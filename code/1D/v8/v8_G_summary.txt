@@ -1,0 +1,89 @@
+V8 STAGE G — FAIR ACTIVATION COMPARISON
+Unique runs: 3780 / expected 3780
+Rows use test_loss; failures are NaN/Inf only. Medians include failures as infinity.
+
+== Best configuration per activation (per task/depth/architecture) ==
+target | depth | arch | act | c | a | gamma | s | k | lr | median | sd | fail/n
+sin3_quad d16 plain | silu c=0.0 a=1.0 g=0.0 s=1.0 k=1.0 lr=0.0003 | 0.0029 | 0.0039 | 0/5
+sin3_quad d16 res_inv | silu c=0.0 a=1.0 g=0.0 s=1.0 k=0.5 lr=0.003 | 0.0129 | 0.0224 | 0/5
+sin3_quad d32 plain | silu c=0.0 a=1.0 g=0.0 s=1.0 k=1.0 lr=0.001 | 0.0420 | 0.0681 | 0/5
+sin3_quad d32 res_inv | silu c=0.0 a=1.0 g=0.0 s=1.0 k=0.5 lr=0.003 | 0.0062 | 0.0009 | 0/5
+sin3_quad d64 plain | precap c=0.5 a=1.5 g=0.0 s=1.5 k=0.5 lr=0.0003 | 0.0485 | 0.1961 | 0/5
+sin3_quad d64 res_inv | silu c=0.0 a=1.0 g=0.0 s=1.0 k=0.5 lr=0.001 | 0.0115 | 0.0039 | 0/5
+sin_mix d16 plain | precap c=0.5 a=1.5 g=0.0 s=1.5 k=1.0 lr=0.003 | 0.0014 | 0.0005 | 0/5
+sin_mix d16 res_inv | precap c=0.5 a=1.5 g=0.0 s=1.5 k=0.5 lr=0.003 | 0.0056 | 0.0016 | 0/5
+sin_mix d32 plain | precap c=1.0 a=1.0 g=0.01 s=1.5 k=1.0 lr=0.001 | 0.0015 | 0.0005 | 0/5
+sin_mix d32 res_inv | precap c=0.5 a=1.5 g=0.0 s=1.5 k=0.5 lr=0.003 | 0.0075 | 0.0033 | 0/5
+sin_mix d64 plain | precap c=1.0 a=1.0 g=0.01 s=1.5 k=1.0 lr=0.0003 | 0.0040 | 0.0039 | 0/5
+sin_mix d64 res_inv | gelu c=0.0 a=1.0 g=0.0 s=1.0 k=0.5 lr=0.003 | 0.0039 | 0.0033 | 0/5
+abs_wave d16 plain | silu c=0.0 a=1.0 g=0.0 s=1.0 k=1.0 lr=0.001 | 0.0445 | 0.0076 | 0/5
+abs_wave d16 res_inv | capexp c=1.0 a=1.0 g=0.0 s=1.0 k=0.5 lr=0.0003 | 0.0475 | 0.0286 | 0/5
+abs_wave d32 plain | silu c=0.0 a=1.0 g=0.0 s=1.0 k=1.0 lr=0.001 | 0.0898 | 0.0473 | 0/5
+abs_wave d32 res_inv | capexp c=1.0 a=1.0 g=0.0 s=1.0 k=0.5 lr=0.0003 | 0.0619 | 0.0124 | 0/5
+abs_wave d64 plain | precap c=1.0 a=1.0 g=0.01 s=1.5 k=1.0 lr=0.0003 | 0.4727 | 0.0535 | 0/5
+abs_wave d64 res_inv | silu c=0.0 a=1.0 g=0.0 s=1.0 k=0.5 lr=0.0003 | 0.0700 | 0.0140 | 0/5
+
+== Head-to-head winner per task/depth/architecture ==
+sin3_quad d16 plain  : WIN silu    0.0029 | silu 0.0029
+sin3_quad d16 res_inv: WIN silu    0.0129 | silu 0.0129
+sin3_quad d32 plain  : WIN silu    0.0420 | silu 0.0420
+sin3_quad d32 res_inv: WIN silu    0.0062 | silu 0.0062
+sin3_quad d64 plain  : WIN precap  0.0485 | precap 0.0485
+sin3_quad d64 res_inv: WIN silu    0.0115 | silu 0.0115
+sin_mix   d16 plain  : WIN precap  0.0014 | precap 0.0014
+sin_mix   d16 res_inv: WIN precap  0.0056 | precap 0.0056
+sin_mix   d32 plain  : WIN precap  0.0015 | precap 0.0015
+sin_mix   d32 res_inv: WIN precap  0.0075 | precap 0.0075
+sin_mix   d64 plain  : WIN precap  0.0040 | precap 0.0040
+sin_mix   d64 res_inv: WIN gelu    0.0039 | gelu 0.0039
+abs_wave  d16 plain  : WIN silu    0.0445 | silu 0.0445
+abs_wave  d16 res_inv: WIN capexp  0.0475 | capexp 0.0475
+abs_wave  d32 plain  : WIN silu    0.0898 | silu 0.0898
+abs_wave  d32 res_inv: WIN capexp  0.0619 | capexp 0.0619
+abs_wave  d64 plain  : WIN precap  0.4727 | precap 0.4727
+abs_wave  d64 res_inv: WIN silu    0.0700 | silu 0.0700
+
+Wins: capexp=2, precap=7, silu=8, gelu=1, relu=0
+Geometric median loss across stable best-cells: silu=0.0233, precap=0.0056, gelu=0.0039, capexp=0.0542
+
+== NaN/Inf stability (all G runs) ==
+activation:
+  capexp: 132/1080 NaN/Inf (12.2%), finite median 0.2029
+  gelu: 0/540 NaN/Inf (0.0%), finite median 0.1531
+  precap: 0/1080 NaN/Inf (0.0%), finite median 0.1507
+  relu: 0/540 NaN/Inf (0.0%), finite median 0.3927
+  silu: 0/540 NaN/Inf (0.0%), finite median 0.1133
+activation / architecture:
+  capexp / plain: 132/540 NaN/Inf (24.4%), finite median 1.6136
+  capexp / res_inv: 0/540 NaN/Inf (0.0%), finite median 0.0910
+  gelu / plain: 0/270 NaN/Inf (0.0%), finite median 0.5600
+  gelu / res_inv: 0/270 NaN/Inf (0.0%), finite median 0.0875
+  precap / plain: 0/540 NaN/Inf (0.0%), finite median 0.4155
+  precap / res_inv: 0/540 NaN/Inf (0.0%), finite median 0.0623
+  relu / plain: 0/270 NaN/Inf (0.0%), finite median 0.4283
+  relu / res_inv: 0/270 NaN/Inf (0.0%), finite median 0.3810
+  silu / plain: 0/270 NaN/Inf (0.0%), finite median 0.5600
+  silu / res_inv: 0/270 NaN/Inf (0.0%), finite median 0.0681
+activation / depth:
+  capexp / 16: 0/360 NaN/Inf (0.0%), finite median 0.1092
+  capexp / 32: 42/360 NaN/Inf (11.7%), finite median 0.2657
+  capexp / 64: 90/360 NaN/Inf (25.0%), finite median 0.3522
+  gelu / 16: 0/180 NaN/Inf (0.0%), finite median 0.0959
+  gelu / 32: 0/180 NaN/Inf (0.0%), finite median 0.1518
+  gelu / 64: 0/180 NaN/Inf (0.0%), finite median 0.5600
+  precap / 16: 0/360 NaN/Inf (0.0%), finite median 0.0996
+  precap / 32: 0/360 NaN/Inf (0.0%), finite median 0.1632
+  precap / 64: 0/360 NaN/Inf (0.0%), finite median 0.2490
+  relu / 16: 0/180 NaN/Inf (0.0%), finite median 0.2809
+  relu / 32: 0/180 NaN/Inf (0.0%), finite median 0.3916
+  relu / 64: 0/180 NaN/Inf (0.0%), finite median 0.5600
+  silu / 16: 0/180 NaN/Inf (0.0%), finite median 0.0745
+  silu / 32: 0/180 NaN/Inf (0.0%), finite median 0.1142
+  silu / 64: 0/180 NaN/Inf (0.0%), finite median 0.5600
+
+== Learning-rate tolerance (configurations with all five seeds finite) ==
+  capexp: lr=0.0003: 63/72 stable, lr=0.001: 63/72 stable, lr=0.003: 63/72 stable
+  precap: lr=0.0003: 72/72 stable, lr=0.001: 72/72 stable, lr=0.003: 72/72 stable
+  silu: lr=0.0003: 36/36 stable, lr=0.001: 36/36 stable, lr=0.003: 36/36 stable
+  gelu: lr=0.0003: 36/36 stable, lr=0.001: 36/36 stable, lr=0.003: 36/36 stable
+  relu: lr=0.0003: 36/36 stable, lr=0.001: 36/36 stable, lr=0.003: 36/36 stable

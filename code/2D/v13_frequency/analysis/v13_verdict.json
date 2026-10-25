@@ -1,0 +1,64 @@
+{
+  "n_confirmatory": 2,
+  "n_significant_holm": 0,
+  "slope_tests": [
+    {
+      "depth": 16,
+      "n": 30,
+      "median_slope": -0.3632,
+      "p_one": 0.994,
+      "holm": 0.994
+    },
+    {
+      "depth": 32,
+      "n": 30,
+      "median_slope": 0.1952,
+      "p_one": 0.1746,
+      "holm": 0.3492
+    }
+  ],
+  "exploratory_crossover_k": {
+    "16": null,
+    "32": 1.4997531142513636
+  },
+  "exploratory_cell_median_spearman": {
+    "16": {
+      "rho": -0.9999999999999999,
+      "p": 1.4042654220543672e-24
+    },
+    "32": {
+      "rho": -0.09999999999999999,
+      "p": 0.8728885715695383
+    }
+  },
+  "exploratory_k150_k200_vs_k100": [
+    {
+      "depth": 16,
+      "k": 1.5,
+      "n": 30,
+      "median_diff_vs_k100": 0.0208,
+      "p_two": 0.9515
+    },
+    {
+      "depth": 16,
+      "k": 2.0,
+      "n": 30,
+      "median_diff_vs_k100": 0.0101,
+      "p_two": 0.3931
+    },
+    {
+      "depth": 32,
+      "k": 1.5,
+      "n": 30,
+      "median_diff_vs_k100": 0.1905,
+      "p_two": 0.1191
+    },
+    {
+      "depth": 32,
+      "k": 2.0,
+      "n": 30,
+      "median_diff_vs_k100": -0.074,
+      "p_two": 0.9032
+    }
+  ]
+}

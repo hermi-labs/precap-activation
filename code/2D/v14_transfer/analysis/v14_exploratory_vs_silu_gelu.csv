@@ -1,0 +1,25 @@
+cmp,task,ratio,seeds_precap_better,p,holm24,verdict
+precap_s225_vs_silu,angled_kink,0.2425,20,0.0,0.0,PreCap besser
+precap_s225_vs_silu,corner_kink,0.7873,19,0.0,0.0001,PreCap besser
+precap_s225_vs_silu,highfreq_grid,0.9837,13,0.0696,0.2087,n.s.
+precap_s225_vs_silu,radial_ripple,0.0717,20,0.0,0.0,PreCap besser
+precap_s225_vs_silu,ridge_mix,0.2379,20,0.0,0.0,PreCap besser
+precap_s225_vs_silu,smooth_bowl,0.1105,20,0.0,0.0,PreCap besser
+precap_s225_vs_gelu,angled_kink,0.3489,20,0.0,0.0,PreCap besser
+precap_s225_vs_gelu,corner_kink,1.1565,1,0.0001,0.0006,PreCap schlechter
+precap_s225_vs_gelu,highfreq_grid,1.0146,5,0.0172,0.0687,n.s.
+precap_s225_vs_gelu,radial_ripple,0.1627,20,0.0,0.0,PreCap besser
+precap_s225_vs_gelu,ridge_mix,0.3621,19,0.0,0.0,PreCap besser
+precap_s225_vs_gelu,smooth_bowl,0.3243,18,0.0,0.0002,PreCap besser
+precap_base_vs_silu,angled_kink,0.2661,20,0.0,0.0,PreCap besser
+precap_base_vs_silu,corner_kink,0.6617,20,0.0,0.0,PreCap besser
+precap_base_vs_silu,highfreq_grid,0.972,15,0.0032,0.0158,PreCap besser
+precap_base_vs_silu,radial_ripple,0.1228,20,0.0,0.0,PreCap besser
+precap_base_vs_silu,ridge_mix,0.1998,20,0.0,0.0,PreCap besser
+precap_base_vs_silu,smooth_bowl,0.1876,20,0.0,0.0,PreCap besser
+precap_base_vs_gelu,angled_kink,0.3769,20,0.0,0.0,PreCap besser
+precap_base_vs_gelu,corner_kink,0.9859,13,0.6477,0.8182,n.s.
+precap_base_vs_gelu,highfreq_grid,1.013,8,0.4091,0.8182,n.s.
+precap_base_vs_gelu,radial_ripple,0.2569,20,0.0,0.0,PreCap besser
+precap_base_vs_gelu,ridge_mix,0.3229,20,0.0,0.0,PreCap besser
+precap_base_vs_gelu,smooth_bowl,0.551,19,0.0,0.0003,PreCap besser

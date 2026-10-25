@@ -1,0 +1,9 @@
+ 5318  5304 /bin/bash /Users/aaronschmitt/PyCharmMiscProject/2D/v18_lr_shallow/launch_v18.sh
+ 5320  5318 caffeinate -dimsu /Users/aaronschmitt/PyCharmMiscProject/2D/v18_lr_shallow/launch_v18.sh
+ 5327  5318 /Users/aaronschmitt/PyCharmMiscProject/.venv/bin/python run_v18_lr.py --worker 0 --workers 7
+ 5331  5318 /Users/aaronschmitt/PyCharmMiscProject/.venv/bin/python run_v18_lr.py --worker 1 --workers 7
+ 5335  5318 /Users/aaronschmitt/PyCharmMiscProject/.venv/bin/python run_v18_lr.py --worker 2 --workers 7
+ 5339  5318 /Users/aaronschmitt/PyCharmMiscProject/.venv/bin/python run_v18_lr.py --worker 3 --workers 7
+ 5343  5318 /Users/aaronschmitt/PyCharmMiscProject/.venv/bin/python run_v18_lr.py --worker 4 --workers 7
+ 5347  5318 /Users/aaronschmitt/PyCharmMiscProject/.venv/bin/python run_v18_lr.py --worker 5 --workers 7
+ 5351  5318 /Users/aaronschmitt/PyCharmMiscProject/.venv/bin/python run_v18_lr.py --worker 6 --workers 7

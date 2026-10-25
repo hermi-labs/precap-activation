@@ -1,0 +1,68 @@
+{
+  "n_tasks": 6,
+  "n_s225_better_holm": 2,
+  "n_s225_worse_holm": 2,
+  "n_no_difference": 2,
+  "per_task": [
+    {
+      "task": "angled_kink",
+      "n": 20,
+      "median_d": 0.0164,
+      "ratio": 1.0384,
+      "seeds_better": 9,
+      "p_two": 0.9854,
+      "holm": 1.0,
+      "verdict": "kein gesicherter Unterschied"
+    },
+    {
+      "task": "corner_kink",
+      "n": 20,
+      "median_d": 0.069,
+      "ratio": 1.1722,
+      "seeds_better": 1,
+      "p_two": 0.0,
+      "holm": 0.0,
+      "verdict": "s225 schlechter"
+    },
+    {
+      "task": "highfreq_grid",
+      "n": 20,
+      "median_d": 0.0056,
+      "ratio": 1.013,
+      "seeds_better": 5,
+      "p_two": 0.0073,
+      "holm": 0.0223,
+      "verdict": "s225 schlechter"
+    },
+    {
+      "task": "radial_ripple",
+      "n": 20,
+      "median_d": -0.2032,
+      "ratio": 0.6263,
+      "seeds_better": 17,
+      "p_two": 0.0,
+      "holm": 0.0002,
+      "verdict": "s225 besser"
+    },
+    {
+      "task": "ridge_mix",
+      "n": 20,
+      "median_d": 0.0173,
+      "ratio": 1.0406,
+      "seeds_better": 9,
+      "p_two": 0.7562,
+      "holm": 1.0,
+      "verdict": "kein gesicherter Unterschied"
+    },
+    {
+      "task": "smooth_bowl",
+      "n": 20,
+      "median_d": -0.2167,
+      "ratio": 0.6072,
+      "seeds_better": 17,
+      "p_two": 0.0056,
+      "holm": 0.0223,
+      "verdict": "s225 besser"
+    }
+  ]
+}

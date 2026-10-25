@@ -1,0 +1,149 @@
+{
+  "final_step": 3000,
+  "n_confirmatory": 24,
+  "counts": {
+    "unklar": 18,
+    "aequivalent (90%-KI in +-10%)": 4,
+    "PreCap besser": 1,
+    "PreCap schlechter": 1
+  },
+  "by_depth": {
+    "64": {
+      "unklar": 9,
+      "aequivalent (90%-KI in +-10%)": 2,
+      "PreCap besser": 1
+    },
+    "128": {
+      "unklar": 9,
+      "aequivalent (90%-KI in +-10%)": 2,
+      "PreCap schlechter": 1
+    }
+  },
+  "spearman_fracpre_vs_absd": {
+    "rho": -0.08391608391608392,
+    "p": 0.7954145018538977,
+    "n": 12
+  },
+  "learning_curve": [
+    {
+      "depth": 32,
+      "step": 0,
+      "geo_ratio_base_over_silu": 1.0953
+    },
+    {
+      "depth": 32,
+      "step": 100,
+      "geo_ratio_base_over_silu": 0.8849
+    },
+    {
+      "depth": 32,
+      "step": 200,
+      "geo_ratio_base_over_silu": 0.4934
+    },
+    {
+      "depth": 32,
+      "step": 400,
+      "geo_ratio_base_over_silu": 0.5832
+    },
+    {
+      "depth": 32,
+      "step": 800,
+      "geo_ratio_base_over_silu": 0.4539
+    },
+    {
+      "depth": 32,
+      "step": 1200,
+      "geo_ratio_base_over_silu": 0.4977
+    },
+    {
+      "depth": 32,
+      "step": 2000,
+      "geo_ratio_base_over_silu": 0.5594
+    },
+    {
+      "depth": 32,
+      "step": 3000,
+      "geo_ratio_base_over_silu": 0.4303
+    },
+    {
+      "depth": 64,
+      "step": 0,
+      "geo_ratio_base_over_silu": 1.1583
+    },
+    {
+      "depth": 64,
+      "step": 100,
+      "geo_ratio_base_over_silu": 0.9371
+    },
+    {
+      "depth": 64,
+      "step": 200,
+      "geo_ratio_base_over_silu": 0.6906
+    },
+    {
+      "depth": 64,
+      "step": 400,
+      "geo_ratio_base_over_silu": 0.6437
+    },
+    {
+      "depth": 64,
+      "step": 800,
+      "geo_ratio_base_over_silu": 0.6546
+    },
+    {
+      "depth": 64,
+      "step": 1200,
+      "geo_ratio_base_over_silu": 0.6562
+    },
+    {
+      "depth": 64,
+      "step": 2000,
+      "geo_ratio_base_over_silu": 0.856
+    },
+    {
+      "depth": 64,
+      "step": 3000,
+      "geo_ratio_base_over_silu": 0.8875
+    },
+    {
+      "depth": 128,
+      "step": 0,
+      "geo_ratio_base_over_silu": 1.4561
+    },
+    {
+      "depth": 128,
+      "step": 100,
+      "geo_ratio_base_over_silu": 0.9778
+    },
+    {
+      "depth": 128,
+      "step": 200,
+      "geo_ratio_base_over_silu": 0.8903
+    },
+    {
+      "depth": 128,
+      "step": 400,
+      "geo_ratio_base_over_silu": 0.7156
+    },
+    {
+      "depth": 128,
+      "step": 800,
+      "geo_ratio_base_over_silu": 0.7367
+    },
+    {
+      "depth": 128,
+      "step": 1200,
+      "geo_ratio_base_over_silu": 0.7875
+    },
+    {
+      "depth": 128,
+      "step": 2000,
+      "geo_ratio_base_over_silu": 0.9245
+    },
+    {
+      "depth": 128,
+      "step": 3000,
+      "geo_ratio_base_over_silu": 1.0253
+    }
+  ]
+}

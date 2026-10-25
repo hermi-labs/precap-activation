@@ -1,0 +1,22 @@
+{
+  "study": "CapExp v5 depth-64 diagnostic confirmation",
+  "status": "pre-registered package; not started",
+  "purpose": "Diagnose the depth-64 boundary with denser temporal checkpoints and layerwise gradient/residual dynamics. Descriptive/confirmatory mechanism study, not a formula search.",
+  "formula": {"name":"PreCap-v9","implementation":"CapExp(s*tanh((a*x+gamma*(a*x)^2)/s))","c":1.0,"a":1.0,"gamma":0.01,"soft_s":1.5},
+  "architecture": {"name":"res_inv","width":64,"init_k":0.5,"lr":0.001,"steps":3000,"batch":128},
+  "cells":[
+    {"class":"boundary","task":"radial_ripple","depth":64},
+    {"class":"boundary","task":"ridge_mix","depth":64},
+    {"class":"anchor","task":"radial_ripple","depth":16},
+    {"class":"counterexample","task":"highfreq_grid","depth":32}
+  ],
+  "activations":["precap","silu","gelu"],
+  "fresh_seeds":[800,801,802,803,804],
+  "checkpoints":[0,100,300,500,800,1200,1500,2200,3000],
+  "planned_runs":60,
+  "workers":4,
+  "pairing":"Same task, depth, seed, initialization and train/test sampling stream across activations.",
+  "stored_metrics":["train_mse","test_mse","global_grad_norm","hmax_peak","cap_fraction","per-layer weight_grad_norm","layer pre/post/residual distribution"],
+  "primary_diagnostic_question":"In depth-64 boundary cells, do rising global or layerwise gradients and residual/activation imbalances emerge before the late loss of PreCap test advantage?",
+  "decision_boundary":"No formula, optimizer, task, seed, step schedule, or post-hoc efficacy gate changes after launch."
+}

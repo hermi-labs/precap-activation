@@ -1,0 +1,2 @@
+
+INVALID: v1 used non-equivalent activation; superseded by v1b_corrected on 2026-10-20 17:51:44

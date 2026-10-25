@@ -1,0 +1,11 @@
+act,arch,16,32,64
+capexp,plain,0.443,0.5,0.342
+capexp,res_inv,0.294,0.391,0.543
+gelu,plain,0.0,0.0,0.0
+gelu,res_inv,0.0,0.0,0.0
+precap,plain,0.0,0.0,0.0
+precap,res_inv,0.0,0.0,0.0
+relu,plain,0.0,0.0,0.0
+relu,res_inv,0.0,0.0,0.0
+silu,plain,0.0,0.0,0.0
+silu,res_inv,0.0,0.0,0.0

@@ -1,0 +1,13 @@
+Core experimental result files:
+- v10B_holdout/: independent 1D holdout
+- v11/v11_mini_results.csv: activation-screening mini
+- v11/v11_confirm_results.csv: hybrid confirmation
+- v12_plain_mechanism/v12_results.csv: plain-mechanism study
+
+Analysis scripts:
+- v11/analyze_v11_mini.py
+- v11/confirm/analyze_v11_confirm.py
+- v12_plain_mechanism/analyze_v12.py
+
+Frozen reference:
+- v12_finale_1d/meta/precap_frozen_reference.json

@@ -1,0 +1,18 @@
+{
+  "study": "CapExp large 2D confirmation v3",
+  "status": "pre-registered; repaired package; not started",
+  "purpose": "Test depth profile and task-family generality of frozen PreCap-v9, independently from v1b/v2.",
+  "frozen_source": "2D/v1b_corrected/capexp_2d_v1b.py",
+  "formula": {"name":"PreCap-v9", "expression":"x - gamma * softplus((x-(c+a))/s)", "c":1.0,"a":1.0,"gamma":0.01,"soft_s":1.5},
+  "architecture": {"name":"res_inv", "width":64, "depths":[4,8,16,32,64], "init_k":0.5, "lr":0.001, "steps":3000, "batch":128},
+  "tasks": {"legacy_core":["radial_ripple","ridge_mix","corner_kink"],"new_prespecified":["smooth_bowl","highfreq_grid","angled_kink"]},
+  "activations":["precap","silu","gelu"],
+  "fresh_seeds":[500,501,502,503,504,505,506,507,508,509],
+  "planned_runs":900,
+  "pairing":"Same task, depth, seed, initialization and train/test sampling stream across activations.",
+  "primary_metric":"d = log10(MSE_PreCap/MSE_reference); d < 0 favors PreCap.",
+  "primary_gate":"On legacy_core tasks, at least 2/3 task-level medians must be < 0 against both SiLU and GELU, with no higher PreCap bad-rate.",
+  "depth_question":"Report effects by each depth 4/8/16/32/64; no claim that benefit grows with depth unless the pre-specified trend is observed across core tasks.",
+  "secondary_metrics":["paired sign tests","hmax_peak ratio","grad_final ratio","cap_final","bad rate"],
+  "exclusions":"No parameter, formula, task, seed, optimizer, training-step, or gate changes after launch. New-task results are reported separately from the primary core-task decision."
+}

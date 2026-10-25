@@ -1,0 +1,42 @@
+WROTE /Users/aaronschmitt/PyCharmMiscProject/2D/v5_depth64_diagnosis/analysis/v5_seed_trajectories_long.csv
+WROTE /Users/aaronschmitt/PyCharmMiscProject/2D/v5_depth64_diagnosis/analysis/v5_seed_paired_decomposition.csv
+WROTE /Users/aaronschmitt/PyCharmMiscProject/2D/v5_depth64_diagnosis/analysis/v5_seed_interval_decomposition.csv
+WROTE /Users/aaronschmitt/PyCharmMiscProject/2D/v5_depth64_diagnosis/analysis/v5_seed_trajectory_classes.csv
+WROTE /Users/aaronschmitt/PyCharmMiscProject/2D/v5_depth64_diagnosis/analysis/v5_endpoint_ranks.csv
+WROTE /Users/aaronschmitt/PyCharmMiscProject/2D/v5_depth64_diagnosis/analysis/v5_complete_seed_decomposition.md
+
+--- radial ripple d64 trajectory classes ---
+   class          task  depth  seed  ref  at_800  at_1200  at_1500  at_2200  at_3000           trajectory_class  final_test_delta  final_train_delta  final_gap_delta  final_precap_mse  final_ref_mse
+boundary radial_ripple     64   800 gelu   False     True    False    False     True  Vorsprung gehalten/erholt         -0.001768          -0.001562        -0.000207          0.000681       0.002450
+boundary radial_ripple     64   801 gelu    True     True    False     True     True  Vorsprung gehalten/erholt         -0.000413          -0.000528         0.000116          0.000499       0.000912
+boundary radial_ripple     64   802 gelu    True     True    False     True     True  Vorsprung gehalten/erholt         -0.001932          -0.001672        -0.000260          0.000238       0.002170
+boundary radial_ripple     64   803 gelu    True     True     True     True    False Später Vorsprung verloren          0.000266           0.000073         0.000193          0.000670       0.000404
+boundary radial_ripple     64   804 gelu    True     True    False     True    False Später Vorsprung verloren          0.005240           0.005828        -0.000588          0.006266       0.001026
+boundary radial_ripple     64   800 silu    True     True     True    False     True  Vorsprung gehalten/erholt         -0.000419          -0.000253        -0.000166          0.000681       0.001100
+boundary radial_ripple     64   801 silu    True     True    False    False    False Später Vorsprung verloren          0.000383           0.000330         0.000052          0.000499       0.000116
+boundary radial_ripple     64   802 silu    True     True    False     True     True  Vorsprung gehalten/erholt         -0.009478          -0.008720        -0.000758          0.000238       0.009716
+boundary radial_ripple     64   803 silu    True     True     True    False    False Später Vorsprung verloren          0.000496           0.000220         0.000277          0.000670       0.000174
+boundary radial_ripple     64   804 silu    True     True    False    False    False Später Vorsprung verloren          0.004401           0.005038        -0.000636          0.006266       0.001865
+
+--- radial ripple d64 intervals vs silu ---
+   class          task  depth  seed  ref  from_step  to_step  precap_test_change  ref_test_change  relative_change_pre_minus_ref  precap_train_change  ref_train_change  precap_gap_change  ref_gap_change
+boundary radial_ripple     64   800 silu        800     1200           -0.012430        -0.129980                       0.117550            -0.010070         -0.120640          -0.002360   -9.340271e-03
+boundary radial_ripple     64   800 silu       1200     1500           -0.001871        -0.019328                       0.017457            -0.001376         -0.017526          -0.000496   -1.802539e-03
+boundary radial_ripple     64   800 silu       1500     2200            0.013526        -0.005052                       0.018578             0.013025         -0.003984           0.000501   -1.067562e-03
+boundary radial_ripple     64   800 silu       2200     3000           -0.015635        -0.001920                      -0.013714            -0.015102         -0.002089          -0.000532    1.688812e-04
+boundary radial_ripple     64   801 silu        800     1200           -0.000460        -0.001867                       0.001407            -0.000381         -0.002183          -0.000079    3.167368e-04
+boundary radial_ripple     64   801 silu       1200     1500            0.002956        -0.005147                       0.008102             0.002925         -0.005258           0.000031    1.118050e-04
+boundary radial_ripple     64   801 silu       1500     2200           -0.004508        -0.001042                      -0.003466            -0.004618         -0.001469           0.000110    4.270765e-04
+boundary radial_ripple     64   801 silu       2200     3000           -0.000072        -0.000391                       0.000319            -0.000211         -0.000394           0.000139    3.065317e-06
+boundary radial_ripple     64   802 silu        800     1200           -0.008231        -0.005057                      -0.003175            -0.007689         -0.004943          -0.000542   -1.136884e-04
+boundary radial_ripple     64   802 silu       1200     1500            0.003507        -0.008966                       0.012473             0.003260         -0.008034           0.000247   -9.319457e-04
+boundary radial_ripple     64   802 silu       1500     2200           -0.004921        -0.000006                      -0.004915            -0.004772         -0.000007          -0.000149    8.080387e-07
+boundary radial_ripple     64   802 silu       2200     3000           -0.000280         0.009025                      -0.009305            -0.000313          0.008279           0.000033    7.454506e-04
+boundary radial_ripple     64   803 silu        800     1200           -0.002557        -0.002982                       0.000425            -0.002905         -0.003961           0.000348    9.791031e-04
+boundary radial_ripple     64   803 silu       1200     1500           -0.001252        -0.019986                       0.018735            -0.000836         -0.016657          -0.000415   -3.329778e-03
+boundary radial_ripple     64   803 silu       1500     2200           -0.000469        -0.004607                       0.004137            -0.000515         -0.002954           0.000046   -1.652761e-03
+boundary radial_ripple     64   803 silu       2200     3000           -0.000337        -0.000593                       0.000256            -0.000184         -0.000487          -0.000153   -1.067714e-04
+boundary radial_ripple     64   804 silu        800     1200           -0.004769        -0.003367                      -0.001402            -0.005932         -0.005179           0.001163    1.811409e-03
+boundary radial_ripple     64   804 silu       1200     1500            0.003513        -0.003709                       0.007222             0.004044         -0.003981          -0.000531    2.717786e-04
+boundary radial_ripple     64   804 silu       1500     2200           -0.004629        -0.003987                      -0.000643            -0.005279         -0.004472           0.000650    4.853081e-04
+boundary radial_ripple     64   804 silu       2200     3000            0.005880         0.001563                       0.004316             0.006536          0.001704          -0.000656   -1.402347e-04

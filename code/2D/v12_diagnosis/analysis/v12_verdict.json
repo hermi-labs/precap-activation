@@ -1,0 +1,20 @@
+{
+  "R_anchor_depth16_replicated": true,
+  "n_confirmatory_contrasts": 6,
+  "n_significant_holm": 0,
+  "significant_contrasts": [],
+  "dose_s300_vs_s225_median_by_cell": {
+    "rot_ang00_k10_a025_d16": 0.0534,
+    "rot_ang00_k10_a025_d32": -0.0167,
+    "rot_ang53_k07_a025_d16": -0.107,
+    "rot_ang53_k07_a025_d32": -0.1454,
+    "rot_ang53_k10_a025_d16": -0.109,
+    "rot_ang53_k10_a025_d32": 0.0301,
+    "rot_ang53_k15_a025_d16": 0.1211,
+    "rot_ang53_k15_a025_d32": 0.0074
+  },
+  "exploratory_spearman_d225_vs_dprep99": {
+    "rho": -0.04104066565100199,
+    "p": 0.6063610342627029
+  }
+}

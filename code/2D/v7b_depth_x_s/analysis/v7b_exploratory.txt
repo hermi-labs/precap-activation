@@ -1,0 +1,11 @@
+EXPLORATIV (nicht präregistriert)
+radial_ripple alle Tiefen gepoolt (seed×depth, n=80): median -0.187 wins 58 /80 p(Wilcoxon less) 3.7368367303004896e-06
+  Median je Tiefe {8: -0.142, 16: -0.213, 32: -0.309, 64: -0.127}
+  seed-gemittelt (n=20): median -0.168 wins 18 /20 p 4.100799560546875e-05
+ridge_mix alle Tiefen gepoolt (seed×depth, n=80): median 0.001 wins 40 /80 p(Wilcoxon less) 0.5363051365032655
+  Median je Tiefe {8: -0.101, 16: 0.064, 32: -0.015, 64: 0.006}
+  seed-gemittelt (n=20): median -0.008 wins 11 /20 p 0.32382774353027344
+radial base vs silu Median je Tiefe {8: -1.473, 16: -0.973, 32: -0.394, 64: -0.298} wins 70 /80
+radial s225 vs silu Median je Tiefe {8: -1.522, 16: -0.988, 32: -0.673, 64: -0.526} wins 78 /80
+radial base vs gelu Median je Tiefe {8: -0.794, 16: -0.611, 32: -0.289, 64: -0.311} wins 71 /80
+radial s225 vs gelu Median je Tiefe {8: -0.889, 16: -0.716, 32: -0.665, 64: -0.593} wins 76 /80

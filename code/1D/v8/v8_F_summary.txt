@@ -1,0 +1,77 @@
+unique 512 expected 512
+
+== Aggregate by stabilizer (all targets/depths/c/a/seeds)
+init_k  =0.25 fail   0/256  median       0.56  sd     0.6785
+init_k  =0.5  fail 128/256  median        inf  sd    6.9e+12
+clip    =0.0  fail  64/256  median      1.801  sd  5.641e+12
+clip    =1.0  fail  64/256  median      1.801  sd  6.974e+09
+warmup  =0    fail  64/256  median      1.801  sd  5.641e+12
+warmup  =200  fail  64/256  median      1.801  sd  4.992e+08
+
+== Combination init x clip x warmup
+k=0.25 clip=0.0 warmup=0 fail 0/64 med 1.18 sd 0.6204
+k=0.25 clip=0.0 warmup=200 fail 0/64 med 1.18 sd 0.6204
+k=0.25 clip=1.0 warmup=0 fail 0/64 med 0.56 sd 0.6568
+k=0.25 clip=1.0 warmup=200 fail 0/64 med 0.56 sd 0.7881
+k=0.5 clip=0.0 warmup=0 fail 32/64 med inf sd 1.363e+13
+k=0.5 clip=0.0 warmup=200 fail 32/64 med inf sd 1.172e+09
+k=0.5 clip=1.0 warmup=0 fail 32/64 med inf sd 1.686e+10
+k=0.5 clip=1.0 warmup=200 fail 32/64 med inf sd 2.936e+08
+
+== By target/depth: best stabilizer combination, then all failure rates
+
+ sin3_quad d 32
+  k=0.5 clip=1.0 wu=0: med 0.09996 fail 4/16 sd 1.88e+04
+  k=0.5 clip=1.0 wu=200: med 0.2575 fail 4/16 sd 1.24e+04
+  k=0.25 clip=1.0 wu=200: med 1.801 fail 0/16 sd 1.19
+  k=0.25 clip=0.0 wu=0: med 1.801 fail 0/16 sd 1.18e-07
+  k=0.25 clip=0.0 wu=200: med 1.801 fail 0/16 sd 2.43e-06
+  k=0.25 clip=1.0 wu=0: med 1.801 fail 0/16 sd 0.798
+  k=0.5 clip=0.0 wu=0: med 73.01 fail 4/16 sd 2.07e+11
+  k=0.5 clip=0.0 wu=200: med 5553 fail 4/16 sd 1.86e+09
+
+ sin3_quad d 64
+  k=0.25 clip=1.0 wu=200: med 1.801 fail 0/16 sd 1.93e-07
+  k=0.25 clip=0.0 wu=0: med 1.801 fail 0/16 sd 1.26e-07
+  k=0.25 clip=0.0 wu=200: med 1.801 fail 0/16 sd 1.26e-07
+  k=0.25 clip=1.0 wu=0: med 1.801 fail 0/16 sd 1.62e-07
+  k=0.5 clip=0.0 wu=0: med inf fail 12/16 sd 0
+  k=0.5 clip=0.0 wu=200: med inf fail 12/16 sd 0
+  k=0.5 clip=1.0 wu=0: med inf fail 12/16 sd 0
+  k=0.5 clip=1.0 wu=200: med inf fail 12/16 sd 0
+
+ sin_mix d 32
+  k=0.5 clip=1.0 wu=200: med 0.2963 fail 4/16 sd 4.53e+08
+  k=0.25 clip=0.0 wu=0: med 0.56 fail 0/16 sd 0
+  k=0.25 clip=0.0 wu=200: med 0.56 fail 0/16 sd 1.44e-08
+  k=0.25 clip=1.0 wu=0: med 0.56 fail 0/16 sd 0
+  k=0.25 clip=1.0 wu=200: med 0.56 fail 0/16 sd 1.44e-08
+  k=0.5 clip=1.0 wu=0: med 0.56 fail 4/16 sd 2.68e+10
+  k=0.5 clip=0.0 wu=200: med 5895 fail 4/16 sd 9.69e+05
+  k=0.5 clip=0.0 wu=0: med 2.333e+04 fail 4/16 sd 2.17e+13
+
+ sin_mix d 64
+  k=0.25 clip=0.0 wu=0: med 0.56 fail 0/16 sd 0
+  k=0.25 clip=0.0 wu=200: med 0.56 fail 0/16 sd 0
+  k=0.25 clip=1.0 wu=0: med 0.56 fail 0/16 sd 0
+  k=0.25 clip=1.0 wu=200: med 0.56 fail 0/16 sd 0
+  k=0.5 clip=0.0 wu=0: med inf fail 12/16 sd 0
+  k=0.5 clip=0.0 wu=200: med inf fail 12/16 sd 0
+  k=0.5 clip=1.0 wu=0: med inf fail 12/16 sd 0
+  k=0.5 clip=1.0 wu=200: med inf fail 12/16 sd 0
+
+== By c/a: failures across all stabilizers
+d32 c1.0 a1.0: fail 0/64 med 0.56
+d32 c1.0 a1.5: fail 0/64 med 0.56
+d32 c1.5 a1.0: fail 0/64 med 1.801
+d32 c1.5 a1.5: fail 32/64 med inf
+d64 c1.0 a1.0: fail 0/64 med 1.18
+d64 c1.0 a1.5: fail 32/64 med inf
+d64 c1.5 a1.0: fail 32/64 med inf
+d64 c1.5 a1.5: fail 32/64 med inf
+
+== Failure step and what prevented failures
+failure steps Counter({'1': 128})
+init_k Counter({'0.5': 128})
+clip Counter({'1.0': 64, '0.0': 64})
+warmup Counter({'200': 64, '0': 64})

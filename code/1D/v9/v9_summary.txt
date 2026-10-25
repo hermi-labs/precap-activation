@@ -1,0 +1,109 @@
+V9 SUMMARY (10 seeds, median test loss; fail=NaN/Inf; dead = loss within 5% of target variance-like plateau >=0.3)
+
+== sin3_quad d32 plain ==
+  precap  c=1.0  g=0.01 k=0.5 lr=0.001  median=0.001001   best=0.000372  fail=0 dead=0 /10
+  capexp  c=1.0  g=0.0  k=0.5 lr=0.0003 median=0.00107    best=0.000156  fail=1 dead=0 /10
+  relu    c=0.0  g=0.0  k=0.5 lr=0.0003 median=0.001142   best=0.00044   fail=0 dead=0 /10
+  precap  c=0.5  g=0.0  k=0.5 lr=0.003  median=0.6558     best=0.652     fail=0 dead=10 /10
+  silu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.656      best=0.656     fail=0 dead=10 /10
+  gelu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.656      best=0.656     fail=0 dead=10 /10
+  capexp  c=1.5  g=0.0  k=0.5 lr=0.0003 median=inf        best=inf       fail=10 dead=0 /10
+
+== sin3_quad d32 res_inv ==
+  precap  c=1.0  g=0.01 k=0.5 lr=0.001  median=3.258e-05  best=5.64e-06  fail=0 dead=0 /10
+  capexp  c=1.5  g=0.0  k=0.5 lr=0.0003 median=4.502e-05  best=1.64e-05  fail=3 dead=0 /10
+  capexp  c=1.0  g=0.0  k=0.5 lr=0.0003 median=5.03e-05   best=2.68e-05  fail=0 dead=0 /10
+  silu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.000128   best=7.36e-05  fail=0 dead=0 /10
+  precap  c=0.5  g=0.0  k=0.5 lr=0.003  median=0.0002056  best=3.58e-05  fail=0 dead=0 /10
+  gelu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.000363   best=0.000236  fail=0 dead=0 /10
+  relu    c=0.0  g=0.0  k=0.5 lr=0.0003 median=0.001448   best=0.000592  fail=0 dead=0 /10
+
+== sin3_quad d64 plain ==
+  precap  c=0.5  g=0.0  k=0.5 lr=0.003  median=0.6559     best=0.65      fail=0 dead=10 /10
+  capexp  c=1.0  g=0.0  k=0.5 lr=0.0003 median=0.656      best=0.656     fail=0 dead=10 /10
+  precap  c=1.0  g=0.01 k=0.5 lr=0.001  median=0.656      best=0.656     fail=0 dead=10 /10
+  silu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.656      best=0.656     fail=0 dead=10 /10
+  capexp  c=1.5  g=0.0  k=0.5 lr=0.0003 median=0.656      best=0.656     fail=1 dead=9 /10
+  gelu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.656      best=0.656     fail=0 dead=10 /10
+  relu    c=0.0  g=0.0  k=0.5 lr=0.0003 median=0.656      best=0.656     fail=0 dead=10 /10
+
+== sin3_quad d64 res_inv ==
+  precap  c=1.0  g=0.01 k=0.5 lr=0.001  median=1.686e-05  best=9.29e-06  fail=0 dead=0 /10
+  capexp  c=1.0  g=0.0  k=0.5 lr=0.0003 median=2.08e-05   best=9.22e-06  fail=2 dead=0 /10
+  silu    c=0.0  g=0.0  k=0.5 lr=0.001  median=4.007e-05  best=1.4e-05   fail=0 dead=0 /10
+  precap  c=0.5  g=0.0  k=0.5 lr=0.003  median=8.486e-05  best=3.4e-05   fail=0 dead=0 /10
+  gelu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.0001413  best=7.91e-05  fail=0 dead=0 /10
+  relu    c=0.0  g=0.0  k=0.5 lr=0.0003 median=0.001997   best=0.00106   fail=0 dead=0 /10
+  capexp  c=1.5  g=0.0  k=0.5 lr=0.0003 median=inf        best=inf       fail=10 dead=0 /10
+
+== sin_mix d32 plain ==
+  precap  c=1.0  g=0.01 k=0.5 lr=0.001  median=0.3345     best=0.332     fail=0 dead=10 /10
+  precap  c=0.5  g=0.0  k=0.5 lr=0.003  median=0.3365     best=0.332     fail=0 dead=10 /10
+  capexp  c=1.0  g=0.0  k=0.5 lr=0.0003 median=0.4819     best=0.000796  fail=1 dead=8 /10
+  gelu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.4819     best=0.482     fail=0 dead=10 /10
+  relu    c=0.0  g=0.0  k=0.5 lr=0.0003 median=0.4819     best=0.482     fail=0 dead=10 /10
+  silu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.4819     best=0.482     fail=0 dead=10 /10
+  capexp  c=1.5  g=0.0  k=0.5 lr=0.0003 median=inf        best=0.482     fail=9 dead=1 /10
+
+== sin_mix d32 res_inv ==
+  precap  c=0.5  g=0.0  k=0.5 lr=0.003  median=0.0005062  best=0.000437  fail=0 dead=0 /10
+  capexp  c=1.5  g=0.0  k=0.5 lr=0.0003 median=0.000738   best=0.000484  fail=3 dead=0 /10
+  precap  c=1.0  g=0.01 k=0.5 lr=0.001  median=0.001141   best=0.000907  fail=0 dead=0 /10
+  gelu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.001212   best=0.000909  fail=0 dead=0 /10
+  capexp  c=1.0  g=0.0  k=0.5 lr=0.0003 median=0.001251   best=0.000804  fail=0 dead=0 /10
+  silu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.001351   best=0.000928  fail=0 dead=0 /10
+  relu    c=0.0  g=0.0  k=0.5 lr=0.0003 median=0.01187    best=0.00523   fail=0 dead=0 /10
+
+== sin_mix d64 plain ==
+  precap  c=0.5  g=0.0  k=0.5 lr=0.003  median=0.3388     best=0.332     fail=0 dead=10 /10
+  capexp  c=1.0  g=0.0  k=0.5 lr=0.0003 median=0.4819     best=0.482     fail=0 dead=10 /10
+  capexp  c=1.5  g=0.0  k=0.5 lr=0.0003 median=0.4819     best=0.482     fail=1 dead=9 /10
+  gelu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.4819     best=0.482     fail=0 dead=10 /10
+  precap  c=1.0  g=0.01 k=0.5 lr=0.001  median=0.4819     best=0.482     fail=0 dead=10 /10
+  relu    c=0.0  g=0.0  k=0.5 lr=0.0003 median=0.4819     best=0.482     fail=0 dead=10 /10
+  silu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.4819     best=0.482     fail=0 dead=10 /10
+
+== sin_mix d64 res_inv ==
+  precap  c=0.5  g=0.0  k=0.5 lr=0.003  median=0.0004396  best=0.000321  fail=0 dead=0 /10
+  precap  c=1.0  g=0.01 k=0.5 lr=0.001  median=0.0008271  best=0.000732  fail=0 dead=0 /10
+  silu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.001013   best=0.000653  fail=0 dead=0 /10
+  gelu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.001152   best=0.000861  fail=0 dead=0 /10
+  capexp  c=1.0  g=0.0  k=0.5 lr=0.0003 median=0.00142    best=0.000791  fail=4 dead=0 /10
+  relu    c=0.0  g=0.0  k=0.5 lr=0.0003 median=0.01223    best=0.00605   fail=0 dead=0 /10
+  capexp  c=1.5  g=0.0  k=0.5 lr=0.0003 median=inf        best=inf       fail=10 dead=0 /10
+
+== abs_wave d32 plain ==
+  relu    c=0.0  g=0.0  k=0.5 lr=0.0003 median=0.0006749  best=0.000319  fail=0 dead=0 /10
+  precap  c=1.0  g=0.01 k=0.5 lr=0.001  median=0.001106   best=0.000714  fail=0 dead=0 /10
+  precap  c=0.5  g=0.0  k=0.5 lr=0.003  median=0.1042     best=0.0967    fail=0 dead=0 /10
+  capexp  c=1.0  g=0.0  k=0.5 lr=0.0003 median=0.1272     best=0.000969  fail=2 dead=0 /10
+  gelu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.1553     best=0.155     fail=0 dead=0 /10
+  silu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.1553     best=0.155     fail=0 dead=0 /10
+  capexp  c=1.5  g=0.0  k=0.5 lr=0.0003 median=inf        best=inf       fail=10 dead=0 /10
+
+== abs_wave d32 res_inv ==
+  precap  c=0.5  g=0.0  k=0.5 lr=0.003  median=7.392e-05  best=3.21e-05  fail=0 dead=0 /10
+  precap  c=1.0  g=0.01 k=0.5 lr=0.001  median=7.88e-05   best=4.77e-05  fail=0 dead=0 /10
+  silu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.000291   best=0.000124  fail=0 dead=0 /10
+  gelu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.000393   best=0.000233  fail=0 dead=0 /10
+  capexp  c=1.5  g=0.0  k=0.5 lr=0.0003 median=0.001451   best=0.000442  fail=4 dead=0 /10
+  capexp  c=1.0  g=0.0  k=0.5 lr=0.0003 median=0.002256   best=0.000406  fail=0 dead=0 /10
+  relu    c=0.0  g=0.0  k=0.5 lr=0.0003 median=0.03       best=0.00738   fail=0 dead=0 /10
+
+== abs_wave d64 plain ==
+  capexp  c=1.0  g=0.0  k=0.5 lr=0.0003 median=0.1553     best=0.155     fail=0 dead=0 /10
+  capexp  c=1.5  g=0.0  k=0.5 lr=0.0003 median=0.1553     best=0.155     fail=1 dead=2 /10
+  gelu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.1553     best=0.155     fail=0 dead=0 /10
+  precap  c=0.5  g=0.0  k=0.5 lr=0.003  median=0.1553     best=0.104     fail=0 dead=0 /10
+  precap  c=1.0  g=0.01 k=0.5 lr=0.001  median=0.1553     best=0.155     fail=0 dead=0 /10
+  relu    c=0.0  g=0.0  k=0.5 lr=0.0003 median=0.1553     best=0.155     fail=0 dead=0 /10
+  silu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.1553     best=0.155     fail=0 dead=0 /10
+
+== abs_wave d64 res_inv ==
+  precap  c=1.0  g=0.01 k=0.5 lr=0.001  median=5.265e-05  best=2.73e-05  fail=0 dead=0 /10
+  precap  c=0.5  g=0.0  k=0.5 lr=0.003  median=7.938e-05  best=3.4e-05   fail=0 dead=0 /10
+  silu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.000107   best=5.86e-05  fail=0 dead=0 /10
+  gelu    c=0.0  g=0.0  k=0.5 lr=0.001  median=0.0004367  best=0.000182  fail=0 dead=0 /10
+  relu    c=0.0  g=0.0  k=0.5 lr=0.0003 median=0.03072    best=0.00963   fail=0 dead=0 /10
+  capexp  c=1.0  g=0.0  k=0.5 lr=0.0003 median=inf        best=0.000196  fail=5 dead=0 /10
+  capexp  c=1.5  g=0.0  k=0.5 lr=0.0003 median=inf        best=inf       fail=10 dead=0 /10

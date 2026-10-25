@@ -1,0 +1,37 @@
+
+== radial_ripple d16 n=20 ==
+  outlier-rate gelu: 0.00  CV=0.35  median=0.01361
+  outlier-rate precap_base: 0.00  CV=0.63  median=0.00275
+  outlier-rate precap_c125: 0.10  CV=0.98  median=0.00288
+  outlier-rate precap_s225: 0.00  CV=0.66  median=0.00152
+  outlier-rate silu: 0.00  CV=0.76  median=0.02088
+  precap_c125 vs base: median=+0.027 trim10=+0.054 wins=9/20 wilcoxon_p=0.7848 sign_p=0.7483 -> PASS (Anker: nicht schlechter)
+  precap_s225 vs base: median=-0.256 trim10=-0.211 wins=16/20 wilcoxon_p=0.0002 sign_p=0.0059 -> PASS (Anker: nicht schlechter)
+  base vs silu: median=-0.881 trim10=-0.907 wins=20/20 wilcoxon_p=0.0000 -> PASS
+  base vs gelu: median=-0.632 trim10=-0.636 wins=20/20 wilcoxon_p=0.0000 -> PASS
+
+== radial_ripple d64 n=20 ==
+  outlier-rate gelu: 0.00  CV=0.61  median=0.00693
+  outlier-rate precap_base: 0.00  CV=0.87  median=0.00374
+  outlier-rate precap_c125: 0.05  CV=0.92  median=0.00233
+  outlier-rate precap_s225: 0.00  CV=0.79  median=0.00244
+  outlier-rate silu: 0.00  CV=0.53  median=0.00535
+  precap_c125 vs base: median=-0.055 trim10=-0.139 wins=11/20 wilcoxon_p=0.1387 sign_p=0.4119 -> no
+  precap_s225 vs base: median=-0.202 trim10=-0.191 wins=13/20 wilcoxon_p=0.0448 sign_p=0.1316 -> no
+  base vs silu: median=-0.028 trim10=-0.133 wins=11/20 wilcoxon_p=0.1012 -> no
+  base vs gelu: median=-0.202 trim10=-0.235 wins=13/20 wilcoxon_p=0.0448 -> PASS
+
+== ridge_mix d64 n=20 ==
+  outlier-rate gelu: 0.00  CV=0.54  median=0.00218
+  outlier-rate precap_base: 0.00  CV=0.73  median=0.00150
+  outlier-rate precap_c125: 0.00  CV=0.66  median=0.00207
+  outlier-rate precap_s225: 0.00  CV=0.64  median=0.00125
+  outlier-rate silu: 0.05  CV=0.91  median=0.00312
+  precap_c125 vs base: median=+0.083 trim10=+0.076 wins=6/20 wilcoxon_p=0.9621 sign_p=0.9793 -> no
+  precap_s225 vs base: median=-0.064 trim10=-0.093 wins=12/20 wilcoxon_p=0.0768 sign_p=0.2517 -> no
+  base vs silu: median=-0.253 trim10=-0.314 wins=18/20 wilcoxon_p=0.0000 -> PASS
+  base vs gelu: median=-0.108 trim10=-0.123 wins=14/20 wilcoxon_p=0.0379 -> PASS
+
+== Gesamtbewertung ==
+precap_c125 KEIN BELASTBARER EFFEKT
+precap_s225 KEIN BELASTBARER EFFEKT

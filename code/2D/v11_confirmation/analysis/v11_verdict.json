@@ -1,0 +1,19 @@
+{
+  "H1_performance_replicated_in_all_success_cells": false,
+  "H2_no_meaningful_benefit_in_failure_cells": false,
+  "H3_mechanism_prep99_confirmed_primary": false,
+  "centered_spearman": {
+    "d_hmax_peak": {
+      "rho": 0.01544551704979512,
+      "p": 0.8670268697698237
+    },
+    "d_layer_pre_p99": {
+      "rho": -0.014438502673796788,
+      "p": 0.8756243289457546
+    }
+  },
+  "secondary_output_peak_success_cells_significant_holm": 0,
+  "secondary_output_peak_failure_cells_positive": false,
+  "n_success_cells": 4,
+  "n_failure_cells": 2
+}

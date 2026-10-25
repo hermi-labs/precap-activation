@@ -1,0 +1,14 @@
+    task  depth  anisotropy  median_d  wins  n        p
+geo_a000     16    0.013403 -0.150355    14 20 0.031861
+geo_a000     32    0.013403 -0.132298    13 20 0.174405
+geo_a025     16    0.221666 -0.438161    17 20 0.000293
+geo_a025     32    0.221666 -0.377651    16 20 0.000293
+geo_a050     16    0.449446 -0.111783    15 20 0.026585
+geo_a050     32    0.449446 -0.153652    14 20 0.215217
+geo_a075     16    0.785598 -0.081644    12 20 0.249004
+geo_a075     32    0.785598  0.201194     3 20 0.999707
+geo_a100     16    0.845255 -0.019036    11 20 0.272938
+geo_a100     32    0.845255 -0.025736    12 20 0.521835
+Spearman anisotropy vs median_d (10 Zellen): rho 0.739 p 0.0147
+Endpunkte seed-gemittelt: median d radial -0.129 ridge -0.034 Kontrast -0.062 wins 11 /20 p 0.19419
+URTEIL: Geometrie-Skalierung NICHT BESTAETIGT

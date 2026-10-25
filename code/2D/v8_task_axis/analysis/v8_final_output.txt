@@ -1,0 +1,15 @@
+ group            task  depth  median_d  wins  n        p
+radial   radial_bessel     16 -0.287797    18 20 0.000845
+radial   radial_bessel     32 -0.321768    14 20 0.014788
+radial radial_highfreq     16 -0.008826    10 20 0.184138
+radial radial_highfreq     32 -0.090161    12 20 0.082479
+radial   radial_ripple     16 -0.150874    17 20 0.001163
+radial   radial_ripple     32 -0.083221    14 20 0.034790
+ ridge    ridge_curved     16 -0.119279    14 20 0.008591
+ ridge    ridge_curved     32 -0.020943    11 20 0.215217
+ ridge  ridge_highfreq     16  0.036907     8 20 0.714702
+ ridge  ridge_highfreq     32  0.047667     8 20 0.958725
+ ridge       ridge_mix     16 -0.021522    12 20 0.406178
+ ridge       ridge_mix     32 -0.080160    13 20 0.392063
+radial median-of-cells -0.121 negative cells 6 / 6
+ridge median-of-cells -0.021 negative cells 4 / 6

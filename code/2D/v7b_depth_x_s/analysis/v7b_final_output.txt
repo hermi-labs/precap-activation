@@ -1,0 +1,15 @@
+radial_ripple 8 s225_vs_base median_d -0.142 wins 15/20 p 0.00211
+radial_ripple 16 s225_vs_base median_d -0.213 wins 14/20 p 0.06636
+radial_ripple 32 s225_vs_base median_d -0.309 wins 16/20 p 0.00072
+radial_ripple 64 s225_vs_base median_d -0.127 wins 13/20 p 0.03479
+ridge_mix 8 s225_vs_base median_d -0.101 wins 12/20 p 0.35059
+ridge_mix 16 s225_vs_base median_d 0.064 wins 7/20 p 0.85287
+ridge_mix 32 s225_vs_base median_d -0.015 wins 11/20 p 0.47816
+ridge_mix 64 s225_vs_base median_d 0.006 wins 10/20 p 0.43474
+
+Primary radial depth profile:
+         task  depth  median_d  wins  n  wilcoxon_p
+radial_ripple      8 -0.141717    15 20    0.002110
+radial_ripple     16 -0.212925    14 20    0.066363
+radial_ripple     32 -0.308880    16 20    0.000716
+radial_ripple     64 -0.127472    13 20    0.034790

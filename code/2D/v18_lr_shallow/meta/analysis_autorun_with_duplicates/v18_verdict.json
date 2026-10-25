@@ -1,0 +1,76 @@
+{
+  "n_rows": 46816,
+  "runs": 4050,
+  "nonfinite_runs": 0,
+  "final_step": 3000,
+  "lr_selection_counts": [
+    {
+      "act": "gelu",
+      "lr_sel": 0.003,
+      "n": 15
+    },
+    {
+      "act": "precap_base",
+      "lr_sel": 0.001,
+      "n": 6
+    },
+    {
+      "act": "precap_base",
+      "lr_sel": 0.003,
+      "n": 9
+    },
+    {
+      "act": "silu",
+      "lr_sel": 0.003,
+      "n": 15
+    }
+  ],
+  "confirmatory_counts": {
+    "unklar": 28,
+    "PreCap schlechter": 2
+  },
+  "criterion": {
+    "gelu": {
+      "besser": 0,
+      "schlechter": 1,
+      "unklar": 14,
+      "H_A_bestaetigt": false,
+      "je_tiefe": {
+        "8": {
+          "unklar": 5
+        },
+        "16": {
+          "unklar": 5
+        },
+        "32": {
+          "unklar": 4,
+          "PreCap schlechter": 1
+        }
+      }
+    },
+    "silu": {
+      "besser": 0,
+      "schlechter": 1,
+      "unklar": 14,
+      "H_A_bestaetigt": false,
+      "je_tiefe": {
+        "8": {
+          "unklar": 5
+        },
+        "16": {
+          "unklar": 4,
+          "PreCap schlechter": 1
+        },
+        "32": {
+          "unklar": 5
+        }
+      }
+    }
+  },
+  "mechanism_spearman_frac_gt_half_vs_log_ratio_silu": {
+    "rho": -0.5214285714285714,
+    "p_one_sided_rho_lt_0": 0.02310961723928651,
+    "n": 15,
+    "gestuetzt": true
+  }
+}

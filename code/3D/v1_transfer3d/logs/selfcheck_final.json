@@ -1,0 +1,152 @@
+{
+  "configs": 7200,
+  "selfcheck": {
+    "formula_max_abs_err": 1.7763568394002505e-15,
+    "monotone_on_grid_pm6": true,
+    "cap_continuity_gap": 5.436563643712589e-09,
+    "cap_slope_left": 2.7182777508905076,
+    "cap_slope_right": 2.718281828739677,
+    "cap_slope_gap": 4.0778491694482e-06,
+    "exp_c": 2.718281828459045,
+    "output_supremum": {
+      "precap_base": {
+        "analytic_sup": 3.077422742688568,
+        "max_seen_at_extremes": 3.077422742688568,
+        "ok": true
+      },
+      "precap_s225": {
+        "analytic_sup": 5.116134114032851,
+        "max_seen_at_extremes": 5.116134114032851,
+        "ok": true
+      }
+    },
+    "cap_hits_match": true,
+    "quantile_max_abs_err": 2.717971803178898e-07,
+    "tasks_data": {
+      "smooth_bowl3d": {
+        "finite": true,
+        "deterministic": true,
+        "y_min": -0.059685155749320984,
+        "y_max": 1.2319968938827515,
+        "y_std": 0.23543980717658997
+      },
+      "gyroid": {
+        "finite": true,
+        "deterministic": true,
+        "y_min": -0.7476469278335571,
+        "y_max": 0.7485377788543701,
+        "y_std": 0.435646116733551
+      },
+      "torus_sdf": {
+        "finite": true,
+        "deterministic": true,
+        "y_min": -0.18979758024215698,
+        "y_max": 1.0815207958221436,
+        "y_std": 0.2613816261291504
+      },
+      "box_sdf": {
+        "finite": true,
+        "deterministic": true,
+        "y_min": -0.43232858180999756,
+        "y_max": 0.801337718963623,
+        "y_std": 0.22473527491092682
+      },
+      "spheres_union": {
+        "finite": true,
+        "deterministic": true,
+        "y_min": -0.3660659193992615,
+        "y_max": 1.1475458145141602,
+        "y_std": 0.27047690749168396
+      }
+    },
+    "seed_overlap_with_v10": [],
+    "expected_runs": 7200,
+    "expected_checkpoint_rows": 57600
+  },
+  "tasks": [
+    [
+      "3d",
+      "smooth_bowl3d"
+    ],
+    [
+      "3d",
+      "gyroid"
+    ],
+    [
+      "3d",
+      "torus_sdf"
+    ],
+    [
+      "3d",
+      "box_sdf"
+    ],
+    [
+      "3d",
+      "spheres_union"
+    ]
+  ],
+  "depths": [
+    8,
+    16
+  ],
+  "scales": [
+    "inv_sqrt"
+  ],
+  "norms": [
+    "none",
+    "layernorm"
+  ],
+  "lrs": [
+    0.001,
+    0.003,
+    0.01
+  ],
+  "acts": [
+    "precap_base",
+    "capexp_c1",
+    "silu",
+    "silu2x"
+  ],
+  "seeds": [
+    30000,
+    30001,
+    30002,
+    30003,
+    30004,
+    30005,
+    30006,
+    30007,
+    30008,
+    30009,
+    30010,
+    30011,
+    30012,
+    30013,
+    30014,
+    30015,
+    30016,
+    30017,
+    30018,
+    30019,
+    30020,
+    30021,
+    30022,
+    30023,
+    30024,
+    30025,
+    30026,
+    30027,
+    30028,
+    30029
+  ],
+  "checkpoints": [
+    0,
+    100,
+    200,
+    400,
+    800,
+    1200,
+    2000,
+    3000
+  ]
+}

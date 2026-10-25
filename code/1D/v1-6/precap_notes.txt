@@ -1,0 +1,49 @@
+CAPEXP PREACT TEST
+==================
+
+IDEA
+----
+Wir formen den Eingang VOR CapExp:
+
+  z = W*x + b
+  u = z + gamma * z^p
+  u_reg = s * tanh(u / s)
+  y = CapExp_c(u_reg)
+
+Das ist weiterhin ein normales neuronales Netz:
+- W*x+b = lineare Matrixmultiplikation der Schicht
+- danach kommt eine neue zusammengesetzte Aktivierung
+
+WARUM DAS SINNVOLL IST
+----------------------
+- z + gamma*z^p gibt groesseren Betraegen mehr Schub
+- tanh regelt diesen Schub weich ab
+- CapExp bekommt dadurch keinen riesigen Input
+- danach greift wieder dein exponentiell-linearer Mechanismus
+
+WIE TESTEN
+----------
+Zuerst klein und fair:
+- baseline: capexp
+- neue Variante: precap
+- p = 2 und 3
+- gamma = 0, 0.01, 0.03, 0.1
+- scale = 1.0 und 1.5
+- Tiefe 8, 16, 32
+- Init default und small
+- zuerst nur sin3_quad
+
+STARTBEFEHL
+-----------
+cd ~/PyCharmMiscProject
+.venv/bin/python capexp_preact_experiment.py --device cpu --targets sin3_quad --seeds 5
+
+AUSWERTUNG
+----------
+.venv/bin/python analyze_precap.py precap_results.csv
+
+INTERPRETATION
+--------------
+- gamma=0 ist praktisch baseline plus Reglerlogik
+- wenn kleines gamma gewinnt: gute Erweiterung
+- wenn nur grosses gamma gut aussieht und viele NaNs auftreten: eher Instabilitaet als echter Fortschritt

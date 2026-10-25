@@ -1,0 +1,4 @@
+/Users/aaronschmitt/PyCharmMiscProject/v9/capexp_v9.py:80: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  return math.isfinite(float(x))
+[1/1] sin3_quad silu d=32 plain seed=0 test=0.656 bad=False

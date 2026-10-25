@@ -1,0 +1,27 @@
+shard 0 stage D todo 26
+[1/26] capexp d=16 plain lr=0.001 c=0.5 in=1.0 seed=0 test=0.0464 bad=False
+[2/26] precap d=16 plain lr=0.001 c=0.5 in=1.5 seed=0 test=0.1252 bad=False
+[3/26] relu d=16 plain lr=0.001 c=0.0 in=1.0 seed=0 test=0.0933 bad=False
+[4/26] precap d=32 plain lr=0.001 c=0.5 in=1.5 seed=0 test=0.0792 bad=False
+[5/26] gelu d=32 plain lr=0.001 c=0.0 in=1.0 seed=0 test=1.8007 bad=False
+[6/26] precap d=16 plain lr=0.001 c=0.5 in=1.0 seed=0 test=0.0061 bad=False
+[7/26] silu d=16 plain lr=0.001 c=0.0 in=1.0 seed=0 test=0.0079 bad=False
+[8/26] precap d=32 plain lr=0.001 c=0.5 in=1.0 seed=0 test=0.5590 bad=False
+[9/26] precap d=32 plain lr=0.001 c=1.0 in=1.5 seed=0 test=0.0013 bad=False
+[10/26] capexp d=16 plain lr=0.001 c=1.0 in=1.5 seed=1 test=0.0286 bad=False
+[11/26] precap d=16 plain lr=0.001 c=1.0 in=1.5 seed=1 test=0.0516 bad=False
+[12/26] capexp d=32 plain lr=0.001 c=1.0 in=1.0 seed=1 test=1.7990 bad=False
+[13/26] precap d=32 plain lr=0.001 c=1.0 in=1.0 seed=1 test=0.0501 bad=False
+[14/26] capexp d=16 plain lr=0.001 c=0.5 in=1.5 seed=1 test=0.0041 bad=False
+[15/26] precap d=16 plain lr=0.001 c=1.0 in=1.0 seed=1 test=0.0055 bad=False
+[16/26] capexp d=32 plain lr=0.001 c=0.5 in=1.0 seed=1 test=0.5600 bad=False
+[17/26] precap d=32 plain lr=0.001 c=0.5 in=1.5 seed=1 test=0.0032 bad=False
+[18/26] relu d=32 plain lr=0.001 c=0.0 in=1.0 seed=1 test=0.5600 bad=False
+[19/26] precap d=16 plain lr=0.001 c=0.5 in=1.5 seed=2 test=0.1005 bad=False
+[20/26] gelu d=16 plain lr=0.001 c=0.0 in=1.0 seed=2 test=0.0425 bad=False
+[21/26] precap d=32 plain lr=0.001 c=0.5 in=1.0 seed=2 test=0.0484 bad=False
+[22/26] silu d=32 plain lr=0.001 c=0.0 in=1.0 seed=2 test=1.8007 bad=False
+[23/26] precap d=16 plain lr=0.001 c=0.5 in=1.0 seed=2 test=0.0060 bad=False
+[24/26] precap d=16 plain lr=0.001 c=1.0 in=1.5 seed=2 test=0.0030 bad=False
+[25/26] capexp d=32 plain lr=0.001 c=1.0 in=1.5 seed=2 test=0.5585 bad=False
+[26/26] precap d=32 plain lr=0.001 c=1.0 in=1.5 seed=2 test=0.0027 bad=False

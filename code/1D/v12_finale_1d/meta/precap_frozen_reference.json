@@ -1,0 +1,24 @@
+{
+  "reference_name": "PreCap 1D frozen reference",
+  "status": "frozen after v10B, v11, and v12",
+  "activation": {
+    "c": 1.0,
+    "a": 1.25,
+    "gamma": 0.01,
+    "soft_s": 1.5,
+    "knee": 0.75,
+    "mix_beta": 0.25
+  },
+  "intended_scope": "Residual inverse architecture (res_inv) on the studied synthetic 1D regression family",
+  "not_claimed": [
+    "Universal superiority over SiLU or GELU",
+    "Advantage in plain feed-forward networks",
+    "Transfer to 2D, images, CNNs, transformers, or real-world tasks"
+  ],
+  "key_evidence": {
+    "v10B": "Independent holdout passed Gate A.",
+    "v11": "Weighted and hybrid repairs did not improve PreCap reproducibly.",
+    "v12": "PreCap was better against both SiLU and GELU in 8/9 res_inv task-regime cells; plain recovery criterion failed in all regimes."
+  },
+  "next_step": "Pre-registered 2D pilot: PreCap vs SiLU vs GELU in residual architecture."
+}

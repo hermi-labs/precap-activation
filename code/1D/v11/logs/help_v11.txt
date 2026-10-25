@@ -1,0 +1,9 @@
+usage: capexp_v11_proto.py [-h] [--out OUT] [--shard SHARD]
+                           [--nshards NSHARDS] [--mode {mini,full}]
+
+optional arguments:
+  -h, --help          show this help message and exit
+  --out OUT
+  --shard SHARD
+  --nshards NSHARDS
+  --mode {mini,full}

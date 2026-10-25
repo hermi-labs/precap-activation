@@ -1,0 +1,15 @@
+{
+  "study": "CapExp independent 2D holdout v2",
+  "purpose": "Independent confirmation of the valid 2D v1b pilot without any parameter changes.",
+  "frozen_source": "2D/v1b_corrected (formula selfcheck max absolute error 0 against 1D v9 reference)",
+  "activations": ["precap", "silu", "gelu"],
+  "precap": {"c": 1.0, "a": 1.0, "gamma": 0.01, "soft_s": 1.5},
+  "architecture": {"name": "res_inv", "width": 64, "depths": [4, 8, 16], "init_k": 0.5, "lr": 0.001, "steps": 3000},
+  "tasks": ["radial_ripple", "ridge_mix", "corner_kink"],
+  "holdout_seeds": [400,401,402,403,404,405,406,407,408,409],
+  "planned_runs": 270,
+  "primary_metric": "paired d = log10(MSE_PreCap / MSE_reference); d < 0 favors PreCap",
+  "primary_gate": "At least 2 of 3 tasks must have median d < 0 against both SiLU and GELU, with no higher PreCap bad-rate.",
+  "secondary_reporting": ["per-depth paired d", "seed sign tests", "hmax_peak ratios", "grad_final ratios", "cap_final"],
+  "rule": "No changes to formula, tasks, width, depths, optimizer, initialization, training steps, or analysis gate after launch."
+}

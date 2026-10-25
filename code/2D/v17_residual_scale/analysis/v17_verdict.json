@@ -1,0 +1,28 @@
+{
+  "n_rows": 11520,
+  "complete_ok_runs": 1440,
+  "final_counts": {
+    "unklar": 29,
+    "PreCap besser": 11,
+    "PreCap schlechter": 8
+  },
+  "by_scale": {
+    "constant": {
+      "PreCap schlechter": 8,
+      "PreCap besser": 8
+    },
+    "inv_quart": {
+      "unklar": 15,
+      "PreCap besser": 1
+    },
+    "inv_sqrt": {
+      "unklar": 14,
+      "PreCap besser": 2
+    }
+  },
+  "post_rms_vs_test_mse": {
+    "rho": 0.7069565217391304,
+    "p": 0.00011232149069224439,
+    "n": 24
+  }
+}

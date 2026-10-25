@@ -1,0 +1,34 @@
+{
+  "targets": [
+    "sin3_quad",
+    "sin_mix",
+    "abs_wave"
+  ],
+  "depths": [
+    32,
+    64
+  ],
+  "acts": [
+    "precap",
+    "silu",
+    "gelu"
+  ],
+  "holdout_seeds": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "frozen_config_count": 18,
+  "planned_runs": 180,
+  "design": "best-vs-best holdout with frozen v10 winners, 3 targets x 2 depths x 3 activations x 10 fresh seeds = 180 runs",
+  "workspace_root": "/Users/aaronschmitt/PyCharmMiscProject",
+  "source_root": "/Users/aaronschmitt/PyCharmMiscProject/v10",
+  "output_root": "/Users/aaronschmitt/PyCharmMiscProject/v10B_holdout"
+}

@@ -1,0 +1,22 @@
+{
+  "study": "CapExp v4 2D mechanism snapshots",
+  "status": "pre-registered diagnostic package; not started",
+  "purpose": "Diagnose layerwise and temporal activation/gradient dynamics in selected v3 winner, boundary and counterexample cells. This is not a new primary efficacy test.",
+  "formula": {"name":"PreCap-v9","implementation":"CapExp(s*tanh((a*x+gamma*(a*x)^2)/s))","c":1.0,"a":1.0,"gamma":0.01,"soft_s":1.5},
+  "architecture": {"name":"res_inv","width":64,"init_k":0.5,"lr":0.001,"steps":3000,"batch":128},
+  "cells": [
+    {"class":"winner","task":"radial_ripple","depth":16},
+    {"class":"winner","task":"angled_kink","depth":32},
+    {"class":"boundary","task":"radial_ripple","depth":64},
+    {"class":"boundary","task":"ridge_mix","depth":64},
+    {"class":"counterexample","task":"highfreq_grid","depth":32}
+  ],
+  "activations":["precap","silu","gelu"],
+  "fresh_seeds":[700,701,702,703,704],
+  "checkpoints":[0,100,500,1500,3000],
+  "planned_runs":75,
+  "pairing":"Same task, depth, seed, initialization and train/test sampling stream across activations.",
+  "stored_metrics":["train_mse","test_mse","grad_norm","hmax_peak","cap_fraction","layer pre/post/residual mean,std,p01,p50,p99,max_abs"],
+  "decision_boundary":"Descriptive diagnostic study only. No parameter search; no post-hoc efficacy gate.",
+  "exclusions":"No changes to PreCap-v9, architecture, optimizer, task definitions, checkpoint schedule or seed set after launch."
+}

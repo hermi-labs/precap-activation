@@ -1,0 +1,19 @@
+EXPLORATIV: V6+v7a gepoolt, nicht primärpräregistriert; n=25 je Zelle.
+
+ radial_ripple 16
+precap_c125 median 0.026 trim10 0.047 wins 12 /25 wilcoxon_less_p 0.80951
+precap_s225 median -0.277 trim10 -0.206 wins 19 /25 wilcoxon_less_p 6e-05
+base_vs_silu median -0.908 wins 25 /25
+base_vs_gelu median -0.663 wins 25 /25
+
+ radial_ripple 64
+precap_c125 median -0.038 trim10 -0.079 wins 13 /25 wilcoxon_less_p 0.23708
+precap_s225 median -0.111 trim10 -0.146 wins 14 /25 wilcoxon_less_p 0.09086
+base_vs_silu median -0.122 wins 15 /25
+base_vs_gelu median -0.267 wins 17 /25
+
+ ridge_mix 64
+precap_c125 median 0.033 trim10 0.041 wins 11 /25 wilcoxon_less_p 0.8373
+precap_s225 median -0.038 trim10 -0.074 wins 16 /25 wilcoxon_less_p 0.09086
+base_vs_silu median -0.253 wins 22 /25
+base_vs_gelu median -0.171 wins 18 /25

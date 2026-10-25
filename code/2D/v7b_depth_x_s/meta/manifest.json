@@ -1,0 +1,23 @@
+{
+  "study": "v7b_depth_x_s",
+  "status": "FROZEN_NOT_LAUNCHED",
+  "full_runs": 640,
+  "checkpoint_rows": 3840,
+  "seeds": "2000-2019",
+  "acts": [
+    "precap_base",
+    "precap_s225",
+    "silu",
+    "gelu"
+  ],
+  "depths": [
+    8,
+    16,
+    32,
+    64
+  ],
+  "tasks": [
+    "radial_ripple",
+    "ridge_mix"
+  ]
+}

@@ -1,0 +1,9 @@
+58897 58859 /bin/bash ./launch_v18.sh 7
+58900 58897 caffeinate -dimsu ./launch_v18.sh 7
+58913 58897 /Users/aaronschmitt/PyCharmMiscProject/.venv/bin/python run_v18_lr.py --worker 0 --workers 7
+58917 58897 /Users/aaronschmitt/PyCharmMiscProject/.venv/bin/python run_v18_lr.py --worker 1 --workers 7
+58921 58897 /Users/aaronschmitt/PyCharmMiscProject/.venv/bin/python run_v18_lr.py --worker 2 --workers 7
+58925 58897 /Users/aaronschmitt/PyCharmMiscProject/.venv/bin/python run_v18_lr.py --worker 3 --workers 7
+58929 58897 /Users/aaronschmitt/PyCharmMiscProject/.venv/bin/python run_v18_lr.py --worker 4 --workers 7
+58933 58897 /Users/aaronschmitt/PyCharmMiscProject/.venv/bin/python run_v18_lr.py --worker 5 --workers 7
+58937 58897 /Users/aaronschmitt/PyCharmMiscProject/.venv/bin/python run_v18_lr.py --worker 6 --workers 7

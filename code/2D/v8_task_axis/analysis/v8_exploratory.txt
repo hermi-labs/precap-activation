@@ -1,0 +1,15 @@
+EXPLORATIV — nicht Teil der eingefrorenen Primärentscheidung
+
+ radial pooled cells n= 120 median -0.129 wins 85 /120 p 9.363493e-08
+radial seed-averaged n=20 median -0.181 wins 20 /20 p 9.536743e-07
+cell medians {('radial_bessel', 16): -0.288, ('radial_bessel', 32): -0.322, ('radial_highfreq', 16): -0.009, ('radial_highfreq', 32): -0.09, ('radial_ripple', 16): -0.151, ('radial_ripple', 32): -0.083}
+base vs silu median -0.572 wins 114 /120 ; s225 vs silu median -0.752 wins 119 /120
+base vs gelu median -0.372 wins 112 /120 ; s225 vs gelu median -0.605 wins 118 /120
+
+ ridge pooled cells n= 120 median -0.022 wins 66 /120 p 0.3638038
+ridge seed-averaged n=20 median 0.021 wins 9 /20 p 0.6761723
+cell medians {('ridge_curved', 16): -0.119, ('ridge_curved', 32): -0.021, ('ridge_highfreq', 16): 0.037, ('ridge_highfreq', 32): 0.048, ('ridge_mix', 16): -0.022, ('ridge_mix', 32): -0.08}
+base vs silu median -0.556 wins 118 /120 ; s225 vs silu median -0.508 wins 118 /120
+base vs gelu median -0.471 wins 104 /120 ; s225 vs gelu median -0.376 wins 106 /120
+
+radial_minus_ridge seed-mean contrast (negative favors radial): median -0.156 wins 18 /20 p 3.147125e-05

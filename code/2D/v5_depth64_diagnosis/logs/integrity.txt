@@ -1,0 +1,1 @@
+full_runs=60/60 checkpoint_rows=540/540 unique_checkpoint_keys=540 layer_rows=71280/71280 unique_layer_keys=71280

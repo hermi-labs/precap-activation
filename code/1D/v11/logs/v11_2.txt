@@ -1,0 +1,37 @@
+checkpoint step=1 target=sin3_quad act=silu depth=8 arch=plain train=0.811748 test=0.841287 grad=0.829088 hmax=2.86995 cap=0.0000
+checkpoint step=2 target=sin3_quad act=silu depth=8 arch=plain train=0.804183 test=0.831542 grad=0.809891 hmax=2.86376 cap=0.0000
+checkpoint step=5 target=sin3_quad act=silu depth=8 arch=plain train=0.770956 test=0.78412 grad=0.733826 hmax=2.88085 cap=0.0000
+checkpoint step=10 target=sin3_quad act=silu depth=8 arch=plain train=0.571831 test=0.522111 grad=0.358212 hmax=2.91735 cap=0.0000
+checkpoint step=20 target=sin3_quad act=silu depth=8 arch=plain train=0.43237 test=0.434424 grad=0.320714 hmax=2.97756 cap=0.0000
+checkpoint step=50 target=sin3_quad act=silu depth=8 arch=plain train=0.326472 test=0.325273 grad=0.194378 hmax=4.35771 cap=0.0000
+checkpoint step=100 target=sin3_quad act=silu depth=8 arch=plain train=0.0385886 test=0.0655362 grad=0.0799709 hmax=5.17094 cap=0.0000
+checkpoint step=200 target=sin3_quad act=silu depth=8 arch=plain train=0.00109119 test=0.00152253 grad=0.21787 hmax=3.88257 cap=0.0000
+checkpoint step=400 target=sin3_quad act=silu depth=8 arch=plain train=0.000230097 test=0.000790587 grad=0.0461991 hmax=3.85593 cap=0.0000
+checkpoint step=800 target=sin3_quad act=silu depth=8 arch=plain train=0.00015112 test=0.000291231 grad=0.0673895 hmax=3.86479 cap=0.0000
+checkpoint step=1600 target=sin3_quad act=silu depth=8 arch=plain train=2.97129e-06 test=1.09634e-05 grad=0.00338117 hmax=4.04373 cap=0.0000
+checkpoint step=3000 target=sin3_quad act=silu depth=8 arch=plain train=8.76418e-06 test=1.7799e-05 grad=0.0136604 hmax=3.93183 cap=0.0000
+[1/229] sin3_quad silu d=8 plain knee=0.75 beta=0.25 test=1.7799e-05 bad=False
+checkpoint step=1 target=sin3_quad act=silu depth=8 arch=plain train=0.813161 test=0.799165 grad=0.939713 hmax=6.02895 cap=0.0000
+checkpoint step=2 target=sin3_quad act=silu depth=8 arch=plain train=0.766415 test=0.732503 grad=0.85812 hmax=6.03524 cap=0.0000
+checkpoint step=5 target=sin3_quad act=silu depth=8 arch=plain train=0.497185 test=0.413197 grad=0.672606 hmax=6.05834 cap=0.0000
+checkpoint step=10 target=sin3_quad act=silu depth=8 arch=plain train=0.372902 test=0.389526 grad=0.411268 hmax=6.06951 cap=0.0000
+checkpoint step=20 target=sin3_quad act=silu depth=8 arch=plain train=0.156025 test=0.191622 grad=0.695758 hmax=6.36696 cap=0.0000
+checkpoint step=50 target=sin3_quad act=silu depth=8 arch=plain train=0.00879931 test=0.0156838 grad=0.146843 hmax=8.49729 cap=0.0000
+checkpoint step=100 target=sin3_quad act=silu depth=8 arch=plain train=0.000792225 test=0.00201499 grad=0.0259244 hmax=7.73912 cap=0.0000
+checkpoint step=200 target=sin3_quad act=silu depth=8 arch=plain train=0.000199293 test=0.000380433 grad=0.00870416 hmax=7.60851 cap=0.0000
+checkpoint step=400 target=sin3_quad act=silu depth=8 arch=plain train=3.05777e-05 test=4.97036e-05 grad=0.00156797 hmax=7.54198 cap=0.0000
+checkpoint step=800 target=sin3_quad act=silu depth=8 arch=plain train=4.04248e-05 test=0.000151795 grad=0.0381577 hmax=7.50804 cap=0.0000
+checkpoint step=1600 target=sin3_quad act=silu depth=8 arch=plain train=9.39777e-05 test=0.000193726 grad=0.0536969 hmax=7.34918 cap=0.0000
+checkpoint step=3000 target=sin3_quad act=silu depth=8 arch=plain train=4.86502e-05 test=9.55903e-05 grad=0.0228097 hmax=7.26539 cap=0.0000
+[2/229] sin3_quad silu d=8 plain knee=0.75 beta=0.25 test=9.55903e-05 bad=False
+checkpoint step=1 target=sin3_quad act=precap_wg depth=8 arch=plain train=0.819021 test=0.763191 grad=1.46064 hmax=5.66387 cap=0.0083
+checkpoint step=2 target=sin3_quad act=precap_wg depth=8 arch=plain train=0.732531 test=0.646987 grad=1.4911 hmax=5.66411 cap=0.0090
+checkpoint step=5 target=sin3_quad act=precap_wg depth=8 arch=plain train=0.379131 test=0.514848 grad=0.773592 hmax=5.67169 cap=0.0208
+checkpoint step=10 target=sin3_quad act=precap_wg depth=8 arch=plain train=0.37729 test=0.377649 grad=2.42094 hmax=5.68798 cap=0.0139
+checkpoint step=20 target=sin3_quad act=precap_wg depth=8 arch=plain train=0.208357 test=0.234751 grad=1.90822 hmax=6.16019 cap=0.0239
+checkpoint step=50 target=sin3_quad act=precap_wg depth=8 arch=plain train=0.0243925 test=0.0433315 grad=2.22903 hmax=7.87054 cap=0.0373
+checkpoint step=100 target=sin3_quad act=precap_wg depth=8 arch=plain train=0.00281185 test=0.0105499 grad=0.232123 hmax=7.78328 cap=0.0331
+checkpoint step=200 target=sin3_quad act=precap_wg depth=8 arch=plain train=0.000469882 test=0.00162903 grad=0.00702106 hmax=7.82605 cap=0.0303
+checkpoint step=400 target=sin3_quad act=precap_wg depth=8 arch=plain train=0.000204414 test=0.00145908 grad=0.142263 hmax=7.94547 cap=0.0296
+checkpoint step=800 target=sin3_quad act=precap_wg depth=8 arch=plain train=3.71929e-05 test=0.000294526 grad=0.00393875 hmax=8.12385 cap=0.0297
+checkpoint step=1600 target=sin3_quad act=precap_wg depth=8 arch=plain train=7.16344e-05 test=0.000879397 grad=0.140846 hmax=8.3364 cap=0.0305

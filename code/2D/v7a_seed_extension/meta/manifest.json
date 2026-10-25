@@ -1,0 +1,14 @@
+{
+ "study": "v7a_seed_extension",
+ "status": "FROZEN_LAUNCHED",
+ "full_runs": 300,
+ "checkpoint_rows": 1800,
+ "seeds": "1000-1019",
+ "acts": [
+  "precap_base",
+  "precap_c125",
+  "precap_s225",
+  "silu",
+  "gelu"
+ ]
+}

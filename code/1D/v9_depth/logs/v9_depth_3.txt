@@ -1,0 +1,46 @@
+/Users/aaronschmitt/PyCharmMiscProject/v9_depth/capexp_v9_depth.py:81: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  curve.append({'step':step,'train_loss':float(loss),'test_loss':float(tl),'grad_norm':gn,'act_std_mean':hstd,'act_abs_max':hmax,'cap_frac':cap,'bad':False})
+[1/43] sin3_quad silu d=64 res_inv k=1.0 lr=0.001 seed=3 test=4.9022e-05 bad=False
+[2/43] sin3_quad gelu d=64 res_inv k=1.0 lr=0.001 seed=0 test=8.1103e-05 bad=False
+[3/43] sin3_quad gelu d=64 res_inv k=1.0 lr=0.001 seed=7 test=0.0026313 bad=False
+[4/43] sin3_quad capexp d=64 res_inv k=0.5 lr=0.0003 seed=4 test=inf bad=True
+[5/43] sin3_quad precap d=64 res_inv k=0.5 lr=0.003 seed=1 test=0.00031026 bad=False
+[6/43] sin3_quad precap d=64 res_inv k=0.5 lr=0.003 seed=8 test=5.352e-05 bad=False
+[7/43] sin3_quad precap d=64 res_inv k=1.0 lr=0.001 seed=5 test=1.4557e-05 bad=False
+[8/43] sin3_quad silu d=128 res_inv k=1.0 lr=0.001 seed=2 test=8.0535e-05 bad=False
+[9/43] sin3_quad silu d=128 res_inv k=1.0 lr=0.001 seed=9 test=5.9708e-05 bad=False
+[10/43] sin3_quad gelu d=128 res_inv k=1.0 lr=0.001 seed=6 test=0.00025469 bad=False
+[11/43] sin3_quad capexp d=128 res_inv k=0.5 lr=0.0003 seed=3 test=inf bad=True
+[12/43] sin3_quad precap d=128 res_inv k=0.5 lr=0.003 seed=0 test=7.1482e-05 bad=False
+[13/43] sin3_quad precap d=128 res_inv k=0.5 lr=0.003 seed=7 test=0.00029147 bad=False
+[14/43] sin3_quad precap d=128 res_inv k=1.0 lr=0.001 seed=4 test=4.3776e-05 bad=False
+[15/43] sin_mix silu d=64 res_inv k=1.0 lr=0.001 seed=1 test=0.00229 bad=False
+[16/43] sin_mix silu d=64 res_inv k=1.0 lr=0.001 seed=8 test=0.0018167 bad=False
+[17/43] sin_mix gelu d=64 res_inv k=1.0 lr=0.001 seed=5 test=0.0013435 bad=False
+[18/43] sin_mix capexp d=64 res_inv k=0.5 lr=0.0003 seed=2 test=0.00081511 bad=False
+[19/43] sin_mix capexp d=64 res_inv k=0.5 lr=0.0003 seed=9 test=0.0018799 bad=False
+[20/43] sin_mix precap d=64 res_inv k=0.5 lr=0.003 seed=6 test=0.00047701 bad=False
+[21/43] sin_mix precap d=64 res_inv k=1.0 lr=0.001 seed=3 test=0.00070012 bad=False
+[22/43] sin_mix silu d=128 res_inv k=1.0 lr=0.001 seed=0 test=0.0021465 bad=False
+[23/43] sin_mix silu d=128 res_inv k=1.0 lr=0.001 seed=7 test=0.0020061 bad=False
+[24/43] sin_mix gelu d=128 res_inv k=1.0 lr=0.001 seed=4 test=0.0014937 bad=False
+[25/43] sin_mix capexp d=128 res_inv k=0.5 lr=0.0003 seed=1 test=inf bad=True
+[26/43] sin_mix capexp d=128 res_inv k=0.5 lr=0.0003 seed=8 test=inf bad=True
+[27/43] sin_mix precap d=128 res_inv k=0.5 lr=0.003 seed=5 test=0.00031812 bad=False
+[28/43] sin_mix precap d=128 res_inv k=1.0 lr=0.001 seed=2 test=0.0005732 bad=False
+[29/43] sin_mix precap d=128 res_inv k=1.0 lr=0.001 seed=9 test=0.00049585 bad=False
+[30/43] abs_wave silu d=64 res_inv k=1.0 lr=0.001 seed=6 test=0.00013197 bad=False
+[31/43] abs_wave gelu d=64 res_inv k=1.0 lr=0.001 seed=3 test=0.00034495 bad=False
+[32/43] abs_wave capexp d=64 res_inv k=0.5 lr=0.0003 seed=0 test=0.00073039 bad=False
+[33/43] abs_wave capexp d=64 res_inv k=0.5 lr=0.0003 seed=7 test=inf bad=True
+[34/43] abs_wave precap d=64 res_inv k=0.5 lr=0.003 seed=4 test=0.00012442 bad=False
+[35/43] abs_wave precap d=64 res_inv k=1.0 lr=0.001 seed=1 test=7.2853e-05 bad=False
+[36/43] abs_wave precap d=64 res_inv k=1.0 lr=0.001 seed=8 test=0.00011255 bad=False
+[37/43] abs_wave silu d=128 res_inv k=1.0 lr=0.001 seed=5 test=0.00016846 bad=False
+[38/43] abs_wave gelu d=128 res_inv k=1.0 lr=0.001 seed=2 test=0.0019735 bad=False
+[39/43] abs_wave gelu d=128 res_inv k=1.0 lr=0.001 seed=9 test=0.0012365 bad=False
+[40/43] abs_wave capexp d=128 res_inv k=0.5 lr=0.0003 seed=6 test=inf bad=True
+[41/43] abs_wave precap d=128 res_inv k=0.5 lr=0.003 seed=3 test=4.87e-05 bad=False
+[42/43] abs_wave precap d=128 res_inv k=1.0 lr=0.001 seed=0 test=0.00014817 bad=False
+[43/43] abs_wave precap d=128 res_inv k=1.0 lr=0.001 seed=7 test=8.6237e-05 bad=False

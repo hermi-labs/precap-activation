@@ -1,0 +1,8 @@
+{
+  "n_rows": 180,
+  "n_expected": 180,
+  "n_bad": 0,
+  "gate_A": "PASS",
+  "confirmed_task_depth_cells": 6,
+  "gate_rule": "at least 2 task-depth cells with PreCap ahead of both baselines by median ratio and paired win count; zero bad runs"
+}

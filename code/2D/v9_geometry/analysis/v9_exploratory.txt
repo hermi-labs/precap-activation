@@ -1,0 +1,20 @@
+EXPLORATIV — nicht Teil der Primärentscheidung
+depth 16 cell-medians {0.0: -0.15, 0.25: -0.438, 0.5: -0.112, 0.75: -0.082, 1.0: -0.019} Spearman 0.9 p 0.0374
+depth 32 cell-medians {0.0: -0.132, 0.25: -0.378, 0.5: -0.154, 0.75: 0.201, 1.0: -0.026} Spearman 0.6 p 0.2848
+
+per alpha pooled across depths:
+0.0 median -0.144 wins 27 /40 p 0.0274051
+0.25 median -0.411 wins 33 /40 p 3.94009e-07
+0.5 median -0.121 wins 29 /40 p 0.0274051
+0.75 median 0.144 wins 15 /40 p 0.96483
+1.0 median -0.026 wins 23 /40 p 0.347413
+seed-avg a 0.0 median -0.129 wins 14 /20 p 0.0768232
+seed-avg a 0.25 median -0.415 wins 19 /20 p 8.39233e-05
+seed-avg a 0.5 median -0.077 wins 15 /20 p 0.03479
+seed-avg a 0.75 median 0.119 wins 5 /20 p 0.994656
+seed-avg a 1.0 median -0.034 wins 12 /20 p 0.29791
+contrast 0 - 0.25 median 0.378 wins 5 /20 p 0.995846
+contrast 0.25 - 0.5 median -0.358 wins 17 /20 p 0.000716209
+contrast 0.5 - 0.75 median -0.266 wins 16 /20 p 0.00471783
+contrast 0.75 - 1 median 0.082 wins 7 /20 p 0.97578
+contrast 0 - 1 median -0.062 wins 11 /20 p 0.194188

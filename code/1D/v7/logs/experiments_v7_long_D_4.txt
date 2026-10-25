@@ -1,0 +1,27 @@
+shard 4 stage D todo 26
+[1/26] precap d=16 plain lr=0.001 c=0.5 in=1.0 seed=0 test=0.0639 bad=False
+[2/26] precap d=16 plain lr=0.001 c=1.0 in=1.5 seed=0 test=0.1015 bad=False
+[3/26] capexp d=32 plain lr=0.001 c=1.0 in=1.5 seed=0 test=7.5322 bad=False
+[4/26] precap d=32 plain lr=0.001 c=1.0 in=1.5 seed=0 test=0.0732 bad=False
+[5/26] capexp d=16 plain lr=0.001 c=1.0 in=1.0 seed=0 test=0.0007 bad=False
+[6/26] precap d=16 plain lr=0.001 c=1.0 in=1.0 seed=0 test=0.0040 bad=False
+[7/26] capexp d=32 plain lr=0.001 c=0.5 in=1.5 seed=0 test=0.3849 bad=False
+[8/26] precap d=32 plain lr=0.001 c=1.0 in=1.0 seed=0 test=0.5600 bad=False
+[9/26] capexp d=16 plain lr=0.001 c=0.5 in=1.0 seed=1 test=0.0684 bad=False
+[10/26] precap d=16 plain lr=0.001 c=0.5 in=1.5 seed=1 test=0.1922 bad=False
+[11/26] relu d=16 plain lr=0.001 c=0.0 in=1.0 seed=1 test=0.0811 bad=False
+[12/26] precap d=32 plain lr=0.001 c=0.5 in=1.5 seed=1 test=0.0733 bad=False
+[13/26] gelu d=32 plain lr=0.001 c=0.0 in=1.0 seed=1 test=1.8007 bad=False
+[14/26] precap d=16 plain lr=0.001 c=0.5 in=1.0 seed=1 test=0.0054 bad=False
+[15/26] silu d=16 plain lr=0.001 c=0.0 in=1.0 seed=1 test=0.0016 bad=False
+[16/26] precap d=32 plain lr=0.001 c=0.5 in=1.0 seed=1 test=0.5567 bad=False
+[17/26] precap d=32 plain lr=0.001 c=1.0 in=1.5 seed=1 test=0.0017 bad=False
+[18/26] capexp d=16 plain lr=0.001 c=1.0 in=1.5 seed=2 test=0.0685 bad=False
+[19/26] precap d=16 plain lr=0.001 c=1.0 in=1.5 seed=2 test=0.0857 bad=False
+[20/26] capexp d=32 plain lr=0.001 c=1.0 in=1.0 seed=2 test=0.0531 bad=False
+[21/26] precap d=32 plain lr=0.001 c=1.0 in=1.0 seed=2 test=0.0490 bad=False
+[22/26] capexp d=16 plain lr=0.001 c=0.5 in=1.5 seed=2 test=0.0024 bad=False
+[23/26] precap d=16 plain lr=0.001 c=1.0 in=1.0 seed=2 test=0.0048 bad=False
+[24/26] capexp d=32 plain lr=0.001 c=0.5 in=1.0 seed=2 test=0.5600 bad=False
+[25/26] precap d=32 plain lr=0.001 c=0.5 in=1.5 seed=2 test=0.0018 bad=False
+[26/26] relu d=32 plain lr=0.001 c=0.0 in=1.0 seed=2 test=0.5600 bad=False

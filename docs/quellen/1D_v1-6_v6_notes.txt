@@ -1,0 +1,64 @@
+V6 STABILITY PLAN
+=================
+
+ZIEL
+----
+CapExp stabiler und zuverlaessiger machen, ohne die Grundidee zu verlieren.
+
+DEINE GRUNDIDEE BLEIBT
+----------------------
+Ja. Die Grundidee bleibt erhalten:
+- schnelles/staerkeres Wachstum fuer nuetzliche Signale
+- aber danach Kontrolle, damit es nicht instabil wird
+
+Wir aendern NICHT die Grundphilosophie, sondern nur die Regelung davor.
+
+FORMELN
+-------
+1) Baseline CapExp mit optionalem Eingangsscale:
+
+   y = CapExp_c(a * z)
+
+   mit z = W*x + b und a = in_scale
+
+2) Neue geregelte Version PreCap:
+
+   z = W*x + b
+   z1 = a * z
+   u = z1 + gamma * z1^p
+   u_reg = s * tanh(u / s)
+   y = CapExp_c(u_reg)
+
+BEDEUTUNG DER NEUEN TEILE
+-------------------------
+- in_scale = Eingang schon vor CapExp kleiner halten
+- gamma*z^p = deine Idee, groesseren Signalen mehr Schub zu geben
+- tanh-Regler = weich abbremsen, damit keine extremen Inputs in CapExp laufen
+
+WARUM DAS SINN MACHT
+--------------------
+V5 hat gezeigt:
+- plain tiefe Netze brechen oft
+- He-Init ist fuer CapExp zu aggressiv
+- Residuals helfen stark
+- c=0.5 ist momentan der bessere Hauptkandidat
+
+Daher V6:
+- nur default/small
+- Fokus auf res_zero und res_inv
+- plain nur noch als Kontrollarm
+- Fokus auf 8/16/32 Layer
+- zuerst c=0.5, c=0.3 nur als Kontrolle
+
+EMPFOHLENER START
+-----------------
+Kleiner Lauf:
+.venv/bin/python capexp_v6_stability.py --device cpu --seeds 3 --targets sin3_quad sin_mix --depths 8 16 --archs res_zero res_inv plain
+
+Danach groesser:
+.venv/bin/python capexp_v6_stability.py --device cpu --seeds 5 --targets sin3_quad sin_mix abs_wave --depths 8 16 32 --archs res_zero res_inv
+
+AUSWERTUNG
+----------
+.venv/bin/python analyze_v6.py experiments_v6.csv
+

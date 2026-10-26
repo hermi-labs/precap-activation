@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Wenn du diese Arbeit verwendest, zitiere sie bitte so. / If you use this work, please cite it as below."
+title: "PreCap / SPreCap: bounded self-normalizing activation functions for deep networks"
+type: software
+authors:
+  - family-names: Schmitt
+    given-names: Aaron
+license: Apache-2.0
+repository-code: "https://github.com/hermi-labs/precap-activation"
+version: 0.1.0
+keywords:
+  - activation function
+  - self-normalizing neural networks
+  - bounded activation
+  - normalization-free
+  - deep learning

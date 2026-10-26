@@ -5,7 +5,7 @@ Forschungsprojekt von Aaron Schmitt, begonnen am 14.10.2026.
 - **CapExp:** exponentiell bis zu einer Schwelle c, danach tangential linear. Mathematisch entspricht das \(e^c\cdot\mathrm{ELU}(x-c)+(e^c-1)\).
 - **PreCap:** CapExp mit vorgeschalteter weicher Begrenzung \(v = s\tanh((z+\gamma z^2)/s)\), \(z = a x\).
 
-Status: in Arbeit, privat. Siehe `docs/PROJEKT_GESAMTDOKUMENTATION.md` und `docs/PreCap_Fahrplan_Veroeffentlichung.md`.
+Status: in Arbeit. Lizenz: Apache-2.0 (siehe LICENSE). Siehe `docs/PROJEKT_GESAMTDOKUMENTATION.md` und `docs/PreCap_Fahrplan_Veroeffentlichung.md`.
 
 ## Struktur
 

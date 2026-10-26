@@ -33,13 +33,15 @@ Ist SPreCap mit gleichem \(\chi_1\) wie SELU (`spreccap_chi_selu`) mindestens gl
 | Punkt | Vorschlag |
 |---|---|
 | Zellen | MNIST, FashionMNIST × Tiefe 50, 100 (4 Zellen), Netz wie 3a-2 |
-| Aktivierungen | spreccap, spreccap_chi_selu, spreccap_chi104, spreccap_e03, selu (5) |
+| Aktivierungen | spreccap, spreccap_chi_selu, spreccap_chi104, spreccap_e03, selu, spreccap_chi_selu_ls (6) |
+| Lernbares s | `spreccap_chi_selu_ls`: wie spreccap_chi_selu, aber s je Schicht lernbar, \(s=1{,}5\cdot e^{\rho}\) mit \(\rho=0\) beim Start. λ, α und b bleiben fest. Beim Start ist die Variante also identisch mit spreccap_chi_selu, der Fixpunkt gilt nur dort. Zusätzlich wird das gelernte s je Schicht an den Checkpoints protokolliert. Hypothese: kein Vorteil (Konfidenz 0,6, wie Aaron vermutet). |
 | LR-Raster | nach 3a-2 festlegen (Bereich um die dort gewählten LRs, 6 Stufen) |
 | Seeds | Tuning 42000–42003, Bestätigung 42010–42024 (15) |
 | Schritte | 1720, Checkpoints wie 3a-2, inklusive Gradientennorm erste/mittlere/letzte Schicht |
 | Primärtest | spreccap_chi_selu gegen selu, 4 Zellen, Wilcoxon, Holm über 4. Für einen Vorteil müssen mindestens 3 von 4 Zellen besser sein und keine schlechter. Für "nicht schlechter" darf keine Zelle signifikant schlechter sein und der Median der Differenz muss bei ≤ 0,5 pp liegen (vorher festlegen). |
 | Sekundär | Dosis-Wirkung: Testfehler gegen \(\chi_1\) über die 4 SPreCap-Varianten (Spearman je Zelle), Divergenzrate, Breite des LR-Fensters |
-| Umfang | etwa 480 Tuning- und 300 Bestätigungsruns, etwa 2,5–3 h auf dem M1 Pro |
+| Umfang | etwa 576 Tuning- und 360 Bestätigungsruns, etwa 3–3,5 h auf dem M1 Pro |
+| Sekundär (s) | spreccap_chi_selu_ls gegen spreccap_chi_selu, eigene Holm-Familie über 4 Zellen |
 
 Erwartungen (vorläufig):
 
@@ -58,6 +60,15 @@ Frage: Kann man mit SPreCap LayerNorm seltener einsetzen oder ganz weglassen und
 - **Kennzahlen:** Testfehler, Divergenzrate, Laufzeit pro Schritt (CPU und MPS).
 - **Erwartung:** Bei k = 1 etwa gleichauf (Konfidenz 0,7). Bei großem k fällt SPreCap weniger ab als GELU (Konfidenz 0,5).
 - **Laufzeit:** Die Ersparnis ist nach der DyT-Arbeit klein. Ohne Optimierung waren es etwa 8 % für das ganze Modell, nach Kompilierung kein Unterschied (Zhu et al. 2025, https://arxiv.org/html/2503.10622v2, Anhang C). Ein Laufzeitvorteil ist daher nur auf Hardware zu erwarten, auf der Reduktionen der Engpass sind.
+
+## Test über MNIST hinaus (Skizze)
+
+MNIST und FashionMNIST überzeugen öffentlich kaum. Vor einer breiten Veröffentlichung sollte mindestens ein Test laufen, der näher an der Praxis liegt:
+
+1. **Kleiner Transformer auf Text** (zeichenweise, Tiny Shakespeare, etwa 1 MB): Pre-LN mit LayerNorm gegen ohne LayerNorm gegen DyT, jeweils mit SPreCap, SELU und GELU im MLP-Teil. Das verbindet sich direkt mit 3b und mit der aktuellen Debatte um normfreie Transformer.
+2. **CIFAR-10** mit tiefem MLP oder kleinem CNN ohne Normierung, also ein schwereres Bildproblem als MNIST.
+
+Rechnen: Der Engpass ist im Moment die CPU mit einem Thread je Worker. Für den Transformer bringt die GPU des M1 Pro (MPS oder MLX) mehr als ein eigener Kernel. Der Kernel lohnt sich vor allem, damit SPreCap im Training nicht langsamer ist als GELU. Plan: zuerst `torch.compile` oder MLX `mx.compile` als Basis messen, dann den Metal-Kernel bauen und gegen diese Basis prüfen (Ergebnisgleichheit auf 1e-6, Laufzeit).
 
 ## Literatur
 

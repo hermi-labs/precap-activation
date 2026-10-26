@@ -93,11 +93,20 @@ Ablauf: zuerst ein Pilot und ein Trockenlauf der Analyse, danach der große Lauf
 - Stabilität in der Tiefe: Divergenzrate und Fehler über der Anzahl der Schichten.
 - Tabellen mit Konfidenzintervallen und Holm-korrigierten Tests.
 
+## Phase 4b – Effiziente Kernels (nur wenn Phase 3 positiv ist)
+
+- Grund: Ohne Fusion ist PreCap auf MPS etwa 9,3-mal so teuer wie ReLU (Phase 1). Ohne schnellen Kernel testet es niemand ernsthaft.
+- MLX: fusionierter Vorwärts- und Rückwärts-Kernel in Metal (`mx.fast.metal_kernel`), getestet auf dem M1 Pro.
+- CUDA: zuerst Triton bzw. `torch.compile` als Referenz, dann eine eigene CUDA-Erweiterung (`torch.autograd.Function`), getestet auf dem Rechner mit RTX 4070.
+- Pflichttests: numerischer Abgleich mit der Referenz (fp32, fp16, bf16), Gradcheck, Grenzfälle (sehr große und kleine x, NaN, Inf), Benchmarks gegen ReLU, SiLU und GELU.
+- Auslieferung zusammen mit dem Release: pip-Paket mit PyTorch- und MLX-Variante.
+
 ## Entscheidungspunkt vor Phase 5 – Patent oder offene Veröffentlichung
 
 - Die Entscheidung fällt erst, wenn Phase 3 komplett ausgewertet ist, also nicht schon nach 3a.
 - Sie muss aber vor jeder öffentlichen Offenlegung fallen: öffentliches Repo, Zenodo, arXiv, Reddit, Mails. Im europäischen Patentrecht gibt es keine Neuheitsschonfrist; auch eine eigene Veröffentlichung zerstört die Neuheit. Das private Repo ist unschädlich.
-- Einschätzung (26.10.2026): Ein Patent ist wenig aussichtsreich. Gründe: Eine Aktivierungsfunktion ist als mathematische Methode nur mit konkretem technischem Bezug schutzfähig, und alle Bausteine (ELU, tanh, DyT) sind bekannt, was die erfinderische Tätigkeit schwächt. Dazu kommen Kosten im vierstelligen Bereich. Empfehlung: offene Veröffentlichung mit DOI. Die macht PreCap zum datierten Stand der Technik, sodass niemand anderes es patentieren kann. Bei einem sehr starken Ergebnis vorher eine Erstberatung bei einem Patentanwalt einholen.
+- Entscheidung (26.10.2026): Ziel ist die Absicherung über eine offene, datierte Veröffentlichung mit DOI und Apache-2.0 (defensive Veröffentlichung), nicht ein Patent.
+- Einschätzung: Ein Patent ist wenig aussichtsreich. Gründe: Eine Aktivierungsfunktion ist als mathematische Methode nur mit konkretem technischem Bezug schutzfähig, und alle Bausteine (ELU, tanh, DyT) sind bekannt, was die erfinderische Tätigkeit schwächt. Dazu kommen Kosten im vierstelligen Bereich. Empfehlung: offene Veröffentlichung mit DOI. Die macht PreCap zum datierten Stand der Technik, sodass niemand anderes es patentieren kann. Bei einem sehr starken Ergebnis vorher eine Erstberatung bei einem Patentanwalt einholen.
 - Lizenz: Apache-2.0 statt MIT. Apache-2.0 enthält eine ausdrückliche Patentlizenz (Abschnitt 3) und ist deshalb für Nutzer sicherer. Sie verträgt sich aber nicht mit einem eigenen Patent, das man durchsetzen will.
 
 ## Phase 5 – Veröffentlichung

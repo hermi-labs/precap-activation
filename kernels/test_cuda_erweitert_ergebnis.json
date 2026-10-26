@@ -1,0 +1,102 @@
+{
+ "gpu": "NVIDIA GeForce RTX 4070",
+ "torch": "2.11.0+cu128",
+ "cuda": "12.8",
+ "python": "3.12.10",
+ "checks": {
+  "precap0 float16": {
+   "ok": true,
+   "max_rel_vorw": 0.000319,
+   "max_rel_rueckw": 0.000244
+  },
+  "precap0 bfloat16": {
+   "ok": true,
+   "max_rel_vorw": 0.00228,
+   "max_rel_rueckw": 0.00195
+  },
+  "precap0 NaN/Inf": {
+   "ok": true,
+   "werte": [
+    NaN,
+    3.077422618865967,
+    -0.7768698334693909,
+    0.0
+   ]
+  },
+  "spreccap float16": {
+   "ok": true,
+   "max_rel_vorw": 0.000324,
+   "max_rel_rueckw": 0.000242
+  },
+  "spreccap bfloat16": {
+   "ok": true,
+   "max_rel_vorw": 0.00247,
+   "max_rel_rueckw": 0.00194
+  },
+  "spreccap NaN/Inf": {
+   "ok": true,
+   "werte": [
+    NaN,
+    2.4827682971954346,
+    -1.502299427986145,
+    0.0
+   ]
+  },
+  "spreccap_cs float16": {
+   "ok": true,
+   "max_rel_vorw": 0.000322,
+   "max_rel_rueckw": 0.000241
+  },
+  "spreccap_cs bfloat16": {
+   "ok": true,
+   "max_rel_vorw": 0.00244,
+   "max_rel_rueckw": 0.00191
+  },
+  "spreccap_cs NaN/Inf": {
+   "ok": true,
+   "werte": [
+    NaN,
+    3.393481492996216,
+    -1.7593803405761719,
+    0.0
+   ]
+  },
+  "spreccap_e03 float16": {
+   "ok": true,
+   "max_rel_vorw": 0.000381,
+   "max_rel_rueckw": 0.000241
+  },
+  "spreccap_e03 bfloat16": {
+   "ok": true,
+   "max_rel_vorw": 0.00286,
+   "max_rel_rueckw": 0.00189
+  },
+  "spreccap_e03 NaN/Inf": {
+   "ok": true,
+   "werte": [
+    NaN,
+    6.110383033752441,
+    -2.4805755615234375,
+    0.0
+   ]
+  },
+  "nicht zusammenhaengend": {
+   "ok": true
+  },
+  "PreCap auto = ref": {
+   "ok": true
+  }
+ },
+ "tempo_ms_16M_fwd_bwd": {
+  "precap_kernel": 1.063,
+  "precap_referenz": 10.321,
+  "relu": 0.731,
+  "silu": 0.73,
+  "gelu": 0.729,
+  "elu": 0.729,
+  "selu": 0.731,
+  "precap_kernel_fp16": 1.608,
+  "selu_fp16": 0.344
+ },
+ "alle_ok": true
+}

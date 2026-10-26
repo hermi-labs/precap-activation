@@ -22,7 +22,7 @@ Stand dieses Dokuments: 26.10.2026, abends (3a-3 ausgewertet, Kernel getestet, R
   5. 3D-V1 (7200 Runs, 26.10.2026) bestätigt das: Mit eigener Lernrate zeigen weder PreCap noch CapExp einen Vorteil gegen SiLU oder SiLU×2. Ohne Normalisierung sind sie im Median etwa 1,3- bis 1,4-mal schlechter, mit LayerNorm gleichauf. Eine breitere Lernraten-Toleranz von PreCap zeigt sich nicht. Details: `analysis/V1_3D_Auswertung_ausfuehrlich.md`.
   6. Mathematik (Phase 1, 26.10.2026): Nahe null ist PreCap bis zur dritten Ordnung ≈ 2·SiLU. Der Term $\gamma z^2$ macht PreCap für $x<-50$ nicht monoton, deshalb künftig $\gamma=0$. Neu ist SPreCap (λ = 0,806769, α = 2,396951), selbstnormierend wie SELU. Details: `math/PreCap_Definition_und_Eigenschaften.md`.
   7. Phase 3 (tiefe MLPs ohne Normalisierung, MNIST und FashionMNIST, 26.10.2026): Nach zwei negativen Runden (3a, 3a-2) zeigte die Mean-Field-Rechnung den Grund: Der Gradientenfaktor χ₁ von SPreCap war zu groß. Mit angepasstem χ₁ ist **SPreCap-cs gleichauf mit SELU** (3a-3, 4 von 4 Zellen innerhalb ±0,2 pp). **SPreCap-e03** (χ₁ = 1,03) ist bei MNIST mit 100 Schichten signifikant besser als SELU. ELU ist aber etwa gleich stark.
-  8. Fusionierte Kernel für CUDA und MLX sind so schnell wie natives SELU. Das Paket `precap` ist ohne feste Pfade installierbar.
+  8. Fusionierte Kernel für CUDA und MLX brauchen in float32 höchstens etwa das 1,5-Fache von nativem SELU, auf dem M1 Pro sind sie sogar schneller. fp16/bf16 sind geprüft, laufen auf CUDA aber über float32 und sind dort langsamer. Das Paket `precap` ist ohne feste Pfade installierbar.
 - **Offen:** Messung des Quantisierungsvorteils, kritische Init (3a-4), Tiefen-abhängiges χ₁, CNNs und Transformer.
 
 ---

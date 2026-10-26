@@ -79,7 +79,7 @@ p('<b>Abstract.</b> We introduce PreCap, a smooth, monotonic activation function
   f'The variant SPreCap-e03 (χ<sub>1</sub> = 1.03) beats SELU on MNIST at depth 100 ({fmt(med[("mnist",100,"spreccap_e03")])} % vs. {fmt(med[("mnist",100,"selu")])} %, '
   f'Holm-adjusted p = {row("mnist",100,"spreccap_e03","selu").holm_all:.4f}, secondary test), while plain ELU is about as strong overall. '
   'PreCap is not more robust to the learning rate. Earlier large advantages at a fixed learning rate disappeared under fair tuning, and we report these negative results. '
-  'We release fused CUDA and Apple MLX kernels that run as fast as native SELU and an installable package.', absS)
+  'We release fused CUDA and Apple MLX kernels that run within about 1.5× of native SELU in float32 and an installable package.', absS)
 S.append(Spacer(1, 4))
 
 # ---------- 1 ----------
@@ -193,7 +193,7 @@ p('6  Kernels and package', h1)
 p('An unfused PreCap needs about ten element-wise operations per direction. We provide fused forward and backward kernels: CUDA C++ compiled at run time through '
   '<font name="Mono" size="8.5">torch.cuda.jiterator</font> (no CUDA toolkit required) and a Metal kernel through <font name="Mono" size="8.5">mx.fast.metal_kernel</font> with a custom VJP for MLX. '
   'On an RTX 4070 all 17 checks pass (values and gradients in fp32/fp64, gradcheck, edge values up to ±10<super>4</super>, a 20-layer MLP trained with kernel vs. reference), '
-  'with a maximum relative fp32 error of 1.1·10<super>−6</super>. On an M1 Pro all 12 checks pass. The package installs with')
+  'with a maximum relative fp32 error of 1.1·10<super>−6</super>. A second, extended run on the same GPU passes 14 further checks: fp16 and bf16 values and gradients for all four presets (maximum relative error 3.8·10<super>−4</super> in fp16 and 2.9·10<super>−3</super> in bf16, i.e. at the rounding level of the format), NaN propagation, ±Inf mapped to the two bounds, non-contiguous tensors, and identical results of the package module and the reference. Speed varies between runs: forward plus backward over 16M fp32 elements took 0.91 ms vs. 0.89 ms for native SELU in the first run (Figure 6) and 1.06 ms vs. 0.73 ms in the second, where ReLU, SiLU, GELU and ELU also took 0.73 ms, so the fused kernel costs up to about 1.5× a native activation. In fp16 the kernel is slower (1.61 ms vs. 0.34 ms for SELU) because inputs are converted to fp32 and back in separate passes. On an M1 Pro all 12 checks pass. The package installs with')
 p('<font name="Mono" size="8.3">pip install "precap[torch] @ git+https://github.com/hermi-labs/precap-activation"</font>', ParagraphStyle('code', parent=body, alignment=TA_CENTER))
 p('and exposes <font name="Mono" size="8.5">from precap import PreCap</font> (the CUDA kernel is used automatically on CUDA tensors) and <font name="Mono" size="8.5">from precap.mlx import PreCap</font>.')
 S.append(fig('fig6_kernels.png', 15*cm, '<b>Figure 6.</b> Time for forward plus backward over 16M float32 elements. The MLX measurement ran alongside a training job and is likely pessimistic.'))
@@ -202,7 +202,7 @@ S.append(fig('fig6_kernels.png', 15*cm, '<b>Figure 6.</b> Time for forward plus 
 p('7  Limitations', h1)
 p('Only fully connected networks on MNIST and FashionMNIST, one width (256), one optimizer (Adam) and short training (1720 steps). No CNNs, Transformers, or large datasets. '
   'The advantage of SPreCap-e03 rests on one cell of a secondary family and should be treated as a hypothesis. The study was not powered to separate e03 from ELU. '
-  'The benefit of a bounded range for fp16/fp8/int8 inference is plausible but was not measured. The kernels were not yet compared with ReLU, SiLU and GELU, or for fp16/bf16 on CUDA. '
+  'The benefit of a bounded range for fp16/fp8/int8 inference is plausible but was not measured. The CUDA kernel has no native fp16/bf16 path and is about 4.7× slower than native SELU in fp16. '
   'The work was done by a single independent researcher on consumer hardware with AI assistance for code and analysis (see acknowledgments).')
 
 # ---------- 8 ----------

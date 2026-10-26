@@ -104,7 +104,7 @@ Ablauf: zuerst ein Pilot und ein Trockenlauf der Analyse, danach der große Lauf
 - CUDA: zuerst Triton bzw. `torch.compile` als Referenz, dann eine eigene CUDA-Erweiterung (`torch.autograd.Function`), getestet auf dem Rechner mit RTX 4070.
 - Pflichttests: numerischer Abgleich mit der Referenz (fp32, fp16, bf16), Gradcheck, Grenzfälle (sehr große und kleine x, NaN, Inf), Benchmarks gegen ReLU, SiLU und GELU.
 - Auslieferung zusammen mit dem Release: pip-Paket mit PyTorch- und MLX-Variante.
-- **Stand 26.10.2026:** CUDA über `torch.cuda.jiterator` statt eigener Erweiterung (kein Toolkit nötig), 17/17 Tests auf der RTX 4070. MLX 12/12 auf dem M1 Pro. Paket `precap` unter `src/precap/` mit 12 Tests, MLX-Paket auf dem M1 Pro geprüft. **Noch nicht gemacht:** fp16/bf16-Abgleich auf CUDA, NaN/Inf-Eingaben, Benchmarks gegen ReLU, SiLU und GELU (bisher nur gegen SELU).
+- **Stand 26.10.2026:** CUDA über `torch.cuda.jiterator` statt eigener Erweiterung (kein Toolkit nötig), 17/17 Tests auf der RTX 4070. MLX 12/12 auf dem M1 Pro. Paket `precap` unter `src/precap/` mit 12 Tests, MLX-Paket auf dem M1 Pro geprüft. **Erweiterter Test (26.10.2026, RTX 4070):** 14/14 bestanden, also fp16/bf16 (Werte und Gradienten, alle 4 Presets), NaN/Inf, nicht zusammenhängende Tensoren, Paket = Referenz. Tempo 1,06 ms gegen 0,73 ms für ReLU/SiLU/GELU/ELU/SELU, fp16 1,61 ms gegen 0,34 ms. **Offen für v0.2:** nativer fp16/bf16-Pfad im CUDA-Kernel.
 
 ## Entscheidungspunkt vor Phase 5 – Patent oder offene Veröffentlichung
 

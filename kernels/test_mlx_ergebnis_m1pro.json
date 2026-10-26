@@ -1,0 +1,65 @@
+{
+ "mlx": "0.32.4",
+ "python": "3.15.0",
+ "geraet": "Device(gpu, 0)",
+ "checks": {
+  "precap0 vorwaerts": {
+   "ok": true,
+   "vs_float64": 2.71e-07,
+   "vs_mlx_ops": 8.74e-08
+  },
+  "precap0 rueckwaerts": {
+   "ok": true,
+   "vs_float64_analytisch": 1.3e-06,
+   "vs_mlx_autograd": 1.3e-06
+  },
+  "precap0 Form 3D": {
+   "ok": true
+  },
+  "precap0 float16-Eingabe": {
+   "ok": true,
+   "ausgabe_typ": "mlx.core.float32"
+  },
+  "spreccap vorwaerts": {
+   "ok": true,
+   "vs_float64": 2.37e-07,
+   "vs_mlx_ops": 9.95e-08
+  },
+  "spreccap rueckwaerts": {
+   "ok": true,
+   "vs_float64_analytisch": 1.11e-06,
+   "vs_mlx_autograd": 1.11e-06
+  },
+  "spreccap Form 3D": {
+   "ok": true
+  },
+  "spreccap float16-Eingabe": {
+   "ok": true,
+   "ausgabe_typ": "mlx.core.float32"
+  },
+  "spreccap_cs vorwaerts": {
+   "ok": true,
+   "vs_float64": 3.1e-07,
+   "vs_mlx_ops": 1.59e-07
+  },
+  "spreccap_cs rueckwaerts": {
+   "ok": true,
+   "vs_float64_analytisch": 9.8e-07,
+   "vs_mlx_autograd": 1e-06
+  },
+  "spreccap_cs Form 3D": {
+   "ok": true
+  },
+  "spreccap_cs float16-Eingabe": {
+   "ok": true,
+   "ausgabe_typ": "mlx.core.float32"
+  }
+ },
+ "tempo_ms_16M_fwd_bwd": {
+  "kernel": 4.148,
+  "referenz": 34.092,
+  "selu_mlx": 11.47,
+  "speedup": 8.22
+ },
+ "alles_ok": true
+}

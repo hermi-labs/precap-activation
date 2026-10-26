@@ -41,8 +41,10 @@ def make_precap(lam=1.0, alpha=1.0, b=1.0, s=1.5, c=1.0):
         return _launch(_kf, [x.astype(mx.float32), prm], x)
     @f.vjp
     def f_vjp(primals, cotangent, output):
-        (x,) = primals
-        return (_launch(_kb, [x.astype(mx.float32), cotangent.astype(mx.float32), prm], x),)
+        # MLX uebergibt bei nur einem Eingang das Array selbst (kein Tupel)
+        x = primals[0] if isinstance(primals, (tuple, list)) else primals
+        g = _launch(_kb, [x.astype(mx.float32), cotangent.astype(mx.float32), prm], x)
+        return (g,) if isinstance(primals, (tuple, list)) else g
     return f
 
 def precap_ref_mlx(x, lam=1.0, alpha=1.0, b=1.0, s=1.5, c=1.0):

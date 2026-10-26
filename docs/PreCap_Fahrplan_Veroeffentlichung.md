@@ -93,6 +93,13 @@ Ablauf: zuerst ein Pilot und ein Trockenlauf der Analyse, danach der große Lauf
 - Stabilität in der Tiefe: Divergenzrate und Fehler über der Anzahl der Schichten.
 - Tabellen mit Konfidenzintervallen und Holm-korrigierten Tests.
 
+## Entscheidungspunkt vor Phase 5 – Patent oder offene Veröffentlichung
+
+- Die Entscheidung fällt erst, wenn Phase 3 komplett ausgewertet ist, also nicht schon nach 3a.
+- Sie muss aber vor jeder öffentlichen Offenlegung fallen: öffentliches Repo, Zenodo, arXiv, Reddit, Mails. Im europäischen Patentrecht gibt es keine Neuheitsschonfrist; auch eine eigene Veröffentlichung zerstört die Neuheit. Das private Repo ist unschädlich.
+- Einschätzung (26.10.2026): Ein Patent ist wenig aussichtsreich. Gründe: Eine Aktivierungsfunktion ist als mathematische Methode nur mit konkretem technischem Bezug schutzfähig, und alle Bausteine (ELU, tanh, DyT) sind bekannt, was die erfinderische Tätigkeit schwächt. Dazu kommen Kosten im vierstelligen Bereich. Empfehlung: offene Veröffentlichung mit DOI. Die macht PreCap zum datierten Stand der Technik, sodass niemand anderes es patentieren kann. Bei einem sehr starken Ergebnis vorher eine Erstberatung bei einem Patentanwalt einholen.
+- Lizenz: Apache-2.0 statt MIT. Apache-2.0 enthält eine ausdrückliche Patentlizenz (Abschnitt 3) und ist deshalb für Nutzer sicherer. Sie verträgt sich aber nicht mit einem eigenen Patent, das man durchsetzen will.
+
 ## Phase 5 – Veröffentlichung
 
 - **Paper** mit 6–10 Seiten als PDF im Stil des ELU-Papers:
@@ -100,7 +107,7 @@ Ablauf: zuerst ein Pilot und ein Trockenlauf der Analyse, danach der große Lauf
   - Ergebnisse aus 1D, 2D und 3D sowie den echten Netzen,
   - Grenzen, Fazit.
   - Die Entstehungsgeschichte kommt in einen Anhang. Die Gesamtdoku liegt bei.
-- **Code und Daten:** öffentliches GitHub-Repository unter MIT-Lizenz mit Skripten, Präregistrierungen, Hashes und Rohdaten oder Zusammenfassungen.
+- **Code und Daten:** öffentliches GitHub-Repository unter Apache-2.0-Lizenz mit Skripten, Präregistrierungen, Hashes und Rohdaten oder Zusammenfassungen.
 - **DOI:** GitHub-Release mit Zenodo verknüpfen. Das ist kostenlos, datiert, zitierbar und läuft auf deinen Namen. arXiv ist optional und braucht eine Empfehlung durch einen anderen Autor.
 - **Bekanntmachen:** Beitrag auf r/MachineLearning und X, Mail an einzelne Forscher zu Aktivierungsfunktionen, optional an Anthropic und OpenAI.
 

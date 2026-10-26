@@ -1,9 +1,9 @@
 # CapExp / PreCap – Gesamtdokumentation des Projekts
 
-Von der ersten Idee (14.10.2026) bis V18 und 3D-V1 (25./26.10.2026)
+Von der ersten Idee (14.10.2026) bis Phase 3a-3, Kernel und Paket v0.1 (26.10.2026)
 
 Autor der Idee und der Funktion: Aaron Schmitt. Durchführung der Läufe auf eigenem MacBook Pro (M1 Pro), Auswertung mit KI-Unterstützung.
-Stand dieses Dokuments: 26.10.2026, ca. 07:00 Uhr (3D-V1 ausgewertet).
+Stand dieses Dokuments: 26.10.2026, abends (3a-3 ausgewertet, Kernel getestet, Recherche abgeschlossen).
 
 ---
 
@@ -21,7 +21,9 @@ Stand dieses Dokuments: 26.10.2026, ca. 07:00 Uhr (3D-V1 ausgewertet).
   4. Echte, belegte Eigenschaft: Die Begrenzung hält sehr tiefe, ungedämpfte Netze (128 Schichten) numerisch trainierbar, wo SiLU und GELU divergieren (V17).
   5. 3D-V1 (7200 Runs, 26.10.2026) bestätigt das: Mit eigener Lernrate zeigen weder PreCap noch CapExp einen Vorteil gegen SiLU oder SiLU×2. Ohne Normalisierung sind sie im Median etwa 1,3- bis 1,4-mal schlechter, mit LayerNorm gleichauf. Eine breitere Lernraten-Toleranz von PreCap zeigt sich nicht. Details: `analysis/V1_3D_Auswertung_ausfuehrlich.md`.
   6. Mathematik (Phase 1, 26.10.2026): Nahe null ist PreCap bis zur dritten Ordnung ≈ 2·SiLU. Der Term \(\gamma z^2\) macht PreCap für \(x<-50\) nicht monoton, deshalb künftig \(\gamma=0\). Neu ist SPreCap (λ = 0,806769, α = 2,396951), selbstnormierend wie SELU. Details: `math/PreCap_Definition_und_Eigenschaften.md`.
-- **Offen:** Verhalten in echten Netzen, besonders in Pre-LN-Netzen wie Transformern, wo PreCap und CapExp in 3D am konkurrenzfähigsten waren (Phase 3 des Fahrplans).
+  7. Phase 3 (tiefe MLPs ohne Normalisierung, MNIST und FashionMNIST, 26.10.2026): Nach zwei negativen Runden (3a, 3a-2) zeigte die Mean-Field-Rechnung den Grund: Der Gradientenfaktor χ₁ von SPreCap war zu groß. Mit angepasstem χ₁ ist **SPreCap-cs gleichauf mit SELU** (3a-3, 4 von 4 Zellen innerhalb ±0,2 pp). **SPreCap-e03** (χ₁ = 1,03) ist bei MNIST mit 100 Schichten signifikant besser als SELU. ELU ist aber etwa gleich stark.
+  8. Fusionierte Kernel für CUDA und MLX sind so schnell wie natives SELU. Das Paket `precap` ist ohne feste Pfade installierbar.
+- **Offen:** Messung des Quantisierungsvorteils, kritische Init (3a-4), Tiefen-abhängiges χ₁, CNNs und Transformer.
 
 ---
 
@@ -152,6 +154,37 @@ Die "dauerhafte Steigung" aus der Ursprungsidee steckt also nur in CapExp. PreCa
   - Explorativ: kein breiteres Lernraten-Fenster für PreCap. SiLU wählt ohne Norm in 9 von 10 Zellen den Rasterrand 1e-2.
   - 0 von 7200 Runs instabil, auch CapExp bei 1e-2 nicht.
 
+### Phase 5 – Tiefe MLPs ohne Normalisierung (Fahrplan-Phase 3, 26.10.2026, `code/phase3/`)
+
+- **3a** (`p3a_deep_mlp`, 2430 Runs): 9 Funktionen, Tiefe 20/50/100. Keine Hauptthese bestätigt. PreCap0 lernt bei 100 Schichten gar nicht, die gewählte LR lag am unteren Rasterrand. Auswertung: `analysis/P3A_Auswertung.md`.
+- **3a-2** (`p3a2_low_lr`, 1092 Runs): tieferes LR-Raster. SPreCap in 4 von 4 Zellen signifikant schlechter als SELU. Das Gradientenprofil bestätigt aber die χ₁-Theorie: SPreCap (χ₁ 1,13) ist bei 100 Schichten etwa 600-fach aufgeblasen, SELU (1,07) etwa 35-fach. Auswertung: `analysis/P3A2_Auswertung.md`.
+- **3a-3** (`p3a3_chi1`, 936 Runs, 0 nicht-endliche Werte, Hashes unverändert, in der Sandbox reproduziert): χ₁-Familie mit b als drittem Parameter.
+
+  | Zelle | SPreCap (1,1305) | cs (1,0716) | e03 (1,0300) | SELU | ELU |
+  |---|---|---|---|---|---|
+  | Fashion 50 | 16,15 % | 14,92 % | 14,57 % | 14,69 % | 14,67 % |
+  | Fashion 100 | 24,21 % | 16,98 % | 16,61 % | 17,29 % | 16,62 % |
+  | MNIST 50 | 5,13 % | 4,42 % | 4,05 % | 4,31 % | 3,75 % |
+  | MNIST 100 | 13,56 % | 6,27 % | 5,28 % | 6,36 % | 5,78 % |
+
+  - Primär cs gegen SELU: 4 von 4 unklar, Entscheidungsregel v0.1 erfüllt (bewährt).
+  - Sekundär: e03 besser als SELU bei MNIST 100 (Holm p = 0,0064), cs schlechter als ELU bei MNIST 50.
+  - Dosis-Wirkung: Fehler sinkt in allen 4 Zellen streng mit χ₁.
+  - Gradientenprofil gemessen gegen vorhergesagt: Abweichung höchstens 0,17 log10.
+  - Kein LR-Robustheitsvorteil: bei LR 5e-4 und Tiefe 50 lernen SELU/ELU (0,59–0,72), PreCap-Varianten nicht (0,10–0,15).
+  - Auswertung: `analysis/P3A3_Auswertung.md`.
+- **3a-4** (Entwurf, `docs/P3A4_Entwurf.md`): kritische Init auf dem Rand des Chaos. Der kritische Punkt ist bei PreCap0 fragil (Sattel-Knoten). e03 wird primärer Kandidat, LR-Robustheit wird primäre Messgröße.
+
+### Kernel und Paket (26.10.2026, `kernels/`, `src/precap/`)
+
+- CUDA über `torch.cuda.jiterator`: 17/17 Tests auf RTX 4070, 0,909 ms gegen natives SELU 0,89 ms (16M Elemente, vorwärts + rückwärts).
+- MLX über `mx.fast.metal_kernel`: 12/12 Tests auf M1 Pro, 4,15 ms gegen MLX-SELU 11,47 ms.
+- Paket `precap` (`pip install "precap[torch] @ git+https://github.com/hermi-labs/precap-activation"`): `from precap import PreCap` wählt auf CUDA den Kernel automatisch. `from precap.mlx import PreCap` für Apple Silicon. 12 Paket-Tests in `tests/`, MLX-Paket auf dem M1 Pro geprüft.
+
+### Recherche vor der Veröffentlichung (26.10.2026)
+
+`docs/Recherche_Neuheit.md`: Die konkrete Formel ist nicht veröffentlicht gefunden worden (Konfidenz etwa 0,8). Die Bausteine sind bekannt, besonders bSELU (Chen et al. 2024), das den Gradientenfaktor ebenfalls bewusst leicht über 1 legt. Der Name `precap` ist auf PyPI frei.
+
 ---
 
 ## 4. Was gesichert ist
@@ -169,11 +202,14 @@ Die "dauerhafte Steigung" aus der Ursprungsidee steckt also nur in CapExp. PreCa
 
    Bei kleinen Werten ist PreCap fast ein mit 2 skaliertes SiLU, und genau dort liegen 70–97 % aller Voraktivierungen.
 4. **Der Begrenzer wirkt als Stabilitätsgarant.** Ungedämpfte 128-Schichten-Netze bleiben mit PreCap trainierbar, SiLU und GELU divergieren dort (V17).
-5. **Mechanismus-Hinweis (V18):** Wo mehr Voraktivierungen über 0,5 liegen, schneidet PreCap relativ besser ab (ρ = −0,52, p = 0,023). Das ist teilweise mit der Tiefe vermischt.
+5. **SPreCap-cs ist in tiefen MLPs ohne Normalisierung gleichauf mit SELU** (3a-3), obwohl die Ausgabe beschränkt ist. Kleineres χ₁ ist dort besser.
+6. **Mechanismus-Hinweis (V18):** Wo mehr Voraktivierungen über 0,5 liegen, schneidet PreCap relativ besser ab (ρ = −0,52, p = 0,023). Das ist teilweise mit der Tiefe vermischt.
 
 ## 5. Was widerlegt oder verworfen wurde
 
 - "PreCap ist allgemein besser": nein.
+- "SPreCap mit SELU-Rezept allein reicht" (3a-2): nein, χ₁ muss mit angepasst werden.
+- "PreCap ist in tiefen MLPs robuster gegenüber der Lernrate" (3a-3): nein.
 - "PreCap ist robuster gegenüber der Lernrate" (Hinweis aus dem Zwischenstand von 3D-V1): über alle Aufgaben nicht bestätigt (3D-V1, explorativ).
 - "Die dauerhafte Steigung von CapExp bringt in 3D einen Vorteil": nicht bestätigt (3D-V1).
 - Untertraining als Grund für das Schrumpfen des Vorteils in der Tiefe (V16): nein.
@@ -204,7 +240,7 @@ Die "dauerhafte Steigung" aus der Ursprungsidee steckt also nur in CapExp. PreCa
 
 ## 7. Einschränkungen
 
-- Nur synthetische Regressionsaufgaben in 1D, 2D und 3D. Keine realen Datensätze, keine CNNs oder Transformer.
+- Bis 3D-V1 nur synthetische Regressionsaufgaben. Phase 3 nutzt MNIST und FashionMNIST, aber nur MLPs. Keine CNNs oder Transformer.
 - Kleine Netze (Breite 64), ein Optimierer (Adam).
 - Bis V17 lief alles mit fester Lernrate. Alle früheren "PreCap besser"-Aussagen sind deshalb an diese Bedingung gebunden.
 
@@ -228,6 +264,9 @@ Die "dauerhafte Steigung" aus der Ursprungsidee steckt also nur in CapExp. PreCa
 | V17 ausführlich | `2D/v17_residual_scale/analysis/V17_Auswertung_ausfuehrlich.md` |
 | V18 ausführlich | `2D/v18_lr_shallow/analysis/V18_Auswertung_ausfuehrlich.md` |
 | 3D-V1 Präregistrierung | `3D/v1_transfer3d/docs/V1_3D_Praeregistrierung.md` |
+| Phase 3 | `code/phase3/`, `analysis/P3A*_Auswertung.md`, `docs/P3A*_Praeregistrierung.md` |
+| Kernel und Paket | `kernels/`, `src/precap/`, `tests/` |
+| Recherche | `literatur/Phase2_Literaturrecherche.md`, `docs/Recherche_Neuheit.md` |
 | Hashes | `*/meta/frozen_sha256.txt` je Studie |
 
 ---

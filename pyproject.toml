@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "precap"
+version = "0.1.0"
+description = "PreCap / SPreCap: bounded self-normalizing activation function with fused CUDA and MLX kernels"
+readme = "README.md"
+license = "Apache-2.0"
+authors = [{ name = "Aaron Schmitt" }]
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["activation function", "self-normalizing", "SELU", "deep learning", "pytorch", "mlx"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+torch = ["torch>=2.1"]
+mlx = ["mlx>=0.20"]
+test = ["pytest"]
+
+[project.urls]
+Repository = "https://github.com/hermi-labs/precap-activation"
+
+[tool.setuptools.packages.find]
+where = ["src"]

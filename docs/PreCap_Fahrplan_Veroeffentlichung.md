@@ -104,6 +104,7 @@ Ablauf: zuerst ein Pilot und ein Trockenlauf der Analyse, danach der große Lauf
 - CUDA: zuerst Triton bzw. `torch.compile` als Referenz, dann eine eigene CUDA-Erweiterung (`torch.autograd.Function`), getestet auf dem Rechner mit RTX 4070.
 - Pflichttests: numerischer Abgleich mit der Referenz (fp32, fp16, bf16), Gradcheck, Grenzfälle (sehr große und kleine x, NaN, Inf), Benchmarks gegen ReLU, SiLU und GELU.
 - Auslieferung zusammen mit dem Release: pip-Paket mit PyTorch- und MLX-Variante.
+- **Stand 26.10.2026:** CUDA über `torch.cuda.jiterator` statt eigener Erweiterung (kein Toolkit nötig), 17/17 Tests auf der RTX 4070. MLX 12/12 auf dem M1 Pro. Paket `precap` unter `src/precap/` mit 12 Tests, MLX-Paket auf dem M1 Pro geprüft. **Noch nicht gemacht:** fp16/bf16-Abgleich auf CUDA, NaN/Inf-Eingaben, Benchmarks gegen ReLU, SiLU und GELU (bisher nur gegen SELU).
 
 ## Entscheidungspunkt vor Phase 5 – Patent oder offene Veröffentlichung
 
@@ -120,6 +121,7 @@ Ablauf: zuerst ein Pilot und ein Trockenlauf der Analyse, danach der große Lauf
 - **Kernels:** Sie kommen mit in v0.1, wenn die Tests gut aussehen: MLX/Metal auf dem M1 Pro und CUDA auf der RTX 4070, jeweils mit Abgleich zur Referenz und Benchmarks nach Phase 4b.
 - **Danach:** Test über MNIST hinaus (kleiner Transformer und/oder CIFAR-10), 3b (weniger LayerNorm), Paper und Posts. Entwürfe: `docs/P3A3_Entwurf.md`; Entwürfe für Posts liegen lokal (nicht im Repo).
 - Reihenfolge bis dahin: 3a-2 auswerten → 3a-3 einfrieren und laufen lassen → auswerten → Kernels → v0.1.
+- **Stand 26.10.2026, abends:** Bedingung erfüllt (3a-3: cs bewährt, 0 nicht-endliche Werte). Kernel, Paket, README, Kernel-README, requirements, Gesamtdoku und Recherche (`docs/Recherche_Neuheit.md`) sind fertig. Offen vor dem Release: Paper-PDF, dann Repo öffentlich, Zenodo-Schalter, Release v0.1.0 (nur mit Freigabe).
 
 ## Phase 5 – Veröffentlichung
 

@@ -6,3 +6,7 @@ __pycache__/
 workers/
 *_checkpoints.csv
 *.DNG
+*.egg-info/
+build/
+dist/
+.pytest_cache/

@@ -1,0 +1,10 @@
+# Getestete Versionen (Oktober 2026). Nur fuer Paket, Kernel und Auswertungen noetig.
+# Windows/Linux mit NVIDIA-GPU (RTX 4070):
+#   Python 3.12.10, torch 2.11.0+cu128 (pip install torch --index-url https://download.pytorch.org/whl/cu128)
+# macOS Apple Silicon (M1 Pro):
+#   Python 3.15, mlx 0.32.4 (MLX-Kernel); Experimente mit torch (CPU/MPS) und scipy 1.13.1
+# Sandbox-Reproduktion: torch 2.14 CPU, scipy 1.18.1
+numpy>=1.26
+scipy>=1.11
+torch>=2.1
+mlx>=0.20 ; sys_platform == "darwin" and platform_machine == "arm64"

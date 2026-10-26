@@ -5,6 +5,7 @@ type: software
 authors:
   - family-names: Schmitt
     given-names: Aaron
+    orcid: "https://orcid.org/0009-0009-8689-5848"
 license: Apache-2.0
 repository-code: "https://github.com/hermi-labs/precap-activation"
 version: 0.1.0

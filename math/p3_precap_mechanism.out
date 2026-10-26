@@ -1,0 +1,14 @@
+precap0   g=1.012 q*=1.000 chi1=1.0641 chi1^100=5.01e+02 mean f=0.306 mean/rms=0.31
+spreccap  g=1.000 q*=1.000 chi1=1.1239 chi1^100=1.18e+05 mean f=-0.001 mean/rms=-0.00
+selu      g=1.000 q*=1.000 chi1=1.0648 chi1^100=5.33e+02 mean f=-0.001 mean/rms=-0.00
+relu      g=1.414 q*=1.000 chi1=1.0000 chi1^100=1.00e+00 mean f=0.400 mean/rms=0.57
+tanh      g=1.593 q*=1.000 chi1=1.1778 chi1^100=1.28e+07 mean f=0.000 mean/rms=0.00
+precap0 chi1-1 ueber g: [(np.float64(0.8), np.float64(-0.36)), (np.float64(1.0), np.float64(0.057)), (np.float64(1.2), np.float64(0.163)), (np.float64(1.4), np.float64(0.278)), (np.float64(1.6), np.float64(0.418)), (np.float64(1.8), np.float64(0.595)), (np.float64(2.0), np.float64(0.657)), (np.float64(2.2), np.float64(0.761)), (np.float64(2.4), np.float64(0.909)), (np.float64(2.6), np.float64(1.101)), (np.float64(2.8), np.float64(1.332)), (np.float64(3.0), np.float64(1.599))]
+g_krit 0.9529 q* 0.144 chi1 1.0 mean/rms 0.17
+--- Korrelation zweier Eingaben ueber 100 Schichten (Start c=0.2) ---
+precap0   [(1, np.float64(0.25901)), (10, np.float64(0.52345)), (20, np.float64(0.62165)), (50, np.float64(0.69513)), (100, np.float64(0.70824))]
+spreccap  [(1, np.float64(0.19144)), (10, np.float64(0.12861)), (20, np.float64(0.08216)), (50, np.float64(0.01901)), (100, np.float64(0.00159))]
+selu      [(1, np.float64(0.19481)), (10, np.float64(0.15307)), (20, np.float64(0.1162)), (50, np.float64(0.04763)), (100, np.float64(0.00906))]
+relu      [(1, np.float64(0.42631)), (10, np.float64(0.88507)), (20, np.float64(0.95612)), (50, np.float64(0.99075)), (100, np.float64(0.99568))]
+tanh      [(1, np.float64(0.18654)), (10, np.float64(0.09865)), (20, np.float64(0.04815)), (50, np.float64(0.00555)), (100, np.float64(0.00015))]
+precap0 zentriert g=1.064 q*=1.000 chi1=1.177 [(1, np.float64(0.18065)), (10, np.float64(0.06746)), (20, np.float64(0.02081)), (50, np.float64(0.00055)), (100, np.float64(0.0))]

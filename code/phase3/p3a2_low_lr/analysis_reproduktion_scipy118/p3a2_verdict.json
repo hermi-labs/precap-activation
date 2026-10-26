@@ -1,0 +1,166 @@
+{
+  "n_rows": 5460,
+  "runs": 1092,
+  "tune_runs": 672,
+  "conf_runs": 420,
+  "diverged_runs": 0,
+  "cells": 4,
+  "need_cells": 3,
+  "lr_selection_matches_file": true,
+  "primary": {
+    "spreccap/selu": {
+      "besser": 0,
+      "schlechter": 4,
+      "unklar": 0,
+      "Vorteil_bestaetigt": false,
+      "Nachteil_bestaetigt": true
+    }
+  },
+  "all_pairs_counts": {
+    "Kandidat besser": 17,
+    "Kandidat schlechter": 16,
+    "unklar": 7
+  },
+  "all_pairs": {
+    "precap0/elu": {
+      "besser": 0,
+      "schlechter": 4,
+      "unklar": 0,
+      "Vorteil_bestaetigt": false,
+      "Nachteil_bestaetigt": true
+    },
+    "precap0/gelu_he": {
+      "besser": 4,
+      "schlechter": 0,
+      "unklar": 0,
+      "Vorteil_bestaetigt": true,
+      "Nachteil_bestaetigt": false
+    },
+    "precap0/relu": {
+      "besser": 2,
+      "schlechter": 0,
+      "unklar": 2,
+      "Vorteil_bestaetigt": false,
+      "Nachteil_bestaetigt": false
+    },
+    "precap0/selu": {
+      "besser": 0,
+      "schlechter": 3,
+      "unklar": 1,
+      "Vorteil_bestaetigt": false,
+      "Nachteil_bestaetigt": true
+    },
+    "precap0/silu_he": {
+      "besser": 4,
+      "schlechter": 0,
+      "unklar": 0,
+      "Vorteil_bestaetigt": true,
+      "Nachteil_bestaetigt": false
+    },
+    "spreccap/elu": {
+      "besser": 0,
+      "schlechter": 4,
+      "unklar": 0,
+      "Vorteil_bestaetigt": false,
+      "Nachteil_bestaetigt": true
+    },
+    "spreccap/gelu_he": {
+      "besser": 3,
+      "schlechter": 0,
+      "unklar": 1,
+      "Vorteil_bestaetigt": true,
+      "Nachteil_bestaetigt": false
+    },
+    "spreccap/relu": {
+      "besser": 0,
+      "schlechter": 1,
+      "unklar": 3,
+      "Vorteil_bestaetigt": false,
+      "Nachteil_bestaetigt": false
+    },
+    "spreccap/selu": {
+      "besser": 0,
+      "schlechter": 4,
+      "unklar": 0,
+      "Vorteil_bestaetigt": false,
+      "Nachteil_bestaetigt": true
+    },
+    "spreccap/silu_he": {
+      "besser": 4,
+      "schlechter": 0,
+      "unklar": 0,
+      "Vorteil_bestaetigt": true,
+      "Nachteil_bestaetigt": false
+    }
+  },
+  "lr_at_upper_edge": {
+    "elu": 0,
+    "gelu_he": 0,
+    "precap0": 0,
+    "relu": 0,
+    "selu": 0,
+    "silu_he": 1,
+    "spreccap": 0
+  },
+  "lr_at_lower_edge": {
+    "elu": 0,
+    "gelu_he": 1,
+    "precap0": 0,
+    "relu": 0,
+    "selu": 0,
+    "silu_he": 1,
+    "spreccap": 0
+  },
+  "trainable_cells_best_tune_val_acc_gt_0_5": {
+    "elu": 4,
+    "gelu_he": 2,
+    "precap0": 4,
+    "relu": 4,
+    "selu": 4,
+    "silu_he": 2,
+    "spreccap": 4
+  },
+  "init_grad_ratio_first_over_last_median": {
+    "50|elu": 0.384,
+    "50|gelu_he": 0.748,
+    "50|precap0": 0.458,
+    "50|relu": -0.034,
+    "50|selu": 0.706,
+    "50|silu_he": 0.395,
+    "50|spreccap": 1.354,
+    "100|elu": 0.698,
+    "100|gelu_he": 0.964,
+    "100|precap0": 1.067,
+    "100|relu": -0.138,
+    "100|selu": 1.54,
+    "100|silu_he": 0.439,
+    "100|spreccap": 2.807
+  },
+  "mean_lr_window": {
+    "elu": 2.0,
+    "gelu_he": 3.0,
+    "precap0": 1.25,
+    "relu": 1.5,
+    "selu": 1.75,
+    "silu_he": 2.5,
+    "spreccap": 1.25
+  },
+  "mean_divergence_tune": {
+    "elu": 0.0,
+    "gelu_he": 0.0,
+    "precap0": 0.0,
+    "relu": 0.0,
+    "selu": 0.0,
+    "silu_he": 0.0,
+    "spreccap": 0.0
+  },
+  "mean_rank_conf": {
+    "elu": 1.25,
+    "gelu_he": 6.25,
+    "precap0": 3.0,
+    "relu": 4.0,
+    "selu": 1.75,
+    "silu_he": 6.75,
+    "spreccap": 5.0
+  }
+}

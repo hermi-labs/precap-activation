@@ -1,0 +1,11 @@
+{
+  "phase": "all",
+  "rows": 5460,
+  "unique_keys": 5460,
+  "duplicates": 0,
+  "ended_runs": 1092,
+  "expected_runs": 1092,
+  "missing": 0,
+  "unexpected": 0,
+  "nonfinite_runs": 0
+}

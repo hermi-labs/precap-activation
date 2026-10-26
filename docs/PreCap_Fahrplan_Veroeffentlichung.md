@@ -57,6 +57,8 @@ Das Ergebnis ist das Kapitel "Definition und Eigenschaften" des Papers. Ich rech
 
 ## Phase 3 – Tests an echten Netzen (mehrere Nächte auf dem M1)
 
+- **Phase 3a erledigt am 26.10.2026:** Keine Hauptthese bestätigt. PreCap0 lernt bei 100 Schichten nicht (vorwärts stabil, aber verschwindende Gradienten). SPreCap ist bei Fashion 100 die beste Funktion, bei 50 Schichten schlechter als SELU. Größte Einschränkung: LR-Raster unten nicht offen (Kandidaten 6/6 am Rand 1e-4). Nächster Schritt: Nachlauf 3a-2 mit LR 1e-5 bis 2e-4. Details: `analysis/P3A_Auswertung.md`.
+
 ### Vergleichsfunktionen
 
 ReLU, GELU, SiLU, SiLU×2, ELU, SELU, Squared ReLU, PreCap und gegebenenfalls SPreCap.

@@ -1,0 +1,8 @@
+{
+  "checkpoint_rows": 57600,
+  "expected_checkpoint_rows": 57600,
+  "unique_checkpoint_keys": 57600,
+  "full_runs": 7200,
+  "nonfinite_runs": 0,
+  "expected_full_runs": 7200
+}

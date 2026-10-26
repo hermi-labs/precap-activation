@@ -1,9 +1,9 @@
 # CapExp / PreCap – Gesamtdokumentation des Projekts
 
-Von der ersten Idee (14.10.2026) bis V18 und dem Start von 3D-V1 (25.10.2026)
+Von der ersten Idee (14.10.2026) bis V18 und 3D-V1 (25./26.10.2026)
 
 Autor der Idee und der Funktion: Aaron Schmitt. Durchführung der Läufe auf eigenem MacBook Pro (M1 Pro), Auswertung mit KI-Unterstützung.
-Stand dieses Dokuments: 25.10.2026, ca. 21:00 Uhr.
+Stand dieses Dokuments: 26.10.2026, ca. 07:00 Uhr (3D-V1 ausgewertet).
 
 ---
 
@@ -19,7 +19,8 @@ Stand dieses Dokuments: 25.10.2026, ca. 21:00 Uhr.
   2. Bekommt jede Aktivierung ihre eigene, optimal gewählte Lernrate (V18), verschwindet dieser Vorteil in 2D. Es gab 0 von 30 Tests mit PreCap besser und 2 mit PreCap schlechter.
   3. Der Hauptgrund: PreCap hat am Ursprung Steigung 1, SiLU und GELU nur 0,5. Bei gleicher Lernrate lernt PreCap dadurch effektiv schneller.
   4. Echte, belegte Eigenschaft: Die Begrenzung hält sehr tiefe, ungedämpfte Netze (128 Schichten) numerisch trainierbar, wo SiLU und GELU divergieren (V17).
-- **Offen:** Bringt das reine CapExp mit dauerhafter Steigung mehr als PreCap? Und ändert LayerNorm das Bild? Das prüft 3D-V1, gestartet am 25.10.2026 um 20:38 Uhr.
+  5. 3D-V1 (7200 Runs, 26.10.2026) bestätigt das: Mit eigener Lernrate zeigen weder PreCap noch CapExp einen Vorteil gegen SiLU oder SiLU×2. Ohne Normalisierung sind sie im Median etwa 1,3- bis 1,4-mal schlechter, mit LayerNorm gleichauf. Eine breitere Lernraten-Toleranz von PreCap zeigt sich nicht. Details: `analysis/V1_3D_Auswertung_ausfuehrlich.md`.
+- **Offen:** Verhalten in echten Netzen, besonders in Pre-LN-Netzen wie Transformern, wo PreCap und CapExp in 3D am konkurrenzfähigsten waren (Phase 3 des Fahrplans).
 
 ---
 
@@ -143,6 +144,12 @@ Die "dauerhafte Steigung" aus der Ursprungsidee steckt also nur in CapExp. PreCa
 - **Seeds:** 30000–30029 (10 Tuning, 20 Bestätigung).
 - **Umfang:** 7200 Runs, 80 präregistrierte Tests mit Holm-Korrektur. Hashes eingefroren in `meta/frozen_sha256.txt`.
 - **Schon vor dem Training gemessen:** Ohne LayerNorm liegen 3 % der Voraktivierungen über 0,5, mit LayerNorm 30 %. Mit LayerNorm arbeitet die Aktivierung also stärker in dem Bereich, in dem sie sich überhaupt von SiLU unterscheidet.
+- **Ergebnis (26.10.2026, Lauf 20:38–02:18, Integrität vollständig, Hashes unverändert):**
+  - Kein Vorteil bestätigt, in keiner der 8 Kombinationen aus Kandidat, Norm und Referenz. Von 80 Tests: 1 besser (CapExp gegen SiLU, torus_sdf, Tiefe 8, LN, Verhältnis 0,34), 6 schlechter (alle bei gyroid ohne Norm), 73 unklar.
+  - Median-Verhältnis MSE ohne Norm: PreCap 1,41 gegen SiLU×2, CapExp 1,30. Mit LN: 0,97 bzw. 1,07.
+  - Explorativ: LayerNorm verschiebt den Vergleich deutlich zugunsten von PreCap und CapExp (−0,22 log10 gegen SiLU, 10 von 10 Zellen). Mittlerer Rang mit LN: CapExp 1,8, PreCap 2,7, SiLU 2,8, SiLU×2 2,7.
+  - Explorativ: kein breiteres Lernraten-Fenster für PreCap. SiLU wählt ohne Norm in 9 von 10 Zellen den Rasterrand 1e-2.
+  - 0 von 7200 Runs instabil, auch CapExp bei 1e-2 nicht.
 
 ---
 
@@ -166,6 +173,8 @@ Die "dauerhafte Steigung" aus der Ursprungsidee steckt also nur in CapExp. PreCa
 ## 5. Was widerlegt oder verworfen wurde
 
 - "PreCap ist allgemein besser": nein.
+- "PreCap ist robuster gegenüber der Lernrate" (Hinweis aus dem Zwischenstand von 3D-V1): über alle Aufgaben nicht bestätigt (3D-V1, explorativ).
+- "Die dauerhafte Steigung von CapExp bringt in 3D einen Vorteil": nicht bestätigt (3D-V1).
 - Untertraining als Grund für das Schrumpfen des Vorteils in der Tiefe (V16): nein.
 - "Die Residual-Dämpfung nimmt PreCap den Vorteil" (V17): nein, die Dämpfung wirkt auf alle gleich.
 - Drehung oder Frequenz erklären die s-Wirkung (V12/V13): nein.

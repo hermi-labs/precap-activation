@@ -20,6 +20,7 @@ Stand: 25.10.2026. Ziel ist eine eigenständige, nachprüfbare Veröffentlichung
 - **Entscheidung:**
   - Zeigt PreCap eine kleinere Spreizung über die Lernraten als SiLU und SiLU×2, wird die Lernraten-Robustheit Hauptthese der Veröffentlichung.
   - Sonst rückt die Stabilität in der Tiefe in den Vordergrund.
+- **Erledigt am 26.10.2026:** Ohne Norm ist die Spreizung bei PreCap zwar kleiner (0,99 gegen 1,41 bei SiLU). Das liegt aber nur daran, dass PreCap bei zu kleiner Lernrate weniger verliert. Das Fenster der guten Lernraten ist kaum breiter (1,3 gegen 1,0 von 3), und der Bestwert ist schlechter. Mit LayerNorm ist SiLU am robustesten (Spreizung 0,08 gegen 0,18). **Entscheidung: Die Lernraten-Robustheit wird nicht Hauptthese.** In den Vordergrund rücken Stabilität in der Tiefe (V17) und das Verhalten mit LayerNorm. Phase 3 bekommt ein nach oben offenes Lernraten-Raster und einen Schwerpunkt auf Pre-LN-Netzen. Details: `analysis/V1_3D_Auswertung_ausfuehrlich.md`.
 
 ## Phase 1 – PreCap mathematisch vollständig beschreiben (1–2 Abende)
 

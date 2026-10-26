@@ -1,0 +1,76 @@
+{
+  "lr_at_upper_edge_1e-2": {
+    "capexp_c1": 3,
+    "precap_base": 4,
+    "silu": 11,
+    "silu2x": 4
+  },
+  "n_rows": 57600,
+  "runs": 7200,
+  "nonfinite_runs": 0,
+  "final_step": 3000,
+  "confirmatory_counts": {
+    "unklar": 73,
+    "Kandidat schlechter": 6,
+    "Kandidat besser": 1
+  },
+  "criterion": {
+    "capexp_c1/layernorm/silu": {
+      "besser": 1,
+      "schlechter": 0,
+      "unklar": 9,
+      "Vorteil_bestaetigt": false
+    },
+    "capexp_c1/layernorm/silu2x": {
+      "besser": 0,
+      "schlechter": 0,
+      "unklar": 10,
+      "Vorteil_bestaetigt": false
+    },
+    "capexp_c1/none/silu": {
+      "besser": 0,
+      "schlechter": 1,
+      "unklar": 9,
+      "Vorteil_bestaetigt": false
+    },
+    "capexp_c1/none/silu2x": {
+      "besser": 0,
+      "schlechter": 1,
+      "unklar": 9,
+      "Vorteil_bestaetigt": false
+    },
+    "precap_base/layernorm/silu": {
+      "besser": 0,
+      "schlechter": 0,
+      "unklar": 10,
+      "Vorteil_bestaetigt": false
+    },
+    "precap_base/layernorm/silu2x": {
+      "besser": 0,
+      "schlechter": 0,
+      "unklar": 10,
+      "Vorteil_bestaetigt": false
+    },
+    "precap_base/none/silu": {
+      "besser": 0,
+      "schlechter": 2,
+      "unklar": 8,
+      "Vorteil_bestaetigt": false
+    },
+    "precap_base/none/silu2x": {
+      "besser": 0,
+      "schlechter": 2,
+      "unklar": 8,
+      "Vorteil_bestaetigt": false
+    }
+  },
+  "frac_gt_half_by_norm": {
+    "layernorm": 0.45840227603912354,
+    "none": 0.15761065483093256
+  },
+  "spearman_frac_vs_log_ratio_precap_vs_silu2x": {
+    "rho": -0.28421052631578947,
+    "p_two_sided": 0.22458459821120466,
+    "n": 20
+  }
+}

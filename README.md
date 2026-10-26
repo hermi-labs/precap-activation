@@ -1,5 +1,7 @@
 # PreCap / SPreCap – beschränkte, selbstnormierende Aktivierungsfunktion
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23676432.svg)](https://doi.org/10.5281/zenodo.23676432)
+
 Forschungsprojekt von Aaron Schmitt (ORCID [0009-0009-8689-5848](https://orcid.org/0009-0009-8689-5848)), 14.–26.10.2026. Lizenz: Apache-2.0.
 
 English summary: [see below](#english-summary).

@@ -1,0 +1,196 @@
+{
+  "n_rows": 4680,
+  "runs": 936,
+  "tune_runs": 576,
+  "conf_runs": 360,
+  "diverged_runs": 0,
+  "cells": 4,
+  "need_cells": 3,
+  "lr_selection_matches_file": true,
+  "primary": {
+    "spreccap_cs/selu": {
+      "besser": 0,
+      "schlechter": 0,
+      "unklar": 4,
+      "Vorteil_bestaetigt": false,
+      "Nachteil_bestaetigt": false
+    }
+  },
+  "all_pairs_counts": {
+    "unklar": 16,
+    "Kandidat besser": 7,
+    "Kandidat schlechter": 5
+  },
+  "all_pairs": {
+    "spreccap/selu": {
+      "besser": 0,
+      "schlechter": 4,
+      "unklar": 0,
+      "Vorteil_bestaetigt": false,
+      "Nachteil_bestaetigt": true
+    },
+    "spreccap_cs/elu": {
+      "besser": 0,
+      "schlechter": 1,
+      "unklar": 3,
+      "Vorteil_bestaetigt": false,
+      "Nachteil_bestaetigt": false
+    },
+    "spreccap_cs/selu": {
+      "besser": 0,
+      "schlechter": 0,
+      "unklar": 4,
+      "Vorteil_bestaetigt": false,
+      "Nachteil_bestaetigt": false
+    },
+    "spreccap_cs/spreccap": {
+      "besser": 4,
+      "schlechter": 0,
+      "unklar": 0,
+      "Vorteil_bestaetigt": true,
+      "Nachteil_bestaetigt": false
+    },
+    "spreccap_cs_ls/spreccap_cs": {
+      "besser": 1,
+      "schlechter": 0,
+      "unklar": 3,
+      "Vorteil_bestaetigt": false,
+      "Nachteil_bestaetigt": false
+    },
+    "spreccap_e03/selu": {
+      "besser": 1,
+      "schlechter": 0,
+      "unklar": 3,
+      "Vorteil_bestaetigt": false,
+      "Nachteil_bestaetigt": false
+    },
+    "spreccap_e03/spreccap_cs": {
+      "besser": 1,
+      "schlechter": 0,
+      "unklar": 3,
+      "Vorteil_bestaetigt": false,
+      "Nachteil_bestaetigt": false
+    }
+  },
+  "lr_at_upper_edge": {
+    "elu": 0,
+    "selu": 0,
+    "spreccap": 0,
+    "spreccap_cs": 0,
+    "spreccap_cs_ls": 0,
+    "spreccap_e03": 0
+  },
+  "lr_at_lower_edge": {
+    "elu": 0,
+    "selu": 0,
+    "spreccap": 0,
+    "spreccap_cs": 0,
+    "spreccap_cs_ls": 0,
+    "spreccap_e03": 0
+  },
+  "trainable_cells_best_tune_val_acc_gt_0_5": {
+    "elu": 4,
+    "selu": 4,
+    "spreccap": 4,
+    "spreccap_cs": 4,
+    "spreccap_cs_ls": 4,
+    "spreccap_e03": 4
+  },
+  "init_grad_ratio_first_over_last_median": {
+    "50|elu": 0.358,
+    "50|selu": 0.699,
+    "50|spreccap": 1.346,
+    "50|spreccap_cs": 0.703,
+    "50|spreccap_cs_ls": 0.703,
+    "50|spreccap_e03": 0.342,
+    "100|elu": 0.656,
+    "100|selu": 1.558,
+    "100|spreccap": 2.804,
+    "100|spreccap_cs": 1.54,
+    "100|spreccap_cs_ls": 1.54,
+    "100|spreccap_e03": 0.572
+  },
+  "init_grad_ratio_predicted_chi1": {
+    "50|spreccap": 1.305,
+    "50|spreccap_cs": 0.736,
+    "50|spreccap_e03": 0.315,
+    "50|selu": 0.736,
+    "100|spreccap": 2.637,
+    "100|spreccap_cs": 1.487,
+    "100|spreccap_e03": 0.635,
+    "100|selu": 1.487
+  },
+  "entscheidung_v01": {
+    "zellen_signifikant_schlechter": 0,
+    "zellen_diff_le_0_5pp": 4,
+    "bewaehrt": true
+  },
+  "chi1_dose_median_err": {
+    "fashion|50": {
+      "spreccap": 0.1615,
+      "spreccap_cs": 0.1492,
+      "spreccap_e03": 0.1457
+    },
+    "fashion|100": {
+      "spreccap": 0.2421,
+      "spreccap_cs": 0.1698,
+      "spreccap_e03": 0.1661
+    },
+    "mnist|50": {
+      "spreccap": 0.0513,
+      "spreccap_cs": 0.0442,
+      "spreccap_e03": 0.0405
+    },
+    "mnist|100": {
+      "spreccap": 0.1356,
+      "spreccap_cs": 0.0627,
+      "spreccap_e03": 0.0528
+    }
+  },
+  "s_learned_min_med_max": {
+    "fashion|50": [
+      0.998,
+      1.337,
+      1.957
+    ],
+    "fashion|100": [
+      0.973,
+      1.284,
+      1.936
+    ],
+    "mnist|50": [
+      0.959,
+      1.262,
+      2.116
+    ],
+    "mnist|100": [
+      0.937,
+      1.285,
+      1.932
+    ]
+  },
+  "mean_lr_window": {
+    "elu": 1.75,
+    "selu": 1.25,
+    "spreccap": 1.25,
+    "spreccap_cs": 1.5,
+    "spreccap_cs_ls": 1.5,
+    "spreccap_e03": 2.5
+  },
+  "mean_divergence_tune": {
+    "elu": 0.0,
+    "selu": 0.0,
+    "spreccap": 0.0,
+    "spreccap_cs": 0.0,
+    "spreccap_cs_ls": 0.0,
+    "spreccap_e03": 0.0
+  },
+  "mean_rank_conf": {
+    "elu": 1.75,
+    "selu": 4.25,
+    "spreccap": 6.0,
+    "spreccap_cs": 4.25,
+    "spreccap_cs_ls": 3.25,
+    "spreccap_e03": 1.5
+  }
+}

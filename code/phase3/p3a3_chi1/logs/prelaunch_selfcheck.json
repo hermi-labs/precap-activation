@@ -1,0 +1,67 @@
+{
+  "gains": {
+    "spreccap": 1.0000044064182336,
+    "spreccap_cs": 0.9999986100840969,
+    "spreccap_e03": 0.9999965415718789,
+    "spreccap_cs_ls": 0.9999986100840969,
+    "selu": 0.9999804996968064,
+    "elu": 1.2451861198833702
+  },
+  "selu_E_Var": [
+    -0.0007718531596613287,
+    1.0000384059899023
+  ],
+  "spreccap_E_Var": [
+    -0.0012518178862982454,
+    0.9999896201737615
+  ],
+  "spreccap_cs_E_Var": [
+    -0.0009104114168044797,
+    1.000001950988654
+  ],
+  "spreccap_e03_E_Var": [
+    -0.0005450636887216476,
+    1.0000066197976996
+  ],
+  "spreccap_cs_ls_E_Var": [
+    -0.0009104114168044797,
+    1.000001950988654
+  ],
+  "cs_ls_equals_cs_at_init_maxabs": 0.0,
+  "spreccap_bounds": [
+    -1.5022994632432678,
+    2.4827683345136657
+  ],
+  "spreccap_cs_bounds": [
+    -1.7593804078578843,
+    3.3934817519195404
+  ],
+  "spreccap_e03_bounds": [
+    -2.4805755421023274,
+    6.110383574010888
+  ],
+  "precap0_max_abs_err": 8.881784197001252e-16,
+  "precap0_monotone": true,
+  "precap0_sup": 3.077422742688568,
+  "mnist": {
+    "ntrain": 55000,
+    "nval": 5000,
+    "ntest": 10000,
+    "xmean": 1.9839257348053252e-08,
+    "xstd": 1.0000001192092896,
+    "classes": 10,
+    "val_test_disjoint_from_train": true
+  },
+  "fashion": {
+    "ntrain": 55000,
+    "nval": 5000,
+    "ntest": 10000,
+    "xmean": 8.044411003993446e-08,
+    "xstd": 0.9999996423721313,
+    "classes": 10,
+    "val_test_disjoint_from_train": true
+  },
+  "configs_tune": 576,
+  "configs": 936,
+  "expected_rows_max": 4680
+}

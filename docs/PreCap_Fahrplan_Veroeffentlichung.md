@@ -59,7 +59,7 @@ Das Ergebnis ist das Kapitel "Definition und Eigenschaften" des Papers. Ich rech
 
 - **Phase 3a erledigt am 26.10.2026:** Keine Hauptthese bestätigt. PreCap0 lernt bei 100 Schichten nicht. Beim Start verschwinden die Gradienten nicht (χ₁ ≈ 1,06, Gradient wächst zur Eingabe hin), der Ausfall entsteht erst im Training: Sättigung an den Schranken plus Mittelwert ≠ 0 (Hypothese, Konfidenz etwa 0,6, siehe `math/p3_precap_mechanism.py`). SPreCap ist bei Fashion 100 die beste Funktion, bei 50 Schichten schlechter als SELU. Größte Einschränkung: LR-Raster unten nicht offen (Kandidaten 6/6 am Rand 1e-4). Nächster Schritt: Nachlauf 3a-2 mit LR 1e-5 bis 2e-4. Details: `analysis/P3A_Auswertung.md`.
 - **Phase 3a-2 erledigt am 26.10.2026:** Nachteil SPreCap gegen SELU bestätigt (4 von 4 Zellen schlechter, bei Tiefe 100 7–8 pp). PreCap0 lernt bei Tiefe 100 mit LR ≤ 2e-5 (18,2 % / 8,3 %). Das Gradientenprofil beim Start folgt \((L-1)/2\cdot\log_{10}\chi_1\), SPreCap ist mit χ₁ = 1,13 zu chaotisch. Beste Funktionen: ELU und SELU. Keine Divergenz bei kleinen LRs. Details: `analysis/P3A2_Auswertung.md`.
-- **Phase 3a-3 (vorregistriert, gestartet am 26.10.2026):** χ₁-angepasstes SPreCap (`spreccap_cs`, χ₁ = SELU) gegen SELU, dazu χ₁ = 1,03 und lernbares s. Die Entscheidungsregel für v0.1 steht in `docs/P3A3_Praeregistrierung.md`.
+- **Phase 3a-3 (vorregistriert, 26.10.2026, ausgewertet):** SPreCap-cs (χ₁ = SELU) ist in allen 4 Zellen gleichauf mit SELU (−0,12 bis +0,20 pp, nirgends signifikant). v0.1 ist nach der Regel **bewährt**. χ₁-Dosis-Wirkung bestätigt; e03 (χ₁ = 1,03) hat den besten mittleren Rang und ist bei MNIST 100 bestätigt besser als SELU. Kein Robustheitsvorteil bei hoher LR. Auswertung: `analysis/P3A3_Auswertung.md`.
 
 ### Vergleichsfunktionen
 

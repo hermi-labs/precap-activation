@@ -1,0 +1,20 @@
+[2026-10-26 16:25:37] P3a-3 Start mit 7 Workern
+[2026-10-26 16:25:38] tune Worker 0 (PID 96298)
+[2026-10-26 16:25:38] tune Worker 1 (PID 96302)
+[2026-10-26 16:25:38] tune Worker 2 (PID 96306)
+[2026-10-26 16:25:38] tune Worker 3 (PID 96310)
+[2026-10-26 16:25:38] tune Worker 4 (PID 96314)
+[2026-10-26 16:25:38] tune Worker 5 (PID 96318)
+[2026-10-26 16:25:38] tune Worker 6 (PID 96322)
+ABBRUCH: P3a-3 laeuft bereits (meta/run.lock existiert)
+[2026-10-26 19:23:43] Integritaet Tuning: {"phase":"tune","rows":2880,"unique_keys":2880,"duplicates":0,"ended_runs":576,"expected_runs":576,"missing":0,"unexpected":0,"nonfinite_runs":0}
+[2026-10-26 19:23:44] LR-Wahl gespeichert
+[2026-10-26 19:23:44] confirm Worker 0 (PID 393)
+[2026-10-26 19:23:44] confirm Worker 1 (PID 397)
+[2026-10-26 19:23:44] confirm Worker 2 (PID 401)
+[2026-10-26 19:23:44] confirm Worker 3 (PID 405)
+[2026-10-26 19:23:44] confirm Worker 4 (PID 409)
+[2026-10-26 19:23:44] confirm Worker 5 (PID 413)
+[2026-10-26 19:23:44] confirm Worker 6 (PID 418)
+[2026-10-26 21:20:39] Integritaet gesamt: {"phase":"all","rows":4680,"unique_keys":4680,"duplicates":0,"ended_runs":936,"expected_runs":936,"missing":0,"unexpected":0,"nonfinite_runs":0}
+[2026-10-26 21:20:42] P3a-3 fertig

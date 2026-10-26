@@ -1,0 +1,11 @@
+{
+  "phase": "tune",
+  "rows": 2880,
+  "unique_keys": 2880,
+  "duplicates": 0,
+  "ended_runs": 576,
+  "expected_runs": 576,
+  "missing": 0,
+  "unexpected": 0,
+  "nonfinite_runs": 0
+}

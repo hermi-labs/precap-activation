@@ -1,0 +1,3 @@
+MacBook Pro M1 Pro, torch 2.8.0, Tensor 4096x1024, Forward+Backward, Median aus 20 Wiederholungen, ohne torch.compile (unfusioniert)
+cpu ReLU=1.07ms(1.0x)  SiLU=3.62ms(3.4x)  GELU=7.53ms(7.0x)  ELU=6.01ms(5.6x)  SELU=6.51ms(6.1x)  CapExp=8.46ms(7.9x)  PreCap=17.92ms(16.7x)  PreCap_g0=14.63ms(13.6x)  SPreCap=19.35ms(18.0x)
+mps ReLU=1.39ms(1.0x)  SiLU=1.50ms(1.1x)  GELU=1.51ms(1.1x)  ELU=1.42ms(1.0x)  SELU=1.46ms(1.0x)  CapExp=6.48ms(4.7x)  PreCap=12.94ms(9.3x)  PreCap_g0=9.95ms(7.1x)  SPreCap=13.87ms(10.0x)

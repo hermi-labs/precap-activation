@@ -1,0 +1,3 @@
+SPreCap        |eig|max=0.6440  max ||J||_2 (om in [-0.1,0.1], tau in [0.8,1.25]) = 0.6970
+SPreCap_shift  |eig|max=0.7194  max ||J||_2 (om in [-0.1,0.1], tau in [0.8,1.25]) = 0.8070
+SELU           |eig|max=0.7824  max ||J||_2 (om in [-0.1,0.1], tau in [0.8,1.25]) = 0.9347

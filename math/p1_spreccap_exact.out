@@ -1,0 +1,7 @@
+SELU-Kontrolle: E= -1.5341e-32 Var= 1.0 chi=E[f'^2]= 1.071575
+SPreCap-B gamma=0.01: lambda=0.79868631232 alpha=2.43021684375 chi=1.1318678
+SPreCap-A gamma=0.01: beta=0.311582663055 lambda=1.0562198262 chi=1.1802829
+SPreCap-B gamma=0.0: lambda=0.80676869644 alpha=2.39695130922 chi=1.130478
+SPreCap-A gamma=0.0: beta=0.305560102648 lambda=1.0642096166 chi=1.1761651
+SiLU E= 0.206621 Var= 0.313083 chi= 0.379482
+2SiLU E= 0.413242 Var= 1.25233 chi= 1.51793

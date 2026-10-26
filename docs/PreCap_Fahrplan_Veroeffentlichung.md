@@ -35,6 +35,12 @@ Das Ergebnis ist das Kapitel "Definition und Eigenschaften" des Papers. Ich rech
 - Rechenaufwand pro Aufruf im Vergleich zu ReLU, SiLU und ELU.
 - **Neu: selbstnormierendes PreCap ("SPreCap").** Analog zu SELU werden Konstanten bestimmt, mit denen Mittelwert und Varianz über die Schichten stabil bleiben. Das ist ein möglicher eigener Beitrag.
 - Möglichst wenige Parameter. Prüfen, ob c und s zu einem Parameter zusammengefasst werden können.
+- **Erledigt am 26.10.2026** (`math/PreCap_Definition_und_Eigenschaften.md`):
+  - PreCap ist \(C^1\) und nach oben durch 3,077 begrenzt.
+  - Formelfehler: Durch \(\gamma z^2\) ist PreCap für \(x<-50\) nicht monoton und springt für \(x<-120\) auf den Höchstwert. Korrektur: \(\gamma=0\).
+  - Nahe null ist PreCap bis zur dritten Ordnung gleich 2·SiLU, bei \(s=\sqrt2\) exakt.
+  - SPreCap mit λ = 0,806769 und α = 2,396951 ist selbstnormierend und über 100 Schichten stabil wie SELU, der Gradient wächst aber stärker.
+  - PreCap ist ohne `torch.compile` auf der GPU etwa 9-mal langsamer als SiLU.
 
 ## Phase 2 – Systematische Literaturrecherche (1 Abend)
 

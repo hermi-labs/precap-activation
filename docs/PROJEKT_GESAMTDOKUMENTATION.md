@@ -20,6 +20,7 @@ Stand dieses Dokuments: 26.10.2026, ca. 07:00 Uhr (3D-V1 ausgewertet).
   3. Der Hauptgrund: PreCap hat am Ursprung Steigung 1, SiLU und GELU nur 0,5. Bei gleicher Lernrate lernt PreCap dadurch effektiv schneller.
   4. Echte, belegte Eigenschaft: Die Begrenzung hält sehr tiefe, ungedämpfte Netze (128 Schichten) numerisch trainierbar, wo SiLU und GELU divergieren (V17).
   5. 3D-V1 (7200 Runs, 26.10.2026) bestätigt das: Mit eigener Lernrate zeigen weder PreCap noch CapExp einen Vorteil gegen SiLU oder SiLU×2. Ohne Normalisierung sind sie im Median etwa 1,3- bis 1,4-mal schlechter, mit LayerNorm gleichauf. Eine breitere Lernraten-Toleranz von PreCap zeigt sich nicht. Details: `analysis/V1_3D_Auswertung_ausfuehrlich.md`.
+  6. Mathematik (Phase 1, 26.10.2026): Nahe null ist PreCap bis zur dritten Ordnung ≈ 2·SiLU. Der Term \(\gamma z^2\) macht PreCap für \(x<-50\) nicht monoton, deshalb künftig \(\gamma=0\). Neu ist SPreCap (λ = 0,806769, α = 2,396951), selbstnormierend wie SELU. Details: `math/PreCap_Definition_und_Eigenschaften.md`.
 - **Offen:** Verhalten in echten Netzen, besonders in Pre-LN-Netzen wie Transformern, wo PreCap und CapExp in 3D am konkurrenzfähigsten waren (Phase 3 des Fahrplans).
 
 ---

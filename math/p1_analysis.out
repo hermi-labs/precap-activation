@@ -1,0 +1,12 @@
+== Taylor am Ursprung (unterer Ast, gilt solange v<c) ==
+x^1: a
+x^2: a**2*(gamma + 1/2)
+x^3: a**3*(s**2*(6*gamma + 1) - 2)/(6*s**2)
+x^4: a**4*(-24*gamma + s**2*(12*gamma**2 + 12*gamma + 1) - 8)/(24*s**2)
+Referenz a=1,g=0.01,s=1.5: [1.0, 0.51, 0.02851851851851852, -0.10587592592592593]
+2*SiLU: x + x**2/2 - x**4/24 + O(x**5)
+GELU*2: [1.0, 0.7978845608028654, 0.0, -0.13298076013381088]
+== Ableitungen ==
+f'(x) unterer Ast = a*(2*a*gamma*x + 1)*exp(s*tanh(a*x*(a*gamma*x + 1)/s))/cosh(a*x*(a*gamma*x + 1)/s)**2
+f'(x) oberer Ast = a*(2*a*gamma*x + 1)*exp(c)/cosh(a*x*(a*gamma*x + 1)/s)**2
+CapExp'' links/rechts bei w=c: exp(c) 0

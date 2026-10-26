@@ -1,0 +1,88 @@
+{
+ "gpu": "NVIDIA GeForce RTX 4070",
+ "torch": "2.11.0+cu128",
+ "cuda": "12.8",
+ "python": "3.12.10",
+ "checks": {
+  "precap0 vorwaerts float32": {
+   "ok": true,
+   "max_rel_fehler": 3.19e-07
+  },
+  "precap0 rueckwaerts float32": {
+   "ok": true,
+   "vs_autograd": 1.07e-06,
+   "vs_analytisch": 1.14e-06
+  },
+  "precap0 vorwaerts float64": {
+   "ok": true,
+   "max_rel_fehler": 5.04e-16
+  },
+  "precap0 rueckwaerts float64": {
+   "ok": true,
+   "vs_autograd": 1.8e-15,
+   "vs_analytisch": 1.91e-15
+  },
+  "precap0 gradcheck fp64": {
+   "ok": true
+  },
+  "spreccap vorwaerts float32": {
+   "ok": true,
+   "max_rel_fehler": 3.18e-07
+  },
+  "spreccap rueckwaerts float32": {
+   "ok": true,
+   "vs_autograd": 8.25e-07,
+   "vs_analytisch": 8.77e-07
+  },
+  "spreccap vorwaerts float64": {
+   "ok": true,
+   "max_rel_fehler": 4.76e-16
+  },
+  "spreccap rueckwaerts float64": {
+   "ok": true,
+   "vs_autograd": 1.48e-15,
+   "vs_analytisch": 1.55e-15
+  },
+  "spreccap gradcheck fp64": {
+   "ok": true
+  },
+  "spreccap_cs vorwaerts float32": {
+   "ok": true,
+   "max_rel_fehler": 3.71e-07
+  },
+  "spreccap_cs rueckwaerts float32": {
+   "ok": true,
+   "vs_autograd": 8.13e-07,
+   "vs_analytisch": 9.25e-07
+  },
+  "spreccap_cs vorwaerts float64": {
+   "ok": true,
+   "max_rel_fehler": 5.87e-16
+  },
+  "spreccap_cs rueckwaerts float64": {
+   "ok": true,
+   "vs_autograd": 1.44e-15,
+   "vs_analytisch": 1.8e-15
+  },
+  "spreccap_cs gradcheck fp64": {
+   "ok": true
+  },
+  "precap0 MLP-Training gleich": {
+   "ok": true,
+   "loss_kernel": 2.305556,
+   "loss_referenz": 2.305556
+  },
+  "spreccap_cs MLP-Training gleich": {
+   "ok": true,
+   "loss_kernel": 2.301894,
+   "loss_referenz": 2.301947
+  }
+ },
+ "tempo_ms_16M_fwd_bwd": {
+  "kernel": 0.909,
+  "referenz": 10.463,
+  "selu_pytorch": 0.89,
+  "speedup": 11.51
+ },
+ "alles_ok": true
+}

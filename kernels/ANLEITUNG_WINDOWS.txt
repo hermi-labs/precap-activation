@@ -1,0 +1,6 @@
+PreCap CUDA-Kernel testen (RTX 4070)
+1. Diesen Ordner nach C:\precap\kernels entpacken.
+2. PowerShell oeffnen:
+   cd C:\precap\kernels
+   C:\precap\.venv\Scripts\python test_cuda.py
+3. Die komplette Ausgabe kopieren und zurueckschicken (oder die Datei test_cuda_ergebnis.json).

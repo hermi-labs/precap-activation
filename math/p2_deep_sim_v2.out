@@ -1,0 +1,4 @@
+SELU               mean@100=+0.002 var@100=1.013 log10 Gradientenverstaerkung=+1.57 nichtlinearer Varianzanteil=0.0281
+SPreCap (b=1)      mean@100=+0.000 var@100=0.993 log10 Gradientenverstaerkung=+2.70 nichtlinearer Varianzanteil=0.0460
+SPreCap-eps0.03    mean@100=-0.001 var@100=0.975 log10 Gradientenverstaerkung=+0.68 nichtlinearer Varianzanteil=0.0141
+SPreCap-eps0.01    mean@100=+0.003 var@100=0.948 log10 Gradientenverstaerkung=+0.24 nichtlinearer Varianzanteil=0.0043

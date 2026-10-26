@@ -1,0 +1,532 @@
+[
+ {
+  "q": "self-normalizing bounded activation function",
+  "hits": [
+   {
+    "t": "Self-Normalizing Neural Networks",
+    "u": "https://www.semanticscholar.org/paper/424a6e62084d919bfc2e39a507c263e5991ebdad",
+    "d": "2017",
+    "a": "Deep Learning has revolutionized vision via convolutional neural networks (CNNs) and natural language processing via recurrent neural networks (RNNs). However, success stories of Deep Learning with standard feed-forward "
+   },
+   {
+    "t": "Self-Normalizing Enhanced Generative Adversarial Network Reconstruction for SAR Image Enhancement",
+    "u": "https://ieeexplore.ieee.org/document/10641462/",
+    "d": "2024",
+    "a": "The imaging process of synthetic aperture radar (SAR) inherently introduces distortions such as blurring, noise, and various disturbances, leading to a notable degradation in image quality. Especially in challenging envi"
+   },
+   {
+    "t": "Sign Language Recognition and Translation Using Self-Attention Long-Short-Term Memory with Shape Autotuning Activation Function",
+    "u": "https://ieeexplore.ieee.org/document/10721928/",
+    "d": "2024",
+    "a": "An efficient Indian Sign Language recognition (ISL) identifies the sign language gestures to ease communication among the non-signer and signer community. It is a graphic form of communication where the community of hear"
+   },
+   {
+    "t": "A Novel Self Learning Activation Function-LogCosh Minimization Based Object Detection Model",
+    "u": "https://ieeexplore.ieee.org/document/10677270/",
+    "d": "2024",
+    "a": "Predicting accurate regions of interest in medical images, such as MRI, is paramount for effective diagnosis. This paper introduces an innovative object detection model adept at excelling in both normal and rotated image"
+   },
+   {
+    "t": "A novel parametric scaled exponential linear unit activation function for deep residual networks in short-term load forecasting",
+    "u": "https://www.nature.com/articles/s41598-025-32564-z",
+    "d": "2026",
+    "a": "Short-Term Load Forecasting (STLF) is essential for ensuring the stability and operational efficiency of modern power systems. Deep Residual Networks (DRNs) have recently demonstrated promising performance in this domain"
+   },
+   {
+    "t": "RoSwish: A novel Rotating Swish activation function with adaptive rotation around zero",
+    "u": "https://linkinghub.elsevier.com/retrieve/pii/S0893608025007737",
+    "d": "2025",
+    "a": "This paper innovatively proposes the Rotating Swish (RoSwish) activation function to address the limitations of existing activation functions in terms of nonlinear expressive capabilities, which is mathematically defined"
+   },
+   {
+    "t": "Grouped Multi-Layer Echo State Networks with Self-Normalizing Activations",
+    "u": "https://link.springer.com/10.1007/978-3-030-77961-0_9",
+    "d": "",
+    "a": ""
+   },
+   {
+    "t": "A Fault Diagnosis Method of Rotating Machinery Based on One-Dimensional, Self-Normalizing Convolutional Neural Networks",
+    "u": "https://www.mdpi.com/1424-8220/20/14/3837",
+    "d": "2020",
+    "a": "Aiming at the fault diagnosis issue of rotating machinery, a novel method based on the deep learning theory is presented in this paper. By combining one-dimensional convolutional neural networks (1D-CNN) with self-normal"
+   }
+  ]
+ },
+ {
+  "q": "scaled exponentially regularized linear unit SERLU",
+  "hits": [
+   {
+    "t": "Effectiveness of Scaled Exponentially-Regularized Linear Units (SERLUs)",
+    "u": "https://www.semanticscholar.org/paper/b6446947139b4aa65b4db0ab859a308163c58e53",
+    "d": "2018",
+    "a": "Recently, self-normalizing neural networks (SNNs) have been proposed with the intention to avoid batch or weight normalization. The key step in SNNs is to properly scale the exponential linear unit (referred to as SELU) "
+   },
+   {
+    "t": "Geopolymer Concrete Strength Analysis Using Gated Recurrent Unit-Scaled Exponential Linear Unit Based on Natural and Recycled Aggregates",
+    "u": "https://ieeexplore.ieee.org/document/10968545/",
+    "d": "2025",
+    "a": "The geopolymer concrete is a positive impact and physical properties on environment associated to conventional concrete. The construction materials are drained because of continue usage and degree for the growth advancem"
+   },
+   {
+    "t": "Modified scaled exponential linear unit",
+    "u": "https://aber.apacsci.com/index.php/MSS/article/view/2870",
+    "d": "2024",
+    "a": "Activation functions assume a crucial role in elucidating the intricacies of training dynamics and the overall performance of neural networks. Despite its simplicity and effectiveness, the ubiquitously embraced ReLU acti"
+   },
+   {
+    "t": "Abnormal Traffic Detection in Data Mining Techniques using Scaled Exponential Linear Unit based Deep Autoencoders",
+    "u": "https://ieeexplore.ieee.org/document/10594262/",
+    "d": "2024",
+    "a": "With the advanced development of data mining techniques, the abnormal traffic detection is becoming simple and easy to acquire. The existing approaches are complex to estimate the time series data in parallel as well as "
+   },
+   {
+    "t": "A novel parametric scaled exponential linear unit activation function for deep residual networks in short-term load forecasting",
+    "u": "https://www.nature.com/articles/s41598-025-32564-z",
+    "d": "2026",
+    "a": "Short-Term Load Forecasting (STLF) is essential for ensuring the stability and operational efficiency of modern power systems. Deep Residual Networks (DRNs) have recently demonstrated promising performance in this domain"
+   },
+   {
+    "t": "Aspect based hotel recommendation system using dilated multichannel CNN and BiGRU with hyperbolic linear unit",
+    "u": "https://link.springer.com/10.1007/s13042-024-02184-6",
+    "d": "2024",
+    "a": ""
+   },
+   {
+    "t": "Stable and Robust Deep Learning By Hyperbolic Tangent Exponential Linear Unit (TeLU)",
+    "u": "https://arxiv.org/abs/2402.02790",
+    "d": "2024",
+    "a": "In this paper, we introduce the Hyperbolic Tangent Exponential Linear Unit (TeLU), a novel neural network activation function, represented as $f(x) = x{\\cdot}tanh(e^x)$. TeLU is designed to overcome the limitations of co"
+   },
+   {
+    "t": "Improving Convolutional Neural Network Expression via Difference Exponentially Linear Units",
+    "u": "https://iopscience.iop.org/article/10.1088/1742-6596/1651/1/012163",
+    "d": "2020",
+    "a": "Convolutional Neural Network (CNN) has been applied to various tasks with great success. Adding an activation function is an important way to introduce nonlinearity into convolutional neural networks. The commonly used a"
+   }
+  ]
+ },
+ {
+  "q": "bidirectionally self-normalizing neural networks",
+  "hits": [
+   {
+    "t": "Bidirectionally self-normalizing neural networks",
+    "u": "https://www.ssrn.com/abstract=4280313",
+    "d": "2020",
+    "a": "The problem of vanishing and exploding gradients has been a long-standing obstacle that hinders the effective training of neural networks. Despite various tricks and techniques that have been employed to alleviate the pr"
+   },
+   {
+    "t": "Self-Normalizing Neural Networks",
+    "u": "https://www.semanticscholar.org/paper/424a6e62084d919bfc2e39a507c263e5991ebdad",
+    "d": "2017",
+    "a": "Deep Learning has revolutionized vision via convolutional neural networks (CNNs) and natural language processing via recurrent neural networks (RNNs). However, success stories of Deep Learning with standard feed-forward "
+   },
+   {
+    "t": "Large-scale self-normalizing neural networks",
+    "u": "https://linkinghub.elsevier.com/retrieve/pii/S2949855424000194",
+    "d": "2024",
+    "a": ""
+   },
+   {
+    "t": "DiPSeN: Differentially Private Self-normalizing Neural Networks For Adversarial Robustness in Federated Learning",
+    "u": "https://linkinghub.elsevier.com/retrieve/pii/S016740482200030X",
+    "d": "2021",
+    "a": "The need for robust, secure and private machine learning is an important goal for realizing the full potential of the Internet of Things (IoT). Federated learning has proven to help protect against privacy violations and"
+   },
+   {
+    "t": "Pulsar candidate recognition based on autoencoder and self-normalizing neural networks",
+    "u": "https://ieeexplore.ieee.org/document/10409084/",
+    "d": "2023",
+    "a": "The identification of pulsar candidates is a crucial step in radio astronomy research. With the continuous improvement of modern radio telescope equipment and the increasing scale of pulsar sky survey, a pulsar survey wi"
+   },
+   {
+    "t": "A Predictive Model to Predict a Cyberattack Using Self Normalizing Neural Networks",
+    "u": "https://ccsenet.org/journal/index.php/ijsp/article/view/0/49677",
+    "d": "2023",
+    "a": "A cyberattack is an unauthorized access and a threat to information systems. Intelligent intrusion systems rely on advancements in technology to detect cyberattacks. In this article, the KDD CUP 99 dataset, from the Thir"
+   },
+   {
+    "t": "Novel Method for Three-Dimensional Facial Expression Recognition Using Self-Normalizing Neural Networks and Mobile Devices",
+    "u": "http://www.thieme-connect.de/DOI/DOI?10.1055/a-1866-2943",
+    "d": "2022",
+    "a": "Abstract Introduction To date, most ways to perform facial expression recognition rely on two-dimensional images, advanced approaches with three-dimensional data exist. These however demand stationary apparatuses and thu"
+   },
+   {
+    "t": "Pan-Cancer Classification Based on Self-Normalizing Neural Networks and Feature Selection",
+    "u": "https://www.frontiersin.org/article/10.3389/fbioe.2020.00766/full",
+    "d": "2020",
+    "a": "Cancer is a one of the severest diseases and cancer classification plays an important role in cancer diagnosis and treatment. Some different cancers even have similar molecular features such as DNA copy number variant. P"
+   }
+  ]
+ },
+ {
+  "q": "LeCun scaled tanh 1.7159 self-normalizing",
+  "hits": [
+   {
+    "t": "Extreme Learning Machine (ELM) Performance in Behavior-Based of Self-Esteem Level Prediction",
+    "u": "https://ieeexplore.ieee.org/document/11387311/",
+    "d": "2025",
+    "a": "This study is presented as a pilot investigation into the feasibility of predicting self-esteem levels among university students using behavior-based questionnaire data and Extreme Learning Machine (ELM). The dataset con"
+   },
+   {
+    "t": "Transformers without Normalization",
+    "u": "https://ieeexplore.ieee.org/document/11094227/",
+    "d": "2025",
+    "a": "Normalization layers are ubiquitous in modern neural networks and have long been considered essential. This work demonstrates that Transformers without normalization can achieve the same or better performance using a rem"
+   },
+   {
+    "t": "FastFlow-DETR: An Efficient Steel Surface Defect Detection Algorithm Based on RT-DETR",
+    "u": "https://ieeexplore.ieee.org/document/11729468/",
+    "d": "2026",
+    "a": "Surface defect detection in steel is critical for industrial quality control. However, existing detection frameworks tend to dilute fine-grained defect information during multi-level feature processing and introduce unne"
+   },
+   {
+    "t": "Research on Co‐Salient Object Detection Methods via Deep Correlation Learning",
+    "u": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.70427",
+    "d": "2026",
+    "a": "\n \n Co‐salient object detection (CoSOD) aims to extract common salient objects from semantically related images and has wide applications in video analysis, image retrieval and multi‐view understanding. Existing methods "
+   },
+   {
+    "t": "FROM PROBABILITY DENSITY TO NEURAL NON-LINEARITY: THE 4RS FAMILY AS A NEW PARAMETRIC CLASS OF ACTIVATION FUNCTIONS FOR NEURAL NETWORKS",
+    "u": "https://periodicorease.pro.br/rease/article/view/31084",
+    "d": "2026",
+    "a": "This article presents the 4Rs-Gate, a novel parametric activation function for neural networks. While popular self-gated activation functions, such as GELU and Swish, multiply the input by the cumulative distribution fun"
+   },
+   {
+    "t": "Effect of RGUP on the nonlinear Klein-Gordon model with spontaneous symmetry breaking",
+    "u": "https://linkinghub.elsevier.com/retrieve/pii/S037026932200404X",
+    "d": "2022",
+    "a": "In the framework of the relativistic generalized uncertainty principle (RGUP), we study the nonlinear Klein-Gordon field with $\\phi^4$ self-interaction. This generalization comes from the quantum gravity theories that pr"
+   },
+   {
+    "t": "VoLTA: Vision-Language Transformer with Weakly-Supervised Local-Feature Alignment",
+    "u": "https://arxiv.org/abs/2210.04135",
+    "d": "2022",
+    "a": "Vision-language pre-training (VLP) has recently proven highly effective for various uni- and multi-modal downstream applications. However, most existing end-to-end VLP methods use high-resolution image-text box data to p"
+   },
+   {
+    "t": "On-Line Learning of Long-Range Obstacle Detection for Off-Road Robots",
+    "u": "https://www.semanticscholar.org/paper/7959e1cb872a7dd284bf082f8cf16fc2c00da750",
+    "d": "",
+    "a": ""
+   }
+  ]
+ },
+ {
+  "q": "exponential of tanh activation function exp(tanh(x))",
+  "hits": [
+   {
+    "t": "TanhExp: A Smooth Activation Function with High Convergence Speed for Lightweight Neural Networks",
+    "u": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/cvi2.12020",
+    "d": "2020",
+    "a": "Lightweight or mobile neural networks used for real-time computer vision tasks contain fewer parameters than normal networks, which lead to a constrained performance. In this work, we proposed a novel activation function"
+   },
+   {
+    "t": "Stable and Robust Deep Learning By Hyperbolic Tangent Exponential Linear Unit (TeLU)",
+    "u": "https://arxiv.org/abs/2402.02790",
+    "d": "2024",
+    "a": "In this paper, we introduce the Hyperbolic Tangent Exponential Linear Unit (TeLU), a novel neural network activation function, represented as $f(x) = x{\\cdot}tanh(e^x)$. TeLU is designed to overcome the limitations of co"
+   },
+   {
+    "t": "EIS - a family of activation functions combining Exponential, ISRU, and Softplus",
+    "u": "https://www.semanticscholar.org/paper/5fb78e0af87bf7c7db882af4f7fa8e74d5bd0f14",
+    "d": "2020",
+    "a": "Activation functions play a pivotal role in the function learning using neural networks. The non-linearity in the learned function is achieved by repeated use of the activation function. Over the years, numerous activati"
+   },
+   {
+    "t": "Physics-informed neural networks-based solutions for the BBM-Burgers equation: forward and inverse modeling",
+    "u": "https://link.springer.com/10.1140/epjp/s13360-026-07791-6",
+    "d": "2026",
+    "a": "In this work, we investigate the use of Physics-Informed Neural networks (PINNs) for solving both forward and inverse problems associated with the nonlinear Benjamin–Bona–Mahony–Burgers (BBM–Burgers) equation. This equat"
+   },
+   {
+    "t": "Approximate Hybrid Binary-Unary Computing with Applications in BERT Language Model and Image Processing",
+    "u": "https://dl.acm.org/doi/10.1145/3543622.3573181",
+    "d": "2023",
+    "a": "We propose a novel method for approximate hardware implementation of univariate math functions with significantly fewer hardware resources compared to previous approaches. Examples of such functions include exp(x) and th"
+   },
+   {
+    "t": "Neural Networks for Singular Perturbations - Finite Regularity",
+    "u": "https://arxiv.org/abs/2605.14459",
+    "d": "2026",
+    "a": "We study finite-element and deep feedforward neural network (DNN for short) expressivity rate bounds for solution sets of a model linear, second order singularly perturbed, elliptic two-point boundary value problem, in S"
+   },
+   {
+    "t": "Discovery of the Double Exponential Transformation and Its Developments",
+    "u": "https://ems.press/doi/10.2977/prims/1145474600",
+    "d": "2005",
+    "a": ""
+   },
+   {
+    "t": "Chapter 5 Radial Basis Function activated Sequential Learning Neural Networks",
+    "u": "https://www.semanticscholar.org/paper/58ae455df4513116ee59fb58d436a3f6bf4f1d17",
+    "d": "",
+    "a": ""
+   }
+  ]
+ },
+ {
+  "q": "bounded ELU clipped exponential linear unit",
+  "hits": [
+   {
+    "t": "Analyzing the Effects of Alpha Variation in Exponential Linear Unit Activation Function for Deep Neural Networks",
+    "u": "https://ieeexplore.ieee.org/document/10723936/",
+    "d": "2024",
+    "a": "This research paper immerses into the subtle effects of varying values within the Exponential Linear Unit (ELU) activation function, altering from 1 to 0.10. Activation functions take an important role in deep learning m"
+   },
+   {
+    "t": "Exponential Linear Unit and Swish with Deep Neural Network Based Resource Allocation in Wireless Communication Systems",
+    "u": "https://ieeexplore.ieee.org/document/10939744/",
+    "d": "2024",
+    "a": "The Device-to-Device (D2D) communications in wireless communication system ensures the energy and spectral efficiency, data rates and total system capacity. However, the dynamic and complex nature of a 5G system, various"
+   },
+   {
+    "t": "Deep learning with ExtendeD Exponential Linear Unit (DELU)",
+    "u": "https://link.springer.com/10.1007/s00521-023-08932-z",
+    "d": "2023",
+    "a": "Activation functions are crucial parts of artificial neural networks. From the first perceptron created artificially up to today, many functions are proposed. Some of them are currently in common use, such as Rectified L"
+   },
+   {
+    "t": "A novel intervention method for aspect-based emotion Using Exponential Linear Unit (ELU) activation function in a Deep Neural Network",
+    "u": "https://ieeexplore.ieee.org/document/9432223/",
+    "d": "2021",
+    "a": "Sentimental analysis, a most opinion analyzer which takes a process of mathematical calculation for fixing the exact emotion, object or user expected reviews, etc. In the modern generation everything comes in a digital w"
+   },
+   {
+    "t": "Robust Deep Network Learning of Nonlinear Regression Tasks by Parametric Leaky Exponential Linear Units (LELUs) and a Diffusion Metric",
+    "u": "https://linkinghub.elsevier.com/retrieve/pii/S0020025525008758",
+    "d": "2025",
+    "a": "This document proposes a parametric activation function (ac.f.) aimed at improving multidimensional nonlinear data regression. It is a established knowledge that nonlinear ac.f's are required for learning nonlinear datas"
+   },
+   {
+    "t": "Fast and Accurate Deep Network Learning by Exponential Linear Units (ELUs)",
+    "u": "https://www.semanticscholar.org/paper/f63e917638553414526a0cc8550de4ad2d83fe7a",
+    "d": "2015",
+    "a": "We introduce the \"exponential linear unit\" (ELU) which speeds up learning in deep neural networks and leads to higher classification accuracies. Like rectified linear units (ReLUs), leaky ReLUs (LReLUs) and parametrized "
+   },
+   {
+    "t": "P + FELU: Flexible and trainable fast exponential linear unit for deep learning architectures",
+    "u": "https://link.springer.com/10.1007/s00521-022-07625-3",
+    "d": "2022",
+    "a": ""
+   },
+   {
+    "t": "FeLU:A Fractional Exponential Linear Unit",
+    "u": "https://ieeexplore.ieee.org/document/9601925/",
+    "d": "2021",
+    "a": "Appropriate activation functions need to be selected to train the complex neural networks. Considering the dead zone problem of ReLU function. Therefore, an Exponential Linear Unit (eLU) is proposed for improvement. In t"
+   }
+  ]
+ },
+ {
+  "q": "self-normalizing activation functions variants of SELU",
+  "hits": [
+   {
+    "t": "Self-Normalizing Neural Networks",
+    "u": "https://www.semanticscholar.org/paper/424a6e62084d919bfc2e39a507c263e5991ebdad",
+    "d": "2017",
+    "a": "Deep Learning has revolutionized vision via convolutional neural networks (CNNs) and natural language processing via recurrent neural networks (RNNs). However, success stories of Deep Learning with standard feed-forward "
+   },
+   {
+    "t": "A Fault Diagnosis Method of Rotating Machinery Based on One-Dimensional, Self-Normalizing Convolutional Neural Networks",
+    "u": "https://www.mdpi.com/1424-8220/20/14/3837",
+    "d": "2020",
+    "a": "Aiming at the fault diagnosis issue of rotating machinery, a novel method based on the deep learning theory is presented in this paper. By combining one-dimensional convolutional neural networks (1D-CNN) with self-normal"
+   },
+   {
+    "t": "Short-term electricity load forecasting method based on multilayered self-normalizing GRU network",
+    "u": "http://ieeexplore.ieee.org/document/8245330/",
+    "d": "2017",
+    "a": ""
+   },
+   {
+    "t": "Self-Normalizing Generative Adversarial Network for Super-Resolution Reconstruction of SAR Images",
+    "u": "https://ieeexplore.ieee.org/document/8900084/",
+    "d": "2019",
+    "a": "High-resolution images with abundant detailed information are necessary elements for various applications of synthetic aperture radar (SAR). In this paper, a novel super-resolution image reconstruction method based on se"
+   },
+   {
+    "t": "Automatic segmentation method of pelvic floor levator hiatus in ultrasound using a self-normalizing neural network",
+    "u": "https://www.spiedigitallibrary.org/journals/journal-of-medical-imaging/volume-5/issue-02/021206/Automatic-segmentation-method-of-pelvic-floor-levator-hiatus-in-ultrasound/10.1117/1.JMI.5.2.021206.full",
+    "d": "2017",
+    "a": "Abstract. Segmentation of the levator hiatus in ultrasound allows the extraction of biometrics, which are of importance for pelvic floor disorder assessment. We present a fully automatic method using a convolutional neur"
+   },
+   {
+    "t": "Effectiveness of Self Normalizing Neural Networks for Text Classification",
+    "u": "https://link.springer.com/10.1007/978-3-031-24340-0_31",
+    "d": "2019",
+    "a": "Self Normalizing Neural Networks(SNN) proposed on Feed Forward Neural Networks(FNN) outperform regular FNN architectures in various machine learning tasks. Particularly in the domain of Computer Vision, the activation fu"
+   },
+   {
+    "t": "A Multi-Task Self-Normalizing 3D-CNN to Infer Tuberculosis Radiological Manifestations",
+    "u": "https://www.semanticscholar.org/paper/1914dd75b7dba972e2f2b8812e7af2b03902fb5c",
+    "d": "2019",
+    "a": "We propose a learning method well-suited to infer the presence of Tuberculosis (TB) manifestations on Computer Tomography (CT) scans mimicking the radiologist reports. Latent features are extracted from the CT volumes em"
+   },
+   {
+    "t": "On the Invariance of the SELU Activation Function on Algorithm and Hyperparameter Selection in Neural Network Recommenders",
+    "u": "https://link.springer.com/10.1007/978-3-030-19823-7_56",
+    "d": "2019",
+    "a": "In a number of recent studies the Scaled Exponential Linear Unit (SELU) activation function has been shown to automatically regularize network parameters and to make learning robust due to its self-normalizing properties"
+   }
+  ]
+ },
+ {
+  "q": "edge of chaos activation function initialization deep networks",
+  "hits": [
+   {
+    "t": "On the Selection of Initialization and Activation Function for Deep Neural Networks",
+    "u": "https://www.semanticscholar.org/paper/8123f84da5545218311808104058aac70b322827",
+    "d": "2018",
+    "a": "The weight initialization and the activation function of deep neural networks have a crucial impact on the performance of the training procedure. An inappropriate selection can lead to the loss of information of the inpu"
+   },
+   {
+    "t": "On the Impact of the Activation Function on Deep Neural Networks Training",
+    "u": "https://www.semanticscholar.org/paper/e663797275a20c0ab960772fe74e86c855b33767",
+    "d": "2019",
+    "a": "The weight initialization and the activation function of deep neural networks have a crucial impact on the performance of the training procedure. An inappropriate selection can lead to the loss of information of the inpu"
+   },
+   {
+    "t": "Criticality versus uniformity in deep neural networks",
+    "u": "https://arxiv.org/abs/2304.04784",
+    "d": "2023",
+    "a": "Deep feedforward networks initialized along the edge of chaos exhibit exponentially superior training ability as quantified by maximum trainable depth. In this work, we explore the effect of saturation of the tanh activa"
+   },
+   {
+    "t": "Mean-field Behaviour of Neural Tangent Kernel for Deep Neural Networks",
+    "u": "https://www.semanticscholar.org/paper/cfc52ae6ab8d0c79d32b22415c96ce71c63baa48",
+    "d": "2019",
+    "a": ""
+   },
+   {
+    "t": "The Expressivity and Training of Deep Neural Networks: toward the Edge of Chaos?",
+    "u": "https://linkinghub.elsevier.com/retrieve/pii/S0925231219317539",
+    "d": "2019",
+    "a": "Expressivity is one of the most significant issues in assessing neural networks. In this paper, we provide a quantitative analysis of the expressivity for the deep neural network (DNN) from its dynamic model, where the H"
+   },
+   {
+    "t": "Competing nonlinearities, criticality, and order-to-chaos transition in deep networks",
+    "u": "https://www.semanticscholar.org/paper/400e80be140c295a9f964c19f6afc7a4727947c4",
+    "d": "2026",
+    "a": "Deep neural networks owe their expressive power to nonlinear activation functions. The effective field theory of signal propagation at initialization reveals a few distinct universality classes of activations that exhibi"
+   },
+   {
+    "t": "The edge of chaos: quantum field theory and deep neural networks",
+    "u": "https://scipost.org/10.21468/SciPostPhys.12.3.081",
+    "d": "2021",
+    "a": "We explicitly construct the quantum field theory corresponding to a general class of deep neural networks encompassing both recurrent and feedforward architectures. We first consider the mean-field theory (MFT) obtained "
+   },
+   {
+    "t": "Protecting Deep Neural Network Intellectual Property with Chaos-Based White-Box Watermarking",
+    "u": "https://arxiv.org/abs/2512.16658",
+    "d": "2025",
+    "a": "The rapid proliferation of deep neural networks (DNNs) across several domains has led to increasing concerns regarding intellectual property (IP) protection and model misuse. Trained DNNs represent valuable assets, often"
+   }
+  ]
+ },
+ {
+  "q": "activation function composition tanh exponential neural network",
+  "hits": [
+   {
+    "t": "Dynamic analysis of Hopfield neural network with Sigmoid-type activation function",
+    "u": "https://iopscience.iop.org/article/10.1088/1402-4896/adb34a",
+    "d": "2025",
+    "a": "The Sigmoid function is a continuous and smooth nonlinear function, often called a logic function that exhibits an ‘S’-shaped characteristic similar to the Tanh function, yet possesses a distinct positive threshold prope"
+   },
+   {
+    "t": "GEPAF: A non-monotonic generalized activation function in neural network for improving prediction with diverse data distributions characteristics",
+    "u": "https://linkinghub.elsevier.com/retrieve/pii/S0893608024006622",
+    "d": "2024",
+    "a": "The world today has made prescriptive analytics that uses data-driven insights to guide future actions. The distribution of data, however, differs depending on the scenario, making it difficult to interpret and comprehen"
+   },
+   {
+    "t": "A Segmented Activation Function‐Based Zeroing Neural Network Model for Dynamic Sylvester Equation Solving and Robotic Manipulator Control",
+    "u": "https://onlinelibrary.wiley.com/doi/10.1002/cpe.70243",
+    "d": "2025",
+    "a": "Traditional methods for solving the dynamic Sylvester equations suffer from challenges such as unsatisfactory convergence and sensitivity to noise. To address these limitations, a segmented activation function‐based Zero"
+   },
+   {
+    "t": "Hybrid Artificial Neural Network Activation Function to Reduce Water Wastage in Agricultural Irrigation",
+    "u": "https://ieeexplore.ieee.org/document/11015500/",
+    "d": "",
+    "a": "Most nations rely heavily on agriculture to provide employment. In recent years, as a result of a growing global population’s increased demand for food and water, numerous nations are consuming excessive amounts of alrea"
+   },
+   {
+    "t": "Hardware Implementation of Tanh Exponential Activation Function using FPGA",
+    "u": "https://ieeexplore.ieee.org/document/9429506/",
+    "d": "2021",
+    "a": "The most active research area for Field Programmable Gate Arrays is the Convolution Neural Network (CNN), and the gist of any CNN is an activation function. Therefore, various non-linear activation functions are required"
+   },
+   {
+    "t": "Convergence Analysis of Max-Min Exponential Neural Network Operators in Orlicz Space",
+    "u": "https://arxiv.org/abs/2508.10248",
+    "d": "2025",
+    "a": "In this current work, we propose a Max Min approach for approximating functions using exponential neural network operators. We extend this framework to develop the Max Min Kantorovich-type exponential neural network oper"
+   },
+   {
+    "t": "Convolutional Neural Network Activation Function Performance on Image Recognition of The Batak Script",
+    "u": "https://jurnal.polgan.ac.id/index.php/sinkron/article/view/13192",
+    "d": "2024",
+    "a": "Deep Learning is a sub-set of Machine learning, Deep Learning is widely used to solve problems in various fields. One of the popular deep learning architectures is The Convolutional Neural Network (CNN), CNN has a layer "
+   },
+   {
+    "t": "E-Tanh: a novel activation function for image processing neural network models",
+    "u": "https://link.springer.com/10.1007/s00521-022-07245-x",
+    "d": "2022",
+    "a": ""
+   }
+  ]
+ },
+ {
+  "q": "trainable bounded activation deep network stability without normalization",
+  "hits": [
+   {
+    "t": "Bounded activation functions for enhanced training stability of deep neural networks on visual pattern recognition problems",
+    "u": "https://linkinghub.elsevier.com/retrieve/pii/S0925231216308797",
+    "d": "2016",
+    "a": ""
+   },
+   {
+    "t": "SaluNet: Enabling Total Plasticity in Normalization-Free Deep Networks",
+    "u": "https://arxiv.org/abs/2606.02927",
+    "d": "2026",
+    "a": "Normalization layers such as BatchNorm and LayerNorm have long been considered essential for stable training in deep networks. This work demonstrates that they can be fully replaced by a single learnable activation mecha"
+   },
+   {
+    "t": "Impact of Batch Normalization on Convolutional Network Representations",
+    "u": "https://link.springer.com/10.1007/978-3-031-78255-8_14",
+    "d": "2025",
+    "a": "Batch normalization (BatchNorm) is a popular layer normalization technique used when training deep neural networks. It has been shown to enhance the training speed and accuracy of deep learning models. However, the mecha"
+   },
+   {
+    "t": "Towards the theory for mitigating gradient issues and dead neurons in deep learning through a modified Gaussian activation function",
+    "u": "https://linkinghub.elsevier.com/retrieve/pii/S0893608025012341",
+    "d": "2025",
+    "a": "Activation functions are essential in deep learning optimization for introducing non-linearity, shaping gradient dynamics, and influencing weight initialization. This paper presents a modified Gaussian function called R-"
+   },
+   {
+    "t": "Z-Plane Neural Networks: Bounded Geometric Activation Replaces ReLU and LayerNorm",
+    "u": "https://arxiv.org/abs/2606.15669",
+    "d": "2026",
+    "a": "Modern deep neural networks rely on Euclidean scalar activations (e.g., ReLU) and global normalization techniques (e.g., LayerNorm) to prevent gradient instability in deep architectures. However, these mechanisms inheren"
+   },
+   {
+    "t": "EUNNet: Efficient UN-Normalized Convolution Layer for Stable Training of Deep Residual Networks Without Batch Normalization Layer",
+    "u": "https://ieeexplore.ieee.org/document/10041931/",
+    "d": "",
+    "a": "Batch Normalization (BN) is an essential component of the Deep Neural Networks (DNNs) architectures. It helps improve stability, convergence, and generalization. However, studies are showing that BN might introduce sever"
+   },
+   {
+    "t": "SPNP: A Calibration-Aware and Sparse Output Normalization for Deep Neural Networks",
+    "u": "https://ieeexplore.ieee.org/document/11710674/",
+    "d": "2026",
+    "a": "In this paper, we introduce Shifted Power Normalized Probabilities (SPNP), a simple closed-form output activation function designed as an alternative to Softmax for probability normalization. The proposed method performs"
+   },
+   {
+    "t": "Stochastic Entropy-Based Gradient Perturbation: A Novel Regularization Framework for Neural Network Stability",
+    "u": "https://ieeexplore.ieee.org/document/11496919/",
+    "d": "2026",
+    "a": "Deep neural networks often face issues with overfitting and unstable convergence, especially when trained on small or uneven data sets. Techniques like Dropout, Weight Decay, and Label Smoothing can help, but they don’t "
+   }
+  ]
+ }
+]

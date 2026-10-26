@@ -49,6 +49,12 @@ Das Ergebnis ist das Kapitel "Definition und Eigenschaften" des Papers. Ich rech
 - Mathematisch prüfen, ob PreCap nur eine Umparametrisierung einer bekannten Funktion ist.
 - Ergebnis: ein Abschnitt "Verwandte Arbeiten" mit ehrlicher Abgrenzung.
 
+- **Erledigt am 26.10.2026 (erste Runde):** `literatur/Phase2_Literaturrecherche.md`.
+  - Nicht neu sind CapExp (= ELU), Stabilität durch Beschränkung und das Rezept für selbstnormierende Konstanten.
+  - Wahrscheinlich neu, aber klein sind die Verkettung CapExp(s·tanh(x/s)) und SPreCap.
+  - Neu: SPreCap mit Eingangsskala b für \(\mathbb E f'^2=1+\varepsilon\). Der Preis sind weniger Gradientenverstärkung und weniger Nichtlinearität.
+  - Offen sind die Patentrecherche und das vollständige Lesen der Survey-Abschnitte.
+
 ## Phase 3 – Tests an echten Netzen (mehrere Nächte auf dem M1)
 
 ### Vergleichsfunktionen

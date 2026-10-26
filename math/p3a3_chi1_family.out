@@ -1,0 +1,14 @@
+Kontrolle SPreCap b=1 s=1.5: lam=0.80676869644 alpha=2.39695130922 chi1=1.1305
+Kontrolle SPreCap-e03: lam=1.985552225 alpha=1.608136397 chi1=1.0300
+SELU chi1 exakt=1.0716
+--- b-Sweep (s=1.5) ---
+b=1.2000 lam=0.698899 alpha=2.585084 chi1=1.1814 Schranken [-1.404, 2.151]
+b=1.0000 lam=0.806769 alpha=2.396951 chi1=1.1305 Schranken [-1.502, 2.483]
+b=0.8000 lam=0.984476 alpha=2.168457 chi1=1.0876 Schranken [-1.658, 3.030]
+b=0.7000 lam=1.121413 alpha=2.037658 chi1=1.0696 Schranken [-1.775, 3.451]
+b=0.6000 lam=1.314546 alpha=1.896169 chi1=1.0539 Schranken [-1.936, 4.045]
+b=0.5000 lam=1.600475 alpha=1.745664 chi1=1.0405 Schranken [-2.170, 4.925]
+b=0.4119 lam=1.985552 alpha=1.608136 chi1=1.0300 Schranken [-2.481, 6.110]
+b=0.3000 lam=2.836797 alpha=1.431925 chi1=1.0181 Schranken [-3.156, 8.730]
+chi1=1.0716: b=0.71188112 lam=1.102702500 alpha=2.053776267 Schranken [-1.759, 3.393]
+chi1=1.0400: b=0.49626398 lam=1.613729530 alpha=1.739903932 Schranken [-2.181, 4.966]

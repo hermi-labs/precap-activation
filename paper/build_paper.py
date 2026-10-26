@@ -173,7 +173,9 @@ p('<b>χ<sub>1</sub> dose-response.</b> Within the family, the median error decr
   'The largest gain comes from 1.13 to 1.07. Measured gradient growth at initialization agrees with the mean-field prediction to within 0.17 orders of magnitude (Figure 4), '
   'and SPreCap-cs is indistinguishable from SELU at initialization by construction.')
 S.append(fig('fig3_chi1.png', 16*cm, '<b>Figure 3.</b> Median test error of the SPreCap family against χ<sub>1</sub>, with SELU and ELU for reference.'))
-S.append(KeepTogether([Image(str(F / 'fig4_gradprofile.png'), width=7.6*cm, height=7.6*cm * 0.82),
+from PIL import Image as _PI
+_w, _h = _PI.open(F / 'fig4_gradprofile.png').size
+S.append(KeepTogether([Image(str(F / 'fig4_gradprofile.png'), width=7.6*cm, height=7.6*cm * _h / _w),
     Paragraph('<b>Figure 4.</b> Gradient growth from the last to the first layer at initialization, at depth 50 (lower point) and 100 (upper point), against the prediction (<i>L</i>−1)/2·log<sub>10</sub> χ<sub>1</sub>. The line marks equality.', cap)]))
 p('<b>Learning rate.</b> PreCap is not more tolerant of large learning rates (Figure 5). At depth 50 and learning rate 5·10<super>−4</super>, SELU and ELU still reach '
   '59–72 % validation accuracy, all PreCap variants 10–15 %. At depth 100 only the original SPreCap still learns at 10<super>−4</super>. This shows a trade-off: '

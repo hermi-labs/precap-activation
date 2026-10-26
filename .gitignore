@@ -11,3 +11,6 @@ build/
 dist/
 .pytest_cache/
 paper/eq/
+
+._*
+.DS_Store

@@ -8,21 +8,21 @@ Der 2D-Pilot prüft, ob der in 1D beobachtete Vorteil von PreCap in residualen 
 
 Für jede identische Zelle (Aufgabe, Tiefe, Seed) wird
 
-\[
-d = \log_{10}\!\left(\frac{\mathrm{MSE}_{\mathrm{PreCap}}}{\mathrm{MSE}_{\mathrm{Ref}}}\right)
-\]
+$$
+d = \log_{10}\left(\frac{\mathrm{MSE}_{\mathrm{PreCap}}}{\mathrm{MSE}_{\mathrm{Ref}}}\right)
+$$
 
-berechnet. Hier bedeutet \(d<0\), dass PreCap besser ist. Die logarithmische Form ist passend, weil MSE-Werte typischerweise über Größenordnungen streuen.
+berechnet. Hier bedeutet $d<0$, dass PreCap besser ist. Die logarithmische Form ist passend, weil MSE-Werte typischerweise über Größenordnungen streuen.
 
 ## Modellidee
 
 Das Netz ist residual aufgebaut:
 
-\[
+$$
 h_{\ell+1} = h_{\ell} + \phi(W_{\ell} h_{\ell} + b_{\ell})
-\]
+$$
 
-mit \(\phi\) als Aktivierung. Für PreCap wird eine gekappte SiLU-artige Aktivierung verwendet, die große Aktivierungen weich zurückdrängt. Dadurch soll bei größerer Tiefe die Aktivierungsamplitude kontrolliert werden, ohne kleine Signale abzuschneiden.
+mit $\phi$ als Aktivierung. Für PreCap wird eine gekappte SiLU-artige Aktivierung verwendet, die große Aktivierungen weich zurückdrängt. Dadurch soll bei größerer Tiefe die Aktivierungsamplitude kontrolliert werden, ohne kleine Signale abzuschneiden.
 
 ## 2D-Aufgaben
 
@@ -38,4 +38,4 @@ Wenn PreCap wirklich über Aktivierungskontrolle und Residualdynamik hilft, dan
 
 ## Bewertungsregel
 
-Der Pilot gilt als erfolgreich, wenn PreCap bei mindestens zwei der drei 2D-Aufgaben einen negativen Median von \(d\) gegen SiLU und GELU zeigt und dabei keine erhöhte Ausfallrate verursacht. Zusätzlich werden `hmax_peak`, Endgradient und Laufzeit dokumentiert.
+Der Pilot gilt als erfolgreich, wenn PreCap bei mindestens zwei der drei 2D-Aufgaben einen negativen Median von $d$ gegen SiLU und GELU zeigt und dabei keine erhöhte Ausfallrate verursacht. Zusätzlich werden `hmax_peak`, Endgradient und Laufzeit dokumentiert.

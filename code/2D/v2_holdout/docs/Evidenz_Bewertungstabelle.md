@@ -13,7 +13,7 @@
 | Tiefe über 16 hinaus | Nicht getestet | Offen |
 | Reale Daten | Nicht getestet | Offen |
 
-**Primärmetrik:** \(d=\log_{10}(\mathrm{MSE}_{PreCap}/\mathrm{MSE}_{Ref})\); negativ ist besser für PreCap. Klammern: Siege / gepaarte Seeds.
+**Primärmetrik:** $d=\log_{10}(\mathrm{MSE}_{PreCap}/\mathrm{MSE}_{Ref})$; negativ ist besser für PreCap. Klammern: Siege / gepaarte Seeds.
 
 ## Leistungsprofil
 

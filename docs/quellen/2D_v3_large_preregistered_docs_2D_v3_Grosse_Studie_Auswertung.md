@@ -2,7 +2,7 @@
 
 Integrität: 900/900 Runs, 300/300 vollständige Paare, bad=0.
 
-Metrik: \(d=\log_{10}(MSE_{PreCap}/MSE_{Ref})\); negativ begünstigt PreCap.
+Metrik: $d=\log_{10}(MSE_{PreCap}/MSE_{Ref})$; negativ begünstigt PreCap.
 
 ## Nach Aufgabe und Tiefe
 

@@ -9,7 +9,7 @@
 - `bad=True`: **0**.
 - Jede Zelle enthält genau PreCap, SiLU und GELU: **ja**.
 
-Primärmetrik: \\(d=\log_{10}(\mathrm{MSE}_{\mathrm{PreCap}}/\mathrm{MSE}_{\mathrm{Ref}})\\). Negative Werte begünstigen PreCap. Klammern zeigen PreCap-Siege / gepaarte Seeds.
+Primärmetrik: \$d=\log_{10}(\mathrm{MSE}_{\mathrm{PreCap}}/\mathrm{MSE}_{\mathrm{Ref}})\$. Negative Werte begünstigen PreCap. Klammern zeigen PreCap-Siege / gepaarte Seeds.
 
 ## Primäre Resultate nach Aufgabe
 

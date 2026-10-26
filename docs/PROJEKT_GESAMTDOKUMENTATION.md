@@ -9,7 +9,7 @@ Stand dieses Dokuments: 26.10.2026, abends (3a-3 ausgewertet, Kernel getestet, R
 
 ## 1. Kurzfassung
 
-- **Die Idee:** Eine Aktivierungsfunktion, die exponentiell wächst, solange das harmlos ist, und ab einer Schwelle \(c\) linear mit fester Steigung \(e^c\) weiterläuft. Ziel war, die Ausdrucksstärke exponentiellen Wachstums zu nutzen, ohne dass Netze explodieren.
+- **Die Idee:** Eine Aktivierungsfunktion, die exponentiell wächst, solange das harmlos ist, und ab einer Schwelle $c$ linear mit fester Steigung $e^c$ weiterläuft. Ziel war, die Ausdrucksstärke exponentiellen Wachstums zu nutzen, ohne dass Netze explodieren.
 - **Zwei Funktionen wurden untersucht:**
   - CapExp (die Urform),
   - PreCap (CapExp mit vorgeschalteter, weich begrenzender tanh-Stufe).
@@ -20,7 +20,7 @@ Stand dieses Dokuments: 26.10.2026, abends (3a-3 ausgewertet, Kernel getestet, R
   3. Der Hauptgrund: PreCap hat am Ursprung Steigung 1, SiLU und GELU nur 0,5. Bei gleicher Lernrate lernt PreCap dadurch effektiv schneller.
   4. Echte, belegte Eigenschaft: Die Begrenzung hält sehr tiefe, ungedämpfte Netze (128 Schichten) numerisch trainierbar, wo SiLU und GELU divergieren (V17).
   5. 3D-V1 (7200 Runs, 26.10.2026) bestätigt das: Mit eigener Lernrate zeigen weder PreCap noch CapExp einen Vorteil gegen SiLU oder SiLU×2. Ohne Normalisierung sind sie im Median etwa 1,3- bis 1,4-mal schlechter, mit LayerNorm gleichauf. Eine breitere Lernraten-Toleranz von PreCap zeigt sich nicht. Details: `analysis/V1_3D_Auswertung_ausfuehrlich.md`.
-  6. Mathematik (Phase 1, 26.10.2026): Nahe null ist PreCap bis zur dritten Ordnung ≈ 2·SiLU. Der Term \(\gamma z^2\) macht PreCap für \(x<-50\) nicht monoton, deshalb künftig \(\gamma=0\). Neu ist SPreCap (λ = 0,806769, α = 2,396951), selbstnormierend wie SELU. Details: `math/PreCap_Definition_und_Eigenschaften.md`.
+  6. Mathematik (Phase 1, 26.10.2026): Nahe null ist PreCap bis zur dritten Ordnung ≈ 2·SiLU. Der Term $\gamma z^2$ macht PreCap für $x<-50$ nicht monoton, deshalb künftig $\gamma=0$. Neu ist SPreCap (λ = 0,806769, α = 2,396951), selbstnormierend wie SELU. Details: `math/PreCap_Definition_und_Eigenschaften.md`.
   7. Phase 3 (tiefe MLPs ohne Normalisierung, MNIST und FashionMNIST, 26.10.2026): Nach zwei negativen Runden (3a, 3a-2) zeigte die Mean-Field-Rechnung den Grund: Der Gradientenfaktor χ₁ von SPreCap war zu groß. Mit angepasstem χ₁ ist **SPreCap-cs gleichauf mit SELU** (3a-3, 4 von 4 Zellen innerhalb ±0,2 pp). **SPreCap-e03** (χ₁ = 1,03) ist bei MNIST mit 100 Schichten signifikant besser als SELU. ELU ist aber etwa gleich stark.
   8. Fusionierte Kernel für CUDA und MLX sind so schnell wie natives SELU. Das Paket `precap` ist ohne feste Pfade installierbar.
 - **Offen:** Messung des Quantisierungsvorteils, kritische Init (3a-4), Tiefen-abhängiges χ₁, CNNs und Transformer.
@@ -31,23 +31,23 @@ Stand dieses Dokuments: 26.10.2026, abends (3a-3 ausgewertet, Kernel getestet, R
 
 ### CapExp (Urform, 14.10.2026)
 
-\[
+$$
 \mathrm{CapExp}_c(x)=
 \begin{cases}
-e^x-1, & x\le c\\
-(e^c-1)+e^c\,(x-c), & x>c
+e^x-1, & x\le c\cr 
+(e^c-1)+e^c\thinspace (x-c), & x>c
 \end{cases}
-\]
+$$
 
-- Wert und erste Ableitung sind bei \(c\) stetig.
-- Steigung bei 0: 1. Oberhalb von \(c\) bleibt sie dauerhaft \(e^c\) (bei c = 1 also 2,72).
+- Wert und erste Ableitung sind bei $c$ stetig.
+- Steigung bei 0: 1. Oberhalb von $c$ bleibt sie dauerhaft $e^c$ (bei c = 1 also 2,72).
 - Negativ nähert sich die Funktion −1 an (wie ELU).
 
 ### PreCap (ab 16.10.2026)
 
-\[
-z=a\,x,\quad u=z+\gamma z^2,\quad v=s\tanh\!\left(\frac{u}{s}\right),\quad \mathrm{PreCap}(x)=\mathrm{CapExp}_c(v)
-\]
+$$
+z=a\thinspace x,\quad u=z+\gamma z^2,\quad v=s\tanh\left(\frac{u}{s}\right),\quad \mathrm{PreCap}(x)=\mathrm{CapExp}_c(v)
+$$
 
 - 2D-Referenz `precap_base`: c = 1, a = 1, γ = 0,01, s = 1,5. Die 1D-Referenz nutzte a = 1,25.
 - Gedacht war die Kette so: γz² gibt großen Signalen mehr Schub, das tanh bremst weich ab, und CapExp liefert danach den exponentiell-linearen Mechanismus (aus `1D/v1-6/precap_notes.txt`).
@@ -69,7 +69,7 @@ Die "dauerhafte Steigung" aus der Ursprungsidee steckt also nur in CapExp. PreCa
 ### Phase 0 – Die Idee (14.10.2026, abends)
 
 - **Ausgangsgedanke:** Lineare Bausteine sind "schnell am Limit". Gesucht war eine Funktion zwischen der Stabilität von linear und der Stärke von exponentiell, die stabil bleibt.
-- **Daraus entstand:** exponentiell bis zur Schwelle \(c\), danach tangential linear. Das ist CapExp.
+- **Daraus entstand:** exponentiell bis zur Schwelle $c$, danach tangential linear. Das ist CapExp.
 - **Erster Test `script.py`:** 1D-Regression sin(3x)+0,3x², MLP mit LayerNorm, 800 Schritte.
   - Bei 8 Schichten hatte CapExp den kleinsten Testfehler: 0,043 gegenüber ReLU 0,123 und GELU 0,107.
   - Die getestete Mischvariante "Blend" war klar schlechter und wurde verworfen.
@@ -110,7 +110,7 @@ Die "dauerhafte Steigung" aus der Ursprungsidee steckt also nur in CapExp. PreCa
 **Gemeinsames Setup:**
 - Synthetische 2D-Regression mit dem Residual-MLP `res_inv` (Breite 64, Skalierung 1/√Tiefe), Adam.
 - **Feste Lernrate 0,001 bis einschließlich V17.**
-- Metrik: \(d=\log_{10}(\mathrm{MSE}_{PreCap}/\mathrm{MSE}_{Ref})\). Negative Werte heißen: PreCap besser.
+- Metrik: $d=\log_{10}(\mathrm{MSE}_{PreCap}/\mathrm{MSE}_{Ref})$. Negative Werte heißen: PreCap besser.
 
 | Version | Frage | Umfang | Ergebnis |
 |---|---|---|---|
@@ -285,12 +285,13 @@ Dass dieser Test gemacht und das Ergebnis ehrlich festgehalten wurde, ist der ei
 
 - **CapExp ist mathematisch exakt ein verschobenes und skaliertes ELU** (ELU mit α = 1, Clevert et al. 2015, [arXiv:1511.07289](https://arxiv.org/pdf/1511.07289v3)):
 
-  \[
-  \mathrm{CapExp}_c(x)=e^c\cdot\mathrm{ELU}(x-c)+(e^c-1)
-  \]
+  
+$$
+\mathrm{CapExp}_c(x)=e^c\cdot\mathrm{ELU}(x-c)+(e^c-1)
+$$
 
   - Numerisch geprüft für c = 0,3 / 0,5 / 1,0 / 1,5 auf [−8, 8]. Die maximale Abweichung liegt unter 4e-15.
-  - Folge: In einem Netz mit Bias-Termen und nachfolgender linearer Schicht lassen sich die Verschiebung und der Offset in die Biases verschieben, der Faktor \(e^c\) in die Gewichte. CapExp kann also dieselben Funktionen darstellen wie ELU. Unterschiede entstehen nur über Initialisierung und effektive Lernrate. Das passt zum V18-Befund.
+  - Folge: In einem Netz mit Bias-Termen und nachfolgender linearer Schicht lassen sich die Verschiebung und der Offset in die Biases verschieben, der Faktor $e^c$ in die Gewichte. CapExp kann also dieselben Funktionen darstellen wie ELU. Unterschiede entstehen nur über Initialisierung und effektive Lernrate. Das passt zum V18-Befund.
 - **PreCap ist durch die tanh-Vorstufe dagegen wirklich eine andere Funktion:** glatt, mit Steigung 1 am Ursprung und beidseitig beschränkt. Eine identische Funktion habe ich nicht gefunden. Es gibt verwandte Ideen:
   - TERELU, nach oben weich begrenzt ([arXiv:2006.02797](https://arxiv.org/pdf/2006.02797)),
   - TanhExp, Kombination aus tanh und exp, und weitere aus der Übersicht über 400 Aktivierungsfunktionen ([Kunc & Kléma 2024](https://arxiv.org/abs/2402.09092)),

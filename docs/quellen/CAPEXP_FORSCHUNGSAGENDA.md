@@ -140,9 +140,9 @@ Nicht sofort Standarddatensätze jagen. Zuerst kontrollierte 2D-Aufgaben, bei de
 
 ### Kandidaten
 
-- separable und nichtseparable Mischungen: \(\sin(kx)\sin(ly)\), \(\sin(xy)\)
-- radiale Funktionen: \(\exp(-r^2)\), Ring-/Bump-Funktionen
-- stückweise glatte Funktionen: \(|x|+|y|\), Kanten und Diagonalen
+- separable und nichtseparable Mischungen: $\sin(kx)\sin(ly)$, $\sin(xy)$
+- radiale Funktionen: $\exp(-r^2)$, Ring-/Bump-Funktionen
+- stückweise glatte Funktionen: $|x|+|y|$, Kanten und Diagonalen
 - anisotrope Frequenzen: hohe Frequenz in einer, niedrige in der anderen Achse
 - Kombinationen aus glatter Grundfunktion und lokaler Struktur
 
@@ -163,9 +163,9 @@ Die Matrixidee bleibt eine eigene Forschungsachse: keine Vermischung mit dem Akt
 
 ### Erste sichere Varianten
 
-- Skalierte Matrix: \(W = \alpha \tilde W\), mit festem oder lernbarem \(\alpha\)
-- Diagonale Vor-/Nachskalierung: \(W = D_1 \tilde W D_2\)
-- Niedrigrang-Faktorisierung: \(W = AB\), mit klarer Parameterkontrolle
+- Skalierte Matrix: $W = \alpha \tilde W$, mit festem oder lernbarem $\alpha$
+- Diagonale Vor-/Nachskalierung: $W = D_1 \tilde W D_2$
+- Niedrigrang-Faktorisierung: $W = AB$, mit klarer Parameterkontrolle
 - Spektral eingeschränkte oder orthogonalisierte Initialisierung
 - Tiefenabhängige lineare Residualfaktoren zusätzlich zu `res_inv`
 Eine Variante wird nur weiterverfolgt, wenn sie gegenüber gleicher Parameterzahl und gleichem Trainingsbudget einen wiederholbaren Vorteil liefert.

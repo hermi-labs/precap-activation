@@ -61,7 +61,7 @@ Vergleich mit 3a bei Tiefe 100: Mit den kleineren LRs verbessert sich SELU stark
 
 ## Mechanismus: Gradientenprofil beim Start
 
-Gemessen wurde \(\log_{10}(\lVert g_1\rVert/\lVert g_L\rVert)\), Median über die Bestätigungs-Seeds. Die Vorhersage aus der Mean-Field-Theorie ist \(\tfrac{L-1}{2}\log_{10}\chi_1\).
+Gemessen wurde $\log_{10}(\lVert g_1\rVert/\lVert g_L\rVert)$, Median über die Bestätigungs-Seeds. Die Vorhersage aus der Mean-Field-Theorie ist $\tfrac{L-1}{2}\log_{10}\chi_1$.
 
 | Funktion | χ₁ | Tiefe 50: gemessen (Fashion / MNIST) | vorhergesagt | Tiefe 100: gemessen | vorhergesagt |
 |---|---|---|---|---|---|

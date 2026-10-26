@@ -15,11 +15,15 @@ Der eingefrorene Holdout umfasst **180 von 180** vollständig validierte Runs o
 
 Für jeden Seed wird der gepaarte Fehlerunterschied berechnet:
 
-\[ \Delta_s = \operatorname{MSE}_{\mathrm{PreCap},s} - \operatorname{MSE}_{\mathrm{Baseline},s}. \]
+$$
+\Delta_s = \mathrm{MSE}_{\mathrm{PreCap},s} - \mathrm{MSE}_{\mathrm{Baseline},s}.
+$$
 
 Ein negativer Wert bedeutet einen PreCap-Vorteil. Ergänzend verwenden wir das Seed-Verhältnis
 
-\[ r_s = \frac{\operatorname{MSE}_{\mathrm{PreCap},s}}{\operatorname{MSE}_{\mathrm{Baseline},s}}. \]
+$$
+r_s = \frac{\mathrm{MSE}_{\mathrm{PreCap},s}}{\mathrm{MSE}_{\mathrm{Baseline},s}}.
+$$
 
 Ein Medianverhältnis unter 1 spricht für PreCap. Der Wilcoxon-Test ist zweiseitig und wird hier als deskriptiver, gepaarter Evidenzindikator berichtet; die Gate-Entscheidung folgt vor allem Richtung, Größenordnung und Konsistenz über die vorab festgelegten Zellen.
 

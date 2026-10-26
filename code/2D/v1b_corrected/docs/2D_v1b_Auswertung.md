@@ -2,7 +2,7 @@
 
 Integrität: 135/135 Runs, `bad=True`: 0. Diese Auswertung ist gültig, weil v1b die 1D-v9-PreCap-Formel auf 10.001 Werten exakt reproduziert hat.
 
-Primärgröße: \(d=\log_{10}(\mathrm{MSE}_{PreCap}/\mathrm{MSE}_{Ref})\). \(d<0\) heißt: PreCap besser. Klammern: PreCap-Siege / gepaarte Seeds.
+Primärgröße: $d=\log_{10}(\mathrm{MSE}_{PreCap}/\mathrm{MSE}_{Ref})$. $d<0$ heißt: PreCap besser. Klammern: PreCap-Siege / gepaarte Seeds.
 
 ## Nach Aufgabe und Tiefe
 

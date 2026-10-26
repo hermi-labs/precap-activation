@@ -27,8 +27,8 @@ Stand: 25.10.2026. Ziel ist eine eigenständige, nachprüfbare Veröffentlichung
 Das Ergebnis ist das Kapitel "Definition und Eigenschaften" des Papers. Ich rechne alles und prüfe es numerisch.
 
 - Definition, erste und zweite Ableitung, Stetigkeit (Glattheitsklasse).
-- Wertebereich und Schranken. Oben gilt etwa 3,08. Untere Schranke und Verhalten für große negative Werte. Achtung: Für \(x<-50\) steigt \(u\) durch den quadratischen Term wieder an, das wird untersucht und dokumentiert.
-- Taylor-Entwicklung am Ursprung: PreCap ≈ \(x + 0{,}51x^2\).
+- Wertebereich und Schranken. Oben gilt etwa 3,08. Untere Schranke und Verhalten für große negative Werte. Achtung: Für $x<-50$ steigt $u$ durch den quadratischen Term wieder an, das wird untersucht und dokumentiert.
+- Taylor-Entwicklung am Ursprung: PreCap ≈ $x + 0{,}51x^2$.
 - Bezug zu bekannten Funktionen:
   - CapExp ist ein verschobenes und skaliertes ELU,
   - nahe null verhält sich PreCap ähnlich wie SiLU×2.
@@ -36,9 +36,9 @@ Das Ergebnis ist das Kapitel "Definition und Eigenschaften" des Papers. Ich rech
 - **Neu: selbstnormierendes PreCap ("SPreCap").** Analog zu SELU werden Konstanten bestimmt, mit denen Mittelwert und Varianz über die Schichten stabil bleiben. Das ist ein möglicher eigener Beitrag.
 - Möglichst wenige Parameter. Prüfen, ob c und s zu einem Parameter zusammengefasst werden können.
 - **Erledigt am 26.10.2026** (`math/PreCap_Definition_und_Eigenschaften.md`):
-  - PreCap ist \(C^1\) und nach oben durch 3,077 begrenzt.
-  - Formelfehler: Durch \(\gamma z^2\) ist PreCap für \(x<-50\) nicht monoton und springt für \(x<-120\) auf den Höchstwert. Korrektur: \(\gamma=0\).
-  - Nahe null ist PreCap bis zur dritten Ordnung gleich 2·SiLU, bei \(s=\sqrt2\) exakt.
+  - PreCap ist $C^1$ und nach oben durch 3,077 begrenzt.
+  - Formelfehler: Durch $\gamma z^2$ ist PreCap für $x<-50$ nicht monoton und springt für $x<-120$ auf den Höchstwert. Korrektur: $\gamma=0$.
+  - Nahe null ist PreCap bis zur dritten Ordnung gleich 2·SiLU, bei $s=\sqrt2$ exakt.
   - SPreCap mit λ = 0,806769 und α = 2,396951 ist selbstnormierend und über 100 Schichten stabil wie SELU, der Gradient wächst aber stärker.
   - PreCap ist ohne `torch.compile` auf der GPU etwa 9-mal langsamer als SiLU.
 
@@ -52,13 +52,13 @@ Das Ergebnis ist das Kapitel "Definition und Eigenschaften" des Papers. Ich rech
 - **Erledigt am 26.10.2026 (erste Runde):** `literatur/Phase2_Literaturrecherche.md`.
   - Nicht neu sind CapExp (= ELU), Stabilität durch Beschränkung und das Rezept für selbstnormierende Konstanten.
   - Wahrscheinlich neu, aber klein sind die Verkettung CapExp(s·tanh(x/s)) und SPreCap.
-  - Neu: SPreCap mit Eingangsskala b für \(\mathbb E f'^2=1+\varepsilon\). Der Preis sind weniger Gradientenverstärkung und weniger Nichtlinearität.
+  - Neu: SPreCap mit Eingangsskala b für $\mathbb E f'^2=1+\varepsilon$. Der Preis sind weniger Gradientenverstärkung und weniger Nichtlinearität.
   - Offen sind die Patentrecherche und das vollständige Lesen der Survey-Abschnitte.
 
 ## Phase 3 – Tests an echten Netzen (mehrere Nächte auf dem M1)
 
 - **Phase 3a erledigt am 26.10.2026:** Keine Hauptthese bestätigt. PreCap0 lernt bei 100 Schichten nicht. Beim Start verschwinden die Gradienten nicht (χ₁ ≈ 1,06, Gradient wächst zur Eingabe hin), der Ausfall entsteht erst im Training: Sättigung an den Schranken plus Mittelwert ≠ 0 (Hypothese, Konfidenz etwa 0,6, siehe `math/p3_precap_mechanism.py`). SPreCap ist bei Fashion 100 die beste Funktion, bei 50 Schichten schlechter als SELU. Größte Einschränkung: LR-Raster unten nicht offen (Kandidaten 6/6 am Rand 1e-4). Nächster Schritt: Nachlauf 3a-2 mit LR 1e-5 bis 2e-4. Details: `analysis/P3A_Auswertung.md`.
-- **Phase 3a-2 erledigt am 26.10.2026:** Nachteil SPreCap gegen SELU bestätigt (4 von 4 Zellen schlechter, bei Tiefe 100 7–8 pp). PreCap0 lernt bei Tiefe 100 mit LR ≤ 2e-5 (18,2 % / 8,3 %). Das Gradientenprofil beim Start folgt \((L-1)/2\cdot\log_{10}\chi_1\), SPreCap ist mit χ₁ = 1,13 zu chaotisch. Beste Funktionen: ELU und SELU. Keine Divergenz bei kleinen LRs. Details: `analysis/P3A2_Auswertung.md`.
+- **Phase 3a-2 erledigt am 26.10.2026:** Nachteil SPreCap gegen SELU bestätigt (4 von 4 Zellen schlechter, bei Tiefe 100 7–8 pp). PreCap0 lernt bei Tiefe 100 mit LR ≤ 2e-5 (18,2 % / 8,3 %). Das Gradientenprofil beim Start folgt $(L-1)/2\cdot\log_{10}\chi_1$, SPreCap ist mit χ₁ = 1,13 zu chaotisch. Beste Funktionen: ELU und SELU. Keine Divergenz bei kleinen LRs. Details: `analysis/P3A2_Auswertung.md`.
 - **Phase 3a-3 (vorregistriert, 26.10.2026, ausgewertet):** SPreCap-cs (χ₁ = SELU) ist in allen 4 Zellen gleichauf mit SELU (−0,12 bis +0,20 pp, nirgends signifikant). v0.1 ist nach der Regel **bewährt**. χ₁-Dosis-Wirkung bestätigt; e03 (χ₁ = 1,03) hat den besten mittleren Rang und ist bei MNIST 100 bestätigt besser als SELU. Kein Robustheitsvorteil bei hoher LR. Auswertung: `analysis/P3A3_Auswertung.md`.
 
 ### Vergleichsfunktionen
@@ -136,9 +136,9 @@ Ablauf: zuerst ein Pilot und ein Trockenlauf der Analyse, danach der große Lauf
 
 ## Phase 6 – Matrix-Idee als eigene Variante (erst nach der DOI)
 
-- Handschriftliche Notiz vom 16.10.: \(y = \sigma\big((Wx+b)^p \cdot \lambda\big)\). Die Voraktivierung wird potenziert und durch einen Faktor gebremst, σ ist PreCap, SiLU oder CapExp.
+- Handschriftliche Notiz vom 16.10.: $y = \sigma\big((Wx+b)^p \cdot \lambda\big)$. Die Voraktivierung wird potenziert und durch einen Faktor gebremst, σ ist PreCap, SiLU oder CapExp.
 - **Verwandte Arbeiten:**
-  - Würfelfunktion \(x^3\) (Chen & Manning 2014),
+  - Würfelfunktion $x^3$ (Chen & Manning 2014),
   - Squared ReLU (Primer, So et al. 2021).
 - **Test in derselben Benchmark-Suite:**
   - p = 2 und p = 3, λ fest oder lernbar,

@@ -15,7 +15,7 @@
 Die mathematischen und methodischen Grundlagen sind derzeit vollständig genug für belastbare 2D-Aussagen:
 
 - **Aktivierungsformel:** eingefrorene PreCap-v9-Urformel mit mathematischer Spezifikation.
-- **Primärmetrik:** \(d=\log_{10}(\mathrm{MSE}_{PreCap}/\mathrm{MSE}_{Ref})\), negativ begünstigt PreCap.
+- **Primärmetrik:** $d=\log_{10}(\mathrm{MSE}_{PreCap}/\mathrm{MSE}_{Ref})$, negativ begünstigt PreCap.
 - **Primärentscheidung:** Auf den drei Kernaufgaben müssen mindestens 2 von 3 Aufgaben im Median gegen **beide** Referenzen gewinnen; zusätzlich keine höhere bad-rate.
 - **Sekundärgrößen:** gepaarte Sign-Tests, Aktivierungspeaks, Gradienten, finaler Cap-Anteil.
 - **Interpretationsregel:** Neue Aufgaben und größere Tiefen erweitern die Evidenz, überschreiben aber nicht rückwirkend die v2-Kernaussage.
@@ -25,7 +25,7 @@ Die mathematischen und methodischen Grundlagen sind derzeit vollständig genug 
 Für v2 ist eine starke, gut lesbare Darstellung sinnvoll und machbar. Empfohlene Ebenen:
 
 1. **Entscheidungsebene:** Scorecard oder Matrix mit PASS/FAIL pro Aufgabe gegen SiLU und GELU.
-2. **Strukturebene:** Heatmap Aufgabe × Tiefe mit den gepaarten Effektgrößen \(d\).
+2. **Strukturebene:** Heatmap Aufgabe × Tiefe mit den gepaarten Effektgrößen $d$.
 3. **Mechanikebene:** zusätzliche Panels für `hmax_peak`, `grad_final` und `cap_final`, damit sichtbar wird, dass PreCap nicht nur Fehler verschiebt, sondern auch Extreme reduziert.
 4. **Narrative Ebene:** ein kompakter Zeitstrahl oder Ablaufblock, der von 1D-v9 über 2D-v1b zu 2D-v2 führt.
 

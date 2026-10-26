@@ -38,7 +38,7 @@ Phase 3a-3: MLP mit Breite 256, Tiefe 50 und 100, **ohne Normalisierung und ohne
 - **Nicht robuster gegenüber der Lernrate:** Bei LR 5e-4 und Tiefe 50 lernen SELU und ELU, die PreCap-Varianten nicht.
 - **Frühere Vorteile in 1D/2D hingen an fester Lernrate** und verschwanden mit fairem Tuning (V18). Das ist dokumentiert.
 
-Details: `analysis/P3A3_Auswertung.md`, Einordnung: `docs/Recherche_Neuheit.md`, alles zusammen: `docs/PROJEKT_GESAMTDOKUMENTATION.md`.
+Paper: `paper/PreCap_paper.pdf`. Details: `analysis/P3A3_Auswertung.md`, Einordnung: `docs/Recherche_Neuheit.md`, alles zusammen: `docs/PROJEKT_GESAMTDOKUMENTATION.md`.
 
 ## Installation und Nutzung
 
@@ -83,6 +83,7 @@ Gemessen: vorwärts und rückwärts über 16M Elemente in float32. Die MLX-Messu
 
 | Ordner | Inhalt |
 |---|---|
+| `paper/` | Preprint als PDF (`PreCap_paper.pdf`), Grafiken und Quellskripte |
 | `src/precap/` | installierbares Paket (PyTorch + CUDA-Kernel, MLX + Metal-Kernel) |
 | `kernels/` | eigenständige Kernel mit Tests und Messergebnissen |
 | `code/` | alle Studien 1D, 2D, 3D, Phase 3 mit Hashes |

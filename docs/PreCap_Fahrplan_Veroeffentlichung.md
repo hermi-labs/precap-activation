@@ -121,7 +121,7 @@ Ablauf: zuerst ein Pilot und ein Trockenlauf der Analyse, danach der große Lauf
 - **Kernels:** Sie kommen mit in v0.1, wenn die Tests gut aussehen: MLX/Metal auf dem M1 Pro und CUDA auf der RTX 4070, jeweils mit Abgleich zur Referenz und Benchmarks nach Phase 4b.
 - **Danach:** Test über MNIST hinaus (kleiner Transformer und/oder CIFAR-10), 3b (weniger LayerNorm), Paper und Posts. Entwürfe: `docs/P3A3_Entwurf.md`; Entwürfe für Posts liegen lokal (nicht im Repo).
 - Reihenfolge bis dahin: 3a-2 auswerten → 3a-3 einfrieren und laufen lassen → auswerten → Kernels → v0.1.
-- **Stand 26.10.2026, abends:** Bedingung erfüllt (3a-3: cs bewährt, 0 nicht-endliche Werte). Kernel, Paket, README, Kernel-README, requirements, Gesamtdoku und Recherche (`docs/Recherche_Neuheit.md`) sind fertig. Offen vor dem Release: Paper-PDF, dann Repo öffentlich, Zenodo-Schalter, Release v0.1.0 (nur mit Freigabe).
+- **Stand 26.10.2026, abends:** Bedingung erfüllt (3a-3: cs bewährt, 0 nicht-endliche Werte). Kernel, Paket, README, Kernel-README, requirements, Gesamtdoku und Recherche (`docs/Recherche_Neuheit.md`) sind fertig. Paper-Preprint liegt als `paper/PreCap_paper.pdf` vor (6 Seiten, Englisch). Offen vor dem Release: Repo öffentlich, Zenodo-Schalter, Release v0.1.0 (nur mit Freigabe).
 
 ## Phase 5 – Veröffentlichung
 

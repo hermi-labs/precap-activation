@@ -57,7 +57,7 @@ Das Ergebnis ist das Kapitel "Definition und Eigenschaften" des Papers. Ich rech
 
 ## Phase 3 – Tests an echten Netzen (mehrere Nächte auf dem M1)
 
-- **Phase 3a erledigt am 26.10.2026:** Keine Hauptthese bestätigt. PreCap0 lernt bei 100 Schichten nicht (vorwärts stabil, aber verschwindende Gradienten). SPreCap ist bei Fashion 100 die beste Funktion, bei 50 Schichten schlechter als SELU. Größte Einschränkung: LR-Raster unten nicht offen (Kandidaten 6/6 am Rand 1e-4). Nächster Schritt: Nachlauf 3a-2 mit LR 1e-5 bis 2e-4. Details: `analysis/P3A_Auswertung.md`.
+- **Phase 3a erledigt am 26.10.2026:** Keine Hauptthese bestätigt. PreCap0 lernt bei 100 Schichten nicht. Beim Start verschwinden die Gradienten nicht (χ₁ ≈ 1,06, Gradient wächst zur Eingabe hin), der Ausfall entsteht erst im Training: Sättigung an den Schranken plus Mittelwert ≠ 0 (Hypothese, Konfidenz etwa 0,6, siehe `math/p3_precap_mechanism.py`). SPreCap ist bei Fashion 100 die beste Funktion, bei 50 Schichten schlechter als SELU. Größte Einschränkung: LR-Raster unten nicht offen (Kandidaten 6/6 am Rand 1e-4). Nächster Schritt: Nachlauf 3a-2 mit LR 1e-5 bis 2e-4. Details: `analysis/P3A_Auswertung.md`.
 
 ### Vergleichsfunktionen
 
@@ -110,6 +110,14 @@ Ablauf: zuerst ein Pilot und ein Trockenlauf der Analyse, danach der große Lauf
 - Entscheidung (26.10.2026): Ziel ist die Absicherung über eine offene, datierte Veröffentlichung mit DOI und Apache-2.0 (defensive Veröffentlichung), nicht ein Patent.
 - Einschätzung: Ein Patent ist wenig aussichtsreich. Gründe: Eine Aktivierungsfunktion ist als mathematische Methode nur mit konkretem technischem Bezug schutzfähig, und alle Bausteine (ELU, tanh, DyT) sind bekannt, was die erfinderische Tätigkeit schwächt. Dazu kommen Kosten im vierstelligen Bereich. Empfehlung: offene Veröffentlichung mit DOI. Die macht PreCap zum datierten Stand der Technik, sodass niemand anderes es patentieren kann. Bei einem sehr starken Ergebnis vorher eine Erstberatung bei einem Patentanwalt einholen.
 - Lizenz: Apache-2.0 statt MIT. Apache-2.0 enthält eine ausdrückliche Patentlizenz (Abschnitt 3) und ist deshalb für Nutzer sicherer. Sie verträgt sich aber nicht mit einem eigenen Patent, das man durchsetzen will.
+
+## Zwischenziel v0.1 – Stand absichern (Entscheidung 26.10.2026)
+
+- **Bedingung:** SPreCap bewährt sich in 3a-2 und 3a-3, mindestens "nicht schlechter als SELU" nach der vorregistrierten Regel, bei 0 % Divergenz. Fällt das Ergebnis negativ aus, wird trotzdem abgesichert, aber ohne Kernels und mit ehrlicher Einordnung.
+- **Inhalt:** Repo öffentlich unter Apache-2.0 (LICENSE, NOTICE und CITATION.cff liegen bereit), GitHub-Release v0.1.0, DOI über Zenodo auf den echten vollen Namen (Profil vorhanden), GitHub-Konto `hermi-labs`.
+- **Kernels:** Sie kommen mit in v0.1, wenn die Tests gut aussehen: MLX/Metal auf dem M1 Pro und CUDA auf der RTX 4070, jeweils mit Abgleich zur Referenz und Benchmarks nach Phase 4b.
+- **Danach:** Test über MNIST hinaus (kleiner Transformer und/oder CIFAR-10), 3b (weniger LayerNorm), Paper und Posts. Entwürfe: `docs/P3A3_Entwurf.md`, `docs/Veroeffentlichung_Entwuerfe.md`.
+- Reihenfolge bis dahin: 3a-2 auswerten → 3a-3 einfrieren und laufen lassen → auswerten → Kernels → v0.1.
 
 ## Phase 5 – Veröffentlichung
 

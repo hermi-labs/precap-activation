@@ -10,3 +10,4 @@ workers/
 build/
 dist/
 .pytest_cache/
+paper/eq/

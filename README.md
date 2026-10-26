@@ -1,6 +1,8 @@
 # PreCap / SPreCap – beschränkte, selbstnormierende Aktivierungsfunktion
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23676432.svg)](https://doi.org/10.5281/zenodo.23676432)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23676432.svg)](https://doi.org/10.5281/zenodo.23676432) [![Preprint DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23676200.svg)](https://doi.org/10.5281/zenodo.23676200)
+
+Preprint: Schmitt, A. (2026). PreCap: A Bounded, Self-Normalizing Activation Function that Matches SELU in Deep Normalization-Free MLPs (Version 0.1). Zenodo. https://doi.org/10.5281/zenodo.23676200 · Software: https://doi.org/10.5281/zenodo.23676433
 
 Forschungsprojekt von Aaron Schmitt (ORCID [0009-0009-8689-5848](https://orcid.org/0009-0009-8689-5848)), 14.–26.10.2026. Lizenz: Apache-2.0.
 

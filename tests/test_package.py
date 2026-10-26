@@ -41,3 +41,14 @@ def test_modul_und_fehler():
     with pytest.raises(ValueError): PreCap('gibtsnicht')
     with pytest.raises(ValueError): PreCap(backend='xyz')
     assert PreCap().preset == 'spreccap_cs' and precap.__version__ == '0.1.0'
+
+def test_nan_inf():
+    x = torch.tensor([float('nan'), float('inf'), -float('inf')], dtype=torch.float64)
+    for p in PRESETS.values():
+        y = precap_ref(x, **p)
+        assert torch.isnan(y[0]) and torch.isfinite(y[1:]).all()
+
+def test_fp16_bf16_cpu():
+    x = torch.randn(1000) * 3
+    for dt in (torch.float16, torch.bfloat16):
+        y = PreCap()(x.to(dt)); assert y.dtype == dt

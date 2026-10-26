@@ -118,7 +118,7 @@ Ablauf: zuerst ein Pilot und ein Trockenlauf der Analyse, danach der große Lauf
 - **Bedingung:** SPreCap bewährt sich in 3a-2 und 3a-3, mindestens "nicht schlechter als SELU" nach der vorregistrierten Regel, bei 0 % Divergenz. Fällt das Ergebnis negativ aus, wird trotzdem abgesichert, aber ohne Kernels und mit ehrlicher Einordnung.
 - **Inhalt:** Repo öffentlich unter Apache-2.0 (LICENSE, NOTICE und CITATION.cff liegen bereit), GitHub-Release v0.1.0, DOI über Zenodo auf den echten vollen Namen (Profil vorhanden), GitHub-Konto `hermi-labs`.
 - **Kernels:** Sie kommen mit in v0.1, wenn die Tests gut aussehen: MLX/Metal auf dem M1 Pro und CUDA auf der RTX 4070, jeweils mit Abgleich zur Referenz und Benchmarks nach Phase 4b.
-- **Danach:** Test über MNIST hinaus (kleiner Transformer und/oder CIFAR-10), 3b (weniger LayerNorm), Paper und Posts. Entwürfe: `docs/P3A3_Entwurf.md`, `docs/Veroeffentlichung_Entwuerfe.md`.
+- **Danach:** Test über MNIST hinaus (kleiner Transformer und/oder CIFAR-10), 3b (weniger LayerNorm), Paper und Posts. Entwürfe: `docs/P3A3_Entwurf.md`; Entwürfe für Posts liegen lokal (nicht im Repo).
 - Reihenfolge bis dahin: 3a-2 auswerten → 3a-3 einfrieren und laufen lassen → auswerten → Kernels → v0.1.
 
 ## Phase 5 – Veröffentlichung

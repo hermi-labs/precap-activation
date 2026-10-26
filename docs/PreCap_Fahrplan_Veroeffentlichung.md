@@ -146,17 +146,6 @@ Ablauf: zuerst ein Pilot und ein Trockenlauf der Analyse, danach der große Lauf
 
 ---
 
-## Wobei ich helfe
-
-| Aufgabe | Ich | Du |
-|---|---|---|
-| Mathematik, Nachrechnen, Konstanten | ja | gegenlesen |
-| Skripte, Präregistrierung, Hashes, Prüfungen | ja | Mac laufen lassen |
-| Auswertung, Statistik, Grafiken | ja | – |
-| Paper als PDF mit Grafiken | ja | Inhalt freigeben |
-| GitHub und Zenodo | Anleitung, Texte, Dateien | Konten anlegen, hochladen |
-| Mails und Beiträge | Entwürfe | absenden |
-
 ## Realistische Erwartung
 
 - Eine saubere, nachprüfbare Veröffentlichung ist machbar, unabhängig vom Ergebnis.

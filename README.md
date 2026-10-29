@@ -48,6 +48,14 @@ Sieben weitere präregistrierte Studien (A, A2, A3, Q1, Q1b, Q2, Q3, etwa 2.200 
 - **Zielkonflikt:** Kein einzelnes Mitglied der Familie hat beides. Die Tiefenkalibrierung vergrößert den Wertebereich und kostet die 4-Bit-Robustheit.
 - **Grenzen:** nur MLPs, MNIST/Fashion, kurze Budgets, nur simulierte Quantisierung nach dem Training, pro Tensor.
 
+![Medianer Testfehler gegen die Tiefe 50, 100, 200 für SELU, SPreCap-cs, SPreCap-e03, kL1 und kL2](paper/figures/fig7_depth.png)
+
+Abb. 7 im Preprint (Studie A): medianer Testfehler gegen die Tiefe, logarithmische Achse. SELU und SPreCap-cs werden bei 200 Schichten in 1720 Schritten nicht fertig trainiert, die Tiefenfamilie kL1/kL2 verschlechtert sich am wenigsten.
+
+![fp32-Testfehler gegen 4-Bit-Testfehler für TAT, SELU und SPreCap-cs, symmetrisch und asymmetrisch](paper/figures/fig8_tradeoff.png)
+
+Abb. 9 im Preprint (Studie Q3): fp32 waagerecht, 4-Bit-Aktivierungen senkrecht, gefüllt symmetrisch, offen asymmetrisch. Die gepunktete Linie heißt „kein Verlust durch Quantisierung“. TAT ist in fp32 am besten, verliert bei 4 Bit aber am meisten. SPreCap-cs verliert bei Tiefe 100 und bei FashionMNIST mit Tiefe 50 am wenigsten, bei MNIST mit Tiefe 50 verliert SELU weniger.
+
 ## Ergebnisse v0.1 (ehrlich)
 
 Phase 3a-3: MLP mit Breite 256, Tiefe 50 und 100, **ohne Normalisierung und ohne Residual**, Adam, eigenes Lernraten-Tuning je Funktion, 15 Bestätigungs-Seeds, präregistriert. Medianer Testfehler:

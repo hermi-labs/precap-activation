@@ -24,3 +24,16 @@ Mitgearbeitet hat Perplexity Computer, ein KI-Assistent ([perplexity.ai](https:/
 - Texten
 
 Alle Ergebnisse wurden mit festgelegten Hashes und reproduzierbaren Skripten geprüft.
+
+## Version 0.2
+
+Die Fragen für v0.2 (Tiefe, Vergleich mit dem Stand der Technik, Quantisierung) und die Entscheidungen stammen wieder von Aaron Schmitt. Die Studien liefen auf seinem MacBook Pro M1 Pro.
+
+Ab v0.2 hat Claude Code von Anthropic ([claude.com/claude-code](https://claude.com/claude-code)) mitgearbeitet, mit dem Modell Claude Opus 5.5. Mit Claude entstanden:
+
+- Entwürfe der Präregistrierungen und die Studienskripte (A, A2, A3, Q1, Q1b, Q2, Q3)
+- die Auswertungen und Berichte
+- der Text und die Abbildungen des Preprints v0.2
+- die Literaturprüfung
+
+Aaron hat die Studien freigegeben, teils einzeln, teils als Rahmen für Folgestudien, die Claude danach begründet ausgewählt hat. Alle Präregistrierungen wurden vor dem Lauf per SHA-256 eingefroren und sind unverändert im Repo.

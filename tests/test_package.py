@@ -40,7 +40,7 @@ def test_modul_und_fehler():
     assert 'spreccap_e03' in repr(m)
     with pytest.raises(ValueError): PreCap('gibtsnicht')
     with pytest.raises(ValueError): PreCap(backend='xyz')
-    assert PreCap().preset == 'spreccap_cs' and precap.__version__ == '0.1.0'
+    assert PreCap().preset == 'spreccap_cs' and precap.__version__ == '0.2.0'
 
 def test_nan_inf():
     x = torch.tensor([float('nan'), float('inf'), -float('inf')], dtype=torch.float64)
@@ -52,3 +52,15 @@ def test_fp16_bf16_cpu():
     x = torch.randn(1000) * 3
     for dt in (torch.float16, torch.bfloat16):
         y = PreCap()(x.to(dt)); assert y.dtype == dt
+
+@pytest.mark.parametrize('name,chi1,lo,hi', [('spreccap_kl2_d50', 1.04, -2.18, 4.97), ('spreccap_kl2_d100', 1.02, -3.01, 8.15),
+                                            ('spreccap_kl2_d200', 1.01, -4.20, 12.83), ('spreccap_kl1_d200', 1.005, -5.86, 19.38)])
+def test_tiefenfamilie(name, chi1, lo, hi):
+    # v0.2, Tabelle 4: E[f]=0, E[f^2]=1, E[f'^2]=1+k/L, Wertebereich
+    import numpy as np
+    z, w = np.polynomial.hermite_e.hermegauss(200); w = w / w.sum(); p = PRESETS[name]
+    zt = torch.tensor(z); f = precap_ref(zt, **p).numpy(); g = precap_ref_grad(zt, **p).numpy()
+    assert abs((w * f).sum()) < 2e-3 and abs((w * f * f).sum() - 1) < 2e-3 and abs((w * g * g).sum() - chi1) < 2e-3
+    y = precap_ref(torch.tensor([-1e6, 1e6], dtype=torch.float64), **p)
+    assert abs(y[0].item() - lo) < 0.006 and abs(y[1].item() - hi) < 0.006
+    assert PRESETS['spreccap_kl1_d50'] == PRESETS['spreccap_kl2_d100'] and PRESETS['spreccap_kl1_d100'] == PRESETS['spreccap_kl2_d200']

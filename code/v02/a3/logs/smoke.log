@@ -1,0 +1,6 @@
+tune mnist_d200_kL2r_T40_s42000_lr2e-05 ok 23:16:27
+tune mnist_d200_kL2r_T40_s42000_lr5e-05 ok 23:16:29
+LR-Wahl [{"dataset": "mnist", "depth": 200, "act": "kL2r", "lr_sel": 5e-05, "med_val_acc": 0.9074, "at_edge": true, "n_seeds": 1}]
+done mnist_d200_tat_T40_s42010 ok 23:16:30
+done mnist_d200_kL2r_T40_s42010 ok 23:16:33
+done mnist_d200_kL2r_T80_s42010 ok 23:16:36

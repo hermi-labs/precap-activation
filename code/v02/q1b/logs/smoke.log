@@ -1,0 +1,4 @@
+done mnist_d50_spreccap_cs_s42010 ok 08:32:27
+done mnist_d50_spreccap_e03_s42010 ok 08:32:30
+done mnist_d50_selu_s42010 ok 08:32:32
+done mnist_d50_elu_s42010 ok 08:32:34

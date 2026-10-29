@@ -1,0 +1,2 @@
+dataset,depth,act,lr_sel,med_val_acc,at_edge,n_seeds
+mnist,200,tat,2e-05,0.8544,True,1

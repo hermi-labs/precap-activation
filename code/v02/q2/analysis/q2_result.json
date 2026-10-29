@@ -1,0 +1,540 @@
+{
+ "n_rows_q2": 62,
+ "failed_q2": 0,
+ "primary": [
+  {
+   "dataset": "mnist",
+   "depth": 50,
+   "cand": "spreccap_cs",
+   "ref": "tat",
+   "n": 15,
+   "med_diff_pp": -1.3700000000000045,
+   "wins": 13,
+   "losses": 2,
+   "p": 0.00030517578125,
+   "holm": 0.00030517578125,
+   "verdict": "besser"
+  },
+  {
+   "dataset": "fashion",
+   "depth": 50,
+   "cand": "spreccap_cs",
+   "ref": "tat",
+   "n": 15,
+   "med_diff_pp": -7.7099999999999955,
+   "wins": 15,
+   "losses": 0,
+   "p": 6.103515625e-05,
+   "holm": 0.000244140625,
+   "verdict": "besser"
+  },
+  {
+   "dataset": "mnist",
+   "depth": 100,
+   "cand": "spreccap_cs",
+   "ref": "tat",
+   "n": 15,
+   "med_diff_pp": -6.530000000000003,
+   "wins": 15,
+   "losses": 0,
+   "p": 6.103515625e-05,
+   "holm": 0.000244140625,
+   "verdict": "besser"
+  },
+  {
+   "dataset": "fashion",
+   "depth": 100,
+   "cand": "spreccap_cs",
+   "ref": "tat",
+   "n": 15,
+   "med_diff_pp": -6.869999999999997,
+   "wins": 15,
+   "losses": 0,
+   "p": 6.103515625e-05,
+   "holm": 0.000244140625,
+   "verdict": "besser"
+  }
+ ],
+ "verdict": "besser als TAT",
+ "secondary": {
+  "S1_cs_vs_tat_fp32": [
+   {
+    "dataset": "mnist",
+    "depth": 50,
+    "cand": "spreccap_cs",
+    "ref": "tat",
+    "n": 15,
+    "med_diff_pp": 0.8099999999999996,
+    "wins": 2,
+    "losses": 13,
+    "p": 0.0042724609375,
+    "holm": 0.0042724609375,
+    "verdict": "schlechter"
+   },
+   {
+    "dataset": "fashion",
+    "depth": 50,
+    "cand": "spreccap_cs",
+    "ref": "tat",
+    "n": 15,
+    "med_diff_pp": 1.1500000000000057,
+    "wins": 1,
+    "losses": 14,
+    "p": 0.0001220703125,
+    "holm": 0.000244140625,
+    "verdict": "schlechter"
+   },
+   {
+    "dataset": "mnist",
+    "depth": 100,
+    "cand": "spreccap_cs",
+    "ref": "tat",
+    "n": 15,
+    "med_diff_pp": 2.6800000000000046,
+    "wins": 0,
+    "losses": 15,
+    "p": 6.103515625e-05,
+    "holm": 0.000244140625,
+    "verdict": "schlechter"
+   },
+   {
+    "dataset": "fashion",
+    "depth": 100,
+    "cand": "spreccap_cs",
+    "ref": "tat",
+    "n": 15,
+    "med_diff_pp": 3.9300000000000015,
+    "wins": 0,
+    "losses": 15,
+    "p": 6.103515625e-05,
+    "holm": 0.000244140625,
+    "verdict": "schlechter"
+   }
+  ],
+  "S2_cs_vs_tat_degradation": [
+   {
+    "dataset": "mnist",
+    "depth": 50,
+    "cand": "spreccap_cs",
+    "ref": "tat",
+    "n": 15,
+    "med_diff_pp": -1.879999999999992,
+    "wins": 15,
+    "losses": 0,
+    "p": 6.103515625e-05,
+    "holm": 0.000244140625,
+    "verdict": "besser"
+   },
+   {
+    "dataset": "fashion",
+    "depth": 50,
+    "cand": "spreccap_cs",
+    "ref": "tat",
+    "n": 15,
+    "med_diff_pp": -8.969999999999999,
+    "wins": 15,
+    "losses": 0,
+    "p": 6.103515625e-05,
+    "holm": 0.000244140625,
+    "verdict": "besser"
+   },
+   {
+    "dataset": "mnist",
+    "depth": 100,
+    "cand": "spreccap_cs",
+    "ref": "tat",
+    "n": 15,
+    "med_diff_pp": -9.320000000000007,
+    "wins": 15,
+    "losses": 0,
+    "p": 6.103515625e-05,
+    "holm": 0.000244140625,
+    "verdict": "besser"
+   },
+   {
+    "dataset": "fashion",
+    "depth": 100,
+    "cand": "spreccap_cs",
+    "ref": "tat",
+    "n": 15,
+    "med_diff_pp": -11.090000000000002,
+    "wins": 15,
+    "losses": 0,
+    "p": 6.103515625e-05,
+    "holm": 0.000244140625,
+    "verdict": "besser"
+   }
+  ],
+  "S3_tat_vs_selu_w8a4best": [
+   {
+    "dataset": "mnist",
+    "depth": 50,
+    "cand": "tat",
+    "ref": "selu",
+    "n": 15,
+    "med_diff_pp": 2.4900000000000038,
+    "wins": 0,
+    "losses": 15,
+    "p": 6.103515625e-05,
+    "holm": 0.000244140625,
+    "verdict": "schlechter"
+   },
+   {
+    "dataset": "fashion",
+    "depth": 50,
+    "cand": "tat",
+    "ref": "selu",
+    "n": 15,
+    "med_diff_pp": 6.669999999999995,
+    "wins": 0,
+    "losses": 15,
+    "p": 6.103515625e-05,
+    "holm": 0.000244140625,
+    "verdict": "schlechter"
+   },
+   {
+    "dataset": "mnist",
+    "depth": 100,
+    "cand": "tat",
+    "ref": "selu",
+    "n": 15,
+    "med_diff_pp": 3.42,
+    "wins": 0,
+    "losses": 15,
+    "p": 6.103515625e-05,
+    "holm": 0.000244140625,
+    "verdict": "schlechter"
+   },
+   {
+    "dataset": "fashion",
+    "depth": 100,
+    "cand": "tat",
+    "ref": "selu",
+    "n": 15,
+    "med_diff_pp": 6.079999999999995,
+    "wins": 1,
+    "losses": 14,
+    "p": 0.0001220703125,
+    "holm": 0.000244140625,
+    "verdict": "schlechter"
+   }
+  ]
+ },
+ "secondary_verdicts": {
+  "S1": "schlechter als TAT",
+  "S2": "besser als TAT",
+  "S3": "schlechter als SELU"
+ },
+ "repro": [
+  {
+   "key": [
+    "mnist",
+    100,
+    "spreccap_cs",
+    42010
+   ],
+   "q2_fp32": 6.179999999999996,
+   "q1b_fp32": 6.179999999999996,
+   "q2_w4": 9.770000000000001,
+   "q1b_w4": 9.770000000000001,
+   "diff_fp32": 0.0,
+   "diff_w4": 0.0
+  },
+  {
+   "key": [
+    "mnist",
+    100,
+    "spreccap_cs",
+    42011
+   ],
+   "q2_fp32": 6.4200000000000035,
+   "q1b_fp32": 6.4200000000000035,
+   "q2_w4": 9.27,
+   "q1b_w4": 9.27,
+   "diff_fp32": 0.0,
+   "diff_w4": 0.0
+  }
+ ],
+ "repro_ok": true,
+ "descriptive": [
+  {
+   "dataset": "mnist",
+   "depth": 50,
+   "act": "spreccap_cs",
+   "n_ok": 15,
+   "n_all": 15,
+   "lr": 5e-05,
+   "fp32": 4.600000000000004,
+   "w8a8": 4.620000000000002,
+   "w8a4_max": 7.830000000000004,
+   "w8a4_best": 6.830000000000003,
+   "range_max": 3.347239375114441,
+   "clip_mse4": 2.735218505859375,
+   "best_cal": {
+    "max": 0,
+    "p999": 2,
+    "p9999": 0,
+    "mse4": 13
+   }
+  },
+  {
+   "dataset": "mnist",
+   "depth": 50,
+   "act": "tat",
+   "n_ok": 15,
+   "n_all": 15,
+   "lr": 0.0002,
+   "fp32": 4.090000000000005,
+   "w8a8": 4.120000000000001,
+   "w8a4_max": 42.24,
+   "w8a4_best": 8.099999999999996,
+   "range_max": 18.60916519165039,
+   "clip_mse4": 7.874987812042237,
+   "best_cal": {
+    "max": 0,
+    "p999": 0,
+    "p9999": 0,
+    "mse4": 15
+   }
+  },
+  {
+   "dataset": "mnist",
+   "depth": 50,
+   "act": "selu",
+   "n_ok": 15,
+   "n_all": 15,
+   "lr": 0.0001,
+   "fp32": 4.2900000000000045,
+   "w8a8": 4.300000000000004,
+   "w8a4_max": 13.490000000000002,
+   "w8a4_best": 5.4300000000000015,
+   "range_max": 7.59710955619812,
+   "clip_mse4": 3.982994692325592,
+   "best_cal": {
+    "max": 0,
+    "p999": 3,
+    "p9999": 0,
+    "mse4": 12
+   }
+  },
+  {
+   "dataset": "fashion",
+   "depth": 50,
+   "act": "spreccap_cs",
+   "n_ok": 15,
+   "n_all": 15,
+   "lr": 0.0001,
+   "fp32": 14.81,
+   "w8a8": 14.749999999999996,
+   "w8a4_max": 15.769999999999996,
+   "w8a4_best": 15.510000000000002,
+   "range_max": 3.370944619178772,
+   "clip_mse4": 2.87260724902153,
+   "best_cal": {
+    "max": 2,
+    "p999": 4,
+    "p9999": 1,
+    "mse4": 8
+   }
+  },
+  {
+   "dataset": "fashion",
+   "depth": 50,
+   "act": "tat",
+   "n_ok": 15,
+   "n_all": 15,
+   "lr": 5e-05,
+   "fp32": 13.649999999999995,
+   "w8a8": 13.560000000000006,
+   "w8a4_max": 51.62,
+   "w8a4_best": 22.970000000000002,
+   "range_max": 6.994840145111084,
+   "clip_mse4": 3.0881948280334477,
+   "best_cal": {
+    "max": 0,
+    "p999": 0,
+    "p9999": 0,
+    "mse4": 15
+   }
+  },
+  {
+   "dataset": "fashion",
+   "depth": 50,
+   "act": "selu",
+   "n_ok": 15,
+   "n_all": 15,
+   "lr": 0.0001,
+   "fp32": 14.980000000000004,
+   "w8a8": 14.980000000000004,
+   "w8a4_max": 22.57,
+   "w8a4_best": 16.92,
+   "range_max": 7.6720802783966064,
+   "clip_mse4": 4.024979176521301,
+   "best_cal": {
+    "max": 0,
+    "p999": 6,
+    "p9999": 0,
+    "mse4": 9
+   }
+  },
+  {
+   "dataset": "mnist",
+   "depth": 100,
+   "act": "spreccap_cs",
+   "n_ok": 15,
+   "n_all": 15,
+   "lr": 5e-05,
+   "fp32": 6.210000000000004,
+   "w8a8": 6.220000000000003,
+   "w8a4_max": 10.660000000000004,
+   "w8a4_best": 9.07,
+   "range_max": 3.345055937767029,
+   "clip_mse4": 2.7639912617206575,
+   "best_cal": {
+    "max": 0,
+    "p999": 2,
+    "p9999": 1,
+    "mse4": 12
+   }
+  },
+  {
+   "dataset": "mnist",
+   "depth": 100,
+   "act": "tat",
+   "n_ok": 15,
+   "n_all": 15,
+   "lr": 5e-05,
+   "fp32": 3.520000000000001,
+   "w8a8": 3.5399999999999987,
+   "w8a4_max": 39.81,
+   "w8a4_best": 15.42,
+   "range_max": 8.297779560089111,
+   "clip_mse4": 3.6993627166748047,
+   "best_cal": {
+    "max": 0,
+    "p999": 0,
+    "p9999": 0,
+    "mse4": 15
+   }
+  },
+  {
+   "dataset": "mnist",
+   "depth": 100,
+   "act": "selu",
+   "n_ok": 15,
+   "n_all": 15,
+   "lr": 5e-05,
+   "fp32": 6.459999999999999,
+   "w8a8": 6.520000000000003,
+   "w8a4_max": 29.93,
+   "w8a4_best": 11.29,
+   "range_max": 6.184210300445557,
+   "clip_mse4": 3.581676535606384,
+   "best_cal": {
+    "max": 0,
+    "p999": 0,
+    "p9999": 0,
+    "mse4": 15
+   }
+  },
+  {
+   "dataset": "fashion",
+   "depth": 100,
+   "act": "spreccap_cs",
+   "n_ok": 15,
+   "n_all": 15,
+   "lr": 5e-05,
+   "fp32": 17.25,
+   "w8a8": 17.190000000000005,
+   "w8a4_max": 21.98,
+   "w8a4_best": 20.77,
+   "range_max": 3.342661738395691,
+   "clip_mse4": 2.7646890127658845,
+   "best_cal": {
+    "max": 0,
+    "p999": 0,
+    "p9999": 1,
+    "mse4": 14
+   }
+  },
+  {
+   "dataset": "fashion",
+   "depth": 100,
+   "act": "tat",
+   "n_ok": 15,
+   "n_all": 15,
+   "lr": 5e-05,
+   "fp32": 13.580000000000004,
+   "w8a8": 13.570000000000004,
+   "w8a4_max": 58.26,
+   "w8a4_best": 27.869999999999994,
+   "range_max": 7.515557765960693,
+   "clip_mse4": 3.3152678632736206,
+   "best_cal": {
+    "max": 0,
+    "p999": 0,
+    "p9999": 0,
+    "mse4": 15
+   }
+  },
+  {
+   "dataset": "fashion",
+   "depth": 100,
+   "act": "selu",
+   "n_ok": 15,
+   "n_all": 15,
+   "lr": 5e-05,
+   "fp32": 16.64,
+   "w8a8": 16.74,
+   "w8a4_max": 37.260000000000005,
+   "w8a4_best": 22.240000000000006,
+   "range_max": 6.255458831787109,
+   "clip_mse4": 3.59283908367157,
+   "best_cal": {
+    "max": 0,
+    "p999": 0,
+    "p9999": 0,
+    "mse4": 15
+   }
+  }
+ ],
+ "lr_tuned": [
+  {
+   "dataset": "mnist",
+   "depth": "50",
+   "act": "tat",
+   "lr_sel": "0.0002",
+   "med_val_acc": "0.9668",
+   "at_edge": "False",
+   "n_seeds": "4"
+  },
+  {
+   "dataset": "fashion",
+   "depth": "50",
+   "act": "tat",
+   "lr_sel": "5e-05",
+   "med_val_acc": "0.8744",
+   "at_edge": "False",
+   "n_seeds": "4"
+  },
+  {
+   "dataset": "mnist",
+   "depth": "100",
+   "act": "tat",
+   "lr_sel": "5e-05",
+   "med_val_acc": "0.9671",
+   "at_edge": "False",
+   "n_seeds": "4"
+  },
+  {
+   "dataset": "fashion",
+   "depth": "100",
+   "act": "tat",
+   "lr_sel": "5e-05",
+   "med_val_acc": "0.875",
+   "at_edge": "False",
+   "n_seeds": "4"
+  }
+ ],
+ "lr_at_edge": []
+}

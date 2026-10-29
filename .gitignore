@@ -14,3 +14,6 @@ paper/eq/
 
 ._*
 .DS_Store
+
+# v0.2-Studien: Rohdaten liegen in workers/
+!code/v02/**/workers/

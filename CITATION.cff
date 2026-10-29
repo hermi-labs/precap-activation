@@ -9,8 +9,8 @@ authors:
 license: Apache-2.0
 repository-code: "https://github.com/hermi-labs/precap-activation"
 doi: "10.5281/zenodo.23676432"
-version: 0.1.0
-date-released: "2026-10-26"
+version: 0.2.0
+date-released: "2026-10-29"
 keywords:
   - activation function
   - self-normalizing neural networks
@@ -19,13 +19,13 @@ keywords:
   - deep learning
 preferred-citation:
   type: article
-  title: "PreCap: A Bounded, Self-Normalizing Activation Function that Matches SELU in Deep Normalization-Free MLPs"
+  title: "PreCap: Bounded, Self-Normalizing Activations for Deep Normalization-Free MLPs – Depth Calibration, a Comparison with TAT, and 4-Bit Robustness"
   authors:
     - family-names: Schmitt
       given-names: Aaron
       orcid: "https://orcid.org/0009-0009-8689-5848"
-  doi: "10.5281/zenodo.23676200"
+  doi: "10.5281/zenodo.23757287"
   year: 2026
   publisher:
     name: Zenodo
-  notes: "Preprint, version 0.1"
+  notes: "Preprint, version 0.2"

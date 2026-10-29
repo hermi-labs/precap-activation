@@ -1,0 +1,5 @@
+dataset,depth,act,lr_sel,med_val_acc,at_edge,n_seeds
+mnist,100,kL2r,5e-05,0.9696,False,4
+fashion,100,kL2r,2e-05,0.8732,False,4
+mnist,200,kL2r,1e-05,0.9689,True,4
+fashion,200,kL2r,1e-05,0.8747,True,4

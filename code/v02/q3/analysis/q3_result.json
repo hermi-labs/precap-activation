@@ -1,0 +1,491 @@
+{
+ "n_rows": 180,
+ "failed": 0,
+ "primary": [
+  {
+   "dataset": "mnist",
+   "depth": 50,
+   "n": 15,
+   "med_diff_pp": 0.34000000000000696,
+   "wins": 7,
+   "losses": 8,
+   "p": 0.93408203125,
+   "holm": 0.93408203125,
+   "verdict": "unklar"
+  },
+  {
+   "dataset": "fashion",
+   "depth": 50,
+   "n": 15,
+   "med_diff_pp": -2.1599999999999966,
+   "wins": 14,
+   "losses": 1,
+   "p": 0.00018310546875,
+   "holm": 0.00054931640625,
+   "verdict": "besser"
+  },
+  {
+   "dataset": "mnist",
+   "depth": 100,
+   "n": 15,
+   "med_diff_pp": -1.0800000000000036,
+   "wins": 13,
+   "losses": 2,
+   "p": 0.0006103515625,
+   "holm": 0.001220703125,
+   "verdict": "besser"
+  },
+  {
+   "dataset": "fashion",
+   "depth": 100,
+   "n": 15,
+   "med_diff_pp": -1.9599999999999937,
+   "wins": 15,
+   "losses": 0,
+   "p": 6.103515625e-05,
+   "holm": 0.000244140625,
+   "verdict": "besser"
+  }
+ ],
+ "verdict": "besser als TAT",
+ "secondary": {
+  "S1_cs_vs_selu_asym": [
+   {
+    "dataset": "mnist",
+    "depth": 50,
+    "n": 15,
+    "med_diff_pp": 0.490000000000002,
+    "wins": 3,
+    "losses": 12,
+    "p": 0.02154541015625,
+    "holm": 0.0430908203125,
+    "verdict": "schlechter"
+   },
+   {
+    "dataset": "fashion",
+    "depth": 50,
+    "n": 15,
+    "med_diff_pp": -0.490000000000002,
+    "wins": 10,
+    "losses": 5,
+    "p": 0.03533935546875,
+    "holm": 0.0430908203125,
+    "verdict": "besser"
+   },
+   {
+    "dataset": "mnist",
+    "depth": 100,
+    "n": 15,
+    "med_diff_pp": -2.1400000000000077,
+    "wins": 15,
+    "losses": 0,
+    "p": 6.103515625e-05,
+    "holm": 0.000244140625,
+    "verdict": "besser"
+   },
+   {
+    "dataset": "fashion",
+    "depth": 100,
+    "n": 15,
+    "med_diff_pp": -1.2000000000000028,
+    "wins": 13,
+    "losses": 2,
+    "p": 0.00836181640625,
+    "holm": 0.02508544921875,
+    "verdict": "besser"
+   }
+  ],
+  "S2_tat_asym_vs_sym": [
+   {
+    "dataset": "mnist",
+    "depth": 50,
+    "n": 15,
+    "med_diff_pp": -2.3700000000000054,
+    "wins": 15,
+    "losses": 0,
+    "p": 6.103515625e-05,
+    "holm": 0.000244140625,
+    "verdict": "besser"
+   },
+   {
+    "dataset": "fashion",
+    "depth": 50,
+    "n": 15,
+    "med_diff_pp": -5.84,
+    "wins": 15,
+    "losses": 0,
+    "p": 6.103515625e-05,
+    "holm": 0.000244140625,
+    "verdict": "besser"
+   },
+   {
+    "dataset": "mnist",
+    "depth": 100,
+    "n": 15,
+    "med_diff_pp": -6.469999999999997,
+    "wins": 15,
+    "losses": 0,
+    "p": 6.103515625e-05,
+    "holm": 0.000244140625,
+    "verdict": "besser"
+   },
+   {
+    "dataset": "fashion",
+    "depth": 100,
+    "n": 15,
+    "med_diff_pp": -6.8799999999999955,
+    "wins": 15,
+    "losses": 0,
+    "p": 6.103515625e-05,
+    "holm": 0.000244140625,
+    "verdict": "besser"
+   }
+  ],
+  "S3_cs_asym_vs_sym": [
+   {
+    "dataset": "mnist",
+    "depth": 50,
+    "n": 15,
+    "med_diff_pp": -1.0700000000000038,
+    "wins": 15,
+    "losses": 0,
+    "p": 6.103515625e-05,
+    "holm": 0.000244140625,
+    "verdict": "besser"
+   },
+   {
+    "dataset": "fashion",
+    "depth": 50,
+    "n": 15,
+    "med_diff_pp": -0.0899999999999892,
+    "wins": 8,
+    "losses": 7,
+    "p": 0.42120361328125,
+    "holm": 0.42120361328125,
+    "verdict": "unklar"
+   },
+   {
+    "dataset": "mnist",
+    "depth": 100,
+    "n": 15,
+    "med_diff_pp": -1.3600000000000056,
+    "wins": 15,
+    "losses": 0,
+    "p": 6.103515625e-05,
+    "holm": 0.000244140625,
+    "verdict": "besser"
+   },
+   {
+    "dataset": "fashion",
+    "depth": 100,
+    "n": 15,
+    "med_diff_pp": -1.5299999999999976,
+    "wins": 15,
+    "losses": 0,
+    "p": 6.103515625e-05,
+    "holm": 0.000244140625,
+    "verdict": "besser"
+   }
+  ],
+  "S4_cs_vs_tat_sym": [
+   {
+    "dataset": "mnist",
+    "depth": 50,
+    "n": 15,
+    "med_diff_pp": -1.3700000000000045,
+    "wins": 13,
+    "losses": 2,
+    "p": 0.00030517578125,
+    "holm": 0.00030517578125,
+    "verdict": "besser"
+   },
+   {
+    "dataset": "fashion",
+    "depth": 50,
+    "n": 15,
+    "med_diff_pp": -7.7099999999999955,
+    "wins": 15,
+    "losses": 0,
+    "p": 6.103515625e-05,
+    "holm": 0.000244140625,
+    "verdict": "besser"
+   },
+   {
+    "dataset": "mnist",
+    "depth": 100,
+    "n": 15,
+    "med_diff_pp": -6.530000000000003,
+    "wins": 15,
+    "losses": 0,
+    "p": 6.103515625e-05,
+    "holm": 0.000244140625,
+    "verdict": "besser"
+   },
+   {
+    "dataset": "fashion",
+    "depth": 100,
+    "n": 15,
+    "med_diff_pp": -6.869999999999997,
+    "wins": 15,
+    "losses": 0,
+    "p": 6.103515625e-05,
+    "holm": 0.000244140625,
+    "verdict": "besser"
+   }
+  ]
+ },
+ "secondary_verdicts": {
+  "S1_cs_vs_selu_asym": "gemischt",
+  "S2_tat_asym_vs_sym": "besser als TAT-sym",
+  "S3_cs_asym_vs_sym": "besser als cs-sym",
+  "S4_cs_vs_tat_sym": "besser als TAT"
+ },
+ "repro": {
+  "n_matched": 180,
+  "n_runs": 180,
+  "max_abs_diff_pp": 0.0
+ },
+ "repro_ok": true,
+ "descriptive": [
+  {
+   "dataset": "mnist",
+   "depth": 50,
+   "act": "spreccap_cs",
+   "n_ok": 15,
+   "n_all": 15,
+   "fp32": 4.600000000000004,
+   "w8a4_best_sym": 6.830000000000003,
+   "w8a4a_best": 5.669999999999997,
+   "w8a8a_max": 4.600000000000004,
+   "w8a4a_max": 5.879999999999996,
+   "lo_max": -1.7508790493011475,
+   "range_max": 3.347239375114441,
+   "best_cal_asym": {
+    "max": 3,
+    "p999": 3,
+    "p9999": 0,
+    "mse4": 9
+   }
+  },
+  {
+   "dataset": "mnist",
+   "depth": 50,
+   "act": "tat",
+   "n_ok": 15,
+   "n_all": 15,
+   "fp32": 4.090000000000005,
+   "w8a4_best_sym": 8.099999999999996,
+   "w8a4a_best": 5.759999999999998,
+   "w8a8a_max": 4.120000000000001,
+   "w8a4a_max": 18.06,
+   "lo_max": -7.057161808013916,
+   "range_max": 18.60916519165039,
+   "best_cal_asym": {
+    "max": 0,
+    "p999": 0,
+    "p9999": 0,
+    "mse4": 15
+   }
+  },
+  {
+   "dataset": "mnist",
+   "depth": 50,
+   "act": "selu",
+   "n_ok": 15,
+   "n_all": 15,
+   "fp32": 4.2900000000000045,
+   "w8a4_best_sym": 5.4300000000000015,
+   "w8a4a_best": 5.100000000000005,
+   "w8a8a_max": 4.2900000000000045,
+   "w8a4a_max": 5.769999999999998,
+   "lo_max": -1.7561709880828857,
+   "range_max": 7.59710955619812,
+   "best_cal_asym": {
+    "max": 0,
+    "p999": 4,
+    "p9999": 1,
+    "mse4": 10
+   }
+  },
+  {
+   "dataset": "fashion",
+   "depth": 50,
+   "act": "spreccap_cs",
+   "n_ok": 15,
+   "n_all": 15,
+   "fp32": 14.81,
+   "w8a4_best_sym": 15.510000000000002,
+   "w8a4a_best": 15.410000000000002,
+   "w8a8a_max": 14.749999999999996,
+   "w8a4a_max": 15.680000000000005,
+   "lo_max": -1.754764437675476,
+   "range_max": 3.370944619178772,
+   "best_cal_asym": {
+    "max": 2,
+    "p999": 3,
+    "p9999": 3,
+    "mse4": 7
+   }
+  },
+  {
+   "dataset": "fashion",
+   "depth": 50,
+   "act": "tat",
+   "n_ok": 15,
+   "n_all": 15,
+   "fp32": 13.649999999999995,
+   "w8a4_best_sym": 22.970000000000002,
+   "w8a4a_best": 17.73,
+   "w8a8a_max": 13.600000000000001,
+   "w8a4a_max": 28.62,
+   "lo_max": -2.8069316148757935,
+   "range_max": 6.994840145111084,
+   "best_cal_asym": {
+    "max": 0,
+    "p999": 0,
+    "p9999": 0,
+    "mse4": 15
+   }
+  },
+  {
+   "dataset": "fashion",
+   "depth": 50,
+   "act": "selu",
+   "n_ok": 15,
+   "n_all": 15,
+   "fp32": 14.980000000000004,
+   "w8a4_best_sym": 16.92,
+   "w8a4a_best": 16.01,
+   "w8a8a_max": 14.93,
+   "w8a4a_max": 16.790000000000006,
+   "lo_max": -1.7560649514198303,
+   "range_max": 7.6720802783966064,
+   "best_cal_asym": {
+    "max": 0,
+    "p999": 4,
+    "p9999": 2,
+    "mse4": 9
+   }
+  },
+  {
+   "dataset": "mnist",
+   "depth": 100,
+   "act": "spreccap_cs",
+   "n_ok": 15,
+   "n_all": 15,
+   "fp32": 6.210000000000004,
+   "w8a4_best_sym": 9.07,
+   "w8a4a_best": 7.650000000000001,
+   "w8a8a_max": 6.230000000000002,
+   "w8a4a_max": 7.86,
+   "lo_max": -1.7501380443572998,
+   "range_max": 3.345055937767029,
+   "best_cal_asym": {
+    "max": 0,
+    "p999": 3,
+    "p9999": 4,
+    "mse4": 8
+   }
+  },
+  {
+   "dataset": "mnist",
+   "depth": 100,
+   "act": "tat",
+   "n_ok": 15,
+   "n_all": 15,
+   "fp32": 3.520000000000001,
+   "w8a4_best_sym": 15.42,
+   "w8a4a_best": 8.940000000000003,
+   "w8a8a_max": 3.5800000000000054,
+   "w8a4a_max": 26.049999999999997,
+   "lo_max": -4.326593637466431,
+   "range_max": 8.297779560089111,
+   "best_cal_asym": {
+    "max": 0,
+    "p999": 0,
+    "p9999": 0,
+    "mse4": 15
+   }
+  },
+  {
+   "dataset": "mnist",
+   "depth": 100,
+   "act": "selu",
+   "n_ok": 15,
+   "n_all": 15,
+   "fp32": 6.459999999999999,
+   "w8a4_best_sym": 11.29,
+   "w8a4a_best": 9.840000000000003,
+   "w8a8a_max": 6.469999999999998,
+   "w8a4a_max": 11.770000000000003,
+   "lo_max": -1.7518917322158813,
+   "range_max": 6.184210300445557,
+   "best_cal_asym": {
+    "max": 0,
+    "p999": 11,
+    "p9999": 2,
+    "mse4": 2
+   }
+  },
+  {
+   "dataset": "fashion",
+   "depth": 100,
+   "act": "spreccap_cs",
+   "n_ok": 15,
+   "n_all": 15,
+   "fp32": 17.25,
+   "w8a4_best_sym": 20.77,
+   "w8a4a_best": 19.240000000000002,
+   "w8a8a_max": 17.300000000000004,
+   "w8a4a_max": 20.209999999999994,
+   "lo_max": -1.7497121691703796,
+   "range_max": 3.342661738395691,
+   "best_cal_asym": {
+    "max": 1,
+    "p999": 3,
+    "p9999": 3,
+    "mse4": 8
+   }
+  },
+  {
+   "dataset": "fashion",
+   "depth": 100,
+   "act": "tat",
+   "n_ok": 15,
+   "n_all": 15,
+   "fp32": 13.580000000000004,
+   "w8a4_best_sym": 27.869999999999994,
+   "w8a4a_best": 21.130000000000003,
+   "w8a8a_max": 13.690000000000001,
+   "w8a4a_max": 40.15,
+   "lo_max": -3.8586885929107666,
+   "range_max": 7.515557765960693,
+   "best_cal_asym": {
+    "max": 0,
+    "p999": 0,
+    "p9999": 0,
+    "mse4": 15
+   }
+  },
+  {
+   "dataset": "fashion",
+   "depth": 100,
+   "act": "selu",
+   "n_ok": 15,
+   "n_all": 15,
+   "fp32": 16.64,
+   "w8a4_best_sym": 22.240000000000006,
+   "w8a4a_best": 20.609999999999996,
+   "w8a8a_max": 16.700000000000003,
+   "w8a4a_max": 22.299999999999997,
+   "lo_max": -1.7519949674606323,
+   "range_max": 6.255458831787109,
+   "best_cal_asym": {
+    "max": 0,
+    "p999": 9,
+    "p9999": 1,
+    "mse4": 5
+   }
+  }
+ ]
+}

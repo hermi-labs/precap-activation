@@ -9,7 +9,7 @@ MLX:      from precap.mlx import PreCap
 """
 from ._presets import PRESETS, DEFAULT
 
-__version__ = '0.1.0'
+__version__ = '0.2.0'
 __all__ = ['PRESETS', 'DEFAULT', 'PreCap', 'precap', 'precap_ref', 'precap_ref_grad', '__version__']
 
 _TORCH = ('PreCap', 'precap', 'precap_ref', 'precap_ref_grad')

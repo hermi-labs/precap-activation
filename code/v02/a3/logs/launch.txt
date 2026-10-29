@@ -1,0 +1,6 @@
+gestartet Tue Oct 27 23:16:38 CET 2026
+There are screens on:
+	48372.a3w1	(Detached)
+	48369.a3w0	(Detached)
+2 Sockets in /var/folders/vd/3bs93c_s3v9_v1mnmn3jmmyw0000gn/T/.screen.
+

@@ -1,0 +1,9 @@
+dataset,depth,cand,ref,quant,n,med_diff_pp,wins,losses,p,holm,verdict
+mnist,50,spreccap_cs,selu,w8a8,15,0.0,6,7,0.9441995784424698,1.0,unklar
+fashion,50,spreccap_cs,selu,w8a8,15,-0.05999999999999339,10,4,0.10247043485974937,0.40988173943899747,unklar
+mnist,100,spreccap_cs,selu,w8a8,15,0.010000000000010001,6,8,0.45103589747961725,1.0,unklar
+fashion,100,spreccap_cs,selu,w8a8,15,0.009999999999998899,7,8,0.7547046296894806,1.0,unklar
+mnist,50,spreccap_cs,selu,w8a4,15,-6.009999999999993,15,0,6.103515625e-05,0.00048828125,SPreCap robuster
+fashion,50,spreccap_cs,selu,w8a4,15,-7.0099999999999945,15,0,6.103515625e-05,0.00048828125,SPreCap robuster
+mnist,100,spreccap_cs,selu,w8a4,15,-19.27,15,0,6.103515625e-05,0.00048828125,SPreCap robuster
+fashion,100,spreccap_cs,selu,w8a4,15,-16.220000000000013,15,0,6.103515625e-05,0.00048828125,SPreCap robuster

@@ -1,0 +1,16 @@
+tune mnist_d200_kL1_s42000_lr5e-05 ok 13:05:46
+tune mnist_d200_kL1_s42000_lr0.0001 ok 13:05:48
+tune mnist_d200_kL2_s42000_lr5e-05 ok 13:05:50
+tune mnist_d200_kL2_s42000_lr0.0001 ok 13:05:52
+tune mnist_d200_spreccap_cs_s42000_lr5e-05 ok 13:05:53
+tune mnist_d200_spreccap_cs_s42000_lr0.0001 ok 13:05:55
+tune mnist_d200_spreccap_e03_s42000_lr5e-05 ok 13:05:57
+tune mnist_d200_spreccap_e03_s42000_lr0.0001 ok 13:05:59
+tune mnist_d200_selu_s42000_lr5e-05 ok 13:06:00
+tune mnist_d200_selu_s42000_lr0.0001 ok 13:06:01
+LR-Wahl [{"dataset": "mnist", "depth": 200, "act": "kL1", "lr_sel": 5e-05, "med_val_acc": 0.2946, "at_edge": true, "n_seeds": 1}, {"dataset": "mnist", "depth": 200, "act": "kL2", "lr_sel": 5e-05, "med_val_acc": 0.3064, "at_edge": true, "n_seeds": 1}, {"dataset": "mnist", "depth": 200, "act": "spreccap_cs", "lr_sel": 0.0001, "med_val_acc": 0.22839999999999994, "at_edge": true, "n_seeds": 1}, {"dataset": "mnist", "depth": 200, "act": "spreccap_e03", "lr_sel": 5e-05, "med_val_acc": 0.2672, "at_edge": true, "n_seeds": 1}, {"dataset": "mnist", "depth": 200, "act": "selu", "lr_sel": 5e-05, "med_val_acc": 0.18620000000000003, "at_edge": true, "n_seeds": 1}]
+done mnist_d200_spreccap_cs_s42010 ok 13:06:15
+done mnist_d200_spreccap_e03_s42010 ok 13:06:29
+done mnist_d200_kL1_s42010 ok 13:06:43
+done mnist_d200_kL2_s42010 ok 13:06:57
+done mnist_d200_selu_s42010 ok 13:07:07

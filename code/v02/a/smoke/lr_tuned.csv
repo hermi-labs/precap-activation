@@ -1,0 +1,6 @@
+dataset,depth,act,lr_sel,med_val_acc,at_edge,n_seeds
+mnist,200,kL1,5e-05,0.2946,True,1
+mnist,200,kL2,5e-05,0.3064,True,1
+mnist,200,spreccap_cs,0.0001,0.22839999999999994,True,1
+mnist,200,spreccap_e03,5e-05,0.2672,True,1
+mnist,200,selu,5e-05,0.18620000000000003,True,1

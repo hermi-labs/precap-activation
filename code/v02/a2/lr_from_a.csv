@@ -1,0 +1,9 @@
+dataset,depth,act,lr_sel,quelle
+fashion,100,kL2,2e-05,A-Tuning
+fashion,100,selu,5e-05,3a-3
+fashion,200,kL2,2e-05,A-Tuning
+fashion,200,selu,2e-05,A-Tuning
+mnist,100,kL2,2e-05,A-Tuning
+mnist,100,selu,5e-05,3a-3
+mnist,200,kL2,2e-05,A-Tuning
+mnist,200,selu,2e-05,A-Tuning

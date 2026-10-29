@@ -9,7 +9,7 @@ authors:
 license: Apache-2.0
 repository-code: "https://github.com/hermi-labs/precap-activation"
 doi: "10.5281/zenodo.23676432"
-version: 0.2.0
+version: 0.2.1
 date-released: "2026-10-29"
 keywords:
   - activation function

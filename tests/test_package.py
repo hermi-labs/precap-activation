@@ -40,7 +40,7 @@ def test_modul_und_fehler():
     assert 'spreccap_e03' in repr(m)
     with pytest.raises(ValueError): PreCap('gibtsnicht')
     with pytest.raises(ValueError): PreCap(backend='xyz')
-    assert PreCap().preset == 'spreccap_cs' and precap.__version__ == '0.2.0'
+    assert PreCap().preset == 'spreccap_cs' and precap.__version__ == '0.2.1'
 
 def test_nan_inf():
     x = torch.tensor([float('nan'), float('inf'), -float('inf')], dtype=torch.float64)

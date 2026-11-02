@@ -1,0 +1,26 @@
+ok   kL2B_tr_gleiche_form 
+ok   LB_tr_gleiche_form 
+ok   kL2B_wie_B3 
+ok   LB_wie_B3 
+ok   tat_wie_B3 
+ok   tr_init_orthogonal_mal_gain 1.000003
+ok   tr_out_wie_tat 
+ok   kL2B_init_wie_B3 
+ok   LB_init_wie_B3 
+ok   tat_init_wie_B3 
+ok   tr_daten_wie_tat 
+ok   ref_daten_wie_B3 
+ok   kL2B_tr_varianz_stabil (1.016, 0.997, 0.95)
+ok   LB_tr_varianz_stabil (1.016, 1.008, 0.982)
+ok   raster_wie_B3 
+ok   n_tune 48
+ok   n_confirm 
+ok   seeds_neu 
+ok   lr_ref_aus_B3 
+ok   kL2B_bitgleich_B3 
+ok   LB_bitgleich_B3 
+ok   tat_bitgleich_B3 
+ok   kL2B_tr_laeuft (0.6581, 0.7498, 0.020368946343660356)
+ok   LB_tr_laeuft (0.6807, 0.7542, 0.09507359825074672)
+ok   kontrolle_bitgleich_B1 
+MECHANIK OK

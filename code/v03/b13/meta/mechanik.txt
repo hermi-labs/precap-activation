@@ -1,0 +1,23 @@
+ok   kL2B_tr_form_wie_B10 
+ok   LB_tr_form_wie_B10 
+ok   kL2Bh_tr_form_wie_B10 
+ok   LBh_tr_form_wie_B10 
+ok   selu_tr_form_wie_B10 
+ok   kL2Bh_tr_init_wie_B10 
+ok   kL2Bh_tr_init_orthogonal_mal_gain 1.00011
+ok   kL2Bh_tr_daten_wie_B10 
+ok   LBh_tr_init_wie_B10 
+ok   LBh_tr_init_orthogonal_mal_gain 1.00007
+ok   LBh_tr_daten_wie_B10 
+ok   konstanten_wie_B10 
+ok   raster 
+ok   n_tune 48
+ok   n_bestaetigung 25
+ok   kontrolle {'dataset': 'cifar10', 'depth': 100, 'act': 'kL2B_tr', 'lr': 0.0001, 'wd': 0.3, 'sched': 'cos', 'seed': 42168}
+ok   seeds_wie_B10 
+ok   kontrolle_bitgleich_B10 [0.5892, 0.5892]
+ok   kL2Bh_tr_lauf_ok 0.5999
+ok   kL2Bh_tr_zwischen_aendert_training_nicht 
+ok   LBh_tr_lauf_ok 0.6169
+ok   LBh_tr_zwischen_aendert_training_nicht 
+MECHANIK OK

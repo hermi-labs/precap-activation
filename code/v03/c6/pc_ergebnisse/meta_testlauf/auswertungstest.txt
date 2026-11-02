@@ -1,0 +1,9 @@
+BPreCap vorn -> besser {'S1_bp_vs_ta_fp32': 'unklar', 'S2_bp_vs_t0_w4a': 'besser', 'S3_bp_vs_se_w4a': 'besser', 'S4_bp_vs_lb_fp32': 'unklar', 'S5_bp_vs_se_fp32': 'unklar'} True
+TAT vorn -> schlechter True
+null (20x) -> Fehlalarme primaer 0 sekundaer 0 True
+Ausfall TAT a zaehlt 90 % -> 1 -35.55 True
+Stopp-Punkte ab Index 5 -> {5160, 6020, 6880} True
+Plattformvergleich mit echten MLX-Studien -> {'test_err_fp32': 46.519999999999996, 'test_err_w8a4a_best': 49.620000000000005, 'cost4a_pp': 3.0249999999999986} True
+AUSWERTUNG OK
+
+--- stderr ---

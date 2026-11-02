@@ -1,0 +1,9 @@
+BPreCap vorn -> besser True {'S1_kL2Btr_vs_selutr_fp32_es': 'besser', 'S2_kL2Btr_vs_selutr_w4_es': 'besser', 'S3_kL2Btr_vs_selutr_w3_es': 'besser'} True
+SELU vorn -> schlechter True
+null (20x) -> Fehlalarme primaer 1 sekundaer 1 True
+falsche Kontrolle (Ende) -> True
+falsche Kontrolle (3440) -> True
+Ausfall SELU ohne Messpunkt zaehlt 90 % -> 1 -39.57 True
+Nullen -> 4 0.0547 True
+relativer Pfad -> True
+AUSWERTUNG OK

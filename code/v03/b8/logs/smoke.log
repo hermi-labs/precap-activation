@@ -1,0 +1,9 @@
+tune cifar10_d100_kL2B_tr_s42000_lr2e-05 ok 09:51:20
+tune cifar10_d100_kL2B_tr_s42000_lr5e-05 ok 09:51:22
+tune cifar10_d100_LB_tr_s42000_lr2e-05 ok 09:51:22
+tune cifar10_d100_LB_tr_s42000_lr5e-05 ok 09:51:23
+LR-Wahl [{"dataset": "cifar10", "depth": 100, "act": "kL2B_tr", "lr_sel": 2e-05, "med_val_acc": 0.34020000000000006, "at_edge": true, "n_seeds": 1}, {"dataset": "cifar10", "depth": 100, "act": "LB_tr", "lr_sel": 5e-05, "med_val_acc": 0.3188, "at_edge": true, "n_seeds": 1}]
+done mnist_d100_kL2B_s42060 ok 09:51:38
+done cifar10_d100_kL2B_tr_s42144 ok 09:51:53
+done cifar10_d100_LB_tr_s42144 ok 09:52:05
+done cifar10_d100_tat_s42144 ok 09:52:16

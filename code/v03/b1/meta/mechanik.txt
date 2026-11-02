@@ -1,0 +1,38 @@
+ok   kL2B_d100_fixpunkt Mittel -2.45e-11 Varianz 1.000000 chi1 1.019992 Soll 1.0200
+ok   kL2B_d100_grenze [-2.9357, 3.0]
+ok   kL2B_d100_akt_gleich_bremse 
+ok   kL2B_d100_mlx_vs_numpy 
+ok   kL2_d100_konstanten_wie_lagma5 
+ok   LB_d100_fixpunkt Mittel -5.6e-17 Varianz 1.000000 chi1 1.020000 M 2.2165
+ok   LB_d100_grenze_und_numpy 
+ok   kL2_d100_akt_wie_lagma5 
+ok   kL2B_d200_fixpunkt Mittel -1.58e-11 Varianz 1.000000 chi1 1.009995 Soll 1.0100
+ok   kL2B_d200_grenze [-2.9995, 3.0]
+ok   kL2B_d200_akt_gleich_bremse 
+ok   kL2B_d200_mlx_vs_numpy 
+ok   kL2_d200_konstanten_wie_lagma5 
+ok   LB_d200_fixpunkt Mittel 0.0e+00 Varianz 1.000000 chi1 1.010000 M 2.4543
+ok   LB_d200_grenze_und_numpy 
+ok   kL2_d200_akt_wie_lagma5 
+ok   cs_konstanten_wie_paket 
+ok   lagma_param_wie_lagma5 
+ok   n_laeufe 242
+ok   lr_kL2B_gleich_kL2 
+ok   lr_kL2_wie_lagma5 
+ok   lr_cs_vorhanden {('mnist', 100, 'spreccap_cs'): 5e-05, ('fashion', 100, 'spreccap_cs'): 5e-05, ('mnist', 200, 'spreccap_cs'): 2e-05, ('fashion', 200, 'spreccap_cs'): 2e-05}
+ok   seeds_neu 
+ok   kL2_bitgleich_lagma5 {'train_loss_last50': (2.3413411378860474, 2.3413411378860474), 'test_err_fp32': (0.8913333333333333, 0.8913333333333333), 'test_err_w8a4_best': (0.9076666666666666, 0.9076666666666666)}
+ok   kL2_asym_da (0.8976666666666666, 'p999')
+ok   kL2_LD100_bitgleich_lagma5 {'train_loss_last50': (2.2918100357055664, 2.2918100357055664), 'test_err_fp32': (0.884, 0.884), 'test_err_w8a4_best': (0.8996666666666666, 0.8996666666666666)}
+ok   kL2_LD100_asym_da (0.8926666666666667, 'p999')
+ok   kL2B_laeuft (0.8957, 0.898, 0.9007)
+ok   kL2B_bereich_unter_M 2.9999897480010986
+ok   kL2B_saettigung_gemessen 0.028989532543346287
+ok   LB_laeuft (0.8833, 0.9003, 0.888)
+ok   LB_bereich_unter_M 2.216508388519287
+ok   LB_saettigung_gemessen 0.125808717161417
+ok   spreccap_cs_laeuft (0.8953, 0.8933, 0.896)
+ok   qa_asym_wie_q3 
+ok   mse_clip_asym_wie_q3 (-2.946944204621352, 3.7000000729860063)
+ok   asym_null_exakt 
+MECHANIK OK

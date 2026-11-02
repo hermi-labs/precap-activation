@@ -1,0 +1,7 @@
+BPreCap vorn -> besser True {'S1_kL2Btr_vs_tat_fp32_es': 'schlechter', 'S2_kL2Btr_vs_tat_w4_es': 'besser', 'S3_LBtr_vs_tat_w4a_es': 'besser', 'S4_kL2Btr_vs_LBtr_fp32_es': 'besser', 'S5_kL2Btr_vs_LBtr_w4a_es': 'besser', 'S6_kL2Btr_vs_tat_w4a_6880': 'besser', 'S7_kL2Btr_vs_tat_fp32_6880': 'besser', 'S8_LBtr_vs_tat_fp32_es': 'schlechter'} Stopp tat {3440, 4300} kL2B_tr {5160, 6020, 6880} True
+TAT vorn -> schlechter {'S1_kL2Btr_vs_tat_fp32_es': 'schlechter', 'S2_kL2Btr_vs_tat_w4_es': 'schlechter', 'S3_LBtr_vs_tat_w4a_es': 'schlechter', 'S4_kL2Btr_vs_LBtr_fp32_es': 'besser', 'S5_kL2Btr_vs_LBtr_w4a_es': 'besser', 'S6_kL2Btr_vs_tat_w4a_6880': 'besser', 'S7_kL2Btr_vs_tat_fp32_6880': 'besser', 'S8_LBtr_vs_tat_fp32_es': 'schlechter'} True
+null (20x) -> Fehlalarme primaer 1 sekundaer 1 True
+falsche Kontrolle B6 -> True True
+Ausfall -> 2 -2.64 33.22 True
+relativer Pfad findet B6 -> True True
+AUSWERTUNG OK

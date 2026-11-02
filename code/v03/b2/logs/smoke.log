@@ -1,0 +1,5 @@
+done mnist_d100_LB_s42060 ok 10:40:32
+done mnist_d100_LB_s42072 ok 10:40:46
+done mnist_d100_LBh_s42072 ok 10:40:58
+done mnist_d100_kL2B_s42072 ok 10:41:17
+done mnist_d100_kL2Bh_s42072 ok 10:41:32

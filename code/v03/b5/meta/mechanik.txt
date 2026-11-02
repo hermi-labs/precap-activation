@@ -1,0 +1,18 @@
+ok   kL2B_d200_wie_B3 
+ok   LB_d200_wie_B3 
+ok   kL2_d200_wie_B3 
+ok   tat_d200_wie_B3 
+ok   gains_wie_B3 
+ok   raster 
+ok   tune_formen 
+ok   n_tune 48
+ok   n_confirm 
+ok   seeds_neu 
+ok   lr_tat_aus_B3 (2e-05, 2e-05)
+ok   tune_rid_1e-5_wie_B3 
+ok   kL2B_bitgleich_B3 (0.7929, 0.7929)
+ok   LB_bitgleich_B3 (0.7912, 0.7912)
+ok   kL2_bitgleich_B3 (0.7902, 0.7902)
+ok   tat_bitgleich_B3 (0.7218, 0.7218)
+ok   kontrolle_bitgleich_B1 
+MECHANIK OK

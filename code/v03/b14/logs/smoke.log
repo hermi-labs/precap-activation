@@ -1,0 +1,12 @@
+tune cifar10_d100_kL2Bp_tr_s42000_lr5e-05_wd0 ok 03:48:56
+tune cifar10_d100_kL2Bp_tr_s42000_lr5e-05_wd3 ok 03:48:58
+tune cifar10_d100_kL2Bp_tr_s42000_lr0.0001_wd0 ok 03:48:59
+tune cifar10_d100_kL2Bp_tr_s42000_lr0.0001_wd3 ok 03:49:00
+tune cifar10_d100_LBp_tr_s42000_lr5e-05_wd0 ok 03:49:01
+tune cifar10_d100_LBp_tr_s42000_lr5e-05_wd3 ok 03:49:02
+tune cifar10_d100_LBp_tr_s42000_lr0.0001_wd0 ok 03:49:03
+tune cifar10_d100_LBp_tr_s42000_lr0.0001_wd3 ok 03:49:04
+Wahl [{"dataset": "cifar10", "depth": 100, "act": "kL2Bp_tr", "lr_sel": 5e-05, "wd_sel": 3.0, "med_val_acc": 0.3468, "lr_at_edge": true, "wd_at_edge": true, "n_seeds": 1}, {"dataset": "cifar10", "depth": 100, "act": "LBp_tr", "lr_sel": 5e-05, "wd_sel": 3.0, "med_val_acc": 0.3294, "lr_at_edge": true, "wd_at_edge": true, "n_seeds": 1}]
+done cifar10_d100_kL2B_tr_s42168 ok 03:49:39
+done cifar10_d100_kL2Bp_tr_s42168 ok 03:50:12
+done cifar10_d100_LBp_tr_s42168 ok 03:50:39

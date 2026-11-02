@@ -1,0 +1,28 @@
+ok   kL2B_d100_wie_B2 
+ok   LB_d100_wie_B2 
+ok   kL2_d100_wie_B2 
+ok   kL2B_d200_wie_B2 
+ok   LB_d200_wie_B2 
+ok   kL2_d200_wie_B2 
+ok   tat_konstanten_wie_A2 
+ok   tat_d100_wie_Q3 
+ok   tat_scale_formel 
+ok   suo_wie_Q3 
+ok   pex_wie_Q3 
+ok   cifar_formen ((45000, 3072), (5000, 3072), (10000, 3072))
+ok   cifar_klassen [1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000]
+ok   cifar_standardisiert (3.413447657862889e-08, 0.9999999403953552)
+ok   cifar_erster_datensatz (6, 6)
+ok   cifar_tat_normiert 
+ok   tat_init_orthogonal 
+ok   netz_3072_eingaenge 
+ok   netz_784_wie_B1 
+ok   n_tune 192
+ok   n_confirm 
+ok   seeds_neu 
+ok   kL2B_bitgleich_B1 {'train_loss_last50': (2.3078917264938354, 2.3078917264938354), 'test_err_fp32': (0.8956666666666666, 0.8956666666666666)}
+ok   kL2B_cifar_laeuft (0.8279, 0.838, 0.8347, 0.8538)
+ok   LB_cifar_laeuft (0.8195, 0.8225, 0.8231, 0.8472)
+ok   kL2_cifar_laeuft (0.8461, 0.867, 0.8552, 0.8914)
+ok   tat_cifar_laeuft (0.719, 0.7711, 0.7583, 0.8855)
+MECHANIK OK

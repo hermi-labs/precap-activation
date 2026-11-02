@@ -1,0 +1,8 @@
+Form zaehlt -> besser als LBhM True True [-2.27, -2.45, -1.95, -1.84] True
+weich teuer -> besser als LBhM False True
+nur Grenze zaehlt -> kein Effekt [(-0.27, -1.49), (-0.45, -1.55), (0.05, -1.75), (0.16, -1.6)] besser als LBM True
+null -> ['kein Effekt', 'kein Effekt', 'kein Effekt', 'kein Effekt', 'kein Effekt', 'kein Effekt'] True
+falsche Kontrolle -> True True
+Ausfall -> 1 True
+relativer Pfad findet B2 -> True True
+AUSWERTUNG OK

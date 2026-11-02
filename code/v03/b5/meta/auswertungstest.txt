@@ -1,0 +1,8 @@
+erfolg -> besser True True {'S1_kL2B_vs_LB_w4': 'unklar', 'S2_kL2B_vs_LB_w4a': 'unklar', 'S3_kL2_vs_LB_fp32': 'besser', 'S4_kL2B_vs_kL2_fp32': 'schlechter', 'S5_kL2B_vs_tat_fp32': 'schlechter', 'S6_kL2B_vs_tat_w4a': 'schlechter', 'S7_LB_vs_tat_w4a': 'schlechter', 'S8_kL2B_vs_tat_w4': 'schlechter'} {'order_fp32': ['tat', 'kL2', 'kL2B', 'LB'], 'p8_order_holds': True} True
+LB holt auf -> unklar 0.006935686683771536 True
+null (20x) -> Fehlalarme primaer 2 sekundaer 0 True
+falsche Kontrolle B1 -> True True
+falsche Tuning-Kontrolle B3 -> True True
+Ausfall -> 1 True
+relativer Pfad findet B1 und B3 -> True True True
+AUSWERTUNG OK

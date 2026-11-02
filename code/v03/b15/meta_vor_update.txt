@@ -1,0 +1,12 @@
+Stand vor dem macOS-Update, 2026-11-01 10:04
+ProductName:		macOS
+ProductVersion:		27.0.1
+BuildVersion:		26A434
+27.0.0
+python 3.15.0
+mlx 0.32.4
+numpy 2.5.4
+device Device(gpu, 0)
+.venv python 3.9.6 scipy 1.13.1 numpy 2.0.2
+      Chipset Model: Apple M1 Pro
+      Metal Support: Metal 4

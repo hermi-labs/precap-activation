@@ -1,0 +1,16 @@
+{
+ "quelle": "Terminalausgabe des Laufs auf Aarons PC am 01.11.2026 (kernels/test_bprecap_cuda.py, vor der kosmetischen detach-Korrektur in Zeile 24)",
+ "torch": "2.14.1+cu126", "cuda": "12.6", "gpu": "NVIDIA GeForce RTX 4070", "python": "3.12.10",
+ "checks": {
+  "bprecap_d100 vorwaerts": {"ok": true, "vs_float64": 1.02e-06, "vs_torch_ref": 9.54e-07},
+  "bprecap_d100 rueckwaerts": {"ok": true, "vs_float64_autograd": 2.09e-06, "vs_torch_ref": 2.49e-06},
+  "bprecap_d100 float16": {"ok": true}, "bprecap_d100 bfloat16": {"ok": true}, "bprecap_d100 Form 3D": {"ok": true}, "bprecap_d100 gradcheck float64": {"ok": true},
+  "bprecap_d200 vorwaerts": {"ok": true, "vs_float64": 1.28e-06, "vs_torch_ref": 1.43e-06},
+  "bprecap_d200 rueckwaerts": {"ok": true, "vs_float64_autograd": 2.16e-06, "vs_torch_ref": 1.99e-06},
+  "bprecap_d200 float16": {"ok": true}, "bprecap_d200 bfloat16": {"ok": true}, "bprecap_d200 Form 3D": {"ok": true}, "bprecap_d200 gradcheck float64": {"ok": true},
+  "Lagma M=2.2165": {"ok": true, "vorwaerts_vs_float64": 3.02e-07, "rueckwaerts_vs_float64": 6.17e-07},
+  "Lagma M=3.0000": {"ok": true, "vorwaerts_vs_float64": 2.98e-07, "rueckwaerts_vs_float64": 3.4e-07}
+ },
+ "tempo_ms_16M_fwd_bwd": {"bprecap_kernel": 1.047, "bprecap_referenz": 19.005, "lagma_kernel": 1.044, "lagma_referenz": 8.726, "selu_torch": 0.73, "speedup_bprecap": 18.16, "speedup_lagma": 8.36},
+ "alles_ok": true
+}

@@ -1,0 +1,196 @@
+{
+ "valid": {
+  "bp_s42168": true,
+  "bp_s42169": true,
+  "lb_s42168": true,
+  "lb_s42169": true,
+  "ta_s42168": true,
+  "ta_s42169": true,
+  "t0_s42168": true,
+  "t0_s42169": true,
+  "se_s42168": true,
+  "se_s42169": true,
+  "lh_s42168": true,
+  "lh_s42169": true
+ },
+ "table": {
+  "bp_s42168": {
+   "eps_local_median": 0.00802,
+   "gain_median": 0.2957,
+   "noise_gain_median": 0.28614,
+   "kurt_median": 2.75298,
+   "r_all": 0.33528,
+   "err_all_2000": 0.491,
+   "err_fp32_2000": 0.4605
+  },
+  "bp_s42169": {
+   "eps_local_median": 0.00798,
+   "gain_median": 0.30499,
+   "noise_gain_median": 0.28826,
+   "kurt_median": 2.74169,
+   "r_all": 0.31772,
+   "err_all_2000": 0.486,
+   "err_fp32_2000": 0.4615
+  },
+  "lb_s42168": {
+   "eps_local_median": 0.0063,
+   "gain_median": 0.31061,
+   "noise_gain_median": 0.30443,
+   "kurt_median": 2.34184,
+   "r_all": 0.2859,
+   "err_all_2000": 0.5055,
+   "err_fp32_2000": 0.473
+  },
+  "lb_s42169": {
+   "eps_local_median": 0.00632,
+   "gain_median": 0.30263,
+   "noise_gain_median": 0.29672,
+   "kurt_median": 2.34662,
+   "r_all": 0.28014,
+   "err_all_2000": 0.504,
+   "err_fp32_2000": 0.4875
+  },
+  "ta_s42168": {
+   "eps_local_median": 0.0377,
+   "gain_median": 0.39673,
+   "noise_gain_median": 0.27759,
+   "kurt_median": 12.4822,
+   "r_all": 0.53972,
+   "err_all_2000": 0.5545,
+   "err_fp32_2000": 0.467
+  },
+  "ta_s42169": {
+   "eps_local_median": 0.03813,
+   "gain_median": 0.48521,
+   "noise_gain_median": 0.2859,
+   "kurt_median": 12.59054,
+   "r_all": 0.55535,
+   "err_all_2000": 0.5715,
+   "err_fp32_2000": 0.4735
+  },
+  "t0_s42168": {
+   "eps_local_median": 0.05749,
+   "gain_median": 0.69046,
+   "noise_gain_median": 0.39236,
+   "kurt_median": 28.99331,
+   "r_all": 0.63481,
+   "err_all_2000": 0.627,
+   "err_fp32_2000": 0.4595
+  },
+  "t0_s42169": {
+   "eps_local_median": 0.06277,
+   "gain_median": 0.62949,
+   "noise_gain_median": 0.35342,
+   "kurt_median": 29.72188,
+   "r_all": 0.62843,
+   "err_all_2000": 0.6055,
+   "err_fp32_2000": 0.4645
+  },
+  "se_s42168": {
+   "eps_local_median": 0.01029,
+   "gain_median": 0.19589,
+   "noise_gain_median": 0.19567,
+   "kurt_median": 2.48139,
+   "r_all": 0.28945,
+   "err_all_2000": 0.479,
+   "err_fp32_2000": 0.4655
+  },
+  "se_s42169": {
+   "eps_local_median": 0.01023,
+   "gain_median": 0.19876,
+   "noise_gain_median": 0.20505,
+   "kurt_median": 2.48019,
+   "r_all": 0.29579,
+   "err_all_2000": 0.5045,
+   "err_fp32_2000": 0.4635
+  },
+  "lh_s42168": {
+   "eps_local_median": 0.00741,
+   "gain_median": 0.66621,
+   "noise_gain_median": 0.67632,
+   "kurt_median": 2.55252,
+   "r_all": 0.48816,
+   "err_all_2000": 0.532,
+   "err_fp32_2000": 0.471
+  },
+  "lh_s42169": {
+   "eps_local_median": 0.00742,
+   "gain_median": 0.70076,
+   "noise_gain_median": 0.69761,
+   "kurt_median": 2.55842,
+   "r_all": 0.50743,
+   "err_all_2000": 0.5835,
+   "err_fp32_2000": 0.4855
+  }
+ },
+ "reading": {
+  "ta_vs_bp": {
+   "per_seed": {
+    "42168": {
+     "f_eps": 4.703,
+     "f_gain": 1.342,
+     "f_noise": 0.97,
+     "lesart": "E1"
+    },
+    "42169": {
+     "f_eps": 4.776,
+     "f_gain": 1.591,
+     "f_noise": 0.992,
+     "lesart": "zwischen"
+    }
+   },
+   "befund": "uneinheitlich"
+  },
+  "ta_vs_lb": {
+   "per_seed": {
+    "42168": {
+     "f_eps": 5.987,
+     "f_gain": 1.277,
+     "f_noise": 0.912,
+     "lesart": "E1"
+    },
+    "42169": {
+     "f_eps": 6.036,
+     "f_gain": 1.603,
+     "f_noise": 0.964,
+     "lesart": "zwischen"
+    }
+   },
+   "befund": "uneinheitlich"
+  },
+  "ta_vs_se": {
+   "per_seed": {
+    "42168": {
+     "f_eps": 3.662,
+     "f_gain": 2.025,
+     "f_noise": 1.419,
+     "lesart": "beide"
+    },
+    "42169": {
+     "f_eps": 3.729,
+     "f_gain": 2.441,
+     "f_noise": 1.394,
+     "lesart": "beide"
+    }
+   },
+   "befund": "beide"
+  },
+  "lh_vs_lb": {
+   "per_seed": {
+    "42168": {
+     "f_eps": 1.177,
+     "f_gain": 2.145,
+     "f_noise": 2.222,
+     "lesart": "E2"
+    },
+    "42169": {
+     "f_eps": 1.174,
+     "f_gain": 2.316,
+     "f_noise": 2.351,
+     "lesart": "E2"
+    }
+   },
+   "befund": "E2"
+  }
+ }
+}

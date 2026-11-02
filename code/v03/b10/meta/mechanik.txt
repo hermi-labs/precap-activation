@@ -1,0 +1,36 @@
+ok   kL2B_tr_form_wie_B9 
+ok   kL2B_tr_init_wie_B9 
+ok   kL2B_tr_daten_wie_B9 
+ok   LB_tr_form_wie_B9 
+ok   LB_tr_init_wie_B9 
+ok   LB_tr_daten_wie_B9 
+ok   tat_form_wie_B9 
+ok   tat_init_wie_B9 
+ok   tat_daten_wie_B9 
+ok   budget_wie_B9 
+ok   konstanten_wie_B9 
+ok   raster 
+ok   n_tune 54
+ok   n_confirm 38
+ok   kontrolle_B9_seed 
+ok   bestaetigung_kosinus 
+ok   seeds_neu 
+ok   spalten 
+ok   wahlregel {'kL2B_tr': (0.0001, 0.3, False, False), 'LB_tr': (0.0002, 3.0, True, True), 'tat': (0.0001, 0.3, False, False)}
+ok   kL2B_tr_adamw_wd0_bitgleich_B9 [0.6146, 0.6146]
+ok   kL2B_tr_konstante_lr_ende 4.999999873689376e-05
+ok   tat_adamw_wd0_bitgleich_B9 [0.616, 0.616]
+ok   tat_konstante_lr_ende 4.999999873689376e-05
+ok   kL2B_tr_kosinus_lr_ende [8.338689738707217e-09, 8.340090943176338e-09]
+ok   kL2B_tr_kosinus_aendert 
+ok   kL2B_tr_wd_aendert 
+ok   kL2B_tr_zwischen_aendert_training_nicht [0.5892, 0.5892]
+ok   LB_tr_kosinus_lr_ende [8.338689738707217e-09, 8.340090943176338e-09]
+ok   LB_tr_kosinus_aendert 
+ok   LB_tr_wd_aendert 
+ok   LB_tr_zwischen_aendert_training_nicht [0.6164, 0.6164]
+ok   tat_kosinus_lr_ende [8.338689738707217e-09, 8.340090943176338e-09]
+ok   tat_kosinus_aendert 
+ok   tat_wd_aendert 
+ok   tat_zwischen_aendert_training_nicht [0.6104, 0.6104]
+MECHANIK OK

@@ -1,0 +1,8 @@
+BPreCap vorn -> {'P1_kL2B_tr_vs_relu_tr_test_err_w8a4a_best': 'besser', 'P2_kL2B_tr_vs_gelu_tr_test_err_w8a4a_best': 'besser', 'P3_kL2B_tr_vs_selu_tr_test_err_w8a4a_best': 'besser'} True True
+eigene Formen vorn -> {'P1_kL2B_tr_vs_relu_tr_test_err_w8a4a_best': 'schlechter', 'P2_kL2B_tr_vs_gelu_tr_test_err_w8a4a_best': 'schlechter', 'P3_kL2B_tr_vs_selu_tr_test_err_w8a4a_best': 'schlechter'} True
+null (20x) -> Fehlalarme primaer 0 True
+falsche Kontrolle (Ende) -> True
+falsche Kontrolle (Messpunkt) -> True
+Ausfall ohne Messpunkt -> 90 %: 1 -40.55 True
+relativer Pfad findet B10 -> True
+AUSWERTUNG OK

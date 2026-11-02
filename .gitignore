@@ -17,3 +17,4 @@ paper/eq/
 
 # v0.2-Studien: Rohdaten liegen in workers/
 !code/v02/**/workers/
+!code/v03/**/workers/

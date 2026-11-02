@@ -1,0 +1,5 @@
+smoke c6_kL2B_tr_lr0.0001_wd0.3_s42168 ok 0.6628 14.7
+smoke c6_LB_tr_lr0.0001_wd0.3_s42168 ok 0.6842 9.3
+smoke c6_tat_lr0.0001_wd0.3_s42168 ok 0.7178 7.2
+
+--- stderr ---

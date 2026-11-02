@@ -1,0 +1,19 @@
+2026-11-01 17:11:48 ABBRUCH: Datei C:\precap\data \cifar10\cifar-10-batches-bin\data_batch_1.bin fehlt oder SHA-256 weicht ab
+2026-11-01 17:12:23 Daten ok (6 Dateien, SHA-256 wie auf dem Mac)
+2026-11-01 17:12:23 Umgebung {"python": "3.12.10", "torch": "2.14.1+cu126", "cuda": "12.6", "cuda_ok": true, "gpu": "NVIDIA GeForce RTX 4070", "platform": "win32"}
+2026-11-01 17:12:24 eingefroren
+2026-11-01 17:12:26 Selbsttest ok
+2026-11-01 17:13:27 Aequivalenztest gegen MLX ok
+2026-11-01 17:13:30 Auswertungstest ok
+2026-11-01 17:14:00 Rauchtest ok
+2026-11-01 17:14:00 nur Tests, kein Start
+2026-11-01 17:15:49 Daten ok (6 Dateien, SHA-256 wie auf dem Mac)
+2026-11-01 17:15:50 Umgebung {"python": "3.12.10", "torch": "2.14.1+cu126", "cuda": "12.6", "cuda_ok": true, "gpu": "NVIDIA GeForce RTX 4070", "platform": "win32"}
+2026-11-01 17:15:50 eingefroren
+2026-11-01 17:15:52 Selbsttest ok
+2026-11-01 17:16:52 Aequivalenztest gegen MLX ok
+2026-11-01 17:16:55 Auswertungstest ok
+2026-11-01 17:17:28 Rauchtest ok
+2026-11-01 17:17:28 Worker 0 gestartet, PID 25568
+2026-11-01 17:17:28 Worker 1 gestartet, PID 19880
+2026-11-01 17:17:28 gestartet, 2 Worker, 60 Laeufe

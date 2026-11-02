@@ -1,0 +1,17 @@
+tune cifar10_d100_relu_tr_s42000_lr5e-05_wd0 ok 23:38:45
+tune cifar10_d100_relu_tr_s42000_lr5e-05_wd3 ok 23:38:46
+tune cifar10_d100_relu_tr_s42000_lr0.0001_wd0 ok 23:38:47
+tune cifar10_d100_relu_tr_s42000_lr0.0001_wd3 ok 23:38:47
+tune cifar10_d100_gelu_tr_s42000_lr5e-05_wd0 ok 23:38:48
+tune cifar10_d100_gelu_tr_s42000_lr5e-05_wd3 ok 23:38:49
+tune cifar10_d100_gelu_tr_s42000_lr0.0001_wd0 ok 23:38:50
+tune cifar10_d100_gelu_tr_s42000_lr0.0001_wd3 ok 23:38:51
+tune cifar10_d100_selu_tr_s42000_lr5e-05_wd0 ok 23:38:51
+tune cifar10_d100_selu_tr_s42000_lr5e-05_wd3 ok 23:38:52
+tune cifar10_d100_selu_tr_s42000_lr0.0001_wd0 ok 23:38:53
+tune cifar10_d100_selu_tr_s42000_lr0.0001_wd3 ok 23:38:54
+Wahl [{"dataset": "cifar10", "depth": 100, "act": "relu_tr", "lr_sel": 5e-05, "wd_sel": 0.0, "med_val_acc": 0.10640000000000005, "lr_at_edge": true, "wd_at_edge": false, "n_seeds": 1}, {"dataset": "cifar10", "depth": 100, "act": "gelu_tr", "lr_sel": 0.0001, "wd_sel": 3.0, "med_val_acc": 0.12819999999999998, "lr_at_edge": true, "wd_at_edge": true, "n_seeds": 1}, {"dataset": "cifar10", "depth": 100, "act": "selu_tr", "lr_sel": 0.0001, "wd_sel": 3.0, "med_val_acc": 0.2128, "lr_at_edge": true, "wd_at_edge": true, "n_seeds": 1}]
+done cifar10_d100_kL2B_tr_s42168 ok 23:39:29
+done cifar10_d100_relu_tr_s42168 ok 23:39:56
+done cifar10_d100_gelu_tr_s42168 ok 23:40:24
+done cifar10_d100_selu_tr_s42168 ok 23:40:51

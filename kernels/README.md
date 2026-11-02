@@ -2,7 +2,30 @@
 
 Dieser Ordner ist die Fassung, mit der die Kernel auf echter Hardware geprüft wurden. Die Messergebnisse liegen als JSON daneben. Für den normalen Einsatz bitte das Paket nutzen (`from precap import PreCap`, `from precap.mlx import PreCap`, siehe Haupt-README). Es enthält denselben Kernel-Code und zusätzlich das Preset `spreccap_e03`.
 
-## Dateien
+## v0.3: BPreCap und Lagma
+
+Die fusionierten Kernel für BPreCap (PreCap-Kern in der Lagma-Hülle) und für die Hülle allein liegen im Paket (`src/precap/torch.py`, `src/precap/mlx.py`). Die Tests hier laden das Paket aus `src/` und vergleichen den Kernel mit einer float64-Rechnung und mit der Referenz aus einzelnen Operationen.
+
+| Datei | Inhalt |
+|---|---|
+| `test_bprecap_cuda.py` | CUDA (jiterator): BPreCap d100/d200 und Lagma, Werte und Gradienten gegen float64, fp16, bf16, 3D-Formen, gradcheck (fp64), Tempo. Aufruf aus dem Repo-Ordner: `python kernels/test_bprecap_cuda.py` |
+| `test_bprecap_mlx.py` | MLX (Metal): dieselben Prüfungen ohne gradcheck, Gradient gegen die analytische Ableitung in float64, float16-Eingabe. Aufruf: `PYTHONPATH=src python kernels/test_bprecap_mlx.py` |
+| `test_bprecap_cuda_ergebnis_rtx4070.json` | 14/14 OK, RTX 4070, torch 2.14.1+cu126, Python 3.12.10 |
+| `test_bprecap_mlx_ergebnis.json` | 10/10 OK, M1 Pro, mlx 0.32.4, Python 3.15 |
+
+| 16M Elemente, vorwärts + rückwärts, float32 | RTX 4070 | M1 Pro |
+|---|---|---|
+| BPreCap-Kernel | 1,047 ms | 3,07 ms |
+| BPreCap-Referenz | 19,005 ms | 60,73 ms |
+| Lagma-Kernel | 1,044 ms | 1,98 ms |
+| Lagma-Referenz | 8,726 ms | 21,45 ms |
+| natives SELU | 0,73 ms | 10,04 ms |
+
+- Größte Abweichung gegen float64: vorwärts 1,3e-6, rückwärts 2,2e-6 (relativ zu 1 + |g|).
+- BPreCap ist in MLX schneller als SELU. Auf CUDA braucht es etwa das 1,4-Fache des nativen SELU.
+- Das CUDA-Ergebnis stammt aus der Terminalausgabe des Laufs vom 01.11.2026. Danach wurde in Zeile 24 nur ein `detach()` ergänzt, an der Rechnung hat sich nichts geändert.
+
+## Dateien (v0.2, PreCap)
 
 | Datei | Inhalt |
 |---|---|

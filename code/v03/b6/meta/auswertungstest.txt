@@ -1,0 +1,7 @@
+Rezept hilft -> besser True {'S1_LBtr_vs_LB_fp32': 'besser', 'S2_kL2Btr_vs_tat_fp32': 'schlechter', 'S3_kL2Btr_vs_tat_w4a': 'unklar', 'S4_LBtr_vs_tat_w4a': 'unklar', 'S5_kL2Btr_vs_LBtr_fp32': 'besser', 'S6_kL2Btr_vs_kL2B_w4': 'besser', 'S7_kL2Btr_vs_kL2B_w4a': 'besser', 'S8_kL2Btr_vs_tat_w4': 'unklar'} ['tat', 'kL2B_tr', 'LB_tr', 'kL2B', 'LB'] True
+Rezept egal -> unklar {'S1_LBtr_vs_LB_fp32': 'unklar', 'S2_kL2Btr_vs_tat_fp32': 'schlechter', 'S3_kL2Btr_vs_tat_w4a': 'schlechter', 'S4_LBtr_vs_tat_w4a': 'schlechter', 'S5_kL2Btr_vs_LBtr_fp32': 'besser', 'S6_kL2Btr_vs_kL2B_w4': 'unklar', 'S7_kL2Btr_vs_kL2B_w4a': 'unklar', 'S8_kL2Btr_vs_tat_w4': 'schlechter'} True
+null (20x) -> Fehlalarme primaer 1 sekundaer 1 True
+falsche Kontrolle B1 -> True True
+Ausfall -> 1 True
+relativer Pfad findet B1 -> True True
+AUSWERTUNG OK

@@ -1,0 +1,6 @@
+done mnist_d100_kL2_LD100_s42045 ok 00:25:52
+done mnist_d100_kL2B_s42060 ok 00:26:03
+done mnist_d100_kL2_s42060 ok 00:26:12
+done mnist_d100_LB_s42060 ok 00:26:20
+done mnist_d100_kL2_LD100_s42060 ok 00:26:31
+done mnist_d100_spreccap_cs_s42060 ok 00:26:39

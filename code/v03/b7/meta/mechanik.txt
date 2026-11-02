@@ -1,0 +1,27 @@
+ok   kL2B_form_wie_B3 
+ok   kL2B_init_wie_B3 
+ok   kL2B_daten_wie_B3 
+ok   LB_form_wie_B3 
+ok   LB_init_wie_B3 
+ok   LB_daten_wie_B3 
+ok   tat_form_wie_B3 
+ok   tat_init_wie_B3 
+ok   tat_daten_wie_B3 
+ok   budget_4fach 
+ok   konstanten_wie_B3 
+ok   lr_aus_B3 
+ok   n_confirm 38
+ok   lr_in_configs 
+ok   seeds_neu 
+ok   kontrolle_B3_seed 
+ok   spalten 
+ok   kL2B_zwischen_bitgleich_B3 [0.7208, 0.7208]
+ok   kL2B_ende_bitgleich_B3 [0.6755, 0.6755]
+ok   kL2B_zwischen_ungleich_ende 
+ok   LB_zwischen_bitgleich_B3 [0.7338, 0.7338]
+ok   LB_ende_bitgleich_B3 [0.7076, 0.7076]
+ok   LB_zwischen_ungleich_ende 
+ok   tat_zwischen_bitgleich_B3 [0.6599, 0.6599]
+ok   tat_ende_bitgleich_B3 [0.6113, 0.6113]
+ok   tat_zwischen_ungleich_ende 
+MECHANIK OK

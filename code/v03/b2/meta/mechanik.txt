@@ -1,0 +1,42 @@
+ok   LBh_d100_fixpunkt Mittel 0.0e+00 Varianz 1.000000 chi1 1.019999 Soll 1.0200
+ok   LBh_d100_grenze 2.299245834350586
+ok   LBh_d100_mlx_vs_numpy 
+ok   kL2Bh_d100_fixpunkt Mittel 3.5e-12 Varianz 1.000000 chi1 1.020000 Soll 1.0200
+ok   kL2Bh_d100_grenze 3.0
+ok   kL2Bh_d100_mlx_vs_numpy 
+ok   kL2Bh_d100_ist_clip_von_precap 
+ok   LBh_d100_ist_clip_linear 
+ok   LB_d100_konstanten_wie_B1 
+ok   LB_d100_akt_wie_B1 
+ok   kL2B_d100_konstanten_wie_B1 
+ok   kL2B_d100_akt_wie_B1 
+ok   LBh_d200_fixpunkt Mittel 5.6e-17 Varianz 1.000000 chi1 1.010000 Soll 1.0100
+ok   LBh_d200_grenze 2.5368728637695312
+ok   LBh_d200_mlx_vs_numpy 
+ok   kL2Bh_d200_fixpunkt Mittel 2.3e-12 Varianz 1.000000 chi1 1.010000 Soll 1.0100
+ok   kL2Bh_d200_grenze 3.0
+ok   kL2Bh_d200_mlx_vs_numpy 
+ok   kL2Bh_d200_ist_clip_von_precap 
+ok   LBh_d200_ist_clip_linear 
+ok   LB_d200_konstanten_wie_B1 
+ok   LB_d200_akt_wie_B1 
+ok   kL2B_d200_konstanten_wie_B1 
+ok   kL2B_d200_akt_wie_B1 
+ok   gains_LB_kL2B_wie_B1 
+ok   n_laeufe 194
+ok   seeds_neu 
+ok   lr_alle_wie_kL2_in_B1 
+ok   q3_sym_7_stufen 7
+ok   q3_asym_8_stufen 
+ok   q4_unveraendert 
+ok   LB_bitgleich_B1 {'train_loss_last50': (2.3257620334625244, 2.3257620334625244), 'test_err_fp32': (0.8833333333333333, 0.8833333333333333), 'test_err_w8a4_best': (0.9003333333333333, 0.9003333333333333)}
+ok   LB_3bit_da (0.8913333333333333, 'p9999', 0.9013333333333333)
+ok   kL2B_bitgleich_B1 {'train_loss_last50': (2.3078917264938354, 2.3078917264938354), 'test_err_fp32': (0.8956666666666666, 0.8956666666666666), 'test_err_w8a4_best': (0.898, 0.898)}
+ok   kL2B_3bit_da (0.904, 'max', 0.9006666666666667)
+ok   LBh_laeuft (0.878, 0.8847, 0.9007)
+ok   LBh_bereich_bis_M 2.299245834350586
+ok   LBh_saettigung_gemessen 0.041262853518128396
+ok   kL2Bh_laeuft (0.8933, 0.8973, 0.8957)
+ok   kL2Bh_bereich_bis_M 3.0
+ok   kL2Bh_saettigung_gemessen 0.010958867738954723
+MECHANIK OK

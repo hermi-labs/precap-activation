@@ -1,0 +1,14 @@
+ok   tat_form_wie_B10 
+ok   tat_init_wie_B10 
+ok   tat_daten_wie_B10 
+ok   konstanten_wie_B10 
+ok   n_laeufe 25
+ok   kontrolle {'dataset': 'cifar10', 'depth': 100, 'act': 'tat', 'lr': 0.0002, 'wd': 0.0, 'sched': 'cos', 'seed': 42168}
+ok   varianten 
+ok   seeds_wie_B10 
+ok   namen_eindeutig 
+ok   kontrolle_ist_B10_wahl {'kL2B_tr': (0.0001, 0.3), 'LB_tr': (0.0001, 0.3), 'tat': (0.0002, 0.0)}
+ok   tat_lr0.0002_wd0_bitgleich_B10 [0.6209, 0.6209]
+ok   tat_lr0.0001_wd0.3_bitgleich_B10 [0.6104, 0.6104]
+ok   tat_lr5e-05_wd3_bitgleich_B10 [0.6119, 0.6119]
+MECHANIK OK

@@ -1,0 +1,28 @@
+ok   LBhM_d100_varianz_chi1 Varianz 1.000000 chi1 1.025344 (p11 1.025344)
+ok   LBhM_d100_grenze_gleich_LB 2.2165089809922915
+ok   LBhM_d100_mlx_vs_numpy 
+ok   LBM_d100_varianz_chi1 Varianz 1.000000 chi1 1.015724 (p11 1.015724)
+ok   LBM_d100_grenze_gleich_LBh 2.2992458453571873
+ok   LBM_d100_mlx_vs_numpy 
+ok   LBhM_d100_ist_clip 
+ok   LBM_d100_ist_bremse 
+ok   LB_d100_wie_B2 
+ok   LBh_d100_wie_B2 
+ok   LBhM_d200_varianz_chi1 Varianz 1.000000 chi1 1.012758 (p11 1.012758)
+ok   LBhM_d200_grenze_gleich_LB 2.454293815050829
+ok   LBhM_d200_mlx_vs_numpy 
+ok   LBM_d200_varianz_chi1 Varianz 1.000000 chi1 1.007843 (p11 1.007843)
+ok   LBM_d200_grenze_gleich_LBh 2.536872795621917
+ok   LBM_d200_mlx_vs_numpy 
+ok   LBhM_d200_ist_clip 
+ok   LBM_d200_ist_bremse 
+ok   LB_d200_wie_B2 
+ok   LBh_d200_wie_B2 
+ok   n_laeufe 194
+ok   seeds_neu 
+ok   lr_wie_B2 
+ok   LB_bitgleich_B2 {'train_loss_last50': (2.318466544151306, 2.318466544151306), 'test_err_fp32': (0.8853333333333333, 0.8853333333333333)}
+ok   LBh_bitgleich_B2 {'train_loss_last50': (2.3142956495285034, 2.3142956495285034), 'test_err_fp32': (0.878, 0.878)}
+ok   LBhM_laeuft (0.886, 2.2165, 0.0499)
+ok   LBM_laeuft (0.8847, 2.2992, 0.111)
+MECHANIK OK

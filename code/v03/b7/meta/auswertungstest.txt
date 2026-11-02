@@ -1,0 +1,7 @@
+haelt -> besser True {'S1_kL2B_vs_LB_w4': 'besser', 'S2_kL2B_vs_LB_w4a': 'besser', 'S3_gap_kL2B_LB_fp32_6880_minus_1720': 'unklar', 'S4_kL2B_vs_tat_fp32': 'schlechter', 'S5_kL2B_vs_tat_w4a': 'schlechter', 'S6_LB_vs_tat_w4a': 'schlechter', 'S7_cost4a_kL2B_6880_minus_1720': 'schlechter', 'S8_gap_kL2B_tat_fp32_6880_minus_1720': 'unklar'} True
+holt auf -> unklar {'S1_kL2B_vs_LB_w4': 'unklar', 'S2_kL2B_vs_LB_w4a': 'unklar', 'S3_gap_kL2B_LB_fp32_6880_minus_1720': 'schlechter', 'S4_kL2B_vs_tat_fp32': 'schlechter', 'S5_kL2B_vs_tat_w4a': 'schlechter', 'S6_LB_vs_tat_w4a': 'schlechter', 'S7_cost4a_kL2B_6880_minus_1720': 'schlechter', 'S8_gap_kL2B_tat_fp32_6880_minus_1720': 'besser'} True
+null (20x) -> Fehlalarme primaer 3 sekundaer 0 True
+falsche Kontrolle B3 -> True True
+Ausfall -> 1 -38.396 True
+relativer Pfad findet B3 -> True True
+AUSWERTUNG OK

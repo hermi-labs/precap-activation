@@ -1,0 +1,35 @@
+ok   kL2B_tr_form_wie_B10 
+ok   LB_tr_form_wie_B10 
+ok   kL2Bh_tr_form_wie_B10 
+ok   LBh_tr_form_wie_B10 
+ok   daten_wie_B10 
+ok   kL2Bp_tr_init_gewichte_wie_kL2Bh_tr 
+ok   kL2Bp_tr_vorwaerts_bei_init_bitgleich_kL2Bh_tr 
+ok   kL2Bp_tr_grenze_trainierbar (100, 3.0)
+ok   kL2Bp_tr_gradient_grenze 100 von 100 Schichten
+ok   kL2Bp_tr_kalibrierung_sieht_grenze 3.0
+ok   LBp_tr_init_gewichte_wie_LBh_tr 
+ok   LBp_tr_vorwaerts_bei_init_bitgleich_LBh_tr 
+ok   LBp_tr_grenze_trainierbar (100, 2.299245834350586)
+ok   LBp_tr_gradient_grenze 100 von 100 Schichten
+ok   LBp_tr_kalibrierung_sieht_grenze 2.2992
+ok   konstanten_wie_B10 
+ok   raster_wie_B13 
+ok   n_tune 48
+ok   n_bestaetigung 25
+ok   kontrolle {'dataset': 'cifar10', 'depth': 100, 'act': 'kL2B_tr', 'lr': 0.0001, 'wd': 0.3, 'sched': 'cos', 'seed': 42168}
+ok   seeds_wie_B10 
+ok   kontrolle_bitgleich_B10 
+ok   kL2Bp_tr_lauf_ok 0.5927
+ok   kL2Bp_tr_grenze_lernt (2.9881, 2.9918, 2.9939)
+ok   kL2Bp_tr_wd_zieht_grenze (2.9229, 2.9918)
+ok   kL2Bp_tr_anders_als_hart_nach_training 
+ok   kL2Bp_tr_bereich_bis_grenze (2.9918, 2.9939)
+ok   kL2Bp_tr_zwischen_aendert_training_nicht 
+ok   LBp_tr_lauf_ok 0.6254
+ok   LBp_tr_grenze_lernt (2.2895, 2.2929, 2.2949)
+ok   LBp_tr_wd_zieht_grenze (2.2401, 2.2929)
+ok   LBp_tr_anders_als_hart_nach_training 
+ok   LBp_tr_bereich_bis_grenze (2.2929, 2.2949)
+ok   LBp_tr_zwischen_aendert_training_nicht 
+MECHANIK OK

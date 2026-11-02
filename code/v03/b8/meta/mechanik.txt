@@ -1,0 +1,21 @@
+ok   kL2B_tr_form_wie_B6 
+ok   LB_tr_form_wie_B6 
+ok   tat_form_wie_B6 
+ok   tr_init_orthogonal_mal_gain 1.000004
+ok   kL2B_tr_init_wie_B6 
+ok   LB_tr_init_wie_B6 
+ok   tat_init_wie_B6 
+ok   kL2B_tr_varianz_stabil_d200 (1.017, 1.011, 1.004)
+ok   LB_tr_varianz_stabil_d200 (1.017, 1.013, 1.01)
+ok   raster 
+ok   n_tune 
+ok   n_confirm 
+ok   seeds_neu 
+ok   lr_tat_aus_B3_d200 
+ok   kL2B_tr_d200_bitgleich 0.6575
+ok   LB_tr_d200_bitgleich 0.6774
+ok   tat_d200_bitgleich 0.6904
+ok   kontrolle_bitgleich_B1 
+ok   cache_grenze_bitgleich Cache ohne 2.51 GB, mit 0.54 GB
+ok   cache_grenze_wirkt (537011532, 2511706170)
+MECHANIK OK

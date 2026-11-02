@@ -1,0 +1,8 @@
+Primaer BPreCap - TAT a w8a4a (ES): med=-5.04pp W/L=12/0 p=0.0005 besser | Erfolg: True
+Sekundaer: {'S1_bp_vs_ta_fp32': (-0.37, '10/2', 0.0049, 'besser'), 'S2_bp_vs_t0_w4a': (-11.44, '12/0', 0.0024, 'besser'), 'S3_bp_vs_se_w4a': (-0.48, '10/2', 0.0049, 'besser'), 'S4_bp_vs_lb_fp32': (-1.91, '12/0', 0.0024, 'besser'), 'S5_bp_vs_se_fp32': (-1.13, '12/0', 0.0024, 'besser')}
+Ausfaelle: 0 | Geraete: ['cuda'] | torch: ['2.14.1+cu126']
+bp {'n': 12, 'test_err_fp32': 46.56, 'test_err_w8a4a_best': 49.68, 'test_err_w8a4_best': 50.64, 'test_err_w8a3_best': 64.75, 'cost4a_pp': 3.11, 'range_es': 3.0, 'mlx': {'test_err_fp32': 46.519999999999996, 'test_err_w8a4a_best': 49.620000000000005, 'cost4a_pp': 3.0249999999999986}}
+lb {'n': 12, 'test_err_fp32': 48.37, 'test_err_w8a4a_best': 50.83, 'test_err_w8a4_best': 50.73, 'test_err_w8a3_best': 59.17, 'cost4a_pp': 2.42, 'range_es': 2.22, 'mlx': {'test_err_fp32': 48.47, 'test_err_w8a4a_best': 50.77499999999999, 'cost4a_pp': 2.3099999999999987}}
+ta {'n': 12, 'test_err_fp32': 46.86, 'test_err_w8a4a_best': 54.65, 'test_err_w8a4_best': 59.36, 'test_err_w8a3_best': 86.31, 'cost4a_pp': 7.72, 'range_es': 3.23, 'mlx': {'test_err_fp32': 47.06, 'test_err_w8a4a_best': 54.165, 'cost4a_pp': 7.274999999999995}}
+t0 {'n': 12, 'test_err_fp32': 46.87, 'test_err_w8a4a_best': 61.23, 'test_err_w8a4_best': 65.13, 'test_err_w8a3_best': 85.12, 'cost4a_pp': 14.32, 'range_es': 27.59, 'mlx': {'test_err_fp32': 46.575, 'test_err_w8a4a_best': 61.22, 'cost4a_pp': 14.61}}
+se {'n': 12, 'test_err_fp32': 47.77, 'test_err_w8a4a_best': 50.23, 'test_err_w8a4_best': 51.57, 'test_err_w8a3_best': 63.58, 'cost4a_pp': 2.54, 'range_es': 3.86, 'mlx': {'test_err_fp32': 47.510000000000005, 'test_err_w8a4a_best': 50.07, 'cost4a_pp': 2.5349999999999966}}

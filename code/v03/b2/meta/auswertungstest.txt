@@ -1,0 +1,8 @@
+erfolg -> besser als LBh True True True {'S1_LB_vs_LBh_fp32': 'gemischt', 'S2_kL2B_vs_kL2Bh_w4': 'besser als kL2Bh', 'S3_kL2B_vs_kL2Bh_fp32': 'kein Effekt', 'S4_LB_vs_LBh_w4a': 'besser als LBh', 'S5_LB_vs_LBh_w3': 'besser als LBh', 'S6_kL2Bh_vs_LBh_fp32': 'gemischt', 'S7_kL2B_vs_LB_w4': 'schlechter als LB', 'S8_kL2B_vs_LB_fp32': 'kein Effekt'} True
+teuer -> besser als LBh False False schlechter als LBh True
+null -> ['kein Effekt', 'kein Effekt', 'kein Effekt', 'kein Effekt', 'kein Effekt', 'kein Effekt'] True
+falsche Kontrolle -> True True
+Ausfall -> 1 [79.059, -3.773, -4.375] True
+relativer Pfad "." findet B1 -> True True
+Blumenfeld-Tabelle -> 8 [12.3, 15.6, 15.7, 16.7] True
+AUSWERTUNG OK

@@ -1,0 +1,43 @@
+ok   kL2B_tr_daten_bitgleich 
+ok   kL2B_tr_init_bitgleich 
+ok   kL2B_tr_logits_init rel 7.6e-06
+ok   kL2B_tr_kalibrierung max rel 4.8e-07
+ok   kL2B_tr_w4a_init 0.8988 gegen 0.8984
+ok   kL2B_tr_verlust_init torch 2.7041693, mlx 2.7041698, f64 2.7041696
+ok   kL2B_tr_gradient_g0 torch-mlx 2.3e-03, torch-f64 3.5e-03, mlx-f64 2.6e-03
+ok   kL2B_tr_gradient_g50 torch-mlx 2.1e-03, torch-f64 2.7e-03, mlx-f64 1.7e-03
+ok   kL2B_tr_gradient_gout torch-mlx 5.2e-06, torch-f64 4.3e-06, mlx-f64 3.2e-06
+ok   kL2B_tr_172_schritte_nahe 0.6263 gegen 0.6154
+ok   tat_daten_bitgleich 
+ok   tat_init_bitgleich 
+ok   tat_logits_init rel 3.7e-06
+ok   tat_kalibrierung max rel 1.1e-06
+ok   tat_w4a_init 0.8956 gegen 0.8980
+ok   tat_verlust_init torch 2.6857142, mlx 2.6857142, f64 2.6857127
+ok   tat_gradient_g0 torch-mlx 3.3e-03, torch-f64 3.5e-03, mlx-f64 1.1e-03
+ok   tat_gradient_g50 torch-mlx 1.8e-03, torch-f64 2.1e-03, mlx-f64 1.1e-03
+ok   tat_gradient_gout torch-mlx 1.5e-06, torch-f64 4.3e-06, mlx-f64 4.4e-06
+ok   tat_172_schritte_nahe 0.6177 gegen 0.6337
+ok   selu_tr_daten_bitgleich 
+ok   selu_tr_init_bitgleich 
+ok   selu_tr_logits_init rel 1.4e-04
+ok   selu_tr_kalibrierung max rel 1.6e-05
+ok   selu_tr_w4a_init 0.8984 gegen 0.8980
+ok   selu_tr_verlust_init torch 2.7569759, mlx 2.7569642, f64 2.7569800
+ok   selu_tr_gradient_g0 torch-mlx 2.0e-02, torch-f64 1.7e-02, mlx-f64 2.2e-02
+ok   selu_tr_gradient_g50 torch-mlx 2.0e-02, torch-f64 1.5e-02, mlx-f64 2.3e-02
+ok   selu_tr_gradient_gout torch-mlx 1.4e-04, torch-f64 3.8e-05, mlx-f64 1.3e-04
+ok   selu_tr_172_schritte_nahe 0.7194 gegen 0.7073
+ok   LB_tr_daten_bitgleich 
+ok   LB_tr_init_bitgleich 
+ok   LB_tr_logits_init rel 6.9e-06
+ok   LB_tr_kalibrierung max rel 2.0e-08
+ok   LB_tr_w4a_init 0.8964 gegen 0.8960
+ok   LB_tr_verlust_init torch 2.5158188, mlx 2.5158191, f64 2.5158189
+ok   LB_tr_gradient_g0 torch-mlx 1.3e-05, torch-f64 1.1e-05, mlx-f64 7.5e-06
+ok   LB_tr_gradient_g50 torch-mlx 1.1e-05, torch-f64 9.0e-06, mlx-f64 6.3e-06
+ok   LB_tr_gradient_gout torch-mlx 4.6e-06, torch-f64 4.0e-06, mlx-f64 2.8e-06
+ok   LB_tr_172_schritte_nahe 0.6620 gegen 0.6479
+ok   adamw_gleich_mlx max abs 1.5e-08
+ok   lr_ende_wie_mlx 9.9847652816e-05 gegen 9.9847646197e-05
+AEQUIVALENZ OK

@@ -1,0 +1,28 @@
+ok   kL2B_tr_d100_form_wie_B10 
+ok   kL2B_tr_d100_init_wie_B10 
+ok   kL2B_tr_d100_init_orthogonal_mal_gain 1.0
+ok   kL2B_tr_d200_form_wie_B10 
+ok   kL2B_tr_d200_init_wie_B10 
+ok   kL2B_tr_d200_init_orthogonal_mal_gain 1.0
+ok   kL2B_tr_daten_wie_B10 
+ok   selu_tr_d100_form_wie_B10 
+ok   selu_tr_d100_init_wie_B10 
+ok   selu_tr_d100_init_orthogonal_mal_gain 0.99998
+ok   selu_tr_d200_form_wie_B10 
+ok   selu_tr_d200_init_wie_B10 
+ok   selu_tr_d200_init_orthogonal_mal_gain 0.99998
+ok   selu_tr_daten_wie_B10 
+ok   kL2B_d200_chi1 1.00999
+ok   selu_gain_E_f2_eins 
+ok   konstanten_wie_B10 
+ok   raster 
+ok   n_tune 48
+ok   n_bestaetigung 25
+ok   kontrolle {'dataset': 'cifar10', 'depth': 100, 'act': 'kL2B_tr', 'lr': 0.0001, 'wd': 0.3, 'sched': 'cos', 'seed': 42168}
+ok   seeds 
+ok   kontrolle_bitgleich_B10 [0.5892, 0.5892]
+ok   kL2B_tr_d200_lauf_ok 0.5919
+ok   kL2B_tr_d200_zwischen_aendert_training_nicht 
+ok   selu_tr_d200_lauf_ok 0.8572
+ok   selu_tr_d200_zwischen_aendert_training_nicht 
+MECHANIK OK

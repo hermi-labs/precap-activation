@@ -1,0 +1,4 @@
+dataset,depth,act,lr_sel,wd_sel,med_val_acc,lr_at_edge,wd_at_edge,n_seeds
+cifar10,100,relu_tr,0.0002,3.0,0.3921,False,True,2
+cifar10,100,gelu_tr,0.0001,0.3,0.2615,False,False,2
+cifar10,100,selu_tr,0.0002,0.3,0.5265,False,False,2

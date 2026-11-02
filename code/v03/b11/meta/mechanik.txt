@@ -1,0 +1,34 @@
+ok   kL2B_tr_form_wie_B10 
+ok   kL2B_tr_init10_wie_B10 
+ok   kL2B_tr_init100_verdeckt_wie_B10 
+ok   kL2B_tr_cifar10_daten_wie_B10 
+ok   LB_tr_form_wie_B10 
+ok   LB_tr_init10_wie_B10 
+ok   LB_tr_init100_verdeckt_wie_B10 
+ok   LB_tr_cifar10_daten_wie_B10 
+ok   tat_form_wie_B10 
+ok   tat_init10_wie_B10 
+ok   tat_init100_verdeckt_wie_B10 
+ok   tat_cifar10_daten_wie_B10 
+ok   c100_formen ((45000, 3072), (5000, 3072), (10000, 3072))
+ok   c100_klassen 
+ok   c100_train_val_klassen 
+ok   c100_normiert (-6.312617273351862e-08, 1.0)
+ok   c100_pex 
+ok   c100_anders_als_c10 
+ok   budget_wie_B10 
+ok   konstanten_wie_B10 
+ok   raster 
+ok   n_tune 72
+ok   n_confirm 38
+ok   kontrolle_hp_aus_B10 [{'dataset': 'cifar10', 'depth': 100, 'act': 'kL2B_tr', 'lr': 0.0001, 'wd': 0.3, 'sched': 'cos', 'seed': 42168}, {'dataset': 'cifar10', 'depth': 100, 'act': 'tat', 'lr': 0.0002, 'wd': 0.0, 'sched': 'cos', 'seed': 42168}]
+ok   seeds_neu 
+ok   kL2B_tr_cifar10_bitgleich_B10 [0.5892, 0.5892]
+ok   tat_cifar10_bitgleich_B10 [0.6209, 0.6209]
+ok   kL2B_tr_c100_lauf_ok 0.8809
+ok   kL2B_tr_c100_zwischen_aendert_training_nicht 
+ok   LB_tr_c100_lauf_ok 0.8878
+ok   LB_tr_c100_zwischen_aendert_training_nicht 
+ok   tat_c100_lauf_ok 0.9188
+ok   tat_c100_zwischen_aendert_training_nicht 
+MECHANIK OK

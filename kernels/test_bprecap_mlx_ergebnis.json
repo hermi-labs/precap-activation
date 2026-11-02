@@ -1,0 +1,59 @@
+{
+ "mlx": "0.32.4",
+ "python": "3.15.0",
+ "geraet": "Device(gpu, 0)",
+ "checks": {
+  "bprecap_d100 vorwaerts": {
+   "ok": true,
+   "vs_float64": 8.96e-07,
+   "vs_mlx_ops": 7.15e-07
+  },
+  "bprecap_d100 rueckwaerts": {
+   "ok": true,
+   "vs_float64_analytisch": 1.45e-06,
+   "vs_mlx_autograd": 7.65e-07
+  },
+  "bprecap_d100 Form 3D": {
+   "ok": true
+  },
+  "bprecap_d100 float16-Eingabe": {
+   "ok": true
+  },
+  "bprecap_d200 vorwaerts": {
+   "ok": true,
+   "vs_float64": 1.01e-06,
+   "vs_mlx_ops": 4.77e-07
+  },
+  "bprecap_d200 rueckwaerts": {
+   "ok": true,
+   "vs_float64_analytisch": 1.47e-06,
+   "vs_mlx_autograd": 1.31e-06
+  },
+  "bprecap_d200 Form 3D": {
+   "ok": true
+  },
+  "bprecap_d200 float16-Eingabe": {
+   "ok": true
+  },
+  "Lagma M=2.2165": {
+   "ok": true,
+   "vorwaerts_vs_float64": 3.19e-07,
+   "rueckwaerts_vs_float64": 8.27e-07
+  },
+  "Lagma M=3.0000": {
+   "ok": true,
+   "vorwaerts_vs_float64": 2.97e-07,
+   "rueckwaerts_vs_float64": 9.07e-07
+  }
+ },
+ "tempo_ms_16M_fwd_bwd": {
+  "bprecap_kernel": 3.07,
+  "bprecap_referenz": 60.727,
+  "lagma_kernel": 1.981,
+  "lagma_referenz": 21.453,
+  "selu_mlx": 10.041,
+  "speedup_bprecap": 19.78,
+  "speedup_lagma": 10.83
+ },
+ "alles_ok": true
+}

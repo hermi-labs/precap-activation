@@ -1,0 +1,4 @@
+dataset,depth,act,lr_sel,med_val_acc,at_edge,n_seeds
+cifar10,200,kL2B,1e-05,0.39560000000000006,True,4
+cifar10,200,LB,7e-06,0.36349999999999993,False,4
+cifar10,200,kL2,1e-05,0.4354,True,4

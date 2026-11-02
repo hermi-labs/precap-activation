@@ -1,0 +1,27 @@
+ok   kL2B_tr_form_wie_B6 
+ok   kL2B_tr_init_wie_B6 
+ok   kL2B_tr_daten_wie_B6 
+ok   LB_tr_form_wie_B6 
+ok   LB_tr_init_wie_B6 
+ok   LB_tr_daten_wie_B6 
+ok   tat_form_wie_B6 
+ok   tat_init_wie_B6 
+ok   tat_daten_wie_B6 
+ok   budget_4fach 
+ok   konstanten_wie_B6 
+ok   lr_aus_B6_B3 
+ok   n_confirm 38
+ok   lr_in_configs 
+ok   seeds_neu 
+ok   kontrolle_B6_seed 
+ok   spalten 
+ok   kL2B_tr_zwischen_bitgleich_B6 [0.6346, 0.6346]
+ok   kL2B_tr_ende_bitgleich_B6 [0.6146, 0.6146]
+ok   kL2B_tr_zwischen_ungleich_ende 
+ok   LB_tr_zwischen_bitgleich_B6 [0.6621, 0.6621]
+ok   LB_tr_ende_bitgleich_B6 [0.6399, 0.6399]
+ok   LB_tr_zwischen_ungleich_ende 
+ok   tat_zwischen_bitgleich_B6 [0.6684, 0.6684]
+ok   tat_ende_bitgleich_B6 [0.616, 0.616]
+ok   tat_zwischen_ungleich_ende 
+MECHANIK OK

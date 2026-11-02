@@ -1,0 +1,6 @@
+erfolg -> besser als LB True {'S1_kL2B_vs_LB_w4': 'schlechter als LB', 'S2_kL2B_vs_kL2_fp32': 'schlechter als kL2', 'S3_kL2B_vs_kL2_w4': 'besser als kL2', 'S4_kL2B_vs_tat_fp32': 'schlechter als tat', 'S5_kL2B_vs_tat_w4a': 'besser als tat', 'S6_LB_vs_tat_w4a': 'besser als tat', 'S7_kL2B_vs_LB_w3': 'kein Effekt', 'S8_kL2_vs_LB_fp32': 'besser als LB'} {'d100': {'order_fp32': ['tat', 'kL2', 'kL2B', 'LB'], 'p8_order_holds': True}, 'd200': {'order_fp32': ['tat', 'kL2', 'kL2B', 'LB'], 'p8_order_holds': True}} True
+null -> ['kein Effekt', 'kein Effekt', 'kein Effekt', 'kein Effekt', 'kein Effekt', 'kein Effekt'] True
+falsche Kontrolle -> True True
+Ausfall -> 1 True
+relativer Pfad findet B1 -> True True
+AUSWERTUNG OK

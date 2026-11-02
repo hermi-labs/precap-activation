@@ -1,0 +1,8 @@
+BPreCap vorn -> besser True {'S1_kL2Btr_vs_tatb_w4a': 'besser', 'S2_kL2Btr_vs_tata_fp32': 'unklar', 'S3_kL2Btr_vs_tatb_fp32': 'besser', 'S4_kL2Btr_vs_tata_w4': 'besser', 'S5_kL2Btr_vs_tatb_w4': 'besser', 'S6_tata_vs_tat0_fp32': 'unklar', 'S7_tata_vs_tat0_w4a': 'besser'} True
+TAT mit WD vorn -> schlechter {'S1_kL2Btr_vs_tatb_w4a': 'unklar', 'S2_kL2Btr_vs_tata_fp32': 'unklar', 'S3_kL2Btr_vs_tatb_fp32': 'besser', 'S4_kL2Btr_vs_tata_w4': 'schlechter', 'S5_kL2Btr_vs_tatb_w4': 'unklar', 'S6_tata_vs_tat0_fp32': 'unklar', 'S7_tata_vs_tat0_w4a': 'besser'} True
+null (20x) -> Fehlalarme primaer 1 True
+falsche Kontrolle (Ende) -> True
+falsche Kontrolle (Messpunkt) -> True
+Ausfall TAT a ohne Messpunkt -> 90 %: 1 -41.53 True
+relativer Pfad findet B10 -> True
+AUSWERTUNG OK

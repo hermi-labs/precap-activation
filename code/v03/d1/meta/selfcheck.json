@@ -1,0 +1,24 @@
+{
+ "eps_uniform": 0.004441364202648401,
+ "eps_uniform_theory": 0.0044444444444444444,
+ "uniform_ok": true,
+ "fwd_mod_identity_exact": true,
+ "n_inputs": 101,
+ "n_runs": 12,
+ "runs": [
+  "bp_s42168",
+  "lb_s42168",
+  "ta_s42168",
+  "t0_s42168",
+  "se_s42168",
+  "lh_s42168",
+  "bp_s42169",
+  "lb_s42169",
+  "ta_s42169",
+  "t0_s42169",
+  "se_s42169",
+  "lh_s42169"
+ ],
+ "ref_rows_found": true,
+ "ok": true
+}

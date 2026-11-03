@@ -1,0 +1,20 @@
+ok   kL2B_tr_form_wie_B10 
+ok   kL2B_tr_init_wie_B10 
+ok   kL2B_tr_daten_wie_B10 
+ok   LB_tr_form_wie_B10 
+ok   LB_tr_init_wie_B10 
+ok   LB_tr_daten_wie_B10 
+ok   tat_form_wie_B10 
+ok   tat_init_wie_B10 
+ok   tat_daten_wie_B10 
+ok   konstanten_wie_B10 
+ok   raster 
+ok   n_tune 54
+ok   n_confirm 38
+ok   kontrolle 
+ok   seeds_wie_B10 
+ok   run_ids_eindeutig 
+ok   plan ['0', '0.0001', '0.0002', '0.0001', '1.19e-11']
+ok   cos_bitgleich_B10 {'train_loss_last50': (1.7705995440483093, 1.7705995440483093), 'val_err_fp32': (0.6502, 0.6502)}
+ok   wcos_wirkt (2.739041917720897e-07,)
+MECHANIK OK

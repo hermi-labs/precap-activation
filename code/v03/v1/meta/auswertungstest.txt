@@ -1,0 +1,7 @@
+vorn -> besser True {'S1_kL2Btr_vs_tat_fp32_es': 'besser', 'S2_kL2Btr_V1_vs_B10_fp32_es': 'besser', 'S3_kL2Btr_V1_vs_B10_w4a_es': 'besser', 'S4_tat_V1_vs_B10_fp32_es': 'unklar', 'S5_tat_V1_vs_B10_w4a_es': 'unklar', 'S6_LBtr_vs_tat_w4a_es': 'besser', 'S7_kL2Btr_vs_LBtr_fp32_es': 'besser', 'S8_kL2Btr_vs_tat_w4a_6880': 'besser'} True
+hinten -> schlechter besser True
+null (20x) -> Fehlalarme primaer 0
+falsche Kontrolle (Ende) -> True
+falsche Kontrolle (Messpunkt) -> True
+Ausfall -> 1 True
+AUSWERTUNG OK

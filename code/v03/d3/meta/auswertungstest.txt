@@ -1,0 +1,12 @@
+ok   basis
+ok   F5_aehnlich
+ok   F1_schwaecher
+ok   F1_uneinheitlich
+ok   F2_waechst
+ok   F2_sinkt
+ok   F3_ausreisser
+ok   F4_verlust
+ok   F5_groesser
+ok   ungueltig
+ok   F6_korrelation
+AUSWERTUNGSTEST OK

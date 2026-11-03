@@ -11,7 +11,7 @@ v0.3:     from precap import BPreCap, Lagma   # BPreCap(depth=100 | 200): tiefen
 """
 from ._presets import PRESETS, DEFAULT, BOUNDED, HULL_RHO
 
-__version__ = '0.3.0'
+__version__ = '0.3.1'
 __all__ = ['PRESETS', 'DEFAULT', 'BOUNDED', 'HULL_RHO', 'PreCap', 'precap', 'precap_ref', 'precap_ref_grad', 'BPreCap', 'bprecap_ref', 'lb_ref', 'lagma_hull', 'Lagma', 'bprecap_cuda', 'lagma_cuda', '__version__']
 
 _TORCH = ('PreCap', 'precap', 'precap_ref', 'precap_ref_grad', 'BPreCap', 'bprecap_ref', 'lb_ref', 'lagma_hull', 'Lagma', 'bprecap_cuda', 'lagma_cuda')

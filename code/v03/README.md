@@ -1,6 +1,6 @@
-# Studien zu v0.3
+# Studien zu v0.3 und v0.3.1
 
-16 präregistrierte Studien (B1–B15, B10b) und eine beschreibende Diagnose (D1) zum Preprint v0.3 ([`paper/PreCap_paper_v0.3.pdf`](../../paper/PreCap_paper_v0.3.pdf)). Sie liefen mit Apple MLX auf einem MacBook Pro M1 Pro. Dazu kommt eine unabhängige Wiederholung mit PyTorch/CUDA auf einer RTX 4070 (C6). Jede Studie ändert genau eine Sache gegenüber ihrer Vorgängerin.
+16 präregistrierte Studien (B1–B15, B10b) und eine beschreibende Diagnose (D1) zum Preprint v0.3 ([`paper/PreCap_paper_v0.3.pdf`](../../paper/PreCap_paper_v0.3.pdf)). Mit v0.3.1 ([`paper/PreCap_paper_v0.3.1.pdf`](../../paper/PreCap_paper_v0.3.1.pdf)) kommen vier präregistrierte Studien (V1, V1c, V1d, V3) und vier beschreibende Messungen (D2, V1b, D3, D3b) dazu. Sie liefen mit Apple MLX auf einem MacBook Pro M1 Pro. Dazu kommt eine unabhängige Wiederholung mit PyTorch/CUDA auf einer RTX 4070 (C6). Jede Studie ändert genau eine Sache gegenüber ihrer Vorgängerin.
 
 | Ordner | Frage | Bericht |
 |---|---|---|
@@ -22,6 +22,15 @@
 | `b15/` | BPreCap gegen SELU bei Tiefe 200 | `b15/B15_Auswertung.md` |
 | `d1/` | Diagnose: Warum zahlt TAT bei 4 Bit mehr? (beschreibend) | `d1/D1_Auswertung.md` |
 | `c6/` | Wiederholung mit PyTorch/CUDA auf anderer Hardware | `c6/C6_Auswertung.md` |
+| **v0.3.1** | | |
+| `d2/` | Diagnose: Warum bricht BPreCap bei LR-Spitze 2·10⁻⁴ ein? (beschreibend) | `d2/D2_Auswertung.md` |
+| `v1/` | wie B10 mit 5 % linearem LR-Anlauf für alle Formen (Tiefe 100) | `v1/V1_Auswertung.md` |
+| `v1b/` | Wo liegt die LR-Grenze mit Anlauf? (beschreibend) | `v1b/V1b_Auswertung.md` |
+| `v1c/` | wie B15 mit LR-Anlauf, BPreCap gegen SELU bei Tiefe 200 | `v1c/V1c_Auswertung.md` |
+| `v1d/` | Länge des Anlaufs (0/1/2,5/5 %) und BPreCaps 4-Bit-Preis bei Tiefe 200 | `v1d/V1d_Auswertung.md` |
+| `d3/` | Ausreißer und Fehlerfortpflanzung je Schicht bei Tiefe 200, int4 und int8 (beschreibend) | `d3/D3_Auswertung.md` |
+| `d3b/` | Anlauf und Nutzung der Hülle bei Tiefe 200 (beschreibend, 2 Seeds, nicht im Preprint ausgewertet; V1d verweist darauf) | `d3b/D3b_Auswertung.md` |
+| `v3/` | QAT als Obergrenze: BPreCap mit PTQ gegen LSQ- und PACT-QAT (Tiefe 100) | `v3/V3_Auswertung.md` |
 
 ## Inhalt je Ordner
 
@@ -33,7 +42,7 @@
 
 ## Weitere Formen im Code (Lagma-Regler)
 
-Die Lauf-Skripte stammen aus einer früheren, noch unveröffentlichten Studienreihe zur Lagma-Hülle (Lagma-1 bis 5). Sie enthalten deshalb weitere Formen, die in v0.3 nicht vorkommen: Hüllen, deren Grenze im Training über eine Ziel-Eingriffsrate geregelt wird (`LR10`, `LR03`, `LA10`, `LT`, `LTA`, `LD100`, `LD125`). B1 nutzt im Primärtest `kL2_LD100` als Vergleich. Das Preprint berichtet B1 nur über die Sekundärtests. Die Skripte sind unverändert, damit die Hashes stimmen.
+Die Lauf-Skripte stammen aus einer früheren, noch unveröffentlichten Studienreihe zur Lagma-Hülle (Lagma-1 bis 5). Sie enthalten deshalb weitere Formen, die in v0.3 nicht vorkommen: Hüllen, deren Grenze im Training über eine Ziel-Eingriffsrate geregelt wird (`LR10`, `LR03`, `LA10`, `LT`, `LTA`, `LD100`, `LD125`). B1 nutzt im Primärtest `kL2_LD100` als Vergleich. Das Preprint berichtet B1 nur über die Sekundärtests. Das gilt auch für die Lauf-Skripte von V1, V1b, V1c und V1d (v0.3.1), die auf B10 bzw. B15 aufbauen. Die Skripte sind unverändert, damit die Hashes stimmen.
 
 ## Nachrechnen
 
@@ -43,6 +52,14 @@ python code/v03/b10/b10_run.py --selfcheck    # Selbsttest, MLX nötig
 ```
 
 - Die Auswertungsskripte erwarten zum Teil die Ordner von Vorgängerstudien als weitere Argumente. Welche das sind, steht oben im jeweiligen Bericht. Dort stehen die alten Pfade `studien/<name>`, im Repo heißen sie `code/v03/<name>`.
+- **Auswertungen v0.3.1** (vom Repo-Wurzelordner, Python mit scipy):
+  - `python code/v03/v1/v1_analyze.py code/v03/v1 code/v03/b10`
+  - `python code/v03/v1b/v1b_analyze.py code/v03/v1b code/v03/v1`
+  - `python code/v03/v1c/v1c_analyze.py code/v03/v1c code/v03/b15`
+  - `python code/v03/v1d/v1d_analyze.py code/v03/v1d code/v03/v1c code/v03/b15`
+  - `python code/v03/v3/v3_analyze.py code/v03/v3`
+  - Vor der Veröffentlichung (03.11.2026) so aus diesem Ordner neu gerechnet: alle fünf Ergebnisdateien byte-gleich zu den Originalen.
+- **D2 und D3** prüfen in ihren Hashes auch `../b10/b10_run.py`, `../b13/b13_run.py` bzw. `../b15/b15_run.py`. Diese Dateien sind die veröffentlichten aus v0.3, deshalb stimmen die Hashes nur in diesem Ordner.
 - Die CIFAR-Daten liegen nicht im Repo, nur ihre Prüfsummen. Quelle: https://www.cs.toronto.edu/~kriz/cifar.html
 - **Neulauf vor der Veröffentlichung (01.11.2026):** Ein Lauf aus B10 (BPreCap, Seed 42173) wurde in einer sauberen Kopie an einem fremden Ort neu gestartet. Er war in allen 93 Spalten bitgleich zum Original, ausgenommen Laufzeiten und Zeitstempel.
 - **Abbildungen 1–4 des Preprints:** `python paper/make_fig1_v03.py` und `python paper/make_figures_v03.py`. Die Übersicht `paper/figures_v03/v03_overview.png` entsteht mit `python paper/make_overview_v03.py`, ebenfalls pixelgleich geprüft. Sie lesen nur das Paket bzw. die Roh-CSVs hier und ergeben pixelgleich die Bilder in `paper/figures_v03/` (geprüft am 02.11.2026).
@@ -56,4 +73,4 @@ python code/v03/b10/b10_run.py --selfcheck    # Selbsttest, MLX nötig
 
 ## English note
 
-Code, preregistrations (German), raw per-run CSVs, analysis outputs and reports for the v0.3 preprint. All scripts are hash-frozen and unchanged. They also contain additional, unpublished hull variants with a regulated bound (`LR*`, `LA10`, `LT*`, `LD*`), which are not part of the v0.3 claims. CIFAR data is not included; set `PRECAP_DATA` to your data folder.
+Code, preregistrations (German), raw per-run CSVs, analysis outputs and reports for the v0.3 and v0.3.1 preprints (v0.3.1 adds D2, V1, V1b, V1c, V1d, D3, D3b and V3). All scripts are hash-frozen and unchanged. They also contain additional, unpublished hull variants with a regulated bound (`LR*`, `LA10`, `LT*`, `LD*`), which are not part of the v0.3 claims. CIFAR data is not included; set `PRECAP_DATA` to your data folder.

@@ -1,0 +1,3 @@
+bp200w ok endlich eps4 0.00882 gain4 0.893 frac_soft 0.0231 17.8s
+se200w ok endlich eps4 0.00886 gain4 4.571 frac_soft 0.0249 11.5s
+RAUCHTEST OK

@@ -1,0 +1,8 @@
+gestartet Mon Nov  2 21:37:50 CET 2026
+There are screens on:
+	20887.lg6w1	(Detached)
+	25448.d2w1	(Detached)
+	20884.lg6w0	(Detached)
+	25445.d2w0	(Detached)
+4 Sockets in /var/folders/vd/3bs93c_s3v9_v1mnmn3jmmyw0000gn/T/.screen.
+

@@ -1,0 +1,11 @@
+ok   a_basis_bitgleich_V1 (0.45699999999999996, '0.45699999999999996', 0.5993999999999999, '0.5993999999999999')
+ok   b_LSQ_start_gleich_PTQ (0.5993999999999999, 0.5993999999999999)
+ok   b_PACT_start_gleich_PTQ (0.5993999999999999, 0.5993999999999999)
+ok   c_PACT_kein_Gradient_im_Bereich (0.0, 0.0)
+ok   c_PACT_Gradient_geclippt (1.0, 1.0)
+ok   c_LSQ_Gradient_s_im_Bereich 75.81201171875
+ok   d_quantisierer_fest_bei_lrq0 
+ok   d_gewichte_aendern_sich 
+ok   d_PACT_grenzen_bewegen_sich_bei_lrq 
+ok   e_plan 
+MECHANIK OK

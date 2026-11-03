@@ -1,0 +1,21 @@
+{
+ "eps_uniform4": 0.004441364202648401,
+ "eps_uniform4_theory": 0.0044444444444444444,
+ "eps_uniform8": 1.5380022887256928e-05,
+ "eps_uniform8_theory": 1.5378700499807765e-05,
+ "uniform_ok": true,
+ "fwd_mod_identity_exact": true,
+ "n_inputs_d200": 201,
+ "n_runs": 6,
+ "runs": [
+  "bp200_s42192",
+  "bp200_s42193",
+  "se200_s42192",
+  "se200_s42193",
+  "bp100_s42168",
+  "bp100_s42169"
+ ],
+ "b15_steps_like_b10": true,
+ "ref_rows_found": true,
+ "ok": true
+}

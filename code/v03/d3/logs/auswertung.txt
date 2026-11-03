@@ -1,0 +1,204 @@
+{
+ "valid": {
+  "bp200_s42192": true,
+  "bp200_s42193": true,
+  "se200_s42192": true,
+  "se200_s42193": true,
+  "bp100_s42168": true,
+  "bp100_s42169": true
+ },
+ "table": {
+  "bp200_s42192": {
+   "err_fp32_2000": 0.461,
+   "err_all4_2000": 0.537,
+   "err_all8_2000": 0.4585,
+   "r_all4": 0.451647,
+   "r_all8": 0.043118,
+   "eps4_median": 0.008535,
+   "eps8_median": 3.8e-05,
+   "gain4_median": 0.409636,
+   "gain8_median": 0.407022,
+   "noise_gain_median": 0.409134,
+   "kurt_median": 2.807278,
+   "kurt_q1": 2.83482,
+   "kurt_q4": 2.801017,
+   "max_over_p9999_q1": 1.000031,
+   "max_over_p9999_q4": 1.000182,
+   "frac_soft_median": 0.027531,
+   "eps4_q1": 0.008688,
+   "eps4_q4": 0.008572
+  },
+  "bp200_s42193": {
+   "err_fp32_2000": 0.452,
+   "err_all4_2000": 0.5495,
+   "err_all8_2000": 0.451,
+   "r_all4": 0.469425,
+   "r_all8": 0.044424,
+   "eps4_median": 0.008496,
+   "eps8_median": 3.8e-05,
+   "gain4_median": 0.427487,
+   "gain8_median": 0.420414,
+   "noise_gain_median": 0.432269,
+   "kurt_median": 2.800828,
+   "kurt_q1": 2.828614,
+   "kurt_q4": 2.790518,
+   "max_over_p9999_q1": 1.000029,
+   "max_over_p9999_q4": 1.000214,
+   "frac_soft_median": 0.02782,
+   "eps4_q1": 0.008643,
+   "eps4_q4": 0.008479
+  },
+  "se200_s42192": {
+   "err_fp32_2000": 0.818,
+   "err_all4_2000": 0.8235,
+   "err_all8_2000": 0.818,
+   "r_all4": 0.346904,
+   "r_all8": 0.111747,
+   "eps4_median": 0.007357,
+   "eps8_median": 3.1e-05,
+   "gain4_median": 1.02842,
+   "gain8_median": 0.001026,
+   "noise_gain_median": 0.000105,
+   "kurt_median": 2.388226,
+   "kurt_q1": 2.421222,
+   "kurt_q4": 2.435697,
+   "max_over_p9999_q1": 1.131089,
+   "max_over_p9999_q4": 1.000016,
+   "frac_soft_median": 0.002285,
+   "eps4_q1": 0.009511,
+   "eps4_q4": 0.006464
+  },
+  "se200_s42193": {
+   "err_fp32_2000": 0.5715,
+   "err_all4_2000": 0.607,
+   "err_all8_2000": 0.5775,
+   "r_all4": 0.400789,
+   "r_all8": 0.049983,
+   "eps4_median": 0.008833,
+   "eps8_median": 5e-05,
+   "gain4_median": 0.30269,
+   "gain8_median": 0.315903,
+   "noise_gain_median": 0.295708,
+   "kurt_median": 2.403952,
+   "kurt_q1": 2.459654,
+   "kurt_q4": 2.435769,
+   "max_over_p9999_q1": 1.192313,
+   "max_over_p9999_q4": 1.074439,
+   "frac_soft_median": 0.0,
+   "eps4_q1": 0.009244,
+   "eps4_q4": 0.008602
+  },
+  "bp100_s42168": {
+   "err_fp32_2000": 0.4605,
+   "err_all4_2000": 0.491,
+   "err_all8_2000": 0.464,
+   "r_all4": 0.335279,
+   "r_all8": 0.030415,
+   "eps4_median": 0.008016,
+   "eps8_median": 3.4e-05,
+   "gain4_median": 0.2957,
+   "gain8_median": 0.296356,
+   "noise_gain_median": 0.286135,
+   "kurt_median": 2.75298,
+   "kurt_q1": 2.732437,
+   "kurt_q4": 2.797743,
+   "max_over_p9999_q1": 1.000006,
+   "max_over_p9999_q4": 1.00019,
+   "frac_soft_median": 0.034215,
+   "eps4_q1": 0.007975,
+   "eps4_q4": 0.008512
+  },
+  "bp100_s42169": {
+   "err_fp32_2000": 0.4615,
+   "err_all4_2000": 0.486,
+   "err_all8_2000": 0.465,
+   "r_all4": 0.317718,
+   "r_all8": 0.029012,
+   "eps4_median": 0.007985,
+   "eps8_median": 3.3e-05,
+   "gain4_median": 0.304991,
+   "gain8_median": 0.289711,
+   "noise_gain_median": 0.288257,
+   "kurt_median": 2.741691,
+   "kurt_q1": 2.749059,
+   "kurt_q4": 2.77299,
+   "max_over_p9999_q1": 1.000007,
+   "max_over_p9999_q4": 1.000119,
+   "frac_soft_median": 0.034762,
+   "eps4_q1": 0.008053,
+   "eps4_q4": 0.008149
+  }
+ },
+ "reading": {
+  "F1": {
+   "per_seed": {
+    "42192": "haelt",
+    "42193": "haelt"
+   },
+   "befund": "haelt"
+  },
+  "F2": {
+   "per_seed": {
+    "42192": "gleich",
+    "42193": "gleich"
+   },
+   "befund": "gleich"
+  },
+  "F3": {
+   "per_seed": {
+    "42192": "keine",
+    "42193": "keine"
+   },
+   "befund": "keine"
+  },
+  "F4": {
+   "per_seed": {
+    "42192": "verlustfrei",
+    "42193": "verlustfrei"
+   },
+   "befund": "verlustfrei"
+  },
+  "F5": {
+   "per_seed": {
+    "42192": {
+     "gain4_median": "aehnlich",
+     "eps4_median": "aehnlich",
+     "r_all4": "aehnlich"
+    },
+    "42193": {
+     "gain4_median": "aehnlich",
+     "eps4_median": "aehnlich",
+     "r_all4": "aehnlich"
+    }
+   },
+   "befund": {
+    "eps4_median": "aehnlich",
+    "gain4_median": "aehnlich",
+    "r_all4": "aehnlich"
+   }
+  }
+ },
+ "f6": {
+  "bp200": {
+   "spearman_frac_soft_eps4": [
+    -0.666,
+    -0.77
+   ],
+   "median": -0.718
+  },
+  "se200": {
+   "spearman_frac_soft_eps4": [
+    -0.608,
+    -0.08
+   ],
+   "median": -0.344
+  },
+  "bp100": {
+   "spearman_frac_soft_eps4": [
+    -0.952,
+    -0.927
+   ],
+   "median": -0.939
+  }
+ }
+}

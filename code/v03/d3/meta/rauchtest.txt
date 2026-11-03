@@ -1,0 +1,4 @@
+kL2B_tr 200 endlich noise_gain_median 2.056 gain4 1.933 gain8 2.054 eps4 0.00937 eps8 4.49e-05 accum_r4 [0.299, 0.569, 0.759, 0.921, 1.077, 1.163, 1.196, 1.197] 17.7s
+selu_tr 200 endlich noise_gain_median 76.996 gain4 12.58 gain8 91.736 eps4 0.01056 eps8 5.36e-05 accum_r4 [1.393, 1.408, 1.396, 1.412, 1.406, 1.413, 1.395, 1.39] 10.9s
+kL2B_tr 100 endlich noise_gain_median 1.835 gain4 1.728 gain8 1.841 eps4 0.00929 eps8 4.15e-05 accum_r4 [0.289, 0.55, 0.732, 0.878, 0.963, 1.003, 1.004] 10.1s
+RAUCHTEST OK

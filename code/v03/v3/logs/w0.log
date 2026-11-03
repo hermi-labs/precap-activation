@@ -1,0 +1,65 @@
+base kL2B_tr 42000 ok True 11:48:15
+ft kL2B_tr FT 0.0 42000 ok 11:48:55
+ft kL2B_tr LSQ 0.0001 42000 ok 11:50:05
+ft kL2B_tr LSQ 0.001 42000 ok 11:50:55
+ft kL2B_tr LSQ 0.01 42000 ok 11:51:51
+ft kL2B_tr PACT 0.0001 42000 ok 11:53:45
+ft kL2B_tr PACT 0.001 42000 ok 11:54:43
+ft kL2B_tr PACT 0.01 42000 ok 11:55:42
+base kL2B_tr 42001 ok True 11:58:21
+ft kL2B_tr FT 0.0 42001 ok 11:58:47
+ft kL2B_tr LSQ 0.0001 42001 ok 11:59:48
+ft kL2B_tr LSQ 0.001 42001 ok 12:00:54
+ft kL2B_tr LSQ 0.01 42001 ok 12:01:44
+ft kL2B_tr PACT 0.0001 42001 ok 12:03:08
+ft kL2B_tr PACT 0.001 42001 ok 12:03:45
+ft kL2B_tr PACT 0.01 42001 ok 12:04:22
+base kL2B_tr 42168 ok True 12:07:08
+ft kL2B_tr FT 0.0 42168 ok 12:07:48
+ft kL2B_tr LSQ 0.01 42168 ok 12:08:55
+ft kL2B_tr PACT 0.01 42168 ok 12:10:46
+base kL2B_tr 42169 ok True 12:13:04
+ft kL2B_tr FT 0.0 42169 ok 12:13:45
+ft kL2B_tr LSQ 0.01 42169 ok 12:14:55
+ft kL2B_tr PACT 0.01 42169 ok 12:16:25
+base kL2B_tr 42170 ok True 12:19:16
+ft kL2B_tr FT 0.0 42170 ok 12:19:55
+ft kL2B_tr LSQ 0.01 42170 ok 12:20:50
+ft kL2B_tr PACT 0.01 42170 ok 12:22:38
+base kL2B_tr 42171 ok True 12:25:21
+ft kL2B_tr FT 0.0 42171 ok 12:25:47
+ft kL2B_tr LSQ 0.01 42171 ok 12:26:48
+ft kL2B_tr PACT 0.01 42171 ok 12:28:38
+base kL2B_tr 42172 ok True 12:30:57
+ft kL2B_tr FT 0.0 42172 ok 12:31:38
+ft kL2B_tr LSQ 0.01 42172 ok 12:32:49
+ft kL2B_tr PACT 0.01 42172 ok 12:34:20
+base kL2B_tr 42173 ok True 12:37:06
+ft kL2B_tr FT 0.0 42173 ok 12:37:46
+ft kL2B_tr LSQ 0.01 42173 ok 12:38:45
+ft kL2B_tr PACT 0.01 42173 ok 12:40:33
+base kL2B_tr 42174 ok True 12:43:22
+ft kL2B_tr FT 0.0 42174 ok 12:43:48
+ft kL2B_tr LSQ 0.01 42174 ok 12:44:44
+ft kL2B_tr PACT 0.01 42174 ok 12:46:35
+base kL2B_tr 42175 ok True 12:48:54
+ft kL2B_tr FT 0.0 42175 ok 12:49:34
+ft kL2B_tr LSQ 0.01 42175 ok 12:50:44
+ft kL2B_tr PACT 0.01 42175 ok 12:52:18
+base kL2B_tr 42176 ok True 12:54:59
+ft kL2B_tr FT 0.0 42176 ok 12:55:40
+ft kL2B_tr LSQ 0.01 42176 ok 12:56:43
+ft kL2B_tr PACT 0.01 42176 ok 12:58:23
+base kL2B_tr 42177 ok True 13:00:10
+ft kL2B_tr FT 0.0 42177 ok 13:00:35
+ft kL2B_tr LSQ 0.01 42177 ok 13:01:18
+ft kL2B_tr PACT 0.01 42177 ok 13:02:41
+base kL2B_tr 42178 ok True 13:04:28
+ft kL2B_tr FT 0.0 42178 ok 13:04:53
+ft kL2B_tr LSQ 0.01 42178 ok 13:05:35
+ft kL2B_tr PACT 0.01 42178 ok 13:06:59
+base kL2B_tr 42179 ok True 13:08:45
+ft kL2B_tr FT 0.0 42179 ok 13:09:11
+ft kL2B_tr LSQ 0.01 42179 ok 13:09:53
+ft kL2B_tr PACT 0.01 42179 ok 13:11:16
+fertig

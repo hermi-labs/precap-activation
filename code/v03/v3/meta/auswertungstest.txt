@@ -1,0 +1,6 @@
+QAT besser -> schlechter {'S1_BPreCapFT_PTQ_vs_TAT_PACT': 'schlechter', 'S2_BPreCap_LSQ_vs_TAT_LSQ': 'besser', 'S3_BPreCap_PACT_vs_TAT_PACT': 'besser', 'S4_TAT_LSQ_vs_TAT_FT': 'besser', 'S5_BPreCap_LSQ_vs_BPreCap_FT': 'besser', 'S6_BPreCapFT_vs_TATFT_PTQ': 'besser'} True
+BPreCap besser -> besser True
+Null 20x -> Fehlalarme 1
+Ausfall -> 1 True
+Basis nicht bitgleich -> 22/24 True
+AUSWERTUNG OK

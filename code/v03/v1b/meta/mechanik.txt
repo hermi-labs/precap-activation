@@ -1,0 +1,14 @@
+ok   kL2B_tr_form_wie_V1 
+ok   kL2B_tr_init_wie_V1 
+ok   kL2B_tr_daten_wie_V1 
+ok   tat_form_wie_V1 
+ok   tat_init_wie_V1 
+ok   tat_daten_wie_V1 
+ok   konstanten_wie_V1 
+ok   raster 
+ok   n_tune 32
+ok   wd_je_form 
+ok   plan_688 ['0', '0.00015', '0.0003', '0.00015', '1.79e-11']
+ok   wcos344_bitgleich_V1 {'train_loss_last50': (1.3481653332710266, 1.3481653332710266), 'val_err_fp32': (0.5274, 0.5274)}
+ok   wcos688_wirkt (1.3625805377960205, 1.3481653332710266)
+MECHANIK OK

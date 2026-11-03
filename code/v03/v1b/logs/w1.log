@@ -1,0 +1,17 @@
+tune cifar10_d100_kL2B_tr_s42000_lr5e-05_wd0.3_wcos688 ok 01:00:36
+tune cifar10_d100_kL2B_tr_s42000_lr0.0002_wd0.3_wcos688 ok 01:03:26
+tune cifar10_d100_kL2B_tr_s42000_lr0.0003_wd0.3_wcos688 ok 01:06:16
+tune cifar10_d100_kL2B_tr_s42000_lr0.0005_wd0.3_wcos688 ok 01:09:07
+tune cifar10_d100_tat_s42000_lr5e-05_wd0_wcos688 ok 01:10:47
+tune cifar10_d100_tat_s42000_lr0.0002_wd0_wcos688 ok 01:12:28
+tune cifar10_d100_tat_s42000_lr0.0003_wd0_wcos688 ok 01:14:09
+tune cifar10_d100_tat_s42000_lr0.0005_wd0_wcos688 ok 01:15:49
+tune cifar10_d100_kL2B_tr_s42001_lr5e-05_wd0.3_wcos688 ok 01:18:39
+tune cifar10_d100_kL2B_tr_s42001_lr0.0002_wd0.3_wcos688 ok 01:21:29
+tune cifar10_d100_kL2B_tr_s42001_lr0.0003_wd0.3_wcos688 ok 01:24:18
+tune cifar10_d100_kL2B_tr_s42001_lr0.0005_wd0.3_wcos688 ok 01:27:08
+tune cifar10_d100_tat_s42001_lr5e-05_wd0_wcos688 ok 01:28:48
+tune cifar10_d100_tat_s42001_lr0.0002_wd0_wcos688 ok 01:30:28
+tune cifar10_d100_tat_s42001_lr0.0003_wd0_wcos688 ok 01:32:08
+tune cifar10_d100_tat_s42001_lr0.0005_wd0_wcos688 ok 01:33:48
+fertig 01:33:48

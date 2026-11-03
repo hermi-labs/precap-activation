@@ -1,0 +1,8 @@
+Dosis linear: {'P1': 'besser', 'P2': 'schlechter'} auch 1 % Anlauf kostet bei 4 Bit True
+nur 5 % kostet: {'P1': 'besser', 'P2': 'unklar'} kurzer Anlauf vermeidet den 4-Bit-Preis
+jeder Anlauf kostet: {'P1': 'unklar', 'P2': 'schlechter'} auch 1 % Anlauf kostet bei 4 Bit
+Null (10x): ['nicht aufgeloest', 'nicht aufgeloest', 'nicht aufgeloest', 'nicht aufgeloest', 'nicht aufgeloest', 'nicht aufgeloest', 'nicht aufgeloest', 'nicht aufgeloest', 'nicht aufgeloest', 'nicht aufgeloest']
+Kontrolle verfehlt: False [{'key': ['cos', 42192], 'present': True, 'equal': False}, {'key': ['w344', 42192], 'present': True, 'equal': True}]
+Ausfall: Zeilen [11, 12] Diff 36.391
+fp32 S3: besser
+AUSWERTUNG OK

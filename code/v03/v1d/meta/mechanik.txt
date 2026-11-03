@@ -1,0 +1,7 @@
+Laufliste 26 ['cifar10_d200_kL2B_tr_s42192_kontrolle', 'cifar10_d200_kL2B_tr_s42192_w344', 'cifar10_d200_kL2B_tr_s42192_w69', 'cifar10_d200_kL2B_tr_s42192_w172'] True
+Plan w69: Spitze bei 69, Ende 0.00e+00 True
+Plan w172: Spitze bei 172, Ende 0.00e+00 True
+Plan w344: Spitze bei 344, Ende 0.00e+00 True
+cos warm 0: V1d cifar10_d200_kL2B_tr_s42192_kontrolle gegen V1c cifar10_d200_kL2B_tr_s42192_kontrolle: bitgleich | w4a 0.8055
+wcos warm 344: V1d cifar10_d200_kL2B_tr_s42192_w344 gegen V1c cifar10_d200_kL2B_tr_s42192: bitgleich | w4a 0.8041
+MECHANIK OK

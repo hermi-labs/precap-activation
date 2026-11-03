@@ -1,0 +1,7 @@
+Tests ok 11:45
+gestartet Tue Nov  3 11:45:23 CET 2026
+There are screens on:
+	35205.v3w1	(Detached)
+	35202.v3w0	(Detached)
+2 Sockets in /var/folders/vd/3bs93c_s3v9_v1mnmn3jmmyw0000gn/T/.screen.
+

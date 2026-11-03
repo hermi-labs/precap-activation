@@ -1,0 +1,65 @@
+base tat 42000 ok True 11:47:14
+ft tat FT 0.0 42000 ok 11:47:42
+ft tat LSQ 0.0001 42000 ok 11:48:37
+ft tat LSQ 0.001 42000 ok 11:49:29
+ft tat LSQ 0.01 42000 ok 11:50:22
+ft tat PACT 0.0001 42000 ok 11:51:57
+ft tat PACT 0.001 42000 ok 11:52:26
+ft tat PACT 0.01 42000 ok 11:52:58
+base tat 42001 ok True 11:54:52
+ft tat FT 0.0 42001 ok 11:55:19
+ft tat LSQ 0.0001 42001 ok 11:56:14
+ft tat LSQ 0.001 42001 ok 11:57:10
+ft tat LSQ 0.01 42001 ok 11:58:06
+ft tat PACT 0.0001 42001 ok 11:59:43
+ft tat PACT 0.001 42001 ok 12:00:29
+ft tat PACT 0.01 42001 ok 12:01:14
+base tat 42168 ok True 12:06:27
+ft tat FT 0.0 42168 ok 12:06:55
+ft tat LSQ 0.001 42168 ok 12:07:51
+ft tat PACT 0.01 42168 ok 12:08:36
+base tat 42169 ok True 12:09:49
+ft tat FT 0.0 42169 ok 12:10:17
+ft tat LSQ 0.001 42169 ok 12:11:12
+ft tat PACT 0.01 42169 ok 12:12:51
+base tat 42170 ok True 12:14:39
+ft tat FT 0.0 42170 ok 12:15:03
+ft tat LSQ 0.001 42170 ok 12:15:36
+ft tat PACT 0.01 42170 ok 12:17:13
+base tat 42171 ok True 12:19:06
+ft tat FT 0.0 42171 ok 12:19:34
+ft tat LSQ 0.001 42171 ok 12:20:28
+ft tat PACT 0.01 42171 ok 12:21:49
+base tat 42172 ok True 12:23:43
+ft tat FT 0.0 42172 ok 12:24:12
+ft tat LSQ 0.001 42172 ok 12:25:07
+ft tat PACT 0.01 42172 ok 12:26:45
+base tat 42173 ok True 12:27:59
+ft tat FT 0.0 42173 ok 12:28:27
+ft tat LSQ 0.001 42173 ok 12:29:22
+ft tat PACT 0.01 42173 ok 12:31:01
+base tat 42174 ok True 12:32:49
+ft tat FT 0.0 42174 ok 12:33:06
+ft tat LSQ 0.001 42174 ok 12:33:39
+ft tat PACT 0.01 42174 ok 12:35:17
+base tat 42175 ok True 12:37:10
+ft tat FT 0.0 42175 ok 12:37:38
+ft tat LSQ 0.001 42175 ok 12:38:32
+ft tat PACT 0.01 42175 ok 12:39:57
+base tat 42176 ok True 12:41:51
+ft tat FT 0.0 42176 ok 12:42:19
+ft tat LSQ 0.001 42176 ok 12:43:14
+ft tat PACT 0.01 42176 ok 12:44:49
+base tat 42177 ok True 12:46:07
+ft tat FT 0.0 42177 ok 12:46:35
+ft tat LSQ 0.001 42177 ok 12:47:31
+ft tat PACT 0.01 42177 ok 12:49:10
+base tat 42178 ok True 12:50:53
+ft tat FT 0.0 42178 ok 12:51:09
+ft tat LSQ 0.001 42178 ok 12:51:45
+ft tat PACT 0.01 42178 ok 12:53:24
+base tat 42179 ok True 12:55:17
+ft tat FT 0.0 42179 ok 12:55:45
+ft tat LSQ 0.001 42179 ok 12:56:39
+ft tat PACT 0.01 42179 ok 12:58:08
+fertig

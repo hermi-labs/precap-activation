@@ -1,0 +1,13 @@
+Laeufe 32/32 ok | Kontrolle bitgleich zu V1: True [{'act': 'kL2B_tr', 'seed': '42000', 'equal': True}, {'act': 'kL2B_tr', 'seed': '42001', 'equal': True}, {'act': 'tat', 'seed': '42000', 'equal': True}, {'act': 'tat', 'seed': '42001', 'equal': True}]
+kL2B_tr
+   5e-05 Anlauf 344: [46.3, 46.58] (w8a4a None) | Anlauf 688: [45.82, 46.18] (w8a4a None)
+   0.0002 Anlauf 344: [45.94, 45.62] (w8a4a None) | Anlauf 688: [45.88, 45.92] (w8a4a None)
+   0.0003 Anlauf 344: [48.62, 48.38] (w8a4a None) | Anlauf 688: [47.42, 48.0] (w8a4a None)
+   0.0005 Anlauf 344: [80.94, 81.74] (w8a4a None) | Anlauf 688: [81.44, 83.58] (w8a4a None)
+   Grenze 5 % / 10 %: 0.0003 / 0.0003 | 10 % verschiebt: {'verschiebt': False, 'diff_2e4_pp': 0.12} | unten: {'med_5e5': 46.44, 'med_1e4_v1': 44.7, 'diff_pp': 1.74, 'urteil': '5e-5 schlechter'}
+tat
+   5e-05 Anlauf 344: [49.68, 49.74] (w8a4a None) | Anlauf 688: [50.62, 50.76] (w8a4a None)
+   0.0002 Anlauf 344: [44.88, 45.7] (w8a4a None) | Anlauf 688: [46.14, 44.68] (w8a4a None)
+   0.0003 Anlauf 344: [47.52, 47.64] (w8a4a None) | Anlauf 688: [47.02, 47.84] (w8a4a None)
+   0.0005 Anlauf 344: [71.66, 58.52] (w8a4a None) | Anlauf 688: [83.8, 87.66] (w8a4a None)
+   Grenze 5 % / 10 %: 0.0005 / 0.0003 | 10 % verschiebt: {'verschiebt': False, 'diff_2e4_pp': 0.12} | unten: {'med_5e5': 49.71, 'med_1e4_v1': 47.56, 'diff_pp': 2.15, 'urteil': '5e-5 schlechter'}

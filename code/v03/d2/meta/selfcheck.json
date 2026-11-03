@@ -1,0 +1,37 @@
+{
+ "n_runs": 12,
+ "runs": [
+  "bp1_s42000",
+  "bp2_s42000",
+  "bp2w3_s42000",
+  "lb2_s42000",
+  "bh2_s42000",
+  "ta2_s42000",
+  "bp1_s42001",
+  "bp2_s42001",
+  "bp2w3_s42001",
+  "lb2_s42001",
+  "bh2_s42001",
+  "ta2_s42001"
+ ],
+ "ref_rows_found": true,
+ "probe_keys": [
+  "deep_layers",
+  "deep_max",
+  "deep_med",
+  "glog_first_last",
+  "glog_layers",
+  "glog_med",
+  "knee_layers",
+  "knee_max",
+  "knee_med",
+  "prerms_max",
+  "prerms_med",
+  "probe_loss",
+  "wnorm_max",
+  "wnorm_med"
+ ],
+ "probe_finite": true,
+ "steps": 6880,
+ "ok": true
+}

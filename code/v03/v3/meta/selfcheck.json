@@ -1,0 +1,21 @@
+{
+ "device": "Device(gpu, 0)",
+ "ft_steps": 1376,
+ "lrq_grid": [
+  0.0001,
+  0.001,
+  0.01
+ ],
+ "LSQ_vs_ptq_maxdiff": 0.0,
+ "LSQ_levels": 16,
+ "LSQ_grad_finite": true,
+ "LSQ_grad_nonzero": true,
+ "PACT_vs_ptq_maxdiff": 0.0,
+ "PACT_levels": 16,
+ "PACT_grad_finite": true,
+ "PACT_grad_nonzero": true,
+ "ref_rows": true,
+ "n_tune_runs": 32,
+ "n_confirm_runs": 96,
+ "ok": true
+}

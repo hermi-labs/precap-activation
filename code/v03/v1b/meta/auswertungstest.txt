@@ -1,0 +1,12 @@
+ok   n 32
+ok   kontrolle_gleich [{'act': 'kL2B_tr', 'seed': '42000', 'equal': True}, {'act': 'kL2B_tr', 'seed': '42001', 'equal': True}, {'act': 'tat', 'seed': '42000', 'equal': True}, {'act': 'tat', 'seed': '42001', 'equal': True}]
+ok   grenze_5 {'kL2B_tr|344': 0.0003, 'kL2B_tr|688': 0.0005, 'tat|344': 0.0003, 'tat|688': 0.0005}
+ok   grenze_10 {'kL2B_tr|344': 0.0003, 'kL2B_tr|688': 0.0005, 'tat|344': 0.0003, 'tat|688': 0.0005}
+ok   warm10_verschiebt {'kL2B_tr': {'verschiebt': True, 'diff_2e4_pp': 0.4}, 'tat': {'verschiebt': True, 'diff_2e4_pp': 0.7}}
+ok   unten_besser {'kL2B_tr': {'med_5e5': 44.0, 'med_1e4_v1': 44.7, 'diff_pp': -0.7, 'urteil': '5e-5 besser'}, 'tat': {'med_5e5': 44.0, 'med_1e4_v1': 44.7, 'diff_pp': -0.7, 'urteil': '5e-5 besser'}}
+ok   warm10_verschiebt_nicht {'kL2B_tr': {'verschiebt': False, 'diff_2e4_pp': 0.4}, 'tat': {'verschiebt': False, 'diff_2e4_pp': 0.7}}
+ok   unten_gleich {'kL2B_tr': {'med_5e5': 44.9, 'med_1e4_v1': 44.7, 'diff_pp': 0.2, 'urteil': 'gleich'}, 'tat': {'med_5e5': 44.9, 'med_1e4_v1': 44.7, 'diff_pp': 0.2, 'urteil': 'gleich'}}
+ok   grenze_2e4 {'kL2B_tr|344': 0.0002, 'kL2B_tr|688': 0.0005, 'tat|344': 0.0002, 'tat|688': 0.0005}
+ok   ausfall_ist_einbruch {'kL2B_tr|344': 0.0002, 'kL2B_tr|688': 0.0005, 'tat|344': 0.0003, 'tat|688': 0.0005}
+ok   kontrolle_ungleich_erkannt [{'act': 'kL2B_tr', 'seed': '42000', 'equal': False}, {'act': 'kL2B_tr', 'seed': '42001', 'equal': True}, {'act': 'tat', 'seed': '42000', 'equal': True}, {'act': 'tat', 'seed': '42001', 'equal': True}]
+AUSWERTUNG OK

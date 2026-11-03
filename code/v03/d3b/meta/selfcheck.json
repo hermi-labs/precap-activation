@@ -1,0 +1,18 @@
+{
+ "n_runs": 4,
+ "runs": [
+  "bp200w_s42192",
+  "bp200w_s42193",
+  "se200w_s42192",
+  "se200w_s42193"
+ ],
+ "warm": 344,
+ "steps": 6880,
+ "lr_0": 0.0,
+ "lr_344": 9.999999747378752e-05,
+ "lr_end": 0.0,
+ "ref_rows_found": true,
+ "d3_results_found": true,
+ "same_consts_as_b15": true,
+ "ok": true
+}

@@ -1,0 +1,306 @@
+{
+ "n_rows": 9,
+ "soll": 9,
+ "n_ok": 9,
+ "eindeutig": true,
+ "gueltige_paare": [
+  42353,
+  42354,
+  42355,
+  42356,
+  42357,
+  42358,
+  42359,
+  42360,
+  42361
+ ],
+ "ausfaelle": [],
+ "referenz_vollstaendig": true,
+ "Primaer": {
+  "E1": {
+   "test": "log(gbarC rho0,4 / gbarC rho0,8): Weitergabe des Abschneidefehlers",
+   "n": 9,
+   "seeds": [
+    42353,
+    42354,
+    42355,
+    42356,
+    42357,
+    42358,
+    42359,
+    42360,
+    42361
+   ],
+   "werte": [
+    0.13048,
+    0.12115,
+    0.05151,
+    0.09553,
+    0.02942,
+    0.12738,
+    0.14013,
+    0.16534,
+    -0.02361
+   ],
+   "median": 0.12115,
+   "positiv": 8,
+   "negativ": 1,
+   "p": 0.00781,
+   "q_median": 1.1288,
+   "p_holm": 0.01562,
+   "urteil": "bestaetigt"
+  },
+  "E2": {
+   "test": "log(D_allC rho0,4 / D_allC rho0,8): Abschneiden in allen Schichten an den Logits",
+   "n": 9,
+   "seeds": [
+    42353,
+    42354,
+    42355,
+    42356,
+    42357,
+    42358,
+    42359,
+    42360,
+    42361
+   ],
+   "werte": [
+    -0.19822,
+    0.01082,
+    -0.08696,
+    -0.04049,
+    -0.29,
+    -0.10741,
+    -0.05219,
+    -0.30146,
+    -0.23279
+   ],
+   "median": -0.10741,
+   "positiv": 1,
+   "negativ": 8,
+   "p": 0.00781,
+   "q_median": 0.8982,
+   "p_holm": 0.01562,
+   "urteil": "widerlegt"
+  }
+ },
+ "Sekundaer": {
+  "S1": {
+   "test": "4-Bit-Preis (w8a4a_best - fp32), rho0,4 - rho0,8",
+   "n": 9,
+   "seeds": [
+    42353,
+    42354,
+    42355,
+    42356,
+    42357,
+    42358,
+    42359,
+    42360,
+    42361
+   ],
+   "werte": [
+    -0.0087,
+    -0.0056,
+    -0.0047,
+    0.0009,
+    -0.0207,
+    -0.0039,
+    0.0012,
+    0.0012,
+    0.0122
+   ],
+   "median": -0.0039,
+   "positiv": 4,
+   "negativ": 5,
+   "p": 0.35938,
+   "median_pp": -0.39,
+   "p_holm": 1.0,
+   "urteil": "kein klarer Unterschied"
+  },
+  "S2": {
+   "test": "Testfehler w8a4a_best, rho0,4 - rho0,8",
+   "n": 9,
+   "seeds": [
+    42353,
+    42354,
+    42355,
+    42356,
+    42357,
+    42358,
+    42359,
+    42360,
+    42361
+   ],
+   "werte": [
+    -0.0134,
+    -0.0112,
+    0.0001,
+    -0.0119,
+    -0.0152,
+    -0.0044,
+    0.0069,
+    -0.0068,
+    0.0153
+   ],
+   "median": -0.0068,
+   "positiv": 3,
+   "negativ": 6,
+   "p": 0.35938,
+   "median_pp": -0.68,
+   "p_holm": 1.0,
+   "urteil": "kein klarer Unterschied"
+  },
+  "S3": {
+   "test": "Testfehler fp32, rho0,4 - rho0,8",
+   "n": 9,
+   "seeds": [
+    42353,
+    42354,
+    42355,
+    42356,
+    42357,
+    42358,
+    42359,
+    42360,
+    42361
+   ],
+   "werte": [
+    -0.0047,
+    -0.0056,
+    0.0048,
+    -0.0128,
+    0.0055,
+    -0.0005,
+    0.0057,
+    -0.008,
+    0.0031
+   ],
+   "median": -0.0005,
+   "positiv": 4,
+   "negativ": 5,
+   "p": 0.65234,
+   "median_pp": -0.05,
+   "p_holm": 1.0,
+   "urteil": "kein klarer Unterschied"
+  },
+  "S4": {
+   "test": "log(gbarC rho0,4 / gbarC ctanh)",
+   "n": 9,
+   "seeds": [
+    42353,
+    42354,
+    42355,
+    42356,
+    42357,
+    42358,
+    42359,
+    42360,
+    42361
+   ],
+   "werte": [
+    -0.09601,
+    -0.2408,
+    -0.29024,
+    -0.16516,
+    -0.23388,
+    -0.04043,
+    -0.22828,
+    -0.09549,
+    -0.33167
+   ],
+   "median": -0.22828,
+   "positiv": 0,
+   "negativ": 9,
+   "p": 0.00391,
+   "q_median": 0.7959,
+   "p_holm": 0.01564,
+   "urteil": "Unterschied (rho0,4 kleiner)"
+  }
+ },
+ "Deutung": "Fruehe Saettigung schwaecht die Wirkung des Abschneidens: die Lesart \"spaete Saettigung hilft\" ist fuer die Huelle falsch",
+ "mediane": {
+  "rho04": {
+   "D_allQ": 0.27118,
+   "D_allC": 0.10421,
+   "D_allR": 0.26222,
+   "rbarQ": 0.07955,
+   "rbarC": 0.02455,
+   "rbarR": 0.07556,
+   "gbarQ": 0.24124,
+   "gbarC": 0.55975,
+   "gbarR": 0.1699,
+   "kappa": 0.95753,
+   "nu": 1.08401,
+   "superpos_Q": 0.98306,
+   "frac_clip_median": 0.04189,
+   "cos_nachbar_median": 0.03983
+  },
+  "rho08": {
+   "D_allQ": 0.27386,
+   "D_allC": 0.12045,
+   "D_allR": 0.25594,
+   "rbarQ": 0.08193,
+   "rbarC": 0.02244,
+   "rbarR": 0.0785,
+   "gbarQ": 0.22272,
+   "gbarC": 0.49536,
+   "gbarR": 0.17306,
+   "kappa": 1.1603,
+   "nu": 1.08305,
+   "superpos_Q": 1.07201,
+   "frac_clip_median": 0.03872,
+   "cos_nachbar_median": 0.04904
+  },
+  "ctanh": {
+   "D_allQ": 0.3033,
+   "D_allC": 0.15062,
+   "D_allR": 0.26842,
+   "rbarQ": 0.07481,
+   "rbarC": 0.02383,
+   "rbarR": 0.07071,
+   "gbarQ": 0.26296,
+   "gbarC": 0.64811,
+   "gbarR": 0.15703,
+   "kappa": 0.76634,
+   "nu": 0.88541,
+   "superpos_Q": 1.09696,
+   "frac_clip_median": 0.03288,
+   "cos_nachbar_median": 0.03526
+  }
+ },
+ "fehler_mediane_pp": {
+  "rho04": {
+   "es_test_err_fp32": 42.72,
+   "es_test_err_w8a4a_best": 47.62,
+   "es_test_err_w8a4a_mse4": 47.62
+  },
+  "rho08": {
+   "es_test_err_fp32": 42.72,
+   "es_test_err_w8a4a_best": 48.09,
+   "es_test_err_w8a4a_mse4": 47.27
+  }
+ },
+ "lage_t_median": {
+  "gbarC": 0.366,
+  "D_allC": -0.62,
+  "gbarQ": 0.559,
+  "D_allQ": 0.339
+ },
+ "logq_v_gegen_rho08_median": {
+  "D_allQ": -0.0504,
+  "D_allC": -0.1074,
+  "D_allR": -0.006,
+  "rbarC": 0.086,
+  "rbarR": -0.0358,
+  "gbarQ": 0.0845,
+  "gbarC": 0.1212,
+  "gbarR": -0.0034,
+  "frac_clip_median": 0.0506
+ },
+ "delta_v_gegen_rho08_median": {
+  "kappa": -0.323,
+  "nu": -0.0289,
+  "superpos_Q": -0.061
+ }
+}

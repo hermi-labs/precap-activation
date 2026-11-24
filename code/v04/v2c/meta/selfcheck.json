@@ -1,0 +1,45 @@
+Geraet: Device(gpu, 0)
+{
+ "L": 50,
+ "C": 32,
+ "steps": 3440,
+ "n_tune": 12,
+ "lr_grid": {
+  "tanh": [
+   1e-05,
+   3e-05,
+   0.0001
+  ]
+ },
+ "wd_grid": [
+  0.0,
+  3.0
+ ],
+ "tune_seeds": [
+  42000,
+  42001
+ ],
+ "seeds": [
+  42350,
+  42351,
+  42352,
+  42353,
+  42354,
+  42355,
+  42356,
+  42357,
+  42358,
+  42359,
+  42360,
+  42361
+ ],
+ "Ef_tanh": 0.0,
+ "Ef2_tanh": 0.3943,
+ "tanh_ist_mx_tanh": true,
+ "bprecap_unveraendert": true,
+ "n_confirm": 12,
+ "confirm_acts": [
+  "tanh"
+ ],
+ "seeds_wie_v2a2": true
+}

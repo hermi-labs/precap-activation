@@ -1,0 +1,7 @@
+Primaer E1 log(gbarC rho0,4 / gbarC rho0,8): Weitergabe des Abschneidefehlers | Median 0.12115 | q 1.1288 | +/- 8 1 | p_holm 0.01562 -> bestaetigt
+Primaer E2 log(D_allC rho0,4 / D_allC rho0,8): Abschneiden in allen Schichten an den Logits | Median -0.10741 | q 0.8982 | +/- 1 8 | p_holm 0.01562 -> widerlegt
+Sekundaer S1 4-Bit-Preis (w8a4a_best - fp32), rho0,4 - rho0,8 | Median -0.0039 | q - | +/- 4 5 | p_holm 1.0 -> kein klarer Unterschied
+Sekundaer S2 Testfehler w8a4a_best, rho0,4 - rho0,8 | Median -0.0068 | q - | +/- 3 6 | p_holm 1.0 -> kein klarer Unterschied
+Sekundaer S3 Testfehler fp32, rho0,4 - rho0,8 | Median -0.0005 | q - | +/- 4 5 | p_holm 1.0 -> kein klarer Unterschied
+Sekundaer S4 log(gbarC rho0,4 / gbarC ctanh) | Median -0.22828 | q 0.7959 | +/- 0 9 | p_holm 0.01564 -> Unterschied (rho0,4 kleiner)
+Zeilen 9 ok 9 gueltige Paare 9 | Fruehe Saettigung schwaecht die Wirkung des Abschneidens: die Lesart "spaete Saettigung hilft" ist fuer die Huelle falsch

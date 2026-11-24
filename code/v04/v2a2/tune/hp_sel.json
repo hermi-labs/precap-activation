@@ -1,0 +1,26 @@
+{
+ "bprecap": {
+  "lr": 3e-05,
+  "wd": 0.0,
+  "med_val_acc": 0.5778,
+  "lr_at_edge": false,
+  "wd_at_edge": false,
+  "all_failed": false
+ },
+ "tat": {
+  "lr": 0.0001,
+  "wd": 0.0,
+  "med_val_acc": 0.6129,
+  "lr_at_edge": false,
+  "wd_at_edge": false,
+  "all_failed": false
+ },
+ "selu": {
+  "lr": 3e-05,
+  "wd": 0.0,
+  "med_val_acc": 0.595,
+  "lr_at_edge": false,
+  "wd_at_edge": false,
+  "all_failed": false
+ }
+}

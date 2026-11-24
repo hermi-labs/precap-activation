@@ -1,0 +1,36 @@
+Geraet: Device(gpu, 0)
+{
+ "n_runs": 18,
+ "soll_zeilen": 36,
+ "forms": [
+  "bprecap",
+  "ctanh"
+ ],
+ "seeds": [
+  42353,
+  42354,
+  42355,
+  42356,
+  42357,
+  42358,
+  42359,
+  42360,
+  42361
+ ],
+ "cals": [
+  "mse4",
+  "max"
+ ],
+ "ntest": 1000,
+ "hist_vollstaendig": true,
+ "seeds_neu_gegen_v2e": true,
+ "run_ids_wie_hist": true,
+ "act_ctanh_wie_v2d": true,
+ "Ef2_bprecap": 1.0,
+ "Ef2_ctanh": 1.0,
+ "mess_mse4_endlich": true,
+ "mess_mse4_r_positiv": true,
+ "mess_max_endlich": true,
+ "mess_max_r_positiv": true,
+ "mess_reproduzierbar": true
+}

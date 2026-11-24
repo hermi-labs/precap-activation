@@ -9,8 +9,8 @@ authors:
 license: Apache-2.0
 repository-code: "https://github.com/hermi-labs/precap-activation"
 doi: "10.5281/zenodo.23676432"
-version: 0.3.1
-date-released: "2026-11-03"
+version: 0.4.0
+date-released: "2026-11-24"
 keywords:
   - activation function
   - self-normalizing neural networks
@@ -19,15 +19,17 @@ keywords:
   - deep learning
   - quantization
   - depth calibration
+  - convolutional networks
+  - post-training quantization
 preferred-citation:
   type: article
-  title: "PreCap v0.3.1: A Depth-Calibrated Activation with a Soft Fixed Bound for Deep Normalization-Free MLPs – Training Depth and 4-Bit Robustness in One Form"
+  title: "BPreCap in Deep Normalization-Free CNNs: A Bounded, Depth-Calibrated Activation under 4-Bit Post-Training Quantization"
   authors:
     - family-names: Schmitt
       given-names: Aaron
       orcid: "https://orcid.org/0009-0009-8689-5848"
-  doi: "10.5281/zenodo.23930791"
+  doi: "10.5281/zenodo.24491869"
   year: 2026
   publisher:
     name: Zenodo
-  notes: "Preprint, version 0.3.1"
+  notes: "Preprint, version 0.4"

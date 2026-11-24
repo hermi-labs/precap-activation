@@ -1,0 +1,13 @@
+OK  Daten gleich Pilot 
+OK  20 Schritte bprecap val_err_fp32 0.786 gegen Pilot-Code 0.786
+OK  20 Schritte bprecap val_err_w8a8 0.78 gegen Pilot-Code 0.78
+OK  20 Schritte bprecap val_err_w8a4a_max 0.782 gegen Pilot-Code 0.782
+OK  20 Schritte bprecap val_err_w8a4a_p9999 0.774 gegen Pilot-Code 0.774
+OK  Kalibrierung bprecap ohne p999 gleich 
+OK  20 Schritte selu val_err_fp32 0.79 gegen Pilot-Code 0.79
+OK  20 Schritte selu val_err_w8a8 0.78 gegen Pilot-Code 0.78
+OK  20 Schritte selu val_err_w8a4a_max 0.798 gegen Pilot-Code 0.798
+OK  20 Schritte selu val_err_w8a4a_p9999 0.8 gegen Pilot-Code 0.8
+OK  Kalibrierung selu ohne p999 gleich 
+OK  Konfigurationen 
+MECHANIK OK

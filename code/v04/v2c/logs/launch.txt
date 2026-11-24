@@ -1,0 +1,8 @@
+Kontrolle laeuft 17:47
+Tests ok 18:30
+gestartet Wed Nov 18 18:30:21 CET 2026
+There are screens on:
+	50751.v2cwache	(Detached)
+	50749.v2cw0	(Detached)
+2 Sockets in /var/folders/vd/3bs93c_s3v9_v1mnmn3jmmyw0000gn/T/.screen.
+

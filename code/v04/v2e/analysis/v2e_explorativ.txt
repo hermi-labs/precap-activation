@@ -1,0 +1,33 @@
+== (1) Zerlegung BPreCap/ctanh: log D = log sqrt(Sum d^2) + log Superposition ==
+42350 cal B=mse4 C=p99999 logD=-0.346 log_sqrtSd2=-0.219 log_superpos=-0.127 superpos B=1.052 C=1.195
+42351 cal B=mse4 C=mse4 logD=-0.080 log_sqrtSd2=-0.032 log_superpos=-0.049 superpos B=1.003 C=1.053
+42352 cal B=mse4 C=max logD=-0.336 log_sqrtSd2=-0.173 log_superpos=-0.163 superpos B=1.060 C=1.248
+
+== (2) sqrt(Sum d_i^2) je Block, D^Q, Superposition ==
+form seed cal Bild 1-10 11-20 21-30 31-40 41-49 Linear D_allQ superpos
+bprecap 42350 mse4 0.122 0.182 0.072 0.057 0.037 0.016 0.050 0.259 1.052
+bprecap 42351 mse4 0.128 0.199 0.082 0.061 0.042 0.022 0.051 0.268 1.003
+bprecap 42352 mse4 0.127 0.194 0.075 0.057 0.039 0.015 0.049 0.274 1.060
+ctanh 42350 p99999 0.151 0.248 0.060 0.044 0.034 0.013 0.052 0.366 1.195
+ctanh 42351 mse4 0.125 0.206 0.079 0.073 0.058 0.024 0.051 0.290 1.053
+ctanh 42352 max 0.151 0.251 0.055 0.046 0.037 0.014 0.049 0.384 1.248
+selu 42350 p999 0.153 0.255 0.086 0.066 0.040 0.084 0.125 0.396 1.122
+selu 42351 mse4 0.136 0.258 0.163 0.122 0.100 0.099 0.088 0.403 1.027
+selu 42352 p999 0.128 0.242 0.069 0.058 0.037 0.077 0.142 0.346 1.040
+tanh 42350 p9999 0.092 0.123 0.047 0.033 0.035 0.018 0.037 0.241 1.398
+tanh 42351 p9999 0.066 0.105 0.042 0.034 0.057 0.019 0.040 0.148 0.961
+tanh 42352 p999 0.063 0.096 0.043 0.036 0.042 0.016 0.036 0.156 1.109
+tat 42350 mse4 0.171 0.240 0.249 0.266 0.168 0.136 0.138 0.578 1.082
+tat 42351 mse4 0.200 0.268 0.283 0.338 0.314 0.280 0.112 0.692 0.983
+tat 42352 mse4 0.219 0.291 0.418 0.318 0.342 0.553 0.181 0.904 0.972
+
+== (4) 4-Bit-Preis (pp) ueber 12 Seeds bei fester Kalibrierung, BPreCap (V2a2) gegen ctanh (V2d) ==
+max     n=12 Median BPreCap 6.23 ctanh 7.26 Median Diff -0.95 BPreCap kleiner 10/12
+p999    n=12 Median BPreCap 5.79 ctanh 7.06 Median Diff -1.21 BPreCap kleiner 10/12
+p9999   n=12 Median BPreCap 6.06 ctanh 7.08 Median Diff -1.10 BPreCap kleiner 9/12
+p99999  n=12 Median BPreCap 6.18 ctanh 7.22 Median Diff -1.37 BPreCap kleiner 8/12
+mse4    n=12 Median BPreCap 4.33 ctanh 6.01 Median Diff -2.04 BPreCap kleiner 10/12
+best    n=12 Median BPreCap 4.63 ctanh 6.50 Median Diff -2.03 BPreCap kleiner 11/12
+Wahl BPreCap ['mse4', 'mse4', 'mse4', 'mse4', 'p999', 'mse4', 'mse4', 'p9999', 'mse4', 'mse4', 'p99999', 'mse4']
+Wahl ctanh   ['p99999', 'mse4', 'max', 'p99999', 'p999', 'p999', 'p999', 'mse4', 'p99999', 'p999', 'mse4', 'mse4']
+mse4 gewaehlt: BPreCap 9 ctanh 4 von 12

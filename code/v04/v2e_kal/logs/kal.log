@@ -1,0 +1,20 @@
+02:34 bprecap 42350 mse4 D 0.2593 rbar 0.0813 gQ 0.2052 sup 1.052 err_a4 0.488 306.9
+02:39 bprecap 42350 max D 0.3326 rbar 0.0923 gQ 0.1828 sup 1.146 err_a4 0.512 306.7
+02:44 bprecap 42350 p99999 D 0.3312 rbar 0.0916 gQ 0.1838 sup 1.148 err_a4 0.499 306.5
+02:49 bprecap 42351 mse4 D 0.2680 rbar 0.0828 gQ 0.2290 sup 1.003 err_a4 0.455 306.1
+02:54 bprecap 42351 max D 0.3361 rbar 0.0939 gQ 0.2075 sup 1.037 err_a4 0.498 306.3
+02:59 bprecap 42351 p99999 D 0.3309 rbar 0.0932 gQ 0.2084 sup 1.034 err_a4 0.484 306.3
+03:04 bprecap 42352 mse4 D 0.2744 rbar 0.0809 gQ 0.2073 sup 1.060 err_a4 0.484 306.5
+03:09 bprecap 42352 max D 0.3226 rbar 0.0917 gQ 0.1913 sup 1.045 err_a4 0.497 306.1
+03:15 bprecap 42352 p99999 D 0.3085 rbar 0.0911 gQ 0.1921 sup 1.008 err_a4 0.496 305.7
+03:16 ctanh 42350 mse4 D 0.3334 rbar 0.0747 gQ 0.2692 sup 1.164 err_a4 0.505 96.6
+03:18 ctanh 42350 max D 0.3729 rbar 0.0826 gQ 0.1770 sup 1.189 err_a4 0.521 96.7
+03:19 ctanh 42350 p99999 D 0.3664 rbar 0.0817 gQ 0.1787 sup 1.195 err_a4 0.523 96.6
+03:21 ctanh 42351 mse4 D 0.2904 rbar 0.0749 gQ 0.2665 sup 1.053 err_a4 0.510 96.4
+03:23 ctanh 42351 max D 0.3118 rbar 0.0830 gQ 0.1691 sup 1.050 err_a4 0.494 96.4
+03:24 ctanh 42351 p99999 D 0.3157 rbar 0.0820 gQ 0.1704 sup 1.055 err_a4 0.506 96.4
+03:26 ctanh 42352 mse4 D 0.3215 rbar 0.0750 gQ 0.2751 sup 1.088 err_a4 0.521 96.8
+03:27 ctanh 42352 max D 0.3839 rbar 0.0827 gQ 0.1769 sup 1.248 err_a4 0.555 96.7
+03:29 ctanh 42352 p99999 D 0.3783 rbar 0.0819 gQ 0.1779 sup 1.243 err_a4 0.562 96.7
+KONTROLLE bprecap 42350 mse4 gleich V2e: True
+fertig 03:29

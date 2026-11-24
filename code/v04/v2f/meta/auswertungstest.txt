@@ -1,0 +1,15 @@
+ok  Effekt: H1 bestaetigt
+ok  Effekt: H2 bestaetigt
+ok  Effekt: H3 bestaetigt
+ok  Effekt: Deutung Kohaerenz
+ok  Effekt: S2 D_mse4 bestaetigt
+ok  Effekt: 9 Paare
+ok  Effekt: min p einseitig 1/512
+ohne Effekt: bestaetigt in 1 von 60 Tests
+ok  ohne Effekt: hoechstens 3/60 bestaetigt
+ok  Gegenrichtung: nichts bestaetigt
+ok  Gegenrichtung: zweiseitig klein
+ok  Gegenrichtung: Deutung nicht bestaetigt
+ok  Kontrolle: unklar
+ok  Holm
+FEHLER: keine

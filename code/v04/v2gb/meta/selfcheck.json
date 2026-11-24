@@ -1,0 +1,54 @@
+Geraet: Device(gpu, 0)
+{
+ "L": 50,
+ "C": 32,
+ "steps": 3440,
+ "n_tune": 12,
+ "lr_grid": {
+  "xtanh": [
+   1e-05,
+   3e-05,
+   0.0001
+  ]
+ },
+ "wd_grid": [
+  0.0,
+  3.0
+ ],
+ "tune_seeds": [
+  42000,
+  42001
+ ],
+ "seeds": [
+  42350,
+  42351,
+  42352,
+  42353,
+  42354,
+  42355,
+  42356,
+  42357,
+  42358,
+  42359,
+  42360,
+  42361
+ ],
+ "SB2": 2e-05,
+ "SW2": 1.04991163197033,
+ "chi1_qstar": 1.0,
+ "fixpunkt_fehler": 0.0,
+ "fixpunkt_ok": true,
+ "xtanh_ist_tanh": true,
+ "bprecap_init_bitgleich": true,
+ "xtanh_gewichte_sigma_w": true,
+ "bias_std": 0.004441,
+ "bias_std_soll": 0.004472,
+ "bias_ok": true,
+ "ausgabe_unveraendert": true,
+ "bprecap_20schritte_bitgleich": true,
+ "n_confirm": 12,
+ "confirm_acts": [
+  "xtanh"
+ ],
+ "seeds_wie_v2a2": true
+}

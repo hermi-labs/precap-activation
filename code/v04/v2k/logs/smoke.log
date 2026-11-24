@@ -1,0 +1,6 @@
+Geraet: Device(gpu, 0)
+03:01 confirm_bprecap_lr3e-05_wd0_s42353 mse4 ok DQ 0.2355 DC 0.1074 DR 0.2282 kappa 0.954 nu 0.858 abw None 33.7
+03:02 confirm_bprecap_lr3e-05_wd0_s42353 max ok DQ 0.2838 DC 0.0062 DR 0.2841 kappa 1.198 nu 1.102 abw None 33.4
+03:02 confirm_ctanh_lr3e-05_wd0_s42353 mse4 ok DQ 0.2229 DC 0.1186 DR 0.2336 kappa 0.218 nu 0.792 abw None 20.1
+03:02 confirm_ctanh_lr3e-05_wd0_s42353 max ok DQ 0.2653 DC 0.0100 DR 0.2483 kappa 1.542 nu 0.897 abw None 20.1
+Worker fertig 03:02

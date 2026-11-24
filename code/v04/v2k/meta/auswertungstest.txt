@@ -1,0 +1,12 @@
+OK  Effekt nur beim Abschneiden -> K1 und K2 bestaetigt ('bestaetigt', 'bestaetigt')
+OK  Deutung gesetzt Vorteil sitzt im Abschneiden: BPreCap verliert durch das Abschneiden weniger, und dort mehr als beim Runden
+OK  Profil und Kosinus-Bloecke vorhanden 
+OK  gleicher Effekt bei beidem -> K1 ja, K2 nein ('bestaetigt', 'nicht bestaetigt')
+OK  Gegenrichtung -> K1 nicht bestaetigt 
+OK  Null: Fehlalarme K1 <= 3 von 20 0
+OK  Null: Fehlalarme S3 <= 3 von 20 1
+OK  S3 erkennt kleineren Kreuzterm Unterschied (BPreCap kleiner)
+OK  fehlendes Paar -> unklar (Kontrolle) 
+OK  Abweichung von V2f -> unklar (Kontrolle) 
+OK  max ohne Abschneiden -> Primaer gueltig, max-K1 nicht berechenbar nicht berechenbar (kein Abschneiden oder Wert 0)
+AUSWERTUNG OK

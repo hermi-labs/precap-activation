@@ -1,0 +1,5 @@
+Geraet: Device(gpu, 0)
+13:40 bprecap_lr0.0001_s42330 ok 0.8011 0.794
+13:41 selu_lr3e-05_s42330 ok 0.761 0.7873
+13:42 selu_lr3e-05_s42331 ok 0.765 0.8127
+13:45 bprecap_lr0.0001_s42331 ok 0.7871 0.7902

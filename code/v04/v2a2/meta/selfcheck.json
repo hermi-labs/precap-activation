@@ -1,0 +1,44 @@
+Geraet: Device(gpu, 0)
+{
+ "L": 50,
+ "C": 32,
+ "steps": 3440,
+ "n_tune": 36,
+ "lr_grid": {
+  "bprecap": [
+   1e-05,
+   3e-05,
+   0.0001
+  ],
+  "selu": [
+   1e-05,
+   3e-05,
+   0.0001
+  ],
+  "tat": [
+   3e-05,
+   0.0001,
+   0.0003
+  ]
+ },
+ "wd_grid": [
+  0.0,
+  3.0
+ ],
+ "chi1": 1.04,
+ "tat": {
+  "neg": 0.4305229485024027,
+  "scale": 1.2989477863189371
+ },
+ "Ef2_bprecap": 1.0,
+ "Ef_bprecap": -0.0006,
+ "Ef2_tat": 1.0,
+ "Ef_tat": 0.2959,
+ "Ef2_selu": 1.0,
+ "Ef_selu": -0.0008,
+ "delta_orth_ok": true,
+ "Ef2_ok": true,
+ "seeds_new": true,
+ "n_confirm": 36,
+ "order_rotates": true
+}

@@ -1,0 +1,10 @@
+2026-11-23 18:51:55 Daten ok (6 Dateien, SHA-256 wie auf dem Mac)
+2026-11-23 18:51:56 Umgebung {"python": "3.12.10", "torch": "2.14.1+cu126", "cuda": "12.6", "cuda_ok": true, "gpu": "NVIDIA GeForce RTX 4070", "platform": "win32"}
+2026-11-23 18:51:56 eingefroren
+2026-11-23 18:51:58 Selbsttest ok
+2026-11-23 18:54:45 Aequivalenztest gegen MLX ok
+2026-11-23 18:54:48 Auswertungstest ok
+2026-11-23 18:59:47 Rauchtest ok
+2026-11-23 18:59:47 Worker 0 gestartet, PID 16000
+2026-11-23 18:59:47 Worker 1 gestartet, PID 9800
+2026-11-23 18:59:47 gestartet, 2 Worker, 36 Laeufe

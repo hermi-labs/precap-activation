@@ -1,0 +1,30 @@
+OK  Daten gleich Pilot 
+OK  20 Schritte bprecap val_err_fp32 0.774 gegen Pilot-Code 0.774
+OK  20 Schritte bprecap val_err_w8a8 0.764 gegen Pilot-Code 0.764
+OK  20 Schritte bprecap val_err_w8a4a_max 0.786 gegen Pilot-Code 0.786
+OK  20 Schritte bprecap val_err_w8a4a_p9999 0.778 gegen Pilot-Code 0.778
+OK  Kalibrierung bprecap max_abs/max/p9999 gleich Pilot 
+OK  bprecap p99999 und mse4 innerhalb min/max 
+OK  20 Schritte tat val_err_fp32 0.902 gegen Pilot-Code 0.902
+OK  20 Schritte tat val_err_w8a8 0.904 gegen Pilot-Code 0.904
+OK  20 Schritte tat val_err_w8a4a_max 0.902 gegen Pilot-Code 0.902
+OK  20 Schritte tat val_err_w8a4a_p9999 0.906 gegen Pilot-Code 0.906
+OK  Kalibrierung tat max_abs/max/p9999 gleich Pilot 
+OK  tat p99999 und mse4 innerhalb min/max 
+OK  20 Schritte selu val_err_fp32 0.796 gegen Pilot-Code 0.796
+OK  20 Schritte selu val_err_w8a8 0.808 gegen Pilot-Code 0.808
+OK  20 Schritte selu val_err_w8a4a_max 0.816 gegen Pilot-Code 0.816
+OK  20 Schritte selu val_err_w8a4a_p9999 0.804 gegen Pilot-Code 0.804
+OK  Kalibrierung selu max_abs/max/p9999 gleich Pilot 
+OK  selu p99999 und mse4 innerhalb min/max 
+OK  mse4 <= max auf Testverteilung 0.29371 <= 1.76185
+OK  Kosinus-Lauf ok, 8 Messpunkte [(3, 0.8646), (6, 0.8088), (9, 0.8138), (12, 0.8424), (15, 0.8264), (18, 0.7936), (21, 0.7872), (24, 0.7892)]
+OK  bester Punkt = kleinster Val-Fehler, Gleichstand frueher 
+OK  zurueckgeladene Parameter treffen Val-Fehler 
+OK  Bestaetigungszeile vollstaendig []
+OK  w8a4a_best ist eine der Kalibrierungen 
+OK  CLE: Ausgabe in fp32 gleich (rel. < 1e-4) 2.80e-07
+OK  CLE: Bereiche angeglichen (Paar 10/11) 0.009
+OK  CLE: fp32-Testfehler gleich (+-0,1 pp) 
+OK  Zeile TAT: es_cle_fp32_delta klein 0.0
+MECHANIK OK

@@ -1,0 +1,18 @@
+Geraet: Device(gpu, 0)
+{
+ "L": 32,
+ "C": 32,
+ "steps": 1720,
+ "n_confirm": 24,
+ "lr": {
+  "bprecap": 0.0001,
+  "selu": 3e-05
+ },
+ "chi1": 1.0625,
+ "Ef2_bprecap": 1.0,
+ "Ef2_selu": 1.0,
+ "delta_orth_ok": true,
+ "bprecap_Ef2_ok": true,
+ "seeds_new": true,
+ "workers_mixed": true
+}

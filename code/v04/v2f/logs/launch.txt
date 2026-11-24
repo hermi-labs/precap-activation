@@ -1,0 +1,16 @@
+Rauchtest laeuft 06:58
+Tests ok 07:18
+gestartet Fri Nov 20 07:18:23 CET 2026
+There are screens on:
+	89740.v2fwache	(Detached)
+	89738.v2fw0	(Detached)
+2 Sockets in /var/folders/vd/3bs93c_s3v9_v1mnmn3jmmyw0000gn/T/.screen.
+
+Waechter: beendet um 09:12
+resume: wieder gestartet Fri Nov 20 21:41:12 CET 2026
+There are screens on:
+	90676.v2fresume	(Detached)
+	91103.v2fw0	(Detached)
+	91106.v2fwache	(Detached)
+3 Sockets in /var/folders/vd/3bs93c_s3v9_v1mnmn3jmmyw0000gn/T/.screen.
+

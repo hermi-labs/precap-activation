@@ -1,0 +1,14 @@
+OK  BPreCap vorn -> "BPreCap besser" BPreCap besser
+OK  fp32 ohne Effekt -> S1 unklar 
+OK  xtanh vorn -> "xtanh besser" xtanh besser
+OK  S2-S4: xtanh besser als tanh, ctanh, SELU ['besser', 'besser', 'besser']
+OK  Null: Fehlalarme P1 <= 3 von 20 0
+OK  Ausfall xtanh zaehlt 90 % 
+OK  fehlende historische Zeile gemeldet, zaehlt 90 % 
+OK  historische Arme gelesen (59 ok) 59
+OK  fehlende tanh-Zeile aus V2c gemeldet 
+OK  fehlende ctanh-Zeile aus V2d gemeldet 
+OK  xtanh in fp32 schlechter, gleicher Preis -> P1 BPreCap besser, P2 unklar ('BPreCap besser', 'unklar')
+OK  xtanh mit groesserem 4-Bit-Preis -> P2 BPreCap besser 
+OK  BPreCap mit groesserem Preis -> P2 xtanh besser 
+AUSWERTUNG OK

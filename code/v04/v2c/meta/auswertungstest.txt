@@ -1,0 +1,11 @@
+OK  BPreCap vorn -> "BPreCap besser" BPreCap besser
+OK  fp32 ohne Effekt -> S1 unklar 
+OK  tanh vorn -> "tanh besser" tanh besser
+OK  S2/S3: tanh besser als SELU und TAT 
+OK  Null: Fehlalarme P1 <= 3 von 20 0
+OK  Ausfall tanh zaehlt 90 % 
+OK  fehlende historische Zeile gemeldet, zaehlt 90 % 
+OK  historische Arme gelesen (35 ok) 35
+OK  tanh in fp32 schlechter, gleicher Preis -> P1 BPreCap besser, P2 unklar ('BPreCap besser', 'unklar')
+OK  tanh mit groesserem 4-Bit-Preis -> P2 BPreCap besser 
+AUSWERTUNG OK

@@ -2,6 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23676432.svg)](https://doi.org/10.5281/zenodo.23676432) [![Preprint DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23676199.svg)](https://doi.org/10.5281/zenodo.23676199)
 
+Preprint v0.4: Schmitt, A. (2026). BPreCap in Deep Normalization-Free CNNs: A Bounded, Depth-Calibrated Activation under 4-Bit Post-Training Quantization (Version 0.4). Zenodo. https://doi.org/10.5281/zenodo.24491869 · PDF: [`paper/PreCap_paper_v0.4.pdf`](paper/PreCap_paper_v0.4.pdf)
+
 Preprint v0.3.1: Schmitt, A. (2026). PreCap v0.3.1: A Depth-Calibrated Activation with a Soft Fixed Bound for Deep Normalization-Free MLPs – Training Depth and 4-Bit Robustness in One Form (Version 0.3.1). Zenodo. https://doi.org/10.5281/zenodo.23930791 · PDF: [`paper/PreCap_paper_v0.3.1.pdf`](paper/PreCap_paper_v0.3.1.pdf)
 
 Preprint v0.3: Schmitt, A. (2026). PreCap v0.3: A Depth-Calibrated Activation with a Soft Fixed Bound for Deep Normalization-Free MLPs – Training Depth and 4-Bit Robustness in One Form (Version 0.3). Zenodo. https://doi.org/10.5281/zenodo.23894714 · PDF: [`paper/PreCap_paper_v0.3.pdf`](paper/PreCap_paper_v0.3.pdf)
@@ -10,7 +12,7 @@ Preprint v0.2: Schmitt, A. (2026). PreCap: Bounded, Self-Normalizing Activations
 
 Preprint v0.1: https://doi.org/10.5281/zenodo.23676200 · Software: https://doi.org/10.5281/zenodo.23676432 (alle Versionen)
 
-Forschungsprojekt von Aaron Schmitt (ORCID [0009-0009-8689-5848](https://orcid.org/0009-0009-8689-5848)), seit 14.10.2026. v0.1: 26.10.2026, v0.2: 29.10.2026, v0.3: 02.11.2026, v0.3.1: 03.11.2026. Lizenz: Apache-2.0.
+Forschungsprojekt von Aaron Schmitt (ORCID [0009-0009-8689-5848](https://orcid.org/0009-0009-8689-5848)), seit 14.10.2026. v0.1: 26.10.2026, v0.2: 29.10.2026, v0.3: 02.11.2026, v0.3.1: 03.11.2026, v0.4: 24.11.2026. Lizenz: Apache-2.0.
 
 English summary: [see below](#english-summary).
 
@@ -41,6 +43,21 @@ Die Tiefenfamilie setzt $\chi_1 = 1 + k/L$ für $L$ verdeckte Schichten. Sie tra
 ![SPreCap-cs und SPreCap-e03 im Vergleich zu SELU und ELU: links f(x), rechts f'(x)](paper/figures/fig1_function.png)
 
 Links f(x), rechts die Ableitung, jeweils im Vergleich zu SELU und ELU (Abb. 1 im Preprint). Für negative x liegt SPreCap-cs fast auf SELU (gleiche untere Schranke ≈ −1,76). Für positive x sättigt sie weich bei ≈ 3,39, statt linear weiterzuwachsen. Die Ableitung geht dort gegen 0. e03 ist flacher und reicht bis ≈ 6,11.
+
+## Ergebnisse v0.4 (24.11.2026)
+
+v0.4 geht von vollverbundenen Netzen zu einfachen Faltungsnetzen über: 32 und 50 Faltungsschichten, ohne Normierung, ohne Residuen, Delta-orthogonal initialisiert, CIFAR-10. Gewichte int8, Aktivierungen 4 Bit je Tensor nach dem Training (PTQ), jedes Netz bei seiner besten von fünf Kalibrierungen. Zehn präregistrierte, per Hash eingefrorene Studien und eine präregistrierte Wiederholung auf anderer Hardware (C7), Code, Präregistrierungen, Rohdaten und Berichte in [`code/v04/`](code/v04/). Preprint: [`paper/PreCap_paper_v0.4.pdf`](paper/PreCap_paper_v0.4.pdf). Die Definition von BPreCap ist unverändert.
+
+![Gepaarte Differenzen je Seed, alle Vergleiche](paper/figures_v04/fig4_paired_seeds.png)
+
+- **Gegen SELU und TAT (V2a2, L = 50, getunt):** BPreCap hat bei 4 Bit einen kleineren Testfehler als SELU (−2,55 pp) und TAT (−13,73 pp), jeweils 12 von 12 Seeds. Cross-Layer Equalization schließt die Lücke zu TAT nicht. **In fp32 ist BPreCap 1,6–3,2 pp schlechter.** Der Vorteil ist ein kleinerer Quantisierungspreis, keine bessere Genauigkeit.
+- **Gegen begrenzte tanh (V2c, V2gb, V2h):** tanh ohne Kalibrierung und zwei kritisch initialisierte tanh-Netze (Pennington et al. 2017; Hayou et al. 2019) zahlen einen kleineren 4-Bit-Preis (1,1–2,0 pp gegen 4,6 pp), lernen bei dieser Tiefe aber schlecht und liegen bei 4 Bit 13,7–20,1 pp hinter BPreCap.
+- **Gleiche Kalibrierung, andere Form (V2d):** Eine tanh nach BPreCaps Rezept trainiert gut, zahlt aber einen größeren 4-Bit-Preis (6,5 gegen 4,6 pp, 11/12) und liegt 5,2 pp hinter BPreCap (12/12).
+- **Wo der Vorteil sitzt (V2e, V2f, V2k):** BPreCap rundet etwa 10 % gröber als die kalibrierte tanh. Der Unterschied sitzt im Abschneideteil des 4-Bit-Fehlers: Abschneiden allein stört die Logits bei BPreCap etwa 19 % weniger (9/9). Mit min/max-Kalibrierung verschwindet der Vorteil.
+- **Eingriff an der Form (V2m):** Lässt man die Hülle früher sättigen (Knie ρ = 0,4 statt 0,8), kommt ein einzelner Abschneidefehler wie erwartet stärker an (1,13, 8/9). Das Abschneiden in allen Schichten zugleich stört die Logits aber schwächer (0,90, 8/9), und der 4-Bit-Fehler ändert sich nicht. Die späte Sättigung der Hülle ist also nicht die Quelle des Vorteils; welcher Teil der Form es ist, bleibt offen.
+- **Wiederholung auf anderer Hardware (C7):** Eine unabhängige PyTorch/CUDA-Umsetzung auf einer RTX 4070 bestätigt beide Vergleiche aus V2a2 (gegen SELU −3,09 pp, gegen TAT −15,65 pp, jeweils 12/0). Bei BPreCap und SELU liegen die Mediane innerhalb von 0,9 pp an MLX. TATs 4-Bit-Fehler reagiert stärker auf die Plattform (Median +2,1 pp, einzelne Seeds bis 15 pp).
+- **Grenzen:** ein Datensatz, eine Architekturfamilie (ohne Normierung und Residuen), nur PTQ, Skalen je Tensor. Transformer und Netze mit BatchNorm sind nicht untersucht.
+- **Paket:** unverändert, nur die Versionsnummer ist 0.4.0.
 
 ## Ergebnisse v0.3.1 (03.11.2026)
 
@@ -168,6 +185,7 @@ Gemessen: vorwärts und rückwärts über 16M Elemente in float32. Die MLX-Messu
 
 - Jede Studie hat eine Präregistrierung (`docs/`), eingefrorene Skripte mit SHA-256 (`code/**/meta/frozen_sha256.txt`), Rohdaten oder deren Hashes und eine Auswertung (`analysis/`).
 - **Pfade in den eingefrorenen Skripten:** Die Skripte enthalten feste Mac-Pfade wie `DATA=Path('/Users/aaronschmitt/PyCharmMiscProject/data')` (bei `run_p3a3.py` in Zeile 10). Sie dürfen nicht verändert werden, sonst stimmen die Hashes nicht. Zum Nachrechnen eine Kopie anlegen und nur diese Zeile auf den eigenen MNIST-Ordner setzen.
+- **Studien v0.4** (`code/v04/`): über `PRECAP_DATA` wie v0.3. Ein Neulauf aus einer sauberen Kopie war bitgleich (V2a2-BPreCap, Seed 42350, 54 von 54 Messspalten). Die Hash-Prüfung von V2k meldet die 18 nicht enthaltenen V2f-Gewichtsdateien als fehlend, die von V2m den nicht enthaltenen Konstanten-Löser, die von C7 das nicht enthaltene Referenzfeld (Hinweise in `code/v04/README.md`). C7 braucht PyTorch statt MLX.
 - **Studien v0.3 und v0.3.1** (`code/v03/`): wie v0.2 über `PRECAP_DATA`. Ein Neulauf aus einer sauberen Kopie war bitgleich (B10, 93 von 93 Spalten). CIFAR-Daten liegen nicht im Repo, nur ihre Prüfsummen.
 - **Studien v0.2** (`code/v02/`): Die Skripte lesen den Datenordner aus der Umgebungsvariable `PRECAP_DATA`, ohne Änderung am Code. Details in `code/v02/README.md`.
 - Paket-Tests: `pip install -e ".[torch,test]" && pytest tests`. Kernel-Tests: `kernels/README.md`.
@@ -176,10 +194,10 @@ Gemessen: vorwärts und rückwärts über 16M Elemente in float32. Die MLX-Messu
 
 | Ordner | Inhalt |
 |---|---|
-| `paper/` | Preprints als PDF (`PreCap_paper_v0.3.1.pdf`, `PreCap_paper_v0.3.pdf`, `PreCap_paper_v0.2.pdf`, `PreCap_paper.pdf` = v0.1), Grafiken und Quellskripte |
+| `paper/` | Preprints als PDF (`PreCap_paper_v0.4.pdf`, `PreCap_paper_v0.3.1.pdf`, `PreCap_paper_v0.3.pdf`, `PreCap_paper_v0.2.pdf`, `PreCap_paper.pdf` = v0.1), Grafiken und Quellskripte |
 | `src/precap/` | installierbares Paket (PyTorch + CUDA-Kernel, MLX + Metal-Kernel) |
 | `kernels/` | eigenständige Kernel mit Tests und Messergebnissen |
-| `code/` | alle Studien 1D, 2D, 3D, Phase 3, `v02/` und `v03/` mit Hashes |
+| `code/` | alle Studien 1D, 2D, 3D, Phase 3, `v02/`, `v03/` und `v04/` mit Hashes |
 | `analysis/` | Auswertungen |
 | `docs/` | Präregistrierungen, Gesamtdoku, Fahrplan, Recherche, [Danksagung](docs/Danksagung_und_Werkzeuge.md) |
 | `math/` | Herleitungen der Konstanten und Mean-Field-Rechnungen |
@@ -188,7 +206,7 @@ Gemessen: vorwärts und rückwärts über 16M Elemente in float32. Die MLX-Messu
 
 ## Zitieren
 
-Siehe `CITATION.cff`. Preprint v0.3.1: https://doi.org/10.5281/zenodo.23930791. Preprint v0.3: https://doi.org/10.5281/zenodo.23894714. Preprint v0.2: https://doi.org/10.5281/zenodo.23757287. Alle Versionen des Preprints: https://doi.org/10.5281/zenodo.23676199
+Siehe `CITATION.cff`. Preprint v0.4: https://doi.org/10.5281/zenodo.24491869. Preprint v0.3.1: https://doi.org/10.5281/zenodo.23930791. Preprint v0.3: https://doi.org/10.5281/zenodo.23894714. Preprint v0.2: https://doi.org/10.5281/zenodo.23757287. Alle Versionen des Preprints: https://doi.org/10.5281/zenodo.23676199
 
 ---
 
@@ -207,5 +225,7 @@ In a preregistered study on 50- and 100-layer MLPs without normalization or resi
 **Version 0.3** puts the depth-calibrated PreCap core inside a soft, fixed bound (BPreCap). In 16 preregistered studies on 100- and 200-layer MLPs without normalization or skips, BPreCap is on par with TAT in fp32 under TAT's recipe on CIFAR-10 and better at 4-bit activations in every tested regime (cautious size −3.8 pp; CIFAR-100 −1.9 pp). Its 4-bit cost stays at about +3 pp while TAT's varies from +7 to +15 pp with learning rate and weight decay. ReLU and GELU do not train well at depth 100; SELU matches BPreCap at 4 bits at depth 100 but falls clearly behind at depth 200 (−8.95 pp at 4 bits, −11.97 pp in fp32). A diagnosis points to heavy-tailed activations (TAT) and missing damping of rounding errors (hard clip), not to the activation range. An independent PyTorch/CUDA replication on an RTX 4070 reproduces the main comparisons (medians within 0.5 pp). All negative results are reported. New in the package: `BPreCap(depth=100|200)` and the soft hull `Lagma(M)` with fused kernels (RTX 4070: 1.05 ms vs 0.73 ms for native SELU; M1 Pro: 3.07 ms vs 10.04 ms for MLX SELU; 16M elements fwd+bwd). Preprint v0.3: https://doi.org/10.5281/zenodo.23894714, code and data: `code/v03/`.
 
 **Version 0.3.1** adds four preregistered studies and three diagnoses. The learning-rate limit of v0.3 was caused by missing warmup, not by the bound: with a 5 % linear warmup BPreCap trains up to 3·10⁻⁴ at depth 100 and its 4-bit advantage over TAT holds (−8.82 pp, 12/0); at depth 200 the advantage over SELU holds as well (−8.15 pp, 12/0). Warmup, however, raises BPreCap's own 4-bit cost at depth 200, and a shorter warmup reduces but does not remove this (w8a4a 53.6 / 54.3 / 54.9 / 55.3 % at 0 / 1 / 2.5 / 5 %). At depth 200 there are no per-layer outliers and int8 is lossless. With quantization-aware training (LSQ), TAT is 3.0 pp better at 4 bits than BPreCap with plain post-training quantization, and under QAT both are equal: the bound is a PTQ advantage, not a substitute for QAT. Preprint v0.3.1: https://doi.org/10.5281/zenodo.23930791, code and data: `code/v03/`.
+
+**Version 0.4** moves from MLPs to plain convolutional networks (32 and 50 layers, no normalization, no residual connections, delta-orthogonal initialization, CIFAR-10) under 4-bit activation post-training quantization, in ten pre-registered, hash-frozen studies and a pre-registered replication on other hardware. At depth 50 with a tuned AdamW regime, BPreCap has a lower 4-bit test error than SELU (−2.55 pp) and TAT (−13.73 pp) on 12 of 12 seeds each, while it is 1.6–3.2 pp worse in fp32; an independent PyTorch/CUDA replication on an RTX 4070 reproduces both comparisons (−3.09 and −15.65 pp, 12/0 each). Bounded tanh baselines (uncalibrated, and critically initialized at two points of the critical line) pay a smaller 4-bit cost but train poorly and end 13.7–20.1 pp behind; a tanh calibrated with BPreCap's own recipe pays a larger 4-bit cost (6.5 vs 4.6 pp) and ends 5.2 pp behind. An exact split of the 4-bit error locates the difference in the clipping part (−19 % at the logits, 9 of 9 seeds); BPreCap rounds about 10 % more coarsely. An intervention that makes the hull saturate earlier leaves the 4-bit error unchanged, so the late saturation of the hull is not the source of the advantage. Limits: one dataset, one architecture family, PTQ only, per-tensor scales; transformers and networks with BatchNorm are not studied. Preprint v0.4: https://doi.org/10.5281/zenodo.24491869, code and data: `code/v04/`.
 
 Fused kernels (v0.2, PreCap): CUDA via `torch.cuda.jiterator` (RTX 4070, 16M elements fwd+bwd: 0.91–1.06 ms vs 0.73–0.89 ms for native SELU, i.e. up to about 1.5×; fp16/bf16 work but go through fp32) and MLX/Metal (4.15 ms vs MLX SELU 11.47 ms on an M1 Pro). Install with `pip install "precap[torch] @ git+https://github.com/hermi-labs/precap-activation"` and use `from precap import PreCap`.

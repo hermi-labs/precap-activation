@@ -1,0 +1,6 @@
+OK     Kopie der MLX-Daten -> P1, P2 besser wie V2a2 {'P1': (-2.554999999999996, 'besser'), 'P2': (-13.734999999999996, 'besser')}
+OK     Kopie -> CUDA = MLX je Form 
+OK     BPreCap = SELU + Rauschen -> P1 unklar 0.6220703125
+OK     BPreCap +35 pp -> beide schlechter 
+OK     Ausfall und fehlende Zeile zaehlen 90 % 
+ANALYSETEST OK

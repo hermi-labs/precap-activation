@@ -1,0 +1,28 @@
+OK     daten_bitgleich Summen torch [4.798, -2441.008, 392705.591], MLX [4.798, -2441.008, 392705.591]
+OK     daten_summen_gleich 
+OK     batch_gleich 
+OK     init_bitgleich_bprecap 
+OK     form_bprecap max abs 1.2e-06
+OK     logits_init_bprecap rel Fehler gegen float64: MLX 8.4e-07, torch 6.9e-07
+OK     gradient_init_bprecap rel Fehler je Schicht gegen float64, Median/Max: MLX 7.4e-05/1.7e-04, torch 7.1e-05/2.3e-04 (Max bei Schicht 1)
+OK     init_bitgleich_tat 
+OK     form_tat max abs 0.0e+00
+OK     logits_init_tat rel Fehler gegen float64: MLX 9.7e-07, torch 9.7e-07
+OK     gradient_init_tat rel Fehler je Schicht gegen float64, Median/Max: MLX 2.3e-05/6.2e-05, torch 1.9e-05/4.5e-05 (Max bei Schicht 0)
+OK     init_bitgleich_selu 
+OK     form_selu max abs 2.4e-07
+OK     logits_init_selu rel Fehler gegen float64: MLX 1.2e-06, torch 1.6e-06
+OK     gradient_init_selu rel Fehler je Schicht gegen float64, Median/Max: MLX 9.0e-05/1.4e-04, torch 7.7e-05/1.6e-04 (Max bei Schicht 0)
+OK     adamw_wie_mlx max abs 7.5e-09
+OK     qw_gleich 
+OK     qa_sym_gleich 
+OK     qa_asym_gleich 
+OK     mse_asym_gleich (-3.1448947048187255, 3.5268048906326293) / [-3.1448947048187255, 3.5268048906326293]
+OK     kalibrierung_init_bprecap max rel 8.8e-07
+OK     kalibrierung_init_tat max rel 6.2e-08
+OK     cle_funktion_gleich rel 3.8e-07
+OK     kurzes_training_bprecap Val-Fehler torch 0.6958, MLX 0.6950; Verlust 1.8917 / 1.8867; 75 s
+OK     kurzes_training_tat Val-Fehler torch 0.8212, MLX 0.8236; Verlust 2.0720 / 2.0867; 22 s
+AEQUIVALENZ OK 25 von 25 Pruefungen
+
+--- stderr ---

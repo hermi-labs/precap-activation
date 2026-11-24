@@ -1,0 +1,137 @@
+{
+ "n_rows": 36,
+ "n_ok": 36,
+ "soll": 36,
+ "run_id_eindeutig": true,
+ "fehlend": [],
+ "primaer": {
+  "P1": {
+   "med_diff_pp": -3.094999999999998,
+   "siege": 12,
+   "niederlagen": 0,
+   "p": 0.00048828125,
+   "diffs": [
+    -5.44,
+    -1.06,
+    -3.89,
+    -4.44,
+    -2.93,
+    -5.3,
+    -3.18,
+    -0.67,
+    -2.12,
+    -2.12,
+    -3.59,
+    -3.01
+   ],
+   "p_holm": 0.0009765625,
+   "urteil": "besser"
+  },
+  "P2": {
+   "med_diff_pp": -15.649999999999997,
+   "siege": 12,
+   "niederlagen": 0,
+   "p": 0.00048828125,
+   "diffs": [
+    -23.37,
+    -9.22,
+    -16.97,
+    -10.2,
+    -17.04,
+    -10.09,
+    -18.05,
+    -12.58,
+    -9.26,
+    -19.47,
+    -14.33,
+    -19.12
+   ],
+   "p_holm": 0.0009765625,
+   "urteil": "besser"
+  }
+ },
+ "cuda_gegen_mlx": {
+  "bprecap": {
+   "es_test_err_fp32": {
+    "cuda": 43.11,
+    "mlx": 42.875,
+    "diff_pp": 0.235
+   },
+   "es_test_err_w8a8": {
+    "cuda": 43.825,
+    "mlx": 43.71,
+    "diff_pp": 0.115
+   },
+   "es_test_err_w8a4a_max": {
+    "cuda": 49.33,
+    "mlx": 49.08,
+    "diff_pp": 0.25
+   },
+   "es_test_err_w8a4a_best": {
+    "cuda": 48.065,
+    "mlx": 48.07,
+    "diff_pp": -0.005
+   },
+   "preis_4bit_pp": {
+    "cuda": 4.595,
+    "mlx": 4.635
+   }
+  },
+  "selu": {
+   "es_test_err_fp32": {
+    "cuda": 41.615,
+    "mlx": 41.4,
+    "diff_pp": 0.215
+   },
+   "es_test_err_w8a8": {
+    "cuda": 43.185,
+    "mlx": 43.015,
+    "diff_pp": 0.17
+   },
+   "es_test_err_w8a4a_max": {
+    "cuda": 56.425,
+    "mlx": 55.865,
+    "diff_pp": 0.56
+   },
+   "es_test_err_w8a4a_best": {
+    "cuda": 51.18,
+    "mlx": 50.33,
+    "diff_pp": 0.85
+   },
+   "preis_4bit_pp": {
+    "cuda": 9.325,
+    "mlx": 8.825
+   }
+  },
+  "tat": {
+   "es_test_err_fp32": {
+    "cuda": 39.965,
+    "mlx": 40.27,
+    "diff_pp": -0.305
+   },
+   "es_test_err_w8a8": {
+    "cuda": 41.9,
+    "mlx": 41.36,
+    "diff_pp": 0.54
+   },
+   "es_test_err_w8a4a_max": {
+    "cuda": 89.89,
+    "mlx": 89.89,
+    "diff_pp": 0.0
+   },
+   "es_test_err_w8a4a_best": {
+    "cuda": 63.76,
+    "mlx": 61.625,
+    "diff_pp": 2.135
+   },
+   "preis_4bit_pp": {
+    "cuda": 22.015,
+    "mlx": 21.52
+   }
+  }
+ },
+ "tat_cle_w8a4a_best": {
+  "cuda": 64.97,
+  "mlx": 63.905
+ }
+}

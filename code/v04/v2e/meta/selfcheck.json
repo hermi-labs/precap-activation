@@ -1,0 +1,33 @@
+Geraet: Device(gpu, 0)
+{
+ "n_runs": 15,
+ "forms": [
+  "bprecap",
+  "ctanh",
+  "selu",
+  "tanh",
+  "tat"
+ ],
+ "seeds": [
+  42350,
+  42351,
+  42352
+ ],
+ "ntest": 1000,
+ "hist_vollstaendig": true,
+ "act_ctanh_wie_v2d": true,
+ "act_tanh_wie_v2c": true,
+ "Ef2_bprecap": 1.0,
+ "Ef2_ctanh": 1.0,
+ "Ef2_selu": 1.0,
+ "Ef2_tanh": 0.394,
+ "Ef2_tat": 1.0,
+ "run_ids_wie_hist": true,
+ "mess_r_positiv": true,
+ "mess_d_endlich": true,
+ "gauss_norm_ok": true,
+ "gauss_reproduzierbar": true,
+ "null_rauschen_null": true,
+ "linear_ratio": 1.974,
+ "linear_ok": true
+}

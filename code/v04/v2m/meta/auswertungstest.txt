@@ -1,0 +1,14 @@
+OK  Effekt nach oben -> E1, E2 bestaetigt ('bestaetigt', 'bestaetigt')
+OK  Deutung gesetzt Fruehe Saettigung verstaerkt die Wirkung des Abschneidens: die spaete Saettigung der Huelle traegt den Vorteil beim Abschneiden mit
+OK  Lage t bei Variante = ctanh-Niveau nahe 1 0.746
+OK  Effekt nach unten -> widerlegt ('widerlegt', 'widerlegt')
+OK  Null: Fehlalarme E1/E2 <= 3 von 20 0
+OK  Null: Fehlalarme S3 <= 3 von 20 0
+OK  1 Ausfall -> 8 Paare, E1 bestaetigt ('bestaetigt', 'bestaetigt')
+OK  1 Ausfall -> S2/S3 mit 9 Paaren (0,9) 0.60783
+OK  3 Ausfaelle -> unklar (zu wenige Paare) ('unklar (zu wenige Paare)', 'unklar (zu wenige Paare)')
+OK  fp32 +3 pp -> S3 Unterschied (rho0,4 groesser) Unterschied (rho0,4 groesser)
+OK  fp32 +3 pp -> S1 Preis kein Unterschied kein klarer Unterschied
+OK  echte Referenzen (V2k, V2a2) lesbar, Effekt erkannt ('bestaetigt', 'bestaetigt')
+OK  echte Referenzen: fp32-Median rho0,8 = direkt aus der V2a2-CSV (9 Seeds) {'es_test_err_fp32': 42.72, 'es_test_err_w8a4a_best': 48.09, 'es_test_err_w8a4a_mse4': 47.27}
+AUSWERTUNG OK

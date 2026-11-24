@@ -1,0 +1,11 @@
+Start launch 06:45
+Selbsttest ok 06:51
+eingefroren, Hashes der Vorgaenger ok 06:52
+Rauchtest laeuft 06:52
+Tests ok 07:03
+gestartet Mon Nov 23 07:03:14 CET 2026
+There are screens on:
+	46619.v2mwache	(Detached)
+	46617.v2mw0	(Detached)
+2 Sockets in /var/folders/vd/3bs93c_s3v9_v1mnmn3jmmyw0000gn/T/.screen.
+

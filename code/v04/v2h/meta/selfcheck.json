@@ -1,0 +1,73 @@
+Geraet: Device(gpu, 0)
+{
+ "L": 50,
+ "C": 32,
+ "steps": 3440,
+ "n_tune": 12,
+ "lr_grid": {
+  "htanh": [
+   1e-05,
+   3e-05,
+   0.0001
+  ]
+ },
+ "wd_grid": [
+  0.0,
+  3.0
+ ],
+ "tune_seeds": [
+  42000,
+  42001
+ ],
+ "seeds": [
+  42350,
+  42351,
+  42352,
+  42353,
+  42354,
+  42355,
+  42356,
+  42357,
+  42358,
+  42359,
+  42360,
+  42361
+ ],
+ "SB": 0.041221694095456875,
+ "SB2": 0.0016992280640994242,
+ "SW2": 1.2273528768534143,
+ "chi1_qstar": 1.0,
+ "fixpunkt_fehler": 2.7755575615628914e-17,
+ "beta_q": 50.0,
+ "fixpunkt_ok": true,
+ "htanh_ist_tanh": true,
+ "bprecap_init_bitgleich": true,
+ "htanh_gewichte_sigma_w": true,
+ "bias_std": 0.040933,
+ "bias_std_soll": 0.041222,
+ "bias_ok": true,
+ "ausgabe_unveraendert": true,
+ "q_init_mess": {
+  "1": 1.17867,
+  "2": 0.41752,
+  "5": 0.18964,
+  "10": 0.1493,
+  "25": 0.13752,
+  "50": 0.13626
+ },
+ "q_init_mittelfeld": {
+  "1": 1.17867,
+  "2": 0.52244,
+  "5": 0.22578,
+  "10": 0.15446,
+  "25": 0.13263,
+  "50": 0.13187
+ },
+ "q_init_endlich": true,
+ "bprecap_20schritte_bitgleich": true,
+ "n_confirm": 12,
+ "confirm_acts": [
+  "htanh"
+ ],
+ "seeds_wie_v2a2": true
+}

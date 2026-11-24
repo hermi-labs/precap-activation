@@ -1,0 +1,6 @@
+Geraet: Device(gpu, 0)
+07:17 tune_ctanh_lr1e-05_wd0_s42000 ok 0.7936 35.0
+07:18 tune_ctanh_lr1e-05_wd3_s42000 ok 0.794 34.5
+Auswahl {"ctanh": {"lr": 1e-05, "wd": 0.0, "med_val_acc": 0.20640000000000003, "lr_at_edge": true, "wd_at_edge": false, "all_failed": false}}
+07:21 confirm_ctanh_lr1e-05_wd0_s42350 ok 0.7801 0.8475 225.0
+Worker fertig 07:21

@@ -1,0 +1,8 @@
+OK  BPreCap vorn gegen beide -> Erfolg 
+OK  Sekundaer w8a4a_max und TAT+CLE besser, fp32 unklar 
+OK  nur gegen SELU -> teilweise (mind. 4 von 5, Zufall im Null-Arm) 5
+OK  BPreCap hinten -> schlechter gegen beide 
+OK  Null: Fehlalarme je Primaertest <= 3 von 20 0, 0
+OK  Ausfall TAT zaehlt 90 % 
+OK  fehlende Zeile gemeldet, zaehlt 90 % 
+AUSWERTUNG OK

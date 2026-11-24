@@ -1,0 +1,1 @@
+AUSWERTUNGSTEST OK: Effekt erkannt, ohne Effekt nichts, Kontrolle greift

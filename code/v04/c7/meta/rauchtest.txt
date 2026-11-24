@@ -1,0 +1,5 @@
+smoke c7_bprecap_lr3e-05_wd0_s42350 ok 0.7601 145.7
+smoke c7_tat_lr0.0001_wd0_s42350 ok 0.8147 92.5
+smoke c7_selu_lr3e-05_wd0_s42350 ok 0.7495 59.0
+
+--- stderr ---

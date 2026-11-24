@@ -1,0 +1,6 @@
+OK  BPreCap vorn -> Erfolg 
+OK  SELU vorn -> schlechter 
+OK  Null: Fehlalarme primaer <= 3 von 20 0
+OK  Ausfall SELU zaehlt 90 % 
+OK  fehlende Zeile gemeldet, zaehlt 90 % 
+AUSWERTUNG OK

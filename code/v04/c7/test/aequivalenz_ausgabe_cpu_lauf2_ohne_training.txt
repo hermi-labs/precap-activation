@@ -1,0 +1,24 @@
+OK     daten_bitgleich Summen torch [4.798, -2441.008, 392705.591], MLX [4.798, -2441.008, 392705.591]
+OK     daten_summen_gleich 
+OK     batch_gleich 
+OK     init_bitgleich_bprecap 
+OK     form_bprecap max abs 1.2e-06
+OK     logits_init_bprecap rel Fehler gegen float64: MLX 8.4e-07, torch 9.1e-07
+OK     gradient_init_bprecap max rel Fehler je Schicht gegen float64: MLX 1.7e-04, torch 2.3e-04
+OK     init_bitgleich_tat 
+OK     form_tat max abs 0.0e+00
+OK     logits_init_tat rel Fehler gegen float64: MLX 9.7e-07, torch 2.0e-06
+OK     gradient_init_tat max rel Fehler je Schicht gegen float64: MLX 6.2e-05, torch 1.6e-04
+OK     init_bitgleich_selu 
+OK     form_selu max abs 2.4e-07
+OK     logits_init_selu rel Fehler gegen float64: MLX 1.2e-06, torch 9.9e-07
+FEHLER gradient_init_selu max rel Fehler je Schicht gegen float64: MLX 1.4e-04, torch 1.4e-03
+OK     adamw_wie_mlx max abs 2.9e-11
+OK     qw_gleich 
+OK     qa_sym_gleich 
+OK     qa_asym_gleich 
+OK     mse_asym_gleich (-3.1448947048187255, 3.5268048906326293) / [-3.1448947048187255, 3.5268048906326293]
+OK     kalibrierung_init_bprecap max rel 5.6e-06
+OK     kalibrierung_init_tat max rel 1.3e-05
+OK     cle_funktion_gleich rel 5.7e-07
+AEQUIVALENZ FEHLER 22 von 23 Pruefungen

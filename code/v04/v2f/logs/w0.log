@@ -1,0 +1,39 @@
+Geraet: Device(gpu, 0)
+Geraet: Device(gpu, 0)
+22:27 confirm_bprecap_lr3e-05_wd0_s42353 mse4 ok diff 0 rbar 0.0810 gQ 0.217 sup 1.086 D 0.2866 a4 0.469 2489.2 306.6
+22:32 confirm_bprecap_lr3e-05_wd0_s42353 max ok diff 0 rbar 0.0917 gQ 0.197 sup 1.080 D 0.3526 a4 0.487 2489.2 306.2
+22:58 confirm_ctanh_lr3e-05_wd0_s42353 mse4 ok diff 0 rbar 0.0738 gQ 0.245 sup 1.098 D 0.2854 a4 0.540 1417.0 96.8
+22:59 confirm_ctanh_lr3e-05_wd0_s42353 max ok diff 0 rbar 0.0812 gQ 0.166 sup 1.093 D 0.3250 a4 0.558 1417.0 96.5
+23:45 confirm_bprecap_lr3e-05_wd0_s42354 mse4 ok diff 0 rbar 0.0798 gQ 0.228 sup 1.122 D 0.2835 a4 0.483 2442.5 306.9
+23:50 confirm_bprecap_lr3e-05_wd0_s42354 max ok diff 0 rbar 0.0905 gQ 0.206 sup 1.117 D 0.3530 a4 0.502 2442.5 307.1
+00:15 confirm_ctanh_lr3e-05_wd0_s42354 mse4 ok diff 0 rbar 0.0748 gQ 0.298 sup 1.097 D 0.3496 a4 0.527 1414.6 96.5
+00:17 confirm_ctanh_lr3e-05_wd0_s42354 max ok diff 0 rbar 0.0825 gQ 0.188 sup 1.062 D 0.3557 a4 0.530 1414.6 96.5
+01:03 confirm_bprecap_lr3e-05_wd0_s42355 mse4 ok diff 0 rbar 0.0819 gQ 0.238 sup 1.050 D 0.2738 a4 0.454 2444.5 307.2
+01:08 confirm_bprecap_lr3e-05_wd0_s42355 max ok diff 0 rbar 0.0929 gQ 0.210 sup 1.138 D 0.3580 a4 0.491 2444.5 307.0
+01:33 confirm_ctanh_lr3e-05_wd0_s42355 mse4 ok diff 0 rbar 0.0747 gQ 0.293 sup 1.159 D 0.3607 a4 0.502 1415.4 96.3
+01:35 confirm_ctanh_lr3e-05_wd0_s42355 max ok diff 0 rbar 0.0826 gQ 0.178 sup 1.087 D 0.3556 a4 0.511 1415.4 96.5
+02:22 confirm_bprecap_lr3e-05_wd0_s42356 mse4 ok diff 0 rbar 0.0820 gQ 0.219 sup 1.076 D 0.2817 a4 0.478 2498.2 336.7
+02:27 confirm_bprecap_lr3e-05_wd0_s42356 max ok diff 0 rbar 0.0932 gQ 0.198 sup 1.016 D 0.3285 a4 0.498 2498.2 307.4
+02:52 confirm_ctanh_lr3e-05_wd0_s42356 mse4 ok diff 0 rbar 0.0749 gQ 0.259 sup 1.071 D 0.3000 a4 0.530 1414.9 96.5
+02:54 confirm_ctanh_lr3e-05_wd0_s42356 max ok diff 0 rbar 0.0828 gQ 0.167 sup 1.086 D 0.3117 a4 0.528 1414.9 96.5
+03:41 confirm_bprecap_lr3e-05_wd0_s42357 mse4 ok diff 0 rbar 0.0825 gQ 0.228 sup 1.080 D 0.3067 a4 0.493 2496.1 337.7
+03:46 confirm_bprecap_lr3e-05_wd0_s42357 max ok diff 0 rbar 0.0937 gQ 0.206 sup 1.000 D 0.3465 a4 0.504 2496.1 306.3
+04:11 confirm_ctanh_lr3e-05_wd0_s42357 mse4 ok diff 0 rbar 0.0746 gQ 0.253 sup 0.974 D 0.2770 a4 0.512 1415.8 96.2
+04:13 confirm_ctanh_lr3e-05_wd0_s42357 max ok diff 0 rbar 0.0824 gQ 0.163 sup 1.074 D 0.3213 a4 0.512 1415.8 96.2
+04:59 confirm_bprecap_lr3e-05_wd0_s42358 mse4 ok diff 0 rbar 0.0828 gQ 0.210 sup 1.004 D 0.2695 a4 0.504 2440.7 307.3
+05:04 confirm_bprecap_lr3e-05_wd0_s42358 max ok diff 0 rbar 0.0946 gQ 0.187 sup 1.122 D 0.3654 a4 0.541 2440.7 306.9
+05:29 confirm_ctanh_lr3e-05_wd0_s42358 mse4 ok diff 0 rbar 0.0757 gQ 0.234 sup 1.052 D 0.3033 a4 0.508 1413.8 96.5
+05:31 confirm_ctanh_lr3e-05_wd0_s42358 max ok diff 0 rbar 0.0838 gQ 0.153 sup 1.117 D 0.3475 a4 0.543 1413.8 96.6
+06:17 confirm_bprecap_lr3e-05_wd0_s42359 mse4 ok diff 0 rbar 0.0809 gQ 0.222 sup 1.072 D 0.2739 a4 0.465 2443.5 306.8
+06:22 confirm_bprecap_lr3e-05_wd0_s42359 max ok diff 0 rbar 0.0914 gQ 0.204 sup 1.076 D 0.3220 a4 0.490 2443.5 307.3
+06:47 confirm_ctanh_lr3e-05_wd0_s42359 mse4 ok diff 0 rbar 0.0748 gQ 0.279 sup 1.148 D 0.3373 a4 0.517 1413.9 96.8
+06:49 confirm_ctanh_lr3e-05_wd0_s42359 max ok diff 0 rbar 0.0824 gQ 0.176 sup 1.197 D 0.3559 a4 0.544 1413.9 96.8
+07:36 confirm_bprecap_lr3e-05_wd0_s42360 mse4 ok diff 0 rbar 0.0822 gQ 0.223 sup 0.992 D 0.2589 a4 0.458 2499.2 336.8
+07:41 confirm_bprecap_lr3e-05_wd0_s42360 max ok diff 0 rbar 0.0931 gQ 0.201 sup 1.102 D 0.3491 a4 0.491 2499.2 307.2
+08:06 confirm_ctanh_lr3e-05_wd0_s42360 mse4 ok diff 0 rbar 0.0750 gQ 0.263 sup 1.131 D 0.3439 a4 0.522 1413.3 96.4
+08:08 confirm_ctanh_lr3e-05_wd0_s42360 max ok diff 0 rbar 0.0830 gQ 0.171 sup 1.147 D 0.3619 a4 0.538 1413.3 96.5
+08:55 confirm_bprecap_lr3e-05_wd0_s42361 mse4 ok diff 0 rbar 0.0815 gQ 0.224 sup 0.991 D 0.2484 a4 0.462 2511.6 318.3
+09:00 confirm_bprecap_lr3e-05_wd0_s42361 max ok diff 0 rbar 0.0923 gQ 0.202 sup 0.990 D 0.3062 a4 0.494 2511.6 332.1
+09:26 confirm_ctanh_lr3e-05_wd0_s42361 mse4 ok diff 0 rbar 0.0749 gQ 0.270 sup 1.000 D 0.2937 a4 0.510 1430.7 96.6
+09:27 confirm_ctanh_lr3e-05_wd0_s42361 max ok diff 0 rbar 0.0828 gQ 0.173 sup 1.075 D 0.3335 a4 0.547 1430.7 96.4
+Worker fertig 09:27

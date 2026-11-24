@@ -1,0 +1,17 @@
+Geraet: Device(gpu, 0)
+19:44 confirm_bprecap_lr3e-05_wd0_s42350 ok diff 0 rbar 0.0813 gQ 0.205 gG 0.133 D 0.2593 2441.9 307.9
+20:10 confirm_ctanh_lr3e-05_wd0_s42350 ok diff 0 rbar 0.0817 gQ 0.179 gG 0.132 D 0.3664 1411.6 96.9
+20:35 confirm_selu_lr3e-05_wd0_s42350 ok diff 0 rbar 0.1025 gQ 0.217 gG 0.155 D 0.3958 1464.8 81.8
+21:21 confirm_bprecap_lr3e-05_wd0_s42351 ok diff 0 rbar 0.0828 gQ 0.229 gG 0.142 D 0.2680 2439.9 307.2
+21:46 confirm_ctanh_lr3e-05_wd0_s42351 ok diff 0 rbar 0.0749 gQ 0.266 gG 0.128 D 0.2904 1411.5 96.5
+22:12 confirm_selu_lr3e-05_wd0_s42351 ok diff 0 rbar 0.1142 gQ 0.340 gG 0.158 D 0.4035 1464.9 81.7
+22:58 confirm_bprecap_lr3e-05_wd0_s42352 ok diff 0 rbar 0.0809 gQ 0.207 gG 0.135 D 0.2744 2439.2 307.5
+23:23 confirm_ctanh_lr3e-05_wd0_s42352 ok diff 0 rbar 0.0827 gQ 0.177 gG 0.127 D 0.3839 1412.5 96.8
+23:49 confirm_selu_lr3e-05_wd0_s42352 ok diff 0 rbar 0.1052 gQ 0.190 gG 0.137 D 0.3456 1465.5 81.9
+00:13 confirm_tanh_lr3e-05_wd0_s42350 ok diff 0 rbar 0.0955 gQ 0.127 gG 0.059 D 0.2408 1381.5 81.6
+00:41 confirm_tat_lr0.0001_wd0_s42350 ok diff 0 rbar 0.1875 gQ 0.332 gG 0.168 D 0.5775 1561.7 108.5
+01:05 confirm_tanh_lr3e-05_wd0_s42351 ok diff 0 rbar 0.0917 gQ 0.139 gG 0.059 D 0.1478 1381.9 81.2
+01:33 confirm_tat_lr0.0001_wd0_s42351 ok diff 0 rbar 0.2085 gQ 0.438 gG 0.200 D 0.6923 1563.0 108.1
+01:58 confirm_tanh_lr3e-05_wd0_s42352 ok diff 0 rbar 0.0914 gQ 0.122 gG 0.052 D 0.1559 1382.9 81.5
+02:26 confirm_tat_lr0.0001_wd0_s42352 ok diff 0 rbar 0.2247 gQ 0.483 gG 0.225 D 0.9035 1564.1 108.4
+Worker fertig 02:26

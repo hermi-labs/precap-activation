@@ -1,0 +1,105 @@
+{
+ "daten_bitgleich": {
+  "ok": true,
+  "info": "Summen torch [4.798, -2441.008, 392705.591], MLX [4.798, -2441.008, 392705.591]"
+ },
+ "daten_summen_gleich": {
+  "ok": true,
+  "info": ""
+ },
+ "batch_gleich": {
+  "ok": true,
+  "info": ""
+ },
+ "init_bitgleich_bprecap": {
+  "ok": true,
+  "info": ""
+ },
+ "form_bprecap": {
+  "ok": true,
+  "info": "max abs 1.2e-06"
+ },
+ "logits_init_bprecap": {
+  "ok": true,
+  "info": "rel Fehler gegen float64: MLX 8.4e-07, torch 6.9e-07"
+ },
+ "gradient_init_bprecap": {
+  "ok": true,
+  "info": "rel Fehler je Schicht gegen float64, Median/Max: MLX 7.4e-05/1.7e-04, torch 7.1e-05/2.3e-04 (Max bei Schicht 1)"
+ },
+ "init_bitgleich_tat": {
+  "ok": true,
+  "info": ""
+ },
+ "form_tat": {
+  "ok": true,
+  "info": "max abs 0.0e+00"
+ },
+ "logits_init_tat": {
+  "ok": true,
+  "info": "rel Fehler gegen float64: MLX 9.7e-07, torch 9.7e-07"
+ },
+ "gradient_init_tat": {
+  "ok": true,
+  "info": "rel Fehler je Schicht gegen float64, Median/Max: MLX 2.3e-05/6.2e-05, torch 1.9e-05/4.5e-05 (Max bei Schicht 0)"
+ },
+ "init_bitgleich_selu": {
+  "ok": true,
+  "info": ""
+ },
+ "form_selu": {
+  "ok": true,
+  "info": "max abs 2.4e-07"
+ },
+ "logits_init_selu": {
+  "ok": true,
+  "info": "rel Fehler gegen float64: MLX 1.2e-06, torch 1.6e-06"
+ },
+ "gradient_init_selu": {
+  "ok": true,
+  "info": "rel Fehler je Schicht gegen float64, Median/Max: MLX 9.0e-05/1.4e-04, torch 7.7e-05/1.6e-04 (Max bei Schicht 0)"
+ },
+ "adamw_wie_mlx": {
+  "ok": true,
+  "info": "max abs 7.5e-09"
+ },
+ "qw_gleich": {
+  "ok": true,
+  "info": ""
+ },
+ "qa_sym_gleich": {
+  "ok": true,
+  "info": ""
+ },
+ "qa_asym_gleich": {
+  "ok": true,
+  "info": ""
+ },
+ "mse_asym_gleich": {
+  "ok": true,
+  "info": "(-3.1448947048187255, 3.5268048906326293) / [-3.1448947048187255, 3.5268048906326293]"
+ },
+ "kalibrierung_init_bprecap": {
+  "ok": true,
+  "info": "max rel 8.8e-07"
+ },
+ "kalibrierung_init_tat": {
+  "ok": true,
+  "info": "max rel 6.2e-08"
+ },
+ "cle_funktion_gleich": {
+  "ok": true,
+  "info": "rel 3.8e-07"
+ },
+ "kurzes_training_bprecap": {
+  "ok": true,
+  "info": "Val-Fehler torch 0.6958, MLX 0.6950; Verlust 1.8917 / 1.8867; 75 s"
+ },
+ "kurzes_training_tat": {
+  "ok": true,
+  "info": "Val-Fehler torch 0.8212, MLX 0.8236; Verlust 2.0720 / 2.0867; 22 s"
+ },
+ "geraet": "cuda",
+ "torch": "2.14.1+cu126",
+ "alle_ok": true
+}

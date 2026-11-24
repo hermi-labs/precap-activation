@@ -1,0 +1,19 @@
+{
+ "device": "cuda",
+ "torch": "2.14.1+cu126",
+ "cuda": true,
+ "n_runs": 36,
+ "Ef2_bprecap": 1.0,
+ "Ef2_tat": 1.0,
+ "Ef2_selu": 1.0,
+ "delta_orth_ok": true,
+ "lr_schedule": [
+  0.0001,
+  5e-05,
+  2.08508055765666e-11
+ ],
+ "data_found": true,
+ "ok": true
+}
+
+--- stderr ---

@@ -1,0 +1,110 @@
+Geraet: Device(gpu, 0)
+{
+ "n_runs": 9,
+ "seeds": [
+  42353,
+  42354,
+  42355,
+  42356,
+  42357,
+  42358,
+  42359,
+  42360,
+  42361
+ ],
+ "act": "bprecapr04",
+ "lr": 3e-05,
+ "wd": 0.0,
+ "cal": "mse4",
+ "ntest": 1000,
+ "rho": 0.4,
+ "konst": {
+  "lam": 1.8050845940958777,
+  "alpha": 1.6519441680354163,
+  "b": 0.46350091456288073,
+  "chi1": 1.0399999999999998,
+  "lo": -2.1924115007865534,
+  "hi": 2.9717270274041074,
+  "nonlin": 0.017126989550991456,
+  "dnu": 0.8233161847776005,
+  "sup_d2": 1.910236065070101,
+  "interv": 0.249536065548401,
+  "rho": 0.4,
+  "M": 3.0,
+  "resid": 2.220446049250313e-16,
+  "ok": true,
+  "L": 50
+ },
+ "seeds_wie_v2k": true,
+ "Ef_bprecap": -0.0006,
+ "Ef2_bprecap": 1.0,
+ "chi1_bprecap": 1.0389,
+ "Ef_bprecapr04": -0.0006,
+ "Ef2_bprecapr04": 1.0,
+ "chi1_bprecapr04": 1.0388,
+ "bereich_v": [
+  -2.192411422729492,
+  2.9717273712158203
+ ],
+ "kontrolle_form_bitgleich": true,
+ "bprecap_unveraendert": true,
+ "variante_anders": 0.25324106216430664,
+ "anteil_jenseits_knie_init": 0.2516,
+ "kontrolle_training_bitgleich": true,
+ "kontrolle_kurve": [
+  [
+   15.0,
+   0.7787999999999999
+  ],
+  [
+   30.0,
+   0.7638
+  ],
+  [
+   45.0,
+   0.7448
+  ],
+  [
+   60.0,
+   0.7288
+  ],
+  [
+   75.0,
+   0.7172000000000001
+  ],
+  [
+   90.0,
+   0.7090000000000001
+  ],
+  [
+   105.0,
+   0.7083999999999999
+  ],
+  [
+   120.0,
+   0.7098
+  ]
+ ],
+ "kontrolle_sec": 353.5,
+ "mess_endlich": true,
+ "mess_summary": {
+  "D_allQ": 0.38474,
+  "D_allC": 0.18559,
+  "D_allR": 0.31683,
+  "rbarQ": 0.08585,
+  "rbarC": 0.02701,
+  "rbarR": 0.0814,
+  "gbarQ": 0.50739,
+  "gbarC": 1.06857,
+  "gbarR": 0.37915,
+  "n_ohne_clip": 0.0,
+  "frac_clip_median": 0.03083,
+  "kappa": 4.2435,
+  "nu": 1.78479,
+  "superpos_Q": 1.0328,
+  "cos_nachbar_median": 0.09297,
+  "cos_mittel_innen": 0.07662,
+  "qc_abw": 0.0
+ },
+ "alle_ok": true
+}

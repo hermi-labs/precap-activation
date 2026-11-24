@@ -1,0 +1,7 @@
+Geraet: Device(gpu, 0)
+{
+ "n_cols": 54,
+ "n_diff": 0,
+ "diff": []
+}
+KONTROLLE OK

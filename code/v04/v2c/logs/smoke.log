@@ -1,0 +1,6 @@
+Geraet: Device(gpu, 0)
+18:26 tune_tanh_lr1e-05_wd0_s42000 ok 0.8176 29.3
+18:26 tune_tanh_lr1e-05_wd3_s42000 ok 0.8180000000000001 28.8
+Auswahl {"tanh": {"lr": 1e-05, "wd": 0.0, "med_val_acc": 0.1824, "lr_at_edge": true, "wd_at_edge": false, "all_failed": false}}
+18:30 confirm_tanh_lr1e-05_wd0_s42350 ok 0.8009999999999999 0.8602 200.1
+Worker fertig 18:30

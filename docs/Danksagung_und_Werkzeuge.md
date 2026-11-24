@@ -37,3 +37,15 @@ Ab v0.2 hat Claude Code von Anthropic ([claude.com/claude-code](https://claude.c
 - die Literaturprüfung
 
 Aaron hat die Studien freigegeben, teils einzeln, teils als Rahmen für Folgestudien, die Claude danach begründet ausgewählt hat. Alle Präregistrierungen wurden vor dem Lauf per SHA-256 eingefroren und sind unverändert im Repo.
+
+## Versionen 0.3 bis 0.4
+
+Die Fragen und Entscheidungen stammen weiter von Aaron Schmitt: die begrenzte Form BPreCap mit der weichen Hülle (v0.3), der Schritt zu CNNs (v0.4) und die Vergleiche mit tanh. Die Studien liefen auf seinem MacBook Pro M1 Pro, die Wiederholungen auf anderer Hardware (C6 in v0.3, C7 in v0.4) auf seiner RTX 4070.
+
+Mitgearbeitet hat weiter Claude Code von Anthropic mit dem Modell Claude Opus 5.5. Mit Claude entstanden:
+- Entwürfe der Präregistrierungen und die Studienskripte;
+- die Auswertungen und Berichte;
+- die Texte und Abbildungen der Preprints;
+- die Literatur- und Zitationsprüfung.
+
+Aaron hat jede Studie freigegeben, einzeln oder als Rahmen für Folgestudien. Alle Präregistrierungen wurden vor dem Lauf per SHA-256 eingefroren und sind unverändert im Repo.

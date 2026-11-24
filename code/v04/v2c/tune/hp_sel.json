@@ -1,0 +1,10 @@
+{
+ "tanh": {
+  "lr": 3e-05,
+  "wd": 0.0,
+  "med_val_acc": 0.33109999999999995,
+  "lr_at_edge": false,
+  "wd_at_edge": false,
+  "all_failed": false
+ }
+}

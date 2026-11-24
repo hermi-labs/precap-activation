@@ -1,0 +1,8 @@
+Rauchtest laeuft 09:43
+Tests ok 09:47
+gestartet Sat Nov 21 09:47:59 CET 2026
+There are screens on:
+	9697.v2gbw0	(Detached)
+	9699.v2gbwache	(Detached)
+2 Sockets in /var/folders/vd/3bs93c_s3v9_v1mnmn3jmmyw0000gn/T/.screen.
+

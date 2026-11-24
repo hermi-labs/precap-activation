@@ -1,0 +1,4 @@
+Geraet: Device(gpu, 0)
+18:54 confirm_bprecap_lr3e-05_wd0_s42350 ok diff None rbar 0.0819 gQ 0.328 gG 0.091 D 0.2258 608.0 88.4
+18:59 confirm_ctanh_lr3e-05_wd0_s42350 ok diff None rbar 0.0785 gQ 0.210 gG 0.046 D 0.1414 227.6 33.7
+Worker fertig 18:59

@@ -1,0 +1,12 @@
+wartet auf v2hw0 seit 18:48
+v2hw0 beendet 02:58
+Selbsttest ok 03:00
+Rauchtest laeuft 03:01
+Tests ok 03:02
+gestartet Sun Nov 22 03:03:00 CET 2026
+There are screens on:
+	32126.v2kw0	(Detached)
+	20585.v2kstart	(Detached)
+	32129.v2kwache	(Detached)
+3 Sockets in /var/folders/vd/3bs93c_s3v9_v1mnmn3jmmyw0000gn/T/.screen.
+

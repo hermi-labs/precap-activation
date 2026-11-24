@@ -1,0 +1,358 @@
+{
+ "n_rows": 36,
+ "soll": 36,
+ "n_ok": 36,
+ "n_bitgleich_laeufe": 18,
+ "run_ids_eindeutig": true,
+ "gueltige_paare": [
+  42353,
+  42354,
+  42355,
+  42356,
+  42357,
+  42358,
+  42359,
+  42360,
+  42361
+ ],
+ "Primaer_mse4": {
+  "H1_Kohaerenz": {
+   "kennzahl": "superpos_Q",
+   "kal": "mse4",
+   "richtung": "BPreCap kleiner",
+   "n": 9,
+   "q": [
+    0.9887,
+    1.0225,
+    0.906,
+    1.0053,
+    1.1089,
+    0.9551,
+    0.9342,
+    0.8772,
+    0.9912
+   ],
+   "q_median": 0.9887,
+   "in_richtung": 6,
+   "p_einseitig": 0.15039,
+   "p_zweiseitig": 0.30078,
+   "p_holm": 0.15039,
+   "urteil": "nicht bestaetigt"
+  },
+  "H2_Weitergabe": {
+   "kennzahl": "gbarQ",
+   "kal": "mse4",
+   "richtung": "BPreCap kleiner",
+   "n": 9,
+   "q": [
+    0.888,
+    0.7657,
+    0.8107,
+    0.8444,
+    0.9003,
+    0.8993,
+    0.7951,
+    0.847,
+    0.8287
+   ],
+   "q_median": 0.8444,
+   "in_richtung": 9,
+   "p_einseitig": 0.00195,
+   "p_zweiseitig": 0.00391,
+   "p_holm": 0.00586,
+   "urteil": "bestaetigt"
+  },
+  "H3_Rundung": {
+   "kennzahl": "rbar",
+   "kal": "mse4",
+   "richtung": "BPreCap groesser",
+   "n": 9,
+   "q": [
+    1.0973,
+    1.0673,
+    1.0967,
+    1.096,
+    1.1066,
+    1.0946,
+    1.0819,
+    1.0961,
+    1.0887
+   ],
+   "q_median": 1.096,
+   "in_richtung": 9,
+   "p_einseitig": 0.00195,
+   "p_zweiseitig": 0.00391,
+   "p_holm": 0.00586,
+   "urteil": "bestaetigt"
+  }
+ },
+ "Deutung": "Kohaerenz-Befund nicht bestaetigt (Hinweis im v0.4-Entwurf entfernen)",
+ "S1_max": {
+  "H1_Kohaerenz": {
+   "kennzahl": "superpos_Q",
+   "kal": "max",
+   "richtung": "BPreCap kleiner",
+   "n": 9,
+   "q": [
+    0.988,
+    1.0516,
+    1.0466,
+    0.935,
+    0.9314,
+    1.0043,
+    0.8992,
+    0.9611,
+    0.9208
+   ],
+   "q_median": 0.9611,
+   "in_richtung": 6,
+   "p_einseitig": 0.08203,
+   "p_zweiseitig": 0.16406,
+   "p_holm": 0.16406,
+   "urteil": "nicht bestaetigt"
+  },
+  "H2_Weitergabe": {
+   "kennzahl": "gbarQ",
+   "kal": "max",
+   "richtung": "BPreCap kleiner",
+   "n": 9,
+   "q": [
+    1.1858,
+    1.095,
+    1.1777,
+    1.1869,
+    1.2642,
+    1.2176,
+    1.1566,
+    1.1738,
+    1.1692
+   ],
+   "q_median": 1.1777,
+   "in_richtung": 0,
+   "p_einseitig": 1.0,
+   "p_zweiseitig": 0.00391,
+   "p_holm": 1.0,
+   "urteil": "nicht bestaetigt"
+  },
+  "H3_Rundung": {
+   "kennzahl": "rbar",
+   "kal": "max",
+   "richtung": "BPreCap groesser",
+   "n": 9,
+   "q": [
+    1.1296,
+    1.0959,
+    1.124,
+    1.1255,
+    1.1368,
+    1.1284,
+    1.1081,
+    1.1206,
+    1.1139
+   ],
+   "q_median": 1.124,
+   "in_richtung": 9,
+   "p_einseitig": 0.00195,
+   "p_zweiseitig": 0.00391,
+   "p_holm": 0.00586,
+   "urteil": "bestaetigt"
+  }
+ },
+ "S2": {
+  "D_mse4": {
+   "kennzahl": "D_allQ",
+   "kal": "mse4",
+   "richtung": "BPreCap kleiner",
+   "n": 9,
+   "q": [
+    1.0041,
+    0.8108,
+    0.759,
+    0.9391,
+    1.1072,
+    0.8885,
+    0.812,
+    0.753,
+    0.8458
+   ],
+   "q_median": 0.8458,
+   "in_richtung": 7,
+   "p_einseitig": 0.01367,
+   "p_zweiseitig": 0.02734,
+   "p_holm": 0.02734,
+   "urteil": "bestaetigt"
+  },
+  "a4_mse4": {
+   "kennzahl": "err_a4_1000",
+   "kal": "mse4",
+   "richtung": "BPreCap kleiner",
+   "n": 9,
+   "q": [
+    0.8685,
+    0.9165,
+    0.9044,
+    0.9019,
+    0.9629,
+    0.9921,
+    0.8994,
+    0.8774,
+    0.9059
+   ],
+   "q_median": 0.9044,
+   "in_richtung": 9,
+   "p_einseitig": 0.00195,
+   "p_zweiseitig": 0.00391,
+   "p_holm": 0.0078,
+   "urteil": "bestaetigt"
+  },
+  "D_max": {
+   "kennzahl": "D_allQ",
+   "kal": "max",
+   "richtung": "BPreCap kleiner",
+   "n": 9,
+   "q": [
+    1.0849,
+    0.9926,
+    1.0068,
+    1.0539,
+    1.0783,
+    1.0515,
+    0.9048,
+    0.9645,
+    0.9182
+   ],
+   "q_median": 1.0068,
+   "in_richtung": 4,
+   "p_einseitig": 0.54492,
+   "p_zweiseitig": 1.0,
+   "p_holm": 0.54492,
+   "urteil": "nicht bestaetigt"
+  },
+  "a4_max": {
+   "kennzahl": "err_a4_1000",
+   "kal": "max",
+   "richtung": "BPreCap kleiner",
+   "n": 9,
+   "q": [
+    0.8728,
+    0.9472,
+    0.9609,
+    0.9432,
+    0.9844,
+    0.9963,
+    0.9007,
+    0.9126,
+    0.9031
+   ],
+   "q_median": 0.9432,
+   "in_richtung": 9,
+   "p_einseitig": 0.00195,
+   "p_zweiseitig": 0.00391,
+   "p_holm": 0.0078,
+   "urteil": "bestaetigt"
+  }
+ },
+ "S3_gepoolt": {
+  "superpos_Q_mse4": {
+   "n": 12,
+   "q_median": 0.9649,
+   "bprecap_kleiner": 9
+  },
+  "gbarQ_mse4": {
+   "n": 12,
+   "q_median": 0.8365,
+   "bprecap_kleiner": 12
+  },
+  "rbar_mse4": {
+   "n": 12,
+   "q_median": 1.0953,
+   "bprecap_kleiner": 0
+  },
+  "D_allQ_mse4": {
+   "n": 12,
+   "q_median": 0.8496,
+   "bprecap_kleiner": 10
+  },
+  "err_a4_mse4": {
+   "n": 12,
+   "q_median": 0.9051,
+   "bprecap_kleiner": 12
+  },
+  "superpos_Q_max": {
+   "n": 12,
+   "q_median": 0.9622,
+   "bprecap_kleiner": 9
+  },
+  "gbarQ_max": {
+   "n": 12,
+   "q_median": 1.1757,
+   "bprecap_kleiner": 0
+  },
+  "rbar_max": {
+   "n": 12,
+   "q_median": 1.1223,
+   "bprecap_kleiner": 0
+  },
+  "D_allQ_max": {
+   "n": 12,
+   "q_median": 0.9997,
+   "bprecap_kleiner": 6
+  },
+  "err_a4_max": {
+   "n": 12,
+   "q_median": 0.9452,
+   "bprecap_kleiner": 11
+  }
+ },
+ "S4_spearman_sup_a4_mse4": {
+  "rho": 0.483,
+  "p": 0.1875,
+  "n": 9
+ },
+ "Zerlegung": {
+  "mse4": {
+   "logq_D": -0.1675,
+   "logq_sqrtSd2": -0.1403,
+   "logq_sup": -0.0114
+  },
+  "max": {
+   "logq_D": 0.0067,
+   "logq_sqrtSd2": 0.0062,
+   "logq_sup": -0.0397
+  }
+ },
+ "Mediane": {
+  "bprecap_mse4": {
+   "rbar": 0.0819,
+   "gbarQ": 0.2227,
+   "superpos_Q": 1.072,
+   "D_allQ": 0.2739,
+   "err_a4_1000": 0.469,
+   "err_fp32_1000": 0.443
+  },
+  "bprecap_max": {
+   "rbar": 0.0929,
+   "gbarQ": 0.2019,
+   "superpos_Q": 1.0799,
+   "D_allQ": 0.3491,
+   "err_a4_1000": 0.494,
+   "err_fp32_1000": 0.443
+  },
+  "ctanh_mse4": {
+   "rbar": 0.0748,
+   "gbarQ": 0.263,
+   "superpos_Q": 1.097,
+   "D_allQ": 0.3033,
+   "err_a4_1000": 0.517,
+   "err_fp32_1000": 0.478
+  },
+  "ctanh_max": {
+   "rbar": 0.0826,
+   "gbarQ": 0.1715,
+   "superpos_Q": 1.087,
+   "D_allQ": 0.3475,
+   "err_a4_1000": 0.538,
+   "err_fp32_1000": 0.478
+  }
+ }
+}

@@ -1,0 +1,12 @@
+Geraet: Device(gpu, 0)
+08:29 tune_bprecap_lr1e-05_wd0_s42000 ok 0.7672 116.0
+08:31 tune_bprecap_lr1e-05_wd3_s42000 ok 0.7666 114.6
+08:31 tune_tat_lr3e-05_wd0_s42000 ok 0.8942 40.7
+08:32 tune_tat_lr3e-05_wd3_s42000 ok 0.8946000000000001 38.5
+08:32 tune_selu_lr1e-05_wd0_s42000 ok 0.7682 29.3
+08:33 tune_selu_lr1e-05_wd3_s42000 ok 0.7672 30.3
+Auswahl {"bprecap": {"lr": 1e-05, "wd": 3.0, "med_val_acc": 0.23340000000000005, "lr_at_edge": true, "wd_at_edge": true, "all_failed": false}, "tat": {"lr": 3e-05, "wd": 0.0, "med_val_acc": 0.1058, "lr_at_edge": true, "wd_at_edge": false, "all_failed": false}, "selu": {"lr": 1e-05, "wd": 3.0, "med_val_acc": 0.2328, "lr_at_edge": true, "wd_at_edge": true, "all_failed": false}}
+08:43 confirm_bprecap_lr1e-05_wd3_s42350 ok 0.7691 0.8563000000000001 604.3
+08:49 confirm_tat_lr3e-05_wd0_s42350 ok 0.7961 0.8898 379.0
+08:53 confirm_selu_lr1e-05_wd3_s42350 ok 0.7791 0.8825000000000001 220.5
+Worker fertig 08:53

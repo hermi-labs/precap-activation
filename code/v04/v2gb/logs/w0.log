@@ -1,0 +1,27 @@
+Geraet: Device(gpu, 0)
+10:07 tune_xtanh_lr1e-05_wd0_s42000 ok 0.6961999999999999 1153.8
+10:26 tune_xtanh_lr1e-05_wd3_s42000 ok 0.7118 1152.3
+10:45 tune_xtanh_lr3e-05_wd0_s42000 ok 0.6546000000000001 1154.5
+11:04 tune_xtanh_lr3e-05_wd3_s42000 ok 0.6839999999999999 1153.8
+11:24 tune_xtanh_lr0.0001_wd0_s42000 ok 0.6930000000000001 1164.8
+11:43 tune_xtanh_lr0.0001_wd3_s42000 ok 0.7286 1155.8
+12:02 tune_xtanh_lr1e-05_wd0_s42001 ok 0.7196 1152.3
+12:21 tune_xtanh_lr1e-05_wd3_s42001 ok 0.7254 1152.6
+12:41 tune_xtanh_lr3e-05_wd0_s42001 ok 0.6312 1153.8
+13:00 tune_xtanh_lr3e-05_wd3_s42001 ok 0.6702 1152.6
+13:19 tune_xtanh_lr0.0001_wd0_s42001 ok 0.692 1165.2
+13:39 tune_xtanh_lr0.0001_wd3_s42001 ok 0.7278 1156.6
+Auswahl {"xtanh": {"lr": 3e-05, "wd": 0.0, "med_val_acc": 0.3571, "lr_at_edge": false, "wd_at_edge": false, "all_failed": false}}
+14:01 confirm_xtanh_lr3e-05_wd0_s42350 ok 0.6555 0.6684 1324.0
+14:23 confirm_xtanh_lr3e-05_wd0_s42351 ok 0.6533 0.6542 1325.3
+14:45 confirm_xtanh_lr3e-05_wd0_s42352 ok 0.6441 0.6656 1325.8
+15:07 confirm_xtanh_lr3e-05_wd0_s42353 ok 0.6441 0.655 1326.4
+15:29 confirm_xtanh_lr3e-05_wd0_s42354 ok 0.6722 0.6742 1327.6
+15:51 confirm_xtanh_lr3e-05_wd0_s42355 ok 0.6486000000000001 0.6597999999999999 1327.2
+16:13 confirm_xtanh_lr3e-05_wd0_s42356 ok 0.6251 0.6317999999999999 1325.3
+16:35 confirm_xtanh_lr3e-05_wd0_s42357 ok 0.659 0.6683 1325.7
+16:58 confirm_xtanh_lr3e-05_wd0_s42358 ok 0.6325000000000001 0.6486000000000001 1327.3
+17:20 confirm_xtanh_lr3e-05_wd0_s42359 ok 0.6456999999999999 0.6489 1328.6
+17:42 confirm_xtanh_lr3e-05_wd0_s42360 ok 0.6524 0.6716 1327.8
+18:04 confirm_xtanh_lr3e-05_wd0_s42361 ok 0.6234999999999999 0.6337999999999999 1325.9
+Worker fertig 18:04
